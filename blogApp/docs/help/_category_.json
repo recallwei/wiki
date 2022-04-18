@@ -1,0 +1,10 @@
+{
+  "label": "help",
+  "position": 10,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "help"
+  }
+}
