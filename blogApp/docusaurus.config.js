@@ -7,9 +7,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Bruce Song",
-  tagline: "Dinosaurs are cool", //todo: check property
+  tagline: "Welcome!", //todo: check property
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
+  baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/geek.png",
@@ -24,12 +25,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/recallwei/blog/",
+          editUrl: "https://github.com/recallwei/blog/tree/main/blogApp", //GitHub 仓库对应文件位置
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/recallwei/blog/",
+          editUrl: "https://github.com/recallwei/blog/tree/main/blogApp",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -48,17 +49,20 @@ const config = {
           src: "img/geek.png",
         },
         items: [
+          // Left
           {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          // Right
           {
             href: "https://github.com/recallwei/",
-            label: "GitHub",
             position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
           },
         ],
       },
@@ -100,12 +104,12 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/recallwei/",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
