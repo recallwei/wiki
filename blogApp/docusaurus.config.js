@@ -62,53 +62,15 @@ const config = {
             href: "https://github.com/recallwei/",
             position: "right",
             className: "header-github-link",
+            title: "Go to Bruce's Github homepage.",
             "aria-label": "GitHub repository",
           },
         ],
       },
       footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/recallwei/",
-              },
-            ],
-          },
-        ],
+        logo: { src: "img/geek.png", href: "/", width: 40, height: 40 },
+        style: "light", // "light" | "dark"
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus.`,
       },
       prism: {
