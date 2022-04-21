@@ -43,9 +43,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Bruce",
+        title: "Bruce's Wiki",
         logo: {
-          alt: "Bruce",
+          alt: "Bruce's Wiki",
           src: "img/geek.png",
         },
         items: [
