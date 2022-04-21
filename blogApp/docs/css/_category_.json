@@ -1,10 +1,10 @@
 {
-  "label": "npm",
-  "position": 3,
+  "label": "CSS",
+  "position": 1,
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "title": "npm"
+    "title": "CSS"
   }
 }
