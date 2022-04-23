@@ -1,10 +1,10 @@
 {
-  "label": "HTML",
-  "position": 1,
+  "label": "Javascript",
+  "position": 3,
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "title": "HTML"
+    "title": "Javascript"
   }
 }
