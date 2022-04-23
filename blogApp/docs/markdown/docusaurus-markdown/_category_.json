@@ -1,10 +1,10 @@
 {
-  "label": "React",
-  "position": 4,
+  "label": "Docusaurus Markdown",
+  "position": 0,
   "collapsible": true,
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "title": "React"
+    "title": "Docusaurus Markdown"
   }
 }
