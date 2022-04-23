@@ -53,10 +53,16 @@ const config = {
           {
             type: "doc",
             docId: "home",
-            position: "left",
             label: "Docs",
+            position: "left",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          {
+            type: "doc",
+            docId: "react/download-file",
+            label: "React",
+            position: "left",
+          },
           // Right
           {
             href: "https://github.com/recallwei/",
