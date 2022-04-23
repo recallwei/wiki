@@ -73,9 +73,23 @@ const config = {
         links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus.`,
       },
+      // code block 基于 prism.js
       prism: {
         theme: require("prism-react-renderer/themes/dracula"),
         darkTheme: darkCodeTheme,
+        // Prism : https://prismjs.com/#supported-languages
+        additionalLanguages: [
+          "aspnet", // ASP.NET
+          "cpp", // C++
+          "csharp", //C#
+          "graphql", //GraphQL
+          "go", //Go
+          "http", //HTTP
+          "java", //Java
+          "powershell", //PowerShell
+          "swift", //Swift
+          "vim", //vim
+        ],
       },
     }),
 };
