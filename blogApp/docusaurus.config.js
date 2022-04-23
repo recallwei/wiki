@@ -52,7 +52,7 @@ const config = {
           // Left
           {
             type: "doc",
-            docId: "intro",
+            docId: "home",
             position: "left",
             label: "Docs",
           },
