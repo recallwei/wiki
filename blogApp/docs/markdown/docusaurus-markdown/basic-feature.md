@@ -3,7 +3,26 @@ sidebar_position: 0
 sidebar_label: 基本特性
 ---
 
+Docusaurus Markdown 具有 Markdown 的基本特性以及其独特的额外特性。
+
 # 基本特性
+
+## Front Matter
+
+Markdown documents have metadata at the top called Front Matter:
+
+```
+---
+id: my-doc-id
+title: My document title
+description: My document description
+slug: /my-custom-url
+---
+
+## Markdown heading
+
+Markdown text with [links](./hello.md)
+```
 
 ## 粗体
 
@@ -19,6 +38,14 @@ sidebar_label: 基本特性
 
 ```
 [链接文字](链接地址)
+```
+
+## 图片
+
+![Docusaurus Logo](../../../static/img/docusaurus.png)
+
+```
+![Docusaurus Logo](../../../static/img/docusaurus.png)
 ```
 
 ## 列表/子列表
