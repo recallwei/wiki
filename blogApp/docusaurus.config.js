@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const oceanicNext = require("prism-react-renderer/themes/oceanicNext");
+const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -23,6 +25,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // 将 docs URL 作为根 URL
+          //routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl: "https://github.com/recallwei/blog/tree/main/blogApp", //GitHub 仓库对应文件位置
@@ -77,12 +81,14 @@ const config = {
         logo: { src: "img/geek.png", href: "/", width: 40, height: 40 },
         style: "light", // "light" | "dark"
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Bruce,Inc. Built with Docusaurus.`,
       },
       // code block 基于 prism.js
       prism: {
-        theme: require("prism-react-renderer/themes/dracula"),
+        theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        // theme: duotoneLight,
+        // darkTheme: oceanicNext,
         // Prism : https://prismjs.com/#supported-languages
         additionalLanguages: [
           "aspnet", // ASP.NET
@@ -96,6 +102,14 @@ const config = {
           "swift", //Swift
           "vim", //vim
         ],
+      },
+      //顶部横幅
+      announcementBar: {
+        id: "support_us",
+        content: "I am currently learning React...",
+        backgroundColor: "#fafbfc",
+        textColor: "#091E42",
+        isCloseable: false,
       },
     }),
 };
