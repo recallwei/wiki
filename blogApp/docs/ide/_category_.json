@@ -1,0 +1,10 @@
+{
+  "label": "IDE",
+  "position": 10,
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "IDE"
+  }
+}
