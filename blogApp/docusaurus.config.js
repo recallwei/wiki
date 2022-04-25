@@ -28,6 +28,8 @@ const config = {
           // 将 docs URL 作为根 URL
           //routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           // Please change this to your repo.
           editUrl: "https://github.com/recallwei/blog/tree/main/blogApp", //GitHub 仓库对应文件位置
         },
@@ -46,6 +48,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      hideableSidebar: true,
       navbar: {
         title: "Bruce's Wiki",
         logo: {
@@ -56,15 +59,27 @@ const config = {
           // Left
           {
             type: "doc",
-            docId: "home",
-            label: "Docs",
+            docId: "front-end/front-end-home",
+            label: "Front-end",
+            position: "left",
+          },
+          {
+            type: "doc",
+            docId: "back-end/back-end-home",
+            label: "Back-end",
+            position: "left",
+          },
+          {
+            type: "doc",
+            docId: "cs/cs-home",
+            label: "CS",
             position: "left",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
             type: "doc",
-            docId: "react/download-file",
-            label: "React",
+            docId: "todo",
+            label: "To Do",
             position: "left",
           },
           // Right
