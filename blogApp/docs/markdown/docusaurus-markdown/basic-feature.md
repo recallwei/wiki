@@ -3,9 +3,9 @@ sidebar_position: 0
 sidebar_label: 基本特性
 ---
 
-Docusaurus Markdown 具有 Markdown 的基本特性以及其独特的额外特性。
-
 # 基本特性
+
+Docusaurus Markdown 具有 Markdown 的基本特性以及其独特的额外特性。
 
 ## Front Matter
 
