@@ -67,17 +67,17 @@ const sidebars = {
       ],
     },
     // HTML
-    {
-      type: "category",
-      label: "HTML",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "generated-index",
-        title: "HTML",
-      },
-      items: [],
-    },
+    // {
+    //   type: "category",
+    //   label: "HTML",
+    //   collapsible: true,
+    //   collapsed: true,
+    //   link: {
+    //     type: "generated-index",
+    //     title: "HTML",
+    //   },
+    //   items: [],
+    // },
     // CSS
     {
       type: "category",
@@ -109,17 +109,17 @@ const sidebars = {
       ],
     },
     // Javascript
-    {
-      type: "category",
-      label: "Javascript",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "generated-index",
-        title: "Javascript",
-      },
-      items: [],
-    },
+    // {
+    //   type: "category",
+    //   label: "Javascript",
+    //   collapsible: true,
+    //   collapsed: true,
+    //   link: {
+    //     type: "generated-index",
+    //     title: "Javascript",
+    //   },
+    //   items: [],
+    // },
     // React
     {
       type: "category",
@@ -233,17 +233,17 @@ const sidebars = {
       ],
     },
     // Design
-    {
-      type: "category",
-      label: "Design",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "generated-index",
-        title: "Design",
-      },
-      items: [],
-    },
+    // {
+    //   type: "category",
+    //   label: "Design",
+    //   collapsible: true,
+    //   collapsed: true,
+    //   link: {
+    //     type: "generated-index",
+    //     title: "Design",
+    //   },
+    //   items: [],
+    // },
   ],
   backend: [
     //Home
@@ -261,17 +261,17 @@ const sidebars = {
       label: "CS",
     },
     // Network
-    {
-      type: "category",
-      label: "Network",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "generated-index",
-        title: "Network",
-      },
-      items: [],
-    },
+    // {
+    //   type: "category",
+    //   label: "Network",
+    //   collapsible: true,
+    //   collapsed: true,
+    //   link: {
+    //     type: "generated-index",
+    //     title: "Network",
+    //   },
+    //   items: [],
+    // },
   ],
 };
 
