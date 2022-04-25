@@ -21,6 +21,5 @@ code {
 }
 ```
 
-🔗 [Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono)
-
+🔗 [Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono)<br/>
 🔗 [JetBrains Mono 官方网址](https://www.jetbrains.com/zh-cn/lp/mono/)

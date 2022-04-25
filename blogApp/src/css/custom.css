@@ -139,10 +139,6 @@ img-annotation {
   font-size: 0.7rem;
 }
 
-p {
-  margin: 3px 0 3px 0px !important;
-}
-
 /* 徽章居左 */
 .Badges {
   display: inline-block !important;
