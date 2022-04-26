@@ -109,17 +109,57 @@ const sidebars = {
       ],
     },
     // Javascript
-    // {
-    //   type: "category",
-    //   label: "Javascript",
-    //   collapsible: true,
-    //   collapsed: true,
-    //   link: {
-    //     type: "generated-index",
-    //     title: "Javascript",
-    //   },
-    //   items: [],
-    // },
+    {
+      type: "category",
+      label: "Javascript",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "generated-index",
+        title: "Javascript",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Built-in Objects",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "Built-in Objects",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/javascript/built-in-objects/array",
+              label: "Array",
+            },
+            {
+              type: "doc",
+              id: "front-end/javascript/built-in-objects/string",
+              label: "String",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Solution",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "Solution",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/javascript/solution/get-document-file-type",
+              label: "获取文件类型",
+            },
+          ],
+        },
+      ],
+    },
     // React
     {
       type: "category",
