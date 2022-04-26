@@ -184,6 +184,24 @@ const sidebars = {
         },
       ],
     },
+    // Wechat Mini Program
+    {
+      type: "category",
+      label: "Wechat Mini Program",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "generated-index",
+        title: "Wechat Mini Program",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "front-end/wechat-mini-program/configuration",
+          label: "configuration",
+        },
+      ],
+    },
     // npm
     {
       type: "category",
@@ -274,5 +292,25 @@ const sidebars = {
     // },
   ],
 };
+
+// Category Template
+// {
+//   type: "category",
+//   label: "",
+//   collapsible: true,
+//   collapsed: true,
+//   link: {
+//     type: "generated-index",
+//     title: "",
+//   },
+//   items: [],
+// },
+
+// Doc Template
+// {
+//    type: "doc",
+//    id: "",
+//    label: "",
+// },
 
 module.exports = sidebars;
