@@ -198,7 +198,7 @@ const sidebars = {
         {
           type: "doc",
           id: "front-end/wechat-mini-program/configuration",
-          label: "configuration",
+          label: "Configuration",
         },
       ],
     },
