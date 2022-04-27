@@ -5,6 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
+/* Font */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 :root {
