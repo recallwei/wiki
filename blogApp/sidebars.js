@@ -240,6 +240,23 @@ const sidebars = {
           id: "front-end/wechat-mini-program/configuration",
           label: "Configuration",
         },
+        {
+          type: "category",
+          label: "API",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "API",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/wechat-mini-program/api/clipboard",
+              label: "剪切板",
+            },
+          ],
+        },
       ],
     },
     // npm
