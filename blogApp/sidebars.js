@@ -67,17 +67,23 @@ const sidebars = {
       ],
     },
     // HTML
-    // {
-    //   type: "category",
-    //   label: "HTML",
-    //   collapsible: true,
-    //   collapsed: true,
-    //   link: {
-    //     type: "generated-index",
-    //     title: "HTML",
-    //   },
-    //   items: [],
-    // },
+    {
+      type: "category",
+      label: "HTML",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "generated-index",
+        title: "HTML",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "front-end/html/a-tag",
+          label: "<a>",
+        },
+      ],
+    },
     // CSS
     {
       type: "category",
