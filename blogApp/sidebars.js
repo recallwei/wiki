@@ -91,6 +91,23 @@ const sidebars = {
       items: [
         {
           type: "category",
+          label: "Flex Box",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "Flex Box",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/css/flex-box/flex",
+              label: "Flex",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Font",
           collapsible: true,
           collapsed: true,
@@ -103,6 +120,11 @@ const sidebars = {
               type: "doc",
               id: "front-end/css/font/import-font-in-css",
               label: "在 CSS 中引入字体",
+            },
+            {
+              type: "doc",
+              id: "front-end/css/font/display",
+              label: "文本显示",
             },
           ],
         },
