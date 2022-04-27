@@ -212,6 +212,23 @@ const sidebars = {
       items: [
         {
           type: "category",
+          label: "DOM",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "DOM",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/react/dom/dom-elements",
+              label: "DOM 元素",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "常见问题",
           collapsible: true,
           collapsed: true,
@@ -224,6 +241,11 @@ const sidebars = {
               type: "doc",
               id: "front-end/react/common/download-file",
               label: "下载文件",
+            },
+            {
+              type: "doc",
+              id: "front-end/react/common/import-image",
+              label: "引入图片",
             },
           ],
         },

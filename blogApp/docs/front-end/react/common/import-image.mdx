@@ -1,0 +1,29 @@
+import Badge from "@site/src/components/Badge";
+
+# 引入图片
+
+<a href="/docs/category/javascript">
+  <Badge color="primary">Javascript</Badge>
+</a>
+
+## import 方法
+
+ES6 不支持在 `<img />` 标签里直接写图片路径。
+
+```jsx
+import src from "@asset/images/icon.png";
+
+render(){
+    return <img src={src} />
+}
+```
+
+## require 方法
+
+require 方法里只能写字符串，不可以写变量。
+
+```jsx
+render(){
+    <img src={require("@asset/images/icon.png")} />
+}
+```
