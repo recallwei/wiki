@@ -5,3 +5,5 @@ https://dev.to/sajclarke_62/using-tailwindcss-v3-in-docusaurus-in-5-steps-5c26
 `yarn add tailwindcss postcss autoprefixer`
 
 `npx tailwindcss init`
+
+https://farer.org/2021/10/08/docusaurus-with-tailwindcss/
