@@ -237,6 +237,11 @@ const sidebars = {
               id: "front-end/react/docusaurus/build",
               label: "Build",
             },
+            {
+              type: "doc",
+              id: "front-end/react/docusaurus/tailwind-css-integration",
+              label: "集成 TailwindCSS v3",
+            },
           ],
         },
       ],
