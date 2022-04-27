@@ -106,6 +106,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Property",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "Property",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/css/property/white-space",
+              label: "white-space",
+            },
+          ],
+        },
       ],
     },
     // Javascript
