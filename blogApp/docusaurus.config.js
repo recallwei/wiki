@@ -19,6 +19,13 @@ const config = {
   organizationName: "Bruce Song", // Usually your GitHub org/user name.
   projectName: "blog", // Usually your repo name.
 
+  themes: ["@docusaurus/theme-live-codeblock"],
+
+  i18n: {
+    defaultLocale: "zh-CN",
+    locales: ["zh-CN", "en", "ko", "ja"],
+  },
+
   presets: [
     [
       "classic",
@@ -83,7 +90,17 @@ const config = {
             label: "To Do",
             position: "left",
           },
+          {
+            type: "doc",
+            docId: "tutorial-extras/translate-your-site",
+            label: "To Do",
+            position: "left",
+          },
           // Right
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
           {
             href: "https://github.com/recallwei/",
             position: "right",
@@ -126,6 +143,14 @@ const config = {
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
         isCloseable: false,
+      },
+      //实时代码块
+      liveCodeBlock: {
+        /**
+         * 实时效果显示的位置，可位于编辑器上方或下方。
+         * 可为："top" | "bottom"
+         */
+        playgroundPosition: "bottom",
       },
     }),
 };
