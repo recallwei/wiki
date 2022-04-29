@@ -149,6 +149,33 @@ const sidebars = {
               id: "front-end/css/property/white-space",
               label: "white-space",
             },
+            {
+              type: "doc",
+              id: "front-end/css/property/box-shadow",
+              label: "box-shadow",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Components",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "generated-index",
+            title: "Components",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/css/components/card",
+              label: "Card",
+            },
+            {
+              type: "doc",
+              id: "front-end/css/components/ribbon",
+              label: "Ribbon",
+            },
           ],
         },
       ],
