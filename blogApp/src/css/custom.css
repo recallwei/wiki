@@ -156,8 +156,8 @@ img-annotation {
 
 /* Feature Icon */
 img[class^="feature-icon"] {
-  height: 156px;
-  width: 156px;
+  height: 128px;
+  width: 128px;
 }
 
 /* Badge */
