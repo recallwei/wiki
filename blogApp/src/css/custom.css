@@ -7,7 +7,7 @@
 /* You can override the default Infima variables here. */
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
 :root {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -104,6 +104,7 @@ html[data-theme="dark"] blockquote {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 /* 代码块、行内代码 */
 code {
   color: var(--ifm-color-primary);
@@ -113,11 +114,24 @@ code {
   padding-right: 5px;
 }
 
+.markdown > h1,
+.markdown > h2,
+.markdown > h3 {
+  font-family: Segoe UI, SegoeUI, Helvetica Neue, Helvetica, Arial, sans-serif; /* from microsoft docs */
+}
+
+.markdown > h1 {
+  margin-bottom: 5px !important;
+  line-height: 100%;
+  font-weight: 600;
+}
+
 .markdown > h2 {
   padding-left: 10px;
   line-height: 100%;
   border-left: var(--ifm-color-primary-dark) 7px solid;
   border-radius: 1px;
+  font-weight: 500;
 }
 
 .markdown > h3 {
@@ -125,11 +139,11 @@ code {
   line-height: 100%;
   border-left: var(--ifm-color-primary-darker) 4px solid;
   border-radius: 1px;
+  font-weight: 400;
 }
 
 .markdown img {
   display: block;
-  margin: 1rem auto;
 }
 
 img-annotation {
@@ -140,10 +154,18 @@ img-annotation {
   font-size: 0.7rem;
 }
 
-/* 徽章居左 */
-.Badges {
-  display: inline-block !important;
-  margin: 0.5rem 0.3rem !important;
+/* Feature Icon */
+img[class^="feature-icon"] {
+  height: 156px;
+  width: 156px;
+}
+
+/* Badge */
+.badge-display-property {
+  display: inline-block;
+  margin: 0.5rem 0.3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* 公告栏 */
@@ -155,5 +177,5 @@ div[class^="announcementBar_"] {
     var(--site-announcement-bar-stripe-color2) 10px,
     var(--site-announcement-bar-stripe-color2) 40px
   );
-  font-weight: 700;
+  font-weight: 600;
 }
