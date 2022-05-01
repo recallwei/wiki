@@ -90,8 +90,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "CSS",
+        type: "doc",
+        id: "front-end/css/css",
       },
       items: [
         {
