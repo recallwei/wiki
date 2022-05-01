@@ -1,4 +1,5 @@
 import React from "react";
+
 export default function TextHighlight({ bgColor, children }) {
   return (
     <span

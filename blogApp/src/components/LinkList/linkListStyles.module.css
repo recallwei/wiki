@@ -1,0 +1,22 @@
+.item {
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 500;
+}
+
+.item > img {
+  height: 25px;
+  width: 25px;
+  margin-right: 6px;
+}
+
+.item > img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .item {
+  color: white;
+}
