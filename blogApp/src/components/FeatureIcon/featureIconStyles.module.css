@@ -1,6 +1,7 @@
 .feature-icon-area {
   text-align: center;
-  width: 128px;
+  min-width: 128px;
+  max-width: fit-content;
   margin-bottom: 20px;
 }
 
