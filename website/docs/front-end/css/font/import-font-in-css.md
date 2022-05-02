@@ -1,4 +1,6 @@
-# 在 CSS 中引入字体
+---
+title: 在 CSS 中引入字体
+---
 
 可以在 CSS 中引入自定义字体，控制字体显示效果。
 
@@ -16,5 +18,5 @@ code {
 }
 ```
 
-🔗 [Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono)<br/>
+🔗 [Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono)  
 🔗 [JetBrains Mono 官方网址](https://www.jetbrains.com/zh-cn/lp/mono/)

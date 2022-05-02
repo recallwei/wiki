@@ -1,6 +1,8 @@
-# Card
+---
+title: Card
+---
 
-use box-shadow
+## use box-shadow
 
 ```css
 .card {

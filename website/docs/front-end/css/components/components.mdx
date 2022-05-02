@@ -1,0 +1,26 @@
+---
+hide_title: true
+pagination_label: Components
+---
+
+import FeatureIcon from "../../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../../src/components/LinkList/LinkList.js";
+import css from "../../../../static/img/icon/css.png";
+
+<FeatureIcon src={css} alt="Components" title="Components" />
+<LinkList
+  srcList={[
+    {
+      title: "Card",
+      link: "/docs/front-end/css/components/card",
+      src: css,
+      alt: "Card",
+    },
+    {
+      title: "Ribbon",
+      link: "/docs/front-end/css/components/ribbon",
+      src: css,
+      alt: "Ribbon",
+    },
+  ]}
+/>

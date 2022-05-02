@@ -1,0 +1,26 @@
+---
+hide_title: true
+pagination_label: Font
+---
+
+import FeatureIcon from "../../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../../src/components/LinkList/LinkList.js";
+import css from "../../../../static/img/icon/css.png";
+
+<FeatureIcon src={css} alt="Font" title="Font" />
+<LinkList
+  srcList={[
+    {
+      title: "在 CSS 中引入字体",
+      link: "/docs/front-end/css/font/import-font-in-css",
+      src: css,
+      alt: "在 CSS 中引入字体",
+    },
+    {
+      title: "文本显示",
+      link: "/docs/front-end/css/font/display",
+      src: css,
+      alt: "文本显示",
+    },
+  ]}
+/>

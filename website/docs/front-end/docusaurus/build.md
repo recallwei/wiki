@@ -1,10 +1,12 @@
-# Build
+---
+title: Build
+---
 
-## 2022.04.24 🐞 Build Error : Docusaurus found broken links!
+## 2022.04.24 🐞 Build Error : Docusaurus found broken links
 
-Problem ：`yarn run build` 构建失败，项目 **.md 文件** 中存在**失效的 URL**。<br/>
-Solution A：替换失效 URL。<br/>
-Solution B：在 **docusaurus.config.js** 配置 **onBrokenLinks** 属性（未采用）。
+Problem ：`yarn run build` 构建失败，项目 **.md 文件** 中存在**失效的 URL**  
+Solution A：替换失效 URL。  
+Solution B：在 **docusaurus.config.js** 配置 **onBrokenLinks** 属性(未采用)。
 
 ```text title="错误信息"
 [ERROR] Unable to build website for locale en.

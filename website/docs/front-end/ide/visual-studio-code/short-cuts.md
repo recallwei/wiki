@@ -1,4 +1,6 @@
-# Shortcuts
+---
+title: Shortcuts
+---
 
 记录 Visual Studio Code 中常用的快捷键。
 

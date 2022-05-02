@@ -1,0 +1,20 @@
+---
+hide_title: true
+pagination_label: npm
+---
+
+import FeatureIcon from "../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../src/components/LinkList/LinkList.js";
+import npm from "../../../static/img/icon/npm.png";
+
+<FeatureIcon src={npm} alt="npm" title="npm" />
+<LinkList
+  srcList={[
+    {
+      title: "patch-package",
+      link: "/docs/front-end/npm/patch-package",
+      src: npm,
+      alt: "patch-package",
+    },
+  ]}
+/>

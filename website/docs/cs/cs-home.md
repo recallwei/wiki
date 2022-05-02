@@ -1,5 +1,4 @@
 ---
+title: CS
 slug: "/cs"
 ---
-
-# CS

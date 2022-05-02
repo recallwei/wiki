@@ -1,5 +1,4 @@
 ---
+title: Back-end
 slug: "/back-end"
 ---
-
-# Back-end

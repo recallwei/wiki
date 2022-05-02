@@ -1,4 +1,6 @@
-# patch-package
+---
+title: patch-package
+---
 
 在安装 npm 包的时候，总是会有些 🐞Bug 或是某些定制化场景，可以修改其代码将其应用到生产环境。需要修改 **node_modules** 时，可以使用 **patch-package** 包临时为某个 node 包打补丁。
 

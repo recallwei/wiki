@@ -1,4 +1,6 @@
-# String
+---
+title: String
+---
 
 ## Property
 

@@ -1,0 +1,32 @@
+---
+hide_title: true
+pagination_label: React
+---
+
+import FeatureIcon from "../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../src/components/LinkList/LinkList.js";
+import react from "../../../static/img/icon/react.png";
+
+<FeatureIcon src={react} alt="React" title="React" />
+<LinkList
+  srcList={[
+    {
+      title: "DOM",
+      link: "/docs/front-end/react/dom",
+      src: react,
+      alt: "DOM",
+    },
+    {
+      title: "常见问题",
+      link: "/docs/front-end/react/common",
+      src: react,
+      alt: "常见问题",
+    },
+    {
+      title: "Experience",
+      link: "/docs/front-end/react/experience",
+      src: react,
+      alt: "Experience",
+    },
+  ]}
+/>

@@ -1,0 +1,42 @@
+---
+hide_title: true
+pagination_label: Docusaurus
+---
+
+import FeatureIcon from "../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../src/components/LinkList/LinkList.js";
+import docusaurus from "../../../static/img/icon/docusaurus.png";
+
+<FeatureIcon
+  src={docusaurus}
+  alt="Docusaurus Markdown"
+  title="Docusaurus Markdown"
+/>
+<LinkList
+  srcList={[
+    {
+      title: "Build",
+      link: "/docs/front-end/docusaurus/build",
+      src: docusaurus,
+      alt: "Build",
+    },
+    {
+      title: "更改项目名称",
+      link: "/docs/front-end/docusaurus/rename-project-name",
+      src: docusaurus,
+      alt: "更改项目名称",
+    },
+    {
+      title: "集成 TailwindCSS v3",
+      link: "/docs/front-end/docusaurus/tailwind-css-integration",
+      src: docusaurus,
+      alt: "集成 TailwindCSS v3",
+    },
+    {
+      title: "Markdown Feature",
+      link: "/docs/front-end/docusaurus/markdown-feature",
+      src: docusaurus,
+      alt: "Markdown Feature",
+    },
+  ]}
+/>

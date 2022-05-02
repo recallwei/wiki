@@ -1,4 +1,6 @@
-# 剪切板
+---
+title: 剪切板
+---
 
 ## wx.setClipboardData
 

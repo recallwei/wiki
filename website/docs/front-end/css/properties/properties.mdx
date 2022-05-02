@@ -1,0 +1,26 @@
+---
+hide_title: true
+pagination_label: Properties
+---
+
+import FeatureIcon from "../../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../../src/components/LinkList/LinkList.js";
+import css from "../../../../static/img/icon/css.png";
+
+<FeatureIcon src={css} alt="Properties" title="Properties" />
+<LinkList
+  srcList={[
+    {
+      title: "white-space",
+      link: "/docs/front-end/css/properties/white-space",
+      src: css,
+      alt: "white-space",
+    },
+    {
+      title: "box-shadow",
+      link: "/docs/front-end/css/properties/box-shadow",
+      src: css,
+      alt: "box-shadow",
+    },
+  ]}
+/>

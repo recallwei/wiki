@@ -100,7 +100,7 @@ const config = {
           {
             type: "doc",
             docId: "tutorial-extras/translate-your-site",
-            label: "To Do",
+            label: "i18n",
             position: "left",
           },
           // Right

@@ -1,4 +1,6 @@
-# Array
+---
+title: Array
+---
 
 ## Property
 

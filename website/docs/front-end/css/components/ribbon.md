@@ -1,1 +1,3 @@
-# Ribbon
+---
+title: Ribbon
+---

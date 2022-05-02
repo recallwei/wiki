@@ -1,0 +1,30 @@
+---
+hide_title: true
+pagination_label: Wechat Mini Program
+---
+
+import FeatureIcon from "../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../src/components/LinkList/LinkList.js";
+import wechatMiniProgram from "../../../static/img/icon/wechat-mini-program.png";
+
+<FeatureIcon
+  src={wechatMiniProgram}
+  alt="Wechat Mini Program"
+  title="Wechat Mini Program"
+/>
+<LinkList
+  srcList={[
+    {
+      title: "Configuration",
+      link: "/docs/front-end/wechat-mini-program/configuration",
+      src: wechatMiniProgram,
+      alt: "Configuration",
+    },
+    {
+      title: "API",
+      link: "/docs/front-end/wechat-mini-program/api",
+      src: wechatMiniProgram,
+      alt: "API",
+    },
+  ]}
+/>

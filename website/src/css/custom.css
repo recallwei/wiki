@@ -149,12 +149,6 @@ img-annotation {
   font-size: 0.7rem;
 }
 
-/* Feature Icon */
-img[class^="feature-icon"] {
-  height: 128px;
-  width: 128px;
-}
-
 /* Badge */
 .badge-display-property {
   display: inline-block;

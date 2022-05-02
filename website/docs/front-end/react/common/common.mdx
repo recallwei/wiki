@@ -1,0 +1,26 @@
+---
+hide_title: true
+pagination_label: 常见问题
+---
+
+import FeatureIcon from "../../../../src/components/FeatureIcon/FeatureIcon.js";
+import LinkList from "../../../../src/components/LinkList/LinkList.js";
+import react from "../../../../static/img/icon/react.png";
+
+<FeatureIcon src={react} alt="常见问题" title="常见问题" />
+<LinkList
+  srcList={[
+    {
+      title: "下载文件",
+      link: "/docs/front-end/react/common/download-file",
+      src: react,
+      alt: "下载文件",
+    },
+    {
+      title: "引入图片",
+      link: "/docs/front-end/react/common/import-image",
+      src: react,
+      alt: "引入图片",
+    },
+  ]}
+/>

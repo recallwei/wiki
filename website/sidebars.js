@@ -30,40 +30,7 @@ const sidebars = {
         type: "doc",
         id: "front-end/markdown/markdown",
       },
-      items: [
-        {
-          type: "category",
-          label: "Docusaurus Markdown",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "front-end/markdown/docusaurus-markdown/docusaurus-markdown",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "front-end/markdown/docusaurus-markdown/basic-feature",
-              label: "基本特性",
-            },
-            {
-              type: "doc",
-              id: "front-end/markdown/docusaurus-markdown/code-block",
-              label: "代码块",
-            },
-            {
-              type: "doc",
-              id: "front-end/markdown/docusaurus-markdown/admonitions",
-              label: "Admonitions",
-            },
-            {
-              type: "doc",
-              id: "front-end/markdown/docusaurus-markdown/mdx-and-react-components",
-              label: "React Components",
-            },
-          ],
-        },
-      ],
+      items: [],
     },
     // HTML
     {
@@ -72,19 +39,14 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "HTML",
+        type: "doc",
+        id: "front-end/html/html",
       },
       items: [
         {
           type: "doc",
-          id: "front-end/html/a-tag",
-          label: "<a>",
-        },
-        {
-          type: "doc",
-          id: "front-end/html/img-tag",
-          label: "<img>",
+          id: "front-end/html/elements",
+          label: "标签",
         },
       ],
     },
@@ -105,8 +67,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Flex Box",
+            type: "doc",
+            id: "front-end/css/flex-box/flex-box",
           },
           items: [
             {
@@ -122,8 +84,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Font",
+            type: "doc",
+            id: "front-end/css/font/font",
           },
           items: [
             {
@@ -140,22 +102,22 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Property",
+          label: "Properties",
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Property",
+            type: "doc",
+            id: "front-end/css/properties/properties",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/css/property/white-space",
+              id: "front-end/css/properties/white-space",
               label: "white-space",
             },
             {
               type: "doc",
-              id: "front-end/css/property/box-shadow",
+              id: "front-end/css/properties/box-shadow",
               label: "box-shadow",
             },
           ],
@@ -166,8 +128,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Components",
+            type: "doc",
+            id: "front-end/css/components/components",
           },
           items: [
             {
@@ -191,8 +153,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "Javascript",
+        type: "doc",
+        id: "front-end/javascript/javascript",
       },
       items: [
         {
@@ -201,8 +163,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Built-in Objects",
+            type: "doc",
+            id: "front-end/javascript/built-in-objects/built-in-objects",
           },
           items: [
             {
@@ -223,8 +185,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Solution",
+            type: "doc",
+            id: "front-end/javascript/solution/solution",
           },
           items: [
             {
@@ -243,8 +205,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "React",
+        type: "doc",
+        id: "front-end/react/react",
       },
       items: [
         {
@@ -253,8 +215,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "DOM",
+            type: "doc",
+            id: "front-end/react/dom/dom",
           },
           items: [
             {
@@ -270,8 +232,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "常见问题",
+            type: "doc",
+            id: "front-end/react/common/common",
           },
           items: [
             {
@@ -292,8 +254,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Experience",
+            type: "doc",
+            id: "front-end/react/experience/experience",
           },
           items: [
             {
@@ -303,25 +265,63 @@ const sidebars = {
             },
           ],
         },
+      ],
+    },
+    // Docusaurus
+    {
+      type: "category",
+      label: "Docusaurus",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "front-end/docusaurus/docusaurus",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "front-end/docusaurus/build",
+          label: "Build",
+        },
+        {
+          type: "doc",
+          id: "front-end/docusaurus/rename-project-name",
+          label: "更改项目名称",
+        },
+        {
+          type: "doc",
+          id: "front-end/docusaurus/tailwind-css-integration",
+          label: "集成 TailwindCSS v3",
+        },
         {
           type: "category",
-          label: "Docusaurus",
+          label: "Markdown Feature",
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Docusaurus",
+            type: "doc",
+            id: "front-end/docusaurus/markdown-feature/markdown-feature",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/react/docusaurus/build",
-              label: "Build",
+              id: "front-end/docusaurus/markdown-feature/basic-feature",
+              label: "基本特性",
             },
             {
               type: "doc",
-              id: "front-end/react/docusaurus/tailwind-css-integration",
-              label: "集成 TailwindCSS v3",
+              id: "front-end/docusaurus/markdown-feature/code-block",
+              label: "代码块",
+            },
+            {
+              type: "doc",
+              id: "front-end/docusaurus/markdown-feature/admonitions",
+              label: "Admonitions",
+            },
+            {
+              type: "doc",
+              id: "front-end/docusaurus/markdown-feature/mdx-and-react-components",
+              label: "React Components",
             },
           ],
         },
@@ -334,8 +334,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "Wechat Mini Program",
+        type: "doc",
+        id: "front-end/wechat-mini-program/wechat-mini-program",
       },
       items: [
         {
@@ -349,8 +349,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "API",
+            type: "doc",
+            id: "front-end/wechat-mini-program/api/api",
           },
           items: [
             {
@@ -369,8 +369,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "npm",
+        type: "doc",
+        id: "front-end/npm/npm",
       },
       items: [
         {
@@ -387,8 +387,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "IDE",
+        type: "doc",
+        id: "front-end/ide/ide",
       },
       items: [
         {
@@ -397,8 +397,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Visual Studio Code",
+            type: "doc",
+            id: "front-end/ide/visual-studio-code/visual-studio-code",
           },
           items: [
             {
@@ -411,17 +411,17 @@ const sidebars = {
       ],
     },
     // Design
-    // {
-    //   type: "category",
-    //   label: "Design",
-    //   collapsible: true,
-    //   collapsed: true,
-    //   link: {
-    //     type: "generated-index",
-    //     title: "Design",
-    //   },
-    //   items: [],
-    // },
+    {
+      type: "category",
+      label: "Design",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "front-end/design/design",
+      },
+      items: [],
+    },
   ],
   backend: [
     //Home

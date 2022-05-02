@@ -5,6 +5,16 @@
   margin-bottom: 20px;
 }
 
+.feature-icon-area > img {
+  height: 128px;
+  width: 128px;
+}
+
+.feature-icon-area > img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: 500;
