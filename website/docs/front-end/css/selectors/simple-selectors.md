@@ -1,0 +1,19 @@
+---
+title: Simple Selectors
+---
+
+## id Selector
+
+在一个页面中，一个元素的 **id** 是唯一的，所以 **id selector** 用于选择一个唯一的元素。
+
+```css
+#elementId {
+  color: red;
+}
+```
+
+:::caution 注意
+
+**id** 的命名不能以数字开头。
+
+:::

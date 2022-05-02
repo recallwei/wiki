@@ -63,6 +63,23 @@ const sidebars = {
       items: [
         {
           type: "category",
+          label: "Selectors",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "front-end/css/selectors/selectors",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/css/selectors/simple-selectors",
+              label: "Simple Selectors",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Flex Box",
           collapsible: true,
           collapsed: true,
@@ -284,16 +301,6 @@ const sidebars = {
           label: "Build",
         },
         {
-          type: "doc",
-          id: "front-end/docusaurus/rename-project-name",
-          label: "更改项目名称",
-        },
-        {
-          type: "doc",
-          id: "front-end/docusaurus/tailwind-css-integration",
-          label: "集成 TailwindCSS v3",
-        },
-        {
           type: "category",
           label: "Markdown Feature",
           collapsible: true,
@@ -324,6 +331,21 @@ const sidebars = {
               label: "React Components",
             },
           ],
+        },
+        {
+          type: "doc",
+          id: "front-end/docusaurus/swizzling",
+          label: "Swizzling",
+        },
+        {
+          type: "doc",
+          id: "front-end/docusaurus/rename-project-name",
+          label: "更改项目名称",
+        },
+        {
+          type: "doc",
+          id: "front-end/docusaurus/tailwind-css-integration",
+          label: "集成 TailwindCSS v3",
         },
       ],
     },
