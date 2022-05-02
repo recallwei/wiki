@@ -1,1 +1,3 @@
-# &lt;img&gt;
+---
+title: <img>
+---

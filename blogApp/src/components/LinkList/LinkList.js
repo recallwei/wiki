@@ -5,13 +5,8 @@ export default function LinkList({ srcList = [], style }) {
     <div style={style}>
       {srcList.map((item) => {
         return (
-          <div key={item.title}>
-            <a
-              href={item.link}
-              target="_self"
-              rel="noreferrer noopener"
-              className={linkListStyles.item}
-            >
+          <div key={item.title} className={linkListStyles.item}>
+            <a href={item.link} target="_self" rel="noreferrer noopener">
               <img src={item.src} alt={item.alt} loading="lazy" />
               {item.title}
             </a>

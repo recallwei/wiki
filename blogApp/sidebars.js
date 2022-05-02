@@ -27,8 +27,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index",
-        title: "Markdown",
+        type: "doc",
+        id: "front-end/markdown/markdown",
       },
       items: [
         {
@@ -37,8 +37,8 @@ const sidebars = {
           collapsible: true,
           collapsed: true,
           link: {
-            type: "generated-index",
-            title: "Docusaurus Markdown",
+            type: "doc",
+            id: "front-end/markdown/docusaurus-markdown/docusaurus-markdown",
           },
           items: [
             {
@@ -80,6 +80,11 @@ const sidebars = {
           type: "doc",
           id: "front-end/html/a-tag",
           label: "<a>",
+        },
+        {
+          type: "doc",
+          id: "front-end/html/img-tag",
+          label: "<img>",
         },
       ],
     },

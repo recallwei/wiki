@@ -1,4 +1,6 @@
-# Admonitions
+---
+title: Admonitions
+---
 
 Docusaurus has a special syntax to create admonitions and callouts:
 
@@ -14,7 +16,7 @@ Docusaurus has a special syntax to create admonitions and callouts:
 
 :::
 
-```
+```md
 :::tip 提示
 
 这是一个提示。

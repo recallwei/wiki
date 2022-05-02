@@ -39,6 +39,13 @@ const config = {
           showLastUpdateTime: true,
           // Please change this to your repo.
           editUrl: "https://github.com/recallwei/blog/tree/main/blogApp", //GitHub 仓库对应文件位置
+          include: ["**/*.md", "**/*.mdx"],
+          exclude: [
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
+          ],
         },
         blog: {
           showReadingTime: true,

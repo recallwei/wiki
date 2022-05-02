@@ -1,5 +1,4 @@
 ---
+title: Front-end
 slug: "/front-end"
 ---
-
-# Front-end

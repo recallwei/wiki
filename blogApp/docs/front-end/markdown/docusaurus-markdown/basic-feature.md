@@ -1,4 +1,6 @@
-# 基本特性
+---
+title: 基本特性
+---
 
 Docusaurus Markdown 具有 Markdown 的基本特性以及其独特的额外特性。
 
@@ -6,7 +8,7 @@ Docusaurus Markdown 具有 Markdown 的基本特性以及其独特的额外特�
 
 Markdown documents have metadata at the top called Front Matter:
 
-```
+```md
 ---
 id: my-doc-id
 title: My document title
@@ -23,7 +25,7 @@ Markdown text with [links](./hello.md)
 
 这是**加粗**的文本。
 
-```
+```md
 **文本内容**
 ```
 
@@ -39,7 +41,7 @@ Markdown text with [links](./hello.md)
 
 ![Docusaurus Logo](../../../../static/img/docusaurus.png)
 
-```
+```md
 ![Docusaurus Logo](../../../static/img/docusaurus.png)
 ```
 
@@ -53,7 +55,7 @@ Markdown text with [links](./hello.md)
     - 三级列表 2
       - 四级列表
 
-```
+```md
 - 一级列表
 - 一级列表 2
   - 二级列表
@@ -67,6 +69,6 @@ Markdown text with [links](./hello.md)
 
 `inline code`
 
-```
+```md
 `inline code`
 ```
