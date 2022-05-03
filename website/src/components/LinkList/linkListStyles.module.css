@@ -17,7 +17,7 @@
 .item > a > img {
   height: 25px;
   width: 25px;
-  margin: 0 6px;
+  margin-right: 6px;
 }
 
 .item > a > img:hover {
