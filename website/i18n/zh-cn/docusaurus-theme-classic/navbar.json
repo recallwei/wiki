@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Bruce's Wiki",
+    "description": "The title in the navbar"
+  },
+  "item.label.Front-end": {
+    "message": "Front-end",
+    "description": "Navbar item with label Front-end"
+  },
+  "item.label.Back-end": {
+    "message": "Back-end",
+    "description": "Navbar item with label Back-end"
+  },
+  "item.label.CS": {
+    "message": "CS",
+    "description": "Navbar item with label CS"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.To Do": {
+    "message": "To Do",
+    "description": "Navbar item with label To Do"
+  },
+  "item.label.i18n": {
+    "message": "i18n",
+    "description": "Navbar item with label i18n"
+  }
+}
