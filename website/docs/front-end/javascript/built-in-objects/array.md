@@ -4,7 +4,7 @@ title: Array
 
 ## Property
 
-### Length
+### length
 
 length 是 Array 的实例属性，返回或设置一个数组中的元素个数。
 

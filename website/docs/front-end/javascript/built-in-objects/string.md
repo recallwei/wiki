@@ -4,7 +4,7 @@ title: String
 
 ## Property
 
-### Length
+### length
 
 [ Read-only ]
 该属性返回字符串中字符编码单元的数量。
