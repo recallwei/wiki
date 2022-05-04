@@ -9,7 +9,7 @@ const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Bruce Song",
-  tagline: "Welcome!", //todo: check property
+  tagline: "Welcome!", //TODO check property
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   baseUrlIssueBanner: true,
@@ -22,8 +22,8 @@ const config = {
   themes: ["@docusaurus/theme-live-codeblock"],
 
   i18n: {
-    defaultLocale: "zh-CN",
-    locales: ["zh-CN", "en", "ko", "ja"],
+    defaultLocale: "zh-cn",
+    locales: ["zh-cn", "en", "ko", "ja"],
   },
 
   presets: [
