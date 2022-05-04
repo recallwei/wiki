@@ -1,11 +1,11 @@
 import React from "react";
-import featureIconStyles from "./featureIconStyles.module.css";
+import styles from "./styles.module.css";
 
 export default function FeatureIcon({ src, alt, title, onClick = () => {} }) {
   return (
-    <div className={featureIconStyles["feature-icon-area"]}>
+    <div className={styles.featureIconArea}>
       <img src={src} alt={alt} loading="lazy" onClick={onClick} />
-      <div className={featureIconStyles.title}>{title}</div>
+      <div className={styles.title}>{title}</div>
     </div>
   );
 }

@@ -1,16 +1,16 @@
-.feature-icon-area {
+.featureIconArea {
   text-align: center;
   min-width: 128px;
   max-width: fit-content;
   margin-bottom: 20px;
 }
 
-.feature-icon-area > img {
+.featureIconArea > img {
   height: 128px;
   width: 128px;
 }
 
-.feature-icon-area > img:hover {
+.featureIconArea > img:hover {
   opacity: 0.8;
   cursor: pointer;
 }
