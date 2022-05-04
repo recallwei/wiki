@@ -129,6 +129,8 @@ code {
   border-left: var(--ifm-color-primary-dark) 7px solid;
   border-radius: 1px;
   font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: var(--ifm-color-primary-dark) 1px solid;
 }
 
 .markdown > h3 {

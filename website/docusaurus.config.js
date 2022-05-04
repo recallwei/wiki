@@ -9,13 +9,13 @@ const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Bruce Song",
-  tagline: "Welcome!", //TODO check property
+  tagline: "信じて諦めなければ、夢は必ずかなう", // motto
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/batman.png",
+  favicon: "img/favicon.png",
   organizationName: "Bruce Song", // Usually your GitHub org/user name.
   projectName: "blog", // Usually your repo name.
 
@@ -68,7 +68,7 @@ const config = {
         title: "Bruce's Wiki",
         logo: {
           alt: "Bruce's Wiki",
-          src: "img/batman.png",
+          src: "img/favicon.png",
         },
         items: [
           // Left
@@ -118,10 +118,10 @@ const config = {
         ],
       },
       footer: {
-        logo: { src: "img/batman.png", href: "/", width: 40, height: 40 },
+        logo: { src: "img/favicon.png", href: "/", width: 40, height: 40 },
         style: "light", // "light" | "dark"
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Bruce,Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus.`,
       },
       // code block 基于 prism.js
       prism: {

@@ -5,18 +5,40 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
+import src from "@site/static/img/favicon.png";
+import { BrowserView, MobileView } from "react-device-detect";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+      <div className={clsx("container", styles.container)}>
+        <BrowserView className={styles.avatarArea}>
+          <img src={src} alt="Bruce" />
+        </BrowserView>
+        <div className={styles.infoArea}>
+          <p className={styles.title}>{siteConfig.title}</p>
+          <p className={styles.subTitle}>{siteConfig.tagline}</p>
+          <BrowserView>
+            <div className={styles.buttons}>
+              <Link
+                className="button button--secondary button--sm"
+                to="/docs/front-end"
+              >
+                Go to Wiki
+              </Link>
+            </div>
+          </BrowserView>
+          <MobileView>
+            <div className={styles.buttons}>
+              <Link
+                className="button button--secondary button--sm"
+                to="/docs/front-end"
+              >
+                Go to Wiki
+              </Link>
+            </div>
+          </MobileView>
         </div>
       </div>
     </header>
@@ -24,10 +46,9 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title="Home"
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
