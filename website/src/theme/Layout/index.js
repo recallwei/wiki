@@ -31,7 +31,7 @@ export default function Layout(props) {
   } = props;
   const [isHomePage, setIsHomePage] = useState(true);
   useEffect(() => {
-    setIsHomePage(window.location.pathname !== "/");
+    setIsHomePage(window.location.pathname === "/");
   }, []);
   useKeyboardNavigation();
   return (
