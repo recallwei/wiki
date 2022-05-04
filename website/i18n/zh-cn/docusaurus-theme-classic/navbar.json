@@ -4,19 +4,19 @@
     "description": "The title in the navbar"
   },
   "item.label.Front-end": {
-    "message": "Front-end",
+    "message": "前端",
     "description": "Navbar item with label Front-end"
   },
   "item.label.Back-end": {
-    "message": "Back-end",
+    "message": "后端",
     "description": "Navbar item with label Back-end"
   },
   "item.label.CS": {
-    "message": "CS",
+    "message": "计算机技术",
     "description": "Navbar item with label CS"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "博客",
     "description": "Navbar item with label Blog"
   },
   "item.label.To Do": {

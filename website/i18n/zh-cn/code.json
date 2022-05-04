@@ -163,11 +163,11 @@
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": "于 {date}",
+    "message": "于 {date} ",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": "由 {user}",
+    "message": "由 {user} ",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
