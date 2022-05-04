@@ -15,7 +15,7 @@ const config = {
   baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/geek.png",
+  favicon: "img/batman.png",
   organizationName: "Bruce Song", // Usually your GitHub org/user name.
   projectName: "blog", // Usually your repo name.
 
@@ -68,7 +68,7 @@ const config = {
         title: "Bruce's Wiki",
         logo: {
           alt: "Bruce's Wiki",
-          src: "img/geek.png",
+          src: "img/batman.png",
         },
         items: [
           // Left
@@ -118,7 +118,7 @@ const config = {
         ],
       },
       footer: {
-        logo: { src: "img/geek.png", href: "/", width: 40, height: 40 },
+        logo: { src: "img/batman.png", href: "/", width: 40, height: 40 },
         style: "light", // "light" | "dark"
         links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Bruce,Inc. Built with Docusaurus.`,
