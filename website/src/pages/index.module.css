@@ -29,7 +29,7 @@
   opacity: 0.9;
 }
 
-@media screen and (min-width: 996.1px) {
+@media screen and (min-width: 997px) {
   .heroBanner {
     height: 100vh;
   }
