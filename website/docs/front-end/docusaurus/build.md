@@ -23,3 +23,9 @@ Exhaustive list of all broken links found:
 error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+
+## 多终端调试
+
+执行 **`yarn run build`** 构建项目，再执行 **`yarn run serve`**，该应用会暴露在 `localhost:3000`。
+
+通过 **`ipconfig`** (Windows) 或者 **`ifconfig`** (Mac) 查询本机 IP 地址（例如：**192.168.0.100**），通过 **`192.168.0.100:3000`** 访问该站点。
