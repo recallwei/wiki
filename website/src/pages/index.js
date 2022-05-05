@@ -5,44 +5,63 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import src from "@site/static/img/favicon.png";
 import BrowserOnly from "@docusaurus/BrowserOnly";
+import favicon from "@site/static/img/favicon.png";
+import github from "@site/static/img/icon/github.png";
+import google from "@site/static/img/icon/google.png";
+import twitter from "@site/static/img/icon/twitter.png";
+import wechat from "@site/static/img/icon/wechat-mini-program.png";
+import zhihu from "@site/static/img/icon/zhihu.png";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header
+      className={clsx("hero hero--primary", styles.heroBanner)}
+      style={{ position: "relative" }}
+    >
       <div className={clsx("container", styles.container)}>
         {!props.isMobileDevice && (
           <div className={styles.avatarArea}>
-            <img src={src} alt="Bruce" />
+            <img src={favicon} alt="Bruce" />
           </div>
         )}
         <div className={styles.infoArea}>
           <p className={styles.title}>{siteConfig.title}</p>
           <p className={styles.subTitle}>{siteConfig.tagline}</p>
-          {!props.isMobileDevice && (
-            <div className={styles.buttons}>
-              <Link
-                className="button button--secondary button--sm"
-                to="/docs/front-end"
-              >
-                Go to Wiki
-              </Link>
-            </div>
-          )}
-          {props.isMobileDevice && (
-            <div className={styles.buttons}>
-              <Link
-                className="button button--secondary button--sm"
-                to="/docs/front-end"
-              >
-                Go to Wiki
-              </Link>
-            </div>
-          )}
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--sm"
+              to="/docs/front-end"
+            >
+              Go to Wiki
+            </Link>
+          </div>
         </div>
       </div>
+      <BrowserOnly fallback={null}>
+        {() => {
+          const openLink = (url) => {
+            const w = window.open("about:blank");
+            w.location.href = url;
+          };
+          return (
+            <div className={styles.navLinkIconArea}>
+              <img
+                src={github}
+                alt="Github"
+                onClick={() => {
+                  openLink(siteConfig.customFields.githubLink);
+                }}
+              />
+              <img src={google} alt="GMail" />
+              <img src={twitter} alt="Twitter" />
+              <img src={wechat} alt="WeChat" />
+              <img src={zhihu} alt="ZhiHu" />
+            </div>
+          );
+        }}
+      </BrowserOnly>
     </header>
   );
 }

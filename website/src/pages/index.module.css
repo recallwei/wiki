@@ -90,3 +90,28 @@
   align-items: center;
   justify-content: center;
 }
+
+.navLinkIconArea {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin: 0 8px 8px 0;
+}
+
+.navLinkIconArea img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  padding: 4px;
+  cursor: pointer;
+  background-color: darkgrey;
+  box-shadow: inset 0 0 3px white;
+}
+
+.navLinkIconArea > img:hover {
+  opacity: 0.8;
+}

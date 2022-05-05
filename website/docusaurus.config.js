@@ -8,6 +8,9 @@ const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  customFields: {
+    githubLink: "https://github.com/recallwei/",
+  },
   title: "Bruce Song",
   tagline: "信じて諦めなければ、夢は必ずかなう", // motto
   url: "https://your-docusaurus-test-site.com",
