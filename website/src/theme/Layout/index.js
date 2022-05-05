@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import clsx from "clsx";
 import ErrorBoundary from "@docusaurus/ErrorBoundary";
 import SkipToContent from "@theme/SkipToContent";
@@ -19,6 +19,7 @@ import {
 } from "@docusaurus/theme-common";
 import ErrorPageContent from "@theme/ErrorPageContent";
 import "./styles.css";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 export default function Layout(props) {
   const {
@@ -29,26 +30,34 @@ export default function Layout(props) {
     title,
     description,
   } = props;
-  const [isHomePage, setIsHomePage] = useState(false);
-  useEffect(() => {
-    setIsHomePage(window.location.pathname === "/");
-  }, []);
   useKeyboardNavigation();
   return (
-    <LayoutProviders>
-      <PageMetadata title={title} description={description} />
+    <BrowserOnly>
+      {() => {
+        // 检查是否是首页
+        const isHomePage = window.location.pathname === "/";
+        return (
+          <LayoutProviders>
+            <PageMetadata title={title} description={description} />
 
-      <SkipToContent />
+            <SkipToContent />
 
-      {!isHomePage && <AnnouncementBar />}
+            {!isHomePage && <AnnouncementBar />}
 
-      {!isHomePage && <Navbar />}
+            {!isHomePage && <Navbar />}
 
-      <div className={clsx(ThemeClassNames.wrapper.main, wrapperClassName)}>
-        <ErrorBoundary fallback={ErrorPageContent}>{children}</ErrorBoundary>
-      </div>
+            <div
+              className={clsx(ThemeClassNames.wrapper.main, wrapperClassName)}
+            >
+              <ErrorBoundary fallback={ErrorPageContent}>
+                {children}
+              </ErrorBoundary>
+            </div>
 
-      {!noFooter && <Footer />}
-    </LayoutProviders>
+            {!noFooter && <Footer />}
+          </LayoutProviders>
+        );
+      }}
+    </BrowserOnly>
   );
 }
