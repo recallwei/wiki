@@ -62,8 +62,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      hideableSidebar: true,
-      autoCollapseSidebarCategories: true, //自动折叠侧边栏
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true, // 自动折叠侧边栏
+        },
+      },
       navbar: {
         title: "Bruce's Wiki",
         logo: {
