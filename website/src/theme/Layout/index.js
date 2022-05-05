@@ -29,7 +29,7 @@ export default function Layout(props) {
     title,
     description,
   } = props;
-  const [isHomePage, setIsHomePage] = useState(true);
+  const [isHomePage, setIsHomePage] = useState(false);
   useEffect(() => {
     setIsHomePage(window.location.pathname === "/");
   }, []);
