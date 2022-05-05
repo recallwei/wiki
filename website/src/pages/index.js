@@ -50,14 +50,15 @@ function HomepageHeader(props) {
               <img
                 src={github}
                 alt="Github"
+                title="Github"
                 onClick={() => {
                   openLink(siteConfig.customFields.githubLink);
                 }}
               />
-              <img src={google} alt="GMail" />
-              <img src={twitter} alt="Twitter" />
-              <img src={wechat} alt="WeChat" />
-              <img src={zhihu} alt="ZhiHu" />
+              <img src={google} alt="GMail" title="谷歌邮箱" />
+              <img src={twitter} alt="Twitter" title="推特" />
+              <img src={wechat} alt="WeChat" title="微信" />
+              <img src={zhihu} alt="ZhiHu" title="知乎" />
             </div>
           );
         }}
