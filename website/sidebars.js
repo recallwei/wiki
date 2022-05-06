@@ -366,6 +366,11 @@ const sidebars = {
           label: "Configuration",
         },
         {
+          type: "doc",
+          id: "front-end/wechat-mini-program/components",
+          label: "Components",
+        },
+        {
           type: "category",
           label: "WXML",
           collapsible: true,
