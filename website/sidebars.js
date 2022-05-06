@@ -367,6 +367,23 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "WXML",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "front-end/wechat-mini-program/wxml/wxml",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/wechat-mini-program/wxml/data",
+              label: "数据绑定",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "API",
           collapsible: true,
           collapsed: true,
