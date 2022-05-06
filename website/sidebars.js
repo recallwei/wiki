@@ -397,6 +397,11 @@ const sidebars = {
               id: "front-end/wechat-mini-program/api/clipboard",
               label: "剪切板",
             },
+            {
+              type: "doc",
+              id: "front-end/wechat-mini-program/api/share",
+              label: "转发",
+            },
           ],
         },
       ],
