@@ -400,7 +400,7 @@ const sidebars = {
             {
               type: "doc",
               id: "front-end/wechat-mini-program/api/share",
-              label: "转发",
+              label: "分享",
             },
           ],
         },
