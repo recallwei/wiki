@@ -14,7 +14,7 @@ const config = {
   },
   title: "Bruce Song",
   tagline: "信じて諦めなければ、夢は必ずかなう", // motto
-  url: "https://your-docusaurus-test-site.com",
+  url: "https:bruce-wiki.vercel.app",
   baseUrl: "/",
   baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
@@ -42,7 +42,7 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/recallwei/blog/tree/main/blogApp", //GitHub 仓库对应文件位置
+          editUrl: "https://github.com/recallwei/wiki/tree/main/website", //GitHub 仓库对应文件位置
           include: ["**/*.md", "**/*.mdx"],
           exclude: [
             "**/_*.{js,jsx,ts,tsx,md,mdx}",
@@ -54,7 +54,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/recallwei/blog/tree/main/blogApp",
+          editUrl: "https://github.com/recallwei/wiki/tree/main/website",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
