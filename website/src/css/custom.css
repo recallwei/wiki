@@ -144,14 +144,6 @@ img-annotation {
   font-size: 0.7rem;
 }
 
-/* Badge */
-.badge-display-property {
-  display: inline-block;
-  margin: 0.5rem 0.3rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
 /* 公告栏 */
 div[class^="announcementBar_"] {
   background: repeating-linear-gradient(
