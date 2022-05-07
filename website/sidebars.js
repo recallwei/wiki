@@ -452,6 +452,11 @@ const sidebars = {
           items: [
             {
               type: "doc",
+              id: "front-end/ide/visual-studio-code/git",
+              label: "Git",
+            },
+            {
+              type: "doc",
               id: "front-end/ide/visual-studio-code/short-cuts",
               label: "Shortcuts",
             },

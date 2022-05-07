@@ -3,13 +3,19 @@ hide_title: true
 pagination_label: Visual Studio Code
 ---
 
-import FeatureIcon from "../../../../src/components/FeatureIcon/index.js";
-import LinkList from "../../../../src/components/LinkList/index.js";
-import visualStudioCode from "../../../../static/img/icon/visual-studio-code.png";
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import visualStudioCode from "@site/static/img/icon/visual-studio-code.png";
 
 <FeatureIcon src={visualStudioCode} alt="IDE" title="IDE" />
 <LinkList
   srcList={[
+    {
+      title: "Git",
+      link: "/docs/front-end/ide/visual-studio-code/git",
+      src: visualStudioCode,
+      alt: "Git",
+    },
     {
       title: "Shortcuts",
       link: "/docs/front-end/ide/visual-studio-code/short-cuts",
