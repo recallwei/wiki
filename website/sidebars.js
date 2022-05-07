@@ -176,23 +176,45 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "Built-in Objects",
+          label: "Value Types",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/javascript/built-in-objects/built-in-objects",
+            id: "front-end/javascript/value-types/value-types",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/javascript/built-in-objects/array",
-              label: "Array",
+              id: "front-end/javascript/value-types/number",
+              label: "Number",
             },
             {
               type: "doc",
-              id: "front-end/javascript/built-in-objects/string",
+              id: "front-end/javascript/value-types/string",
               label: "String",
+            },
+            {
+              type: "doc",
+              id: "front-end/javascript/value-types/type-conversion",
+              label: "Type Conversion",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Reference Types",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "front-end/javascript/reference-types/reference-types",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/javascript/reference-types/array",
+              label: "Array",
             },
           ],
         },

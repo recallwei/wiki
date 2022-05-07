@@ -3,18 +3,24 @@ hide_title: true
 pagination_label: Javascript
 ---
 
-import FeatureIcon from "../../../src/components/FeatureIcon/index.js";
-import LinkList from "../../../src/components/LinkList/index.js";
-import javascript from "../../../static/img/icon/javascript.png";
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import javascript from "@site/static/img/icon/javascript.png";
 
 <FeatureIcon src={javascript} alt="Javascript" title="Javascript" />
 <LinkList
   srcList={[
     {
-      title: "Built-in Objects",
-      link: "/docs/front-end/javascript/built-in-objects",
+      title: "Value Types",
+      link: "/docs/front-end/javascript/value-types",
       src: javascript,
-      alt: "Built-in Objects",
+      alt: "Value Types",
+    },
+    {
+      title: "Reference Types",
+      link: "/docs/front-end/javascript/reference-types",
+      src: javascript,
+      alt: "Reference Types",
     },
     {
       title: "Solution",

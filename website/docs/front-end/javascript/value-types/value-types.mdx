@@ -1,0 +1,32 @@
+---
+hide_title: true
+pagination_label: Built-in Objects
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import javascript from "@site/static/img/icon/javascript.png";
+
+<FeatureIcon src={javascript} alt="Value Types" title="Value Types" />
+<LinkList
+  srcList={[
+    {
+      title: "Number",
+      link: "/docs/front-end/javascript/value-types/number",
+      src: javascript,
+      alt: "Number",
+    },
+    {
+      title: "String",
+      link: "/docs/front-end/javascript/value-types/string",
+      src: javascript,
+      alt: "String",
+    },
+    {
+      title: "Type Conversion",
+      link: "/docs/front-end/javascript/value-types/type-conversion",
+      src: javascript,
+      alt: "Type Conversion",
+    },
+  ]}
+/>
