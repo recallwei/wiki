@@ -431,6 +431,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Solutions",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "front-end/wechat-mini-program/solutions/solutions",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/wechat-mini-program/solutions/remove-style-of-button",
+              label: "移除 Button 原生样式",
+            },
+          ],
+        },
       ],
     },
     // npm
