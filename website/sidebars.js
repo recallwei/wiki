@@ -220,17 +220,17 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Solution",
+          label: "Solutions",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/javascript/solution/solution",
+            id: "front-end/javascript/solutions/solutions",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/javascript/solution/get-document-file-type",
+              id: "front-end/javascript/solutions/get-document-file-type",
               label: "获取文件类型",
             },
           ],
