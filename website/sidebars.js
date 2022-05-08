@@ -267,22 +267,22 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "常见问题",
+          label: "Solutions",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/react/common/common",
+            id: "front-end/react/solutions/solutions",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/react/common/download-file",
+              id: "front-end/react/solutions/download-file",
               label: "下载文件",
             },
             {
               type: "doc",
-              id: "front-end/react/common/import-image",
+              id: "front-end/react/solutions/import-image",
               label: "引入图片",
             },
           ],
