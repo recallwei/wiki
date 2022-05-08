@@ -220,17 +220,17 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Solution",
+          label: "Solutions",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/javascript/solution/solution",
+            id: "front-end/javascript/solutions/solutions",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/javascript/solution/get-document-file-type",
+              id: "front-end/javascript/solutions/get-document-file-type",
               label: "获取文件类型",
             },
           ],
@@ -267,22 +267,22 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "常见问题",
+          label: "Solutions",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/react/common/common",
+            id: "front-end/react/solutions/solutions",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/react/common/download-file",
+              id: "front-end/react/solutions/download-file",
               label: "下载文件",
             },
             {
               type: "doc",
-              id: "front-end/react/common/import-image",
+              id: "front-end/react/solutions/import-image",
               label: "引入图片",
             },
           ],
@@ -428,6 +428,23 @@ const sidebars = {
               type: "doc",
               id: "front-end/wechat-mini-program/api/share",
               label: "分享",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Solutions",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "front-end/wechat-mini-program/solutions/solutions",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/wechat-mini-program/solutions/remove-style-of-button",
+              label: "移除 Button 原生样式",
             },
           ],
         },
