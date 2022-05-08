@@ -56,15 +56,15 @@
   .subTitle {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-family: "Yusei Magic", sans-serif;
   }
 
   .title::selection {
-    color: greenyellow;
+    color: var(--ifm-color-primary);
   }
 
   .subTitle::selection {
-    color: greenyellow;
+    color: var(--ifm-color-primary);
   }
 }
 
