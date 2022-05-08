@@ -5,8 +5,9 @@
  */
 
 /* You can override the default Infima variables here. */
+
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yusei+Magic&family=ZCOOL+XiaoWei&display=swap");
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -59,8 +60,7 @@
 /* 全局字体 */
 html {
   /* font-family: "Noto Sans", sans-serif; */
-  font-family: "comic sans ms", sans-serif;
-  font-style: normal;
+  font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", sans-serif;
 }
 
 hr {
@@ -105,7 +105,7 @@ code {
   color: var(--ifm-color-primary);
   /* 使用 JetBrains Mono 字体 */
   /* font-family: "JetBrains Mono", monospace !important; */
-  font-family: "comic sans ms", sans-serif !important;
+  font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", serif !important;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -113,13 +113,13 @@ code {
 .markdown h1,
 .markdown h2,
 .markdown h3 {
-  font-family: "comic sans ms", sans-serif;
+  font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", serif;
 }
 
 .markdown h1 {
   padding-bottom: 0.5rem;
   line-height: 100%;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px !important;
 }
 
@@ -128,7 +128,7 @@ code {
   line-height: 100%;
   border-left: var(--ifm-color-primary-dark) 7px solid;
   border-radius: 1px;
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 0.5rem;
   border-bottom: var(--ifm-color-primary-dark) 1px solid;
   margin-top: 20px !important;
@@ -139,7 +139,7 @@ code {
   line-height: 100%;
   border-left: var(--ifm-color-primary-darker) 4px solid;
   border-radius: 1px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .markdown img {
