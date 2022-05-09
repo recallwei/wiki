@@ -24,6 +24,7 @@
   --site-announcement-bar-stripe-color1: hsl(167deg 68% 85%);
   --site-announcement-bar-stripe-color2: hsl(167deg 68% 95%);
   --link-list-hover: rgb(102, 212, 189);
+  --base-font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -60,7 +61,7 @@
 /* 全局字体 */
 html {
   /* font-family: "Noto Sans", sans-serif; */
-  font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", sans-serif;
+  font-family: var(--base-font-family);
 }
 
 hr {
@@ -105,7 +106,7 @@ code {
   color: var(--ifm-color-primary);
   /* 使用 JetBrains Mono 字体 */
   /* font-family: "JetBrains Mono", monospace !important; */
-  font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", serif !important;
+  font-family: var(--base-font-family) !important;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -113,7 +114,7 @@ code {
 .markdown h1,
 .markdown h2,
 .markdown h3 {
-  font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", serif;
+  font-family: var(--base-font-family);
 }
 
 .markdown h1 {
