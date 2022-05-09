@@ -40,5 +40,5 @@ let imageArr = [
   "svg",
   "tiff",
 ];
-console.log(imageArr.indexOf(fileExtension.toLowerCase()) > -1); // expect: true
+console.log(imageArr.indexOf(fileExtension.toLowerCase()) > -1); // expected: true
 ```
