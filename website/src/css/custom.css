@@ -113,7 +113,8 @@ code {
 
 .markdown h1,
 .markdown h2,
-.markdown h3 {
+.markdown h3,
+.markdown h4 {
   font-family: var(--base-font-family);
 }
 
@@ -127,7 +128,7 @@ code {
 .markdown h2 {
   padding-left: 10px;
   line-height: 100%;
-  border-left: var(--ifm-color-primary-dark) 7px solid;
+  border-left: var(--ifm-color-primary-dark) 8px solid;
   border-radius: 1px;
   font-weight: 400;
   padding-bottom: 0.5rem;
@@ -138,9 +139,17 @@ code {
 .markdown h3 {
   padding-left: 10px;
   line-height: 100%;
-  border-left: var(--ifm-color-primary-darker) 4px solid;
+  border-left: var(--ifm-color-primary-darker) 6px solid;
   border-radius: 1px;
   font-weight: 300;
+}
+
+.markdown h4 {
+  line-height: 100%;
+  border-radius: 1px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .markdown img {
