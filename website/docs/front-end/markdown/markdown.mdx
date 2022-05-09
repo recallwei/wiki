@@ -6,18 +6,16 @@ pagination_label: Markdown
 import FeatureIcon from "../../../src/components/FeatureIcon/index.js";
 import LinkList from "../../../src/components/LinkList/index.js";
 import markdown from "../../../static/img/icon/markdown.png";
-import docusaurus from "../../../static/img/icon/docusaurus.png";
+import html from "../../../static/img/icon/html.png";
 
 <FeatureIcon src={markdown} alt="Markdown" title="Markdown" />
 <LinkList
-  srcList={
-    [
-      /* {
-      title: "",
-      link: "/docs/front-end/markdown/",
-      src: "",
-      alt: "",
-    }, */
-    ]
-  }
+  srcList={[
+    {
+      title: "嵌入 HTML",
+      link: "/docs/front-end/markdown/embed-html",
+      src: html,
+      alt: "嵌入 HTML",
+    },
+  ]}
 />

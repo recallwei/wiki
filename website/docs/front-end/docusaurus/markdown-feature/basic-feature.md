@@ -33,7 +33,7 @@ Markdown text with [links](./hello.md)
 
 这是 [GitHub](https://github.com/recallwei/) 链接。
 
-```
+```md
 [链接文字](链接地址)
 ```
 

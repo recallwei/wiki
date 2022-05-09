@@ -1,0 +1,11 @@
+---
+title: 嵌入 HTML
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
+## 块级元素
+
+对于 HTML 的块级元素 `<div>`，`<table>`，`<pre>`， 和 `<p>`，请在其前后<TextHighlight>使用空行（blank lines）与其它内容进行分隔</TextHighlight>。尽量不要使用制表符（tabs）或空格（spaces）对 HTML 标签做缩进，否则将影响格式。
+
+块级元素内<TextHighlight>不能使用 Markdown 语法</TextHighlight>。`<p>italic and **bold**</p>` 将不起作用。

@@ -30,7 +30,13 @@ const sidebars = {
         type: "doc",
         id: "front-end/markdown/markdown",
       },
-      items: [],
+      items: [
+        {
+          type: "doc",
+          id: "front-end/markdown/embed-html",
+          label: "嵌入 HTML",
+        },
+      ],
     },
     // HTML
     {
