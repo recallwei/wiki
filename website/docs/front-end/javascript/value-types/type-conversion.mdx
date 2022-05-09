@@ -17,13 +17,17 @@ parseInt("0xF", 16); // 指定为 16 则被解析的值是 16进制整数
 console.log(parseInt("0xF", 16)); // expected: 15
 ```
 
-返回 NaN：
+:::note 返回 `NaN`
 
 - 可选参数 radix <TextHighlight>小于 2 或大于 36</TextHighlight>。
 - 第一个<TextHighlight>非空格字符</TextHighlight>不能转换为数字。
 
-:::danger 警告
+:::
+
+:::danger
+
 参数 redix 虽为可选但默认并非为解析 10 进制整数.
+
 :::
 
 ### `parseFloat()`
