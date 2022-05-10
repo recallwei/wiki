@@ -34,7 +34,17 @@ const sidebars = {
         {
           type: "doc",
           id: "front-end/markdown/embed-html",
-          label: "嵌入 HTML",
+          label: "Embed HTML",
+        },
+        {
+          type: "doc",
+          id: "front-end/markdown/headings",
+          label: "Headings",
+        },
+        {
+          type: "doc",
+          id: "front-end/markdown/paragraph",
+          label: "Paragraph",
         },
       ],
     },
