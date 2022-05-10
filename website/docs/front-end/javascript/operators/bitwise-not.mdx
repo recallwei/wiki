@@ -1,0 +1,32 @@
+---
+title: Bitwise Not(~)
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
+Bitwise Not(~) 即按位非（按位取反），将操作数转换为 **32 位二进制数**，超过 32 位的数字将<TextHighlight>丢弃其最高有效位</TextHighlight>。
+
+## 按位非计算过程
+
+> ~1
+
+- 将 1（原码）转为二进制 -> **00000001**
+- 按位取反 -> **11111110**
+- 符号位（即最高位）为 1（表示负数），将除符号位之外的其他数字取反 -> **10000001**
+- 末位加 1 取其补码 -> **10000010**
+- 转为十进制 ＝ -2
+
+### 补码
+
+- 正数：(x) = x
+- 负数：(x) = -x - 1
+
+## 结果
+
+```javascript
+let result = ~num; // expected: -(num+1)
+```
+
+:::caution 注意
+数字 -1 和 2^32-1 按位非的运算结果为 **0**。
+:::

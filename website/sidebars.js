@@ -226,6 +226,23 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "Operators",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "front-end/javascript/operators/operators",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "front-end/javascript/operators/bitwise-not",
+              label: "Bitwise Not(~)",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "Solutions",
           collapsible: true,
           collapsed: true,
