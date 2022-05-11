@@ -29,16 +29,33 @@ title: Headings
 <h6>六级标题</h6>
 ```
 
-在 Docusaurus 中受自定义标题样式影响显示如下：
+## Best Practice
 
-# 一级标题
+为了兼容性，需要在 # 与 标题名称之间添加一个空格。
 
-## 二级标题
-
-### 三级标题
-
-#### 四级标题
-
-##### 五级标题
-
-###### 六级标题
+<table>
+  <thead>
+    <tr>
+      <th>✅</th>
+      <th>❌</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code># heading</code>
+      </td>
+      <td>
+        <code>#heading</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>## heading</code>
+      </td>
+      <td>
+        <code>##heading</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
