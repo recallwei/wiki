@@ -30,8 +30,12 @@ JavaScript 使用 UTF-16 编码，该编码使用一个 16 比特的编码单元
 
 #### Syntax
 
-- `string.split(separator)`
-- `string.split(separator, limit)`
+- `string.split()`
+- `string.split([option: string | regular expression] separator)`
+- `string.split([option: string | regular expression] separator, [option: number] limit)`
+
+- separator: 根据字符串或者正则表达式分隔字符串。
+- limit: 会丢弃 limit 后的数组元素。
 
 #### `string.split(separator)`分隔英文单词
 
