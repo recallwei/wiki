@@ -18,7 +18,7 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 100%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-footer-padding-horizontal: var(--ifm-spacing-horizontal);
   --ifm-footer-padding-vertical: var(--ifm-spacing-vertical);
@@ -61,22 +61,19 @@
 
 /* 全局字体 */
 html {
-  /* font-family: "Noto Sans", sans-serif; */
   font-family: var(--base-font-family);
 }
 
 hr {
-  border: 0.5px solid rgb(245, 244, 244);
+  border: 1px solid rgb(245, 244, 244);
   padding: 0;
   margin: 0;
-  width: 90%;
-  color: rgb(201, 120, 120);
 }
 
 blockquote {
   transition: all 0.5s ease-in-out;
-  /* background: var(--ifm-color-primary-lighter); */
-  /* border-bottom: #25c2a0 1px solid; */
+  /* background: var(--ifm-color-primary-lighter);
+  border-bottom: #25c2a0 1px solid; */
   background-color: #f8f8f9;
   font-size: 0.9em;
   border-image-source: linear-gradient(to left, #8f41e9, #f8f8f8);
@@ -106,10 +103,10 @@ html[data-theme="dark"] blockquote {
 code {
   color: var(--ifm-color-primary);
   /* 使用 JetBrains Mono 字体 */
-  /* font-family: "JetBrains Mono", monospace !important; */
-  font-family: var(--base-font-family) !important;
-  padding-left: 5px;
-  padding-right: 5px;
+  font-family: "JetBrains Mono", monospace !important;
+  /* font-family: var(--base-font-family) !important; */
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .markdown h1,

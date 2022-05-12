@@ -28,7 +28,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/markdown/markdown",
+        id: "front-end/markdown/index",
       },
       items: [
         {
@@ -45,6 +45,11 @@ const sidebars = {
           type: "doc",
           id: "front-end/markdown/paragraph",
           label: "Paragraph",
+        },
+        {
+          type: "doc",
+          id: "front-end/markdown/line-breaks",
+          label: "Line Breaks",
         },
       ],
     },
