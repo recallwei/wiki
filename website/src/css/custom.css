@@ -7,7 +7,8 @@
 /* You can override the default Infima variables here. */
 
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yusei+Magic&family=ZCOOL+XiaoWei&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yusei+Magic&family=ZCOOL+XiaoWei&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -24,7 +25,7 @@
   --site-announcement-bar-stripe-color1: hsl(167deg 68% 85%);
   --site-announcement-bar-stripe-color2: hsl(167deg 68% 95%);
   --link-list-hover: rgb(102, 212, 189);
-  --base-font-family: "Source Code Pro", monospace, "ZCOOL XiaoWei", sans-serif;
+  --base-font-family: "Noto Serif", sans-serif;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
