@@ -64,7 +64,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true, // 底部隐藏按钮
-          autoCollapseCategories: false, // 自动折叠侧边栏
+          autoCollapseCategories: true, // 自动折叠侧边栏
         },
       },
       navbar: {
@@ -77,13 +77,13 @@ const config = {
           // Left
           {
             type: "doc",
-            docId: "front-end-home",
+            docId: "front-end",
             label: "Front-end",
             position: "left",
           },
           {
             type: "doc",
-            docId: "back-end-home",
+            docId: "back-end",
             label: "Back-end",
             position: "left",
           },

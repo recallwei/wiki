@@ -4,7 +4,7 @@ const sidebars = {
     // Home
     {
       type: "doc",
-      id: "front-end-home",
+      id: "front-end",
       label: "Front-end",
     },
     // Markdown
@@ -380,6 +380,23 @@ const sidebars = {
           ],
         },
         {
+          type: "category",
+          label: "Theme",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "docusaurus/theme/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "docusaurus/theme/customized-image",
+              label: "Customized Image",
+            },
+          ],
+        },
+        {
           type: "doc",
           id: "docusaurus/swizzling",
           label: "Swizzling",
@@ -545,7 +562,7 @@ const sidebars = {
     //Home
     {
       type: "doc",
-      id: "back-end-home",
+      id: "back-end",
       label: "Back-end",
     },
   ],
