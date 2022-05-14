@@ -5,7 +5,6 @@ export default (color) => {
     case "primary":
     case "":
     case undefined:
-      console.log(siteConfig.customFields.primaryColor);
       return siteConfig.customFields.primaryColor;
     case "red":
       return "#e53935";
