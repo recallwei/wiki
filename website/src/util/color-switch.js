@@ -1,10 +1,12 @@
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 export default (color) => {
+  const { siteConfig } = useDocusaurusContext();
   switch (color) {
-    // 未定义颜色时为主题色
     case "primary":
     case "":
     case undefined:
-      return "#25c2a0";
+      console.log(siteConfig.customFields.primaryColor);
+      return siteConfig.customFields.primaryColor;
     case "red":
       return "#e53935";
     case "pink":

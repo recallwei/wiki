@@ -10,7 +10,7 @@ const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 const config = {
   customFields: {
     githubLink: "https://github.com/recallwei/",
-    themePrimaryColor: "#25c2a0",
+    primaryColor: "#25c2a0",
   },
   title: "Bruce Song",
   tagline: "信じて諦めなければ、夢は必ずかなう", // motto
