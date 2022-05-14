@@ -55,10 +55,10 @@ function HomepageHeader(props) {
                   openLink(siteConfig.customFields.githubLink);
                 }}
               />
-              <img src={google} alt="GMail" title="谷歌邮箱" />
-              <img src={twitter} alt="Twitter" title="推特" />
-              <img src={wechat} alt="WeChat" title="微信" />
-              <img src={zhihu} alt="ZhiHu" title="知乎" />
+              <img src={google} alt="GMail" title="GMail" />
+              <img src={twitter} alt="Twitter" title="Twitter" />
+              <img src={wechat} alt="WeChat" title="WeChat" />
+              <img src={zhihu} alt="ZhiHu" title="ZhiHu" />
             </div>
           );
         }}
