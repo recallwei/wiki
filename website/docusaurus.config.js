@@ -19,7 +19,7 @@ const config = {
   baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.png",
+  favicon: "img/favicon/favicon.png",
   organizationName: "Bruce Song", // Usually your GitHub org/user name.
   projectName: "blog", // Usually your repo name.
 
@@ -76,35 +76,29 @@ const config = {
         title: "Bruce's Wiki",
         logo: {
           alt: "Bruce's Wiki",
-          src: "img/favicon.png",
+          src: "img/favicon/favicon.png",
         },
         items: [
           // Left
           {
             type: "doc",
-            docId: "front-end/front-end-home",
+            docId: "front-end-home",
             label: "Front-end",
             position: "left",
           },
           {
             type: "doc",
-            docId: "back-end/back-end-home",
+            docId: "back-end-home",
             label: "Back-end",
             position: "left",
           },
-          {
-            type: "doc",
-            docId: "cs/cs-home",
-            label: "CS",
-            position: "left",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            type: "doc",
-            docId: "todo",
-            label: "To Do",
-            position: "left",
-          },
+          // { to: "/blog", label: "Blog", position: "left" },
+          // {
+          //   type: "doc",
+          //   docId: "todo",
+          //   label: "To Do",
+          //   position: "left",
+          // },
           {
             type: "doc",
             docId: "tutorial-extras/translate-your-site",
@@ -126,7 +120,12 @@ const config = {
         ],
       },
       footer: {
-        logo: { src: "img/favicon.png", href: "/", width: 40, height: 40 },
+        logo: {
+          src: "img/favicon/favicon.png",
+          href: "/",
+          width: 40,
+          height: 40,
+        },
         style: "light", // "light" | "dark"
         links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus.`,

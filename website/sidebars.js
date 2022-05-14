@@ -1,23 +1,10 @@
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
-
-// @ts-check
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  // By default, Docusaurus generates a sidebar from the docs folder structure
   frontend: [
-    //Home
+    // Home
     {
       type: "doc",
-      id: "front-end/front-end-home",
+      id: "front-end-home",
       label: "Front-end",
     },
     // Markdown
@@ -28,27 +15,27 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/markdown/index",
+        id: "markdown/index",
       },
       items: [
         {
           type: "doc",
-          id: "front-end/markdown/embed-html",
+          id: "markdown/embed-html",
           label: "Embed HTML",
         },
         {
           type: "doc",
-          id: "front-end/markdown/headings",
+          id: "markdown/headings",
           label: "Headings",
         },
         {
           type: "doc",
-          id: "front-end/markdown/paragraph",
-          label: "Paragraph",
+          id: "markdown/paragraphs",
+          label: "Paragraphs",
         },
         {
           type: "doc",
-          id: "front-end/markdown/line-breaks",
+          id: "markdown/line-breaks",
           label: "Line Breaks",
         },
       ],
@@ -61,13 +48,13 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/html/html",
+        id: "html/index",
       },
       items: [
         {
           type: "doc",
-          id: "front-end/html/elements",
-          label: "标签",
+          id: "html/elements",
+          label: "Elements",
         },
       ],
     },
@@ -79,7 +66,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/css/css",
+        id: "css/index",
       },
       items: [
         {
@@ -89,12 +76,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/css/selectors/selectors",
+            id: "css/selectors/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/css/selectors/simple-selectors",
+              id: "css/selectors/simple-selectors",
               label: "Simple Selectors",
             },
           ],
@@ -106,12 +93,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/css/flex-box/flex-box",
+            id: "css/flex-box/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/css/flex-box/flex",
+              id: "css/flex-box/flex",
               label: "Flex",
             },
           ],
@@ -123,18 +110,18 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/css/font/font",
+            id: "css/font/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/css/font/import-font-in-css",
-              label: "在 CSS 中引入字体",
+              id: "css/font/import",
+              label: "Import",
             },
             {
               type: "doc",
-              id: "front-end/css/font/display",
-              label: "文本显示",
+              id: "css/font/display",
+              label: "Display",
             },
           ],
         },
@@ -145,17 +132,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/css/properties/properties",
+            id: "css/properties/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/css/properties/white-space",
+              id: "css/properties/white-space",
               label: "white-space",
             },
             {
               type: "doc",
-              id: "front-end/css/properties/box-shadow",
+              id: "css/properties/box-shadow",
               label: "box-shadow",
             },
           ],
@@ -167,17 +154,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/css/components/components",
+            id: "css/components/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/css/components/card",
+              id: "css/components/card",
               label: "Card",
             },
             {
               type: "doc",
-              id: "front-end/css/components/ribbon",
+              id: "css/components/ribbon",
               label: "Ribbon",
             },
           ],
@@ -192,7 +179,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/javascript/javascript",
+        id: "javascript/index",
       },
       items: [
         {
@@ -202,22 +189,22 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/javascript/value-types/value-types",
+            id: "javascript/value-types/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/javascript/value-types/number",
+              id: "javascript/value-types/number",
               label: "Number",
             },
             {
               type: "doc",
-              id: "front-end/javascript/value-types/string",
+              id: "javascript/value-types/string",
               label: "String",
             },
             {
               type: "doc",
-              id: "front-end/javascript/value-types/type-conversion",
+              id: "javascript/value-types/type-conversion",
               label: "Type Conversion",
             },
           ],
@@ -229,12 +216,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/javascript/reference-types/reference-types",
+            id: "javascript/reference-types/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/javascript/reference-types/array",
+              id: "javascript/reference-types/array",
               label: "Array",
             },
           ],
@@ -246,12 +233,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/javascript/operators/operators",
+            id: "javascript/operators/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/javascript/operators/bitwise-not",
+              id: "javascript/operators/bitwise-not",
               label: "Bitwise Not(~)",
             },
           ],
@@ -263,13 +250,13 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/javascript/solutions/solutions",
+            id: "javascript/solutions/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/javascript/solutions/get-document-file-type",
-              label: "获取文件类型",
+              id: "javascript/solutions/get-file-type",
+              label: "Get File Type",
             },
           ],
         },
@@ -283,7 +270,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/react/react",
+        id: "react/index",
       },
       items: [
         {
@@ -293,12 +280,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/react/dom/dom",
+            id: "react/dom/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/react/dom/dom-elements",
+              id: "react/dom/dom-elements",
               label: "DOM 元素",
             },
           ],
@@ -310,18 +297,18 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/react/solutions/solutions",
+            id: "react/solutions/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/react/solutions/download-file",
-              label: "下载文件",
+              id: "react/solutions/download-file",
+              label: "Download File",
             },
             {
               type: "doc",
-              id: "front-end/react/solutions/import-image",
-              label: "引入图片",
+              id: "react/solutions/import-image",
+              label: "Import Image",
             },
           ],
         },
@@ -332,13 +319,13 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/react/experience/experience",
+            id: "react/experience/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/react/experience/component-design",
-              label: "组件设计",
+              id: "react/experience/component-design",
+              label: "Component Design",
             },
           ],
         },
@@ -352,12 +339,12 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/docusaurus/docusaurus",
+        id: "docusaurus/index",
       },
       items: [
         {
           type: "doc",
-          id: "front-end/docusaurus/build",
+          id: "docusaurus/build",
           label: "Build",
         },
         {
@@ -367,45 +354,45 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/docusaurus/markdown-feature/markdown-feature",
+            id: "docusaurus/markdown-feature/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/docusaurus/markdown-feature/basic-feature",
-              label: "基本特性",
+              id: "docusaurus/markdown-feature/basic-feature",
+              label: "Basic Feature",
             },
             {
               type: "doc",
-              id: "front-end/docusaurus/markdown-feature/code-block",
-              label: "代码块",
+              id: "docusaurus/markdown-feature/code-block",
+              label: "Code Block",
             },
             {
               type: "doc",
-              id: "front-end/docusaurus/markdown-feature/admonitions",
+              id: "docusaurus/markdown-feature/admonitions",
               label: "Admonitions",
             },
             {
               type: "doc",
-              id: "front-end/docusaurus/markdown-feature/mdx-and-react-components",
+              id: "docusaurus/markdown-feature/mdx-and-react-components",
               label: "React Components",
             },
           ],
         },
         {
           type: "doc",
-          id: "front-end/docusaurus/swizzling",
+          id: "docusaurus/swizzling",
           label: "Swizzling",
         },
         {
           type: "doc",
-          id: "front-end/docusaurus/rename-project-name",
-          label: "更改项目名称",
+          id: "docusaurus/rename-project-name",
+          label: "Rename Project Name",
         },
         {
           type: "doc",
-          id: "front-end/docusaurus/tailwind-css-integration",
-          label: "集成 TailwindCSS v3",
+          id: "docusaurus/integrate-tailwind-css",
+          label: "Integrate TailwindCSS",
         },
       ],
     },
@@ -417,17 +404,17 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/wechat-mini-program/wechat-mini-program",
+        id: "wechat-mini-program/index",
       },
       items: [
         {
           type: "doc",
-          id: "front-end/wechat-mini-program/configuration",
+          id: "wechat-mini-program/configuration",
           label: "Configuration",
         },
         {
           type: "doc",
-          id: "front-end/wechat-mini-program/components",
+          id: "wechat-mini-program/components",
           label: "Components",
         },
         {
@@ -437,13 +424,13 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/wechat-mini-program/wxml/wxml",
+            id: "wechat-mini-program/wxml/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/wechat-mini-program/wxml/data",
-              label: "数据绑定",
+              id: "wechat-mini-program/wxml/data-binding",
+              label: "Data Binding",
             },
           ],
         },
@@ -454,18 +441,18 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/wechat-mini-program/api/api",
+            id: "wechat-mini-program/api/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/wechat-mini-program/api/clipboard",
-              label: "剪切板",
+              id: "wechat-mini-program/api/clipboard",
+              label: "Clipboard",
             },
             {
               type: "doc",
-              id: "front-end/wechat-mini-program/api/share",
-              label: "分享",
+              id: "wechat-mini-program/api/share",
+              label: "Share",
             },
           ],
         },
@@ -476,13 +463,13 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/wechat-mini-program/solutions/solutions",
+            id: "wechat-mini-program/solutions/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/wechat-mini-program/solutions/remove-style-of-button",
-              label: "移除 Button 原生样式",
+              id: "wechat-mini-program/solutions/remove-style-of-button",
+              label: "Remove Style Of Button",
             },
           ],
         },
@@ -496,12 +483,12 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/npm/npm",
+        id: "npm/index",
       },
       items: [
         {
           type: "doc",
-          id: "front-end/npm/patch-package",
+          id: "npm/patch-package",
           label: "patch-package",
         },
       ],
@@ -514,7 +501,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/ide/ide",
+        id: "ide/index",
       },
       items: [
         {
@@ -524,17 +511,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "front-end/ide/visual-studio-code/visual-studio-code",
+            id: "ide/visual-studio-code/index",
           },
           items: [
             {
               type: "doc",
-              id: "front-end/ide/visual-studio-code/git",
+              id: "ide/visual-studio-code/git",
               label: "Git",
             },
             {
               type: "doc",
-              id: "front-end/ide/visual-studio-code/short-cuts",
+              id: "ide/visual-studio-code/shortcuts",
               label: "Shortcuts",
             },
           ],
@@ -549,7 +536,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "front-end/design/design",
+        id: "design/index",
       },
       items: [],
     },
@@ -558,50 +545,9 @@ const sidebars = {
     //Home
     {
       type: "doc",
-      id: "back-end/back-end-home",
+      id: "back-end-home",
       label: "Back-end",
     },
   ],
-  cs: [
-    //Home
-    {
-      type: "doc",
-      id: "cs/cs-home",
-      label: "CS",
-    },
-    // Network
-    // {
-    //   type: "category",
-    //   label: "Network",
-    //   collapsible: true,
-    //   collapsed: true,
-    //   link: {
-    //     type: "generated-index",
-    //     title: "Network",
-    //   },
-    //   items: [],
-    // },
-  ],
 };
-
-// Category Template
-// {
-//   type: "category",
-//   label: "",
-//   collapsible: true,
-//   collapsed: true,
-//   link: {
-//     type: "generated-index",
-//     title: "",
-//   },
-//   items: [],
-// },
-
-// Doc Template
-// {
-//    type: "doc",
-//    id: "",
-//    label: "",
-// },
-
 module.exports = sidebars;

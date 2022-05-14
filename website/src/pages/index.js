@@ -6,7 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import favicon from "@site/static/img/favicon.png";
+import favicon from "@site/static/img/favicon/favicon.png";
 import github from "@site/static/img/icon/github.png";
 import google from "@site/static/img/icon/google.png";
 import twitter from "@site/static/img/icon/twitter.png";

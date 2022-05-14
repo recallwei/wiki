@@ -1,0 +1,26 @@
+---
+hide_title: true
+pagination_label: API
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import wechatMiniProgram from "@site/static/img/icon/wechat-mini-program.png";
+
+<FeatureIcon src={wechatMiniProgram} alt="API" title="API" />
+<LinkList
+  srcList={[
+    {
+      title: "Clipboard",
+      link: "/docs/wechat-mini-program/api/clipboard",
+      src: wechatMiniProgram,
+      alt: "Clipboard",
+    },
+    {
+      title: "Share",
+      link: "/docs/wechat-mini-program/api/share",
+      src: wechatMiniProgram,
+      alt: "Share",
+    },
+  ]}
+/>

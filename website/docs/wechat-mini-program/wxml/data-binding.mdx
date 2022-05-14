@@ -1,0 +1,19 @@
+---
+title: Data Binding
+---
+
+import Badge from "@site/src/components/Badge/index";
+
+## 运算
+
+WXML 支持在 **`{{}}`** 内进行简单的运算。
+
+### 三元表达式
+
+<Badge color="primary">条件渲染</Badge>
+
+```jsx
+<view hidden="{{flag ? true : false}}"> Hidden </view>
+
+<view class="{{isDarkMode ? 'dark-mode' : 'light-mode' }}"> Hidden </view>
+```

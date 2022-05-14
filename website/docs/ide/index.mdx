@@ -1,0 +1,21 @@
+---
+hide_title: true
+pagination_label: IDE
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import ide from "@site/static/img/icon/ide.png";
+import visualStudioCode from "@site/static/img/icon/visual-studio-code.png";
+
+<FeatureIcon src={ide} alt="IDE" title="IDE" />
+<LinkList
+  srcList={[
+    {
+      title: "Visual Studio Code",
+      link: "/docs/ide/visual-studio-code",
+      src: visualStudioCode,
+      alt: "Visual Studio Code",
+    },
+  ]}
+/>

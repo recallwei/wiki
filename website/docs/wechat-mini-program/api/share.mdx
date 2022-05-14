@@ -1,0 +1,49 @@
+---
+title: Share
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
+## 页面内发起分享
+
+通过给 `button` 组件设置属性 `open-type="share"`，可以在用户点击按钮后触发 `Page.onShareAppMessage` 事件。
+
+```jsx title="page.wxml"
+<button open-type="share" />
+```
+
+如果需要自定义按钮样式，需要[移除 Button 原生样式](/docs/front-end/wechat-mini-program/solutions/remove-style-of-button)。
+
+### `onShareAppMessage()`
+
+监听用户**点击页面内分享按钮** (`button` 组件 `open-type="share"`) 或右上角菜单 **“分享”** 按钮的行为，并自定义分享内容。
+
+:::caution 注意
+
+只有定义了此事件处理函数，右上角菜单才会显示 “分享” 按钮。
+
+:::
+
+默认的标题为<TextHighlight>**当前小程序名称**</TextHighlight>，默认分享路径为<TextHighlight>**当前页面路径**</TextHighlight>（必须是<TextHighlight>**以 / 开头的完整路径**</TextHighlight>），默认图片为<TextHighlight>**当前页面的截图**</TextHighlight>。
+
+```javascript {11-12,14,16} title="page.js" showLineNumbers
+Page({
+  onShareAppMessage() {
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({
+          title: "自定义分享标题",
+        });
+      }, 2000);
+    });
+    return {
+      title: "自定义分享标题", // 分享标题
+      path: "/page/user?id=123", // 分享路径
+      // 自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径。支持 PNG 及 JPG。显示图片长宽比是 5:4。
+      imageUrl: "./image.png",
+      // 如果该参数存在，则以 resolve 结果为准，如果三秒内不 resolve，分享会使用上面传入的默认参数
+      promise,
+    };
+  },
+});
+```

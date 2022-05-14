@@ -1,0 +1,39 @@
+---
+hide_title: true
+pagination_label: Markdown
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import markdown from "@site/static/img/icon/markdown.png";
+import html from "@site/static/img/icon/html.png";
+
+<FeatureIcon src={markdown} alt="Markdown" title="Markdown" />
+<LinkList
+  srcList={[
+    {
+      title: "Embed HTML",
+      link: "/docs/markdown/embed-html",
+      src: html,
+      alt: "Embed HTML",
+    },
+    {
+      title: "Headings",
+      link: "/docs/front-end/markdown/headings",
+      src: markdown,
+      alt: "Headings",
+    },
+    {
+      title: "Paragraph",
+      link: "/docs/front-end/markdown/paragraph",
+      src: markdown,
+      alt: "Paragraph",
+    },
+    {
+      title: "Line Breaks",
+      link: "/docs/front-end/markdown/line-breaks",
+      src: markdown,
+      alt: "Line Breaks",
+    },
+  ]}
+/>
