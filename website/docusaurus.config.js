@@ -3,8 +3,8 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-const oceanicNext = require("prism-react-renderer/themes/oceanicNext");
-const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
+// const oceanicNext = require("prism-react-renderer/themes/oceanicNext");
+// const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -25,11 +25,6 @@ const config = {
 
   themes: ["@docusaurus/theme-live-codeblock"],
 
-  i18n: {
-    defaultLocale: "zh-cn",
-    locales: ["zh-cn", "en", "ko", "ja"],
-  },
-
   presets: [
     [
       "classic",
@@ -42,7 +37,7 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/recallwei/wiki/tree/main/website", //GitHub 仓库对应文件位置
+          editUrl: "https://github.com/recallwei/wiki/tree/main/website", // GitHub 仓库对应文件位置
           include: ["**/*.md", "**/*.mdx"],
           exclude: [
             "**/_*.{js,jsx,ts,tsx,md,mdx}",
@@ -99,17 +94,7 @@ const config = {
           //   label: "To Do",
           //   position: "left",
           // },
-          {
-            type: "doc",
-            docId: "tutorial-extras/translate-your-site",
-            label: "i18n",
-            position: "left",
-          },
           // Right
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
           {
             href: "https://github.com/recallwei/",
             position: "right",
