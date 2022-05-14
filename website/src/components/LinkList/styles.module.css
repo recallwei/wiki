@@ -7,25 +7,25 @@
   background-color: var(--link-list-hover);
 }
 
-.item > a {
+.item a {
   display: flex;
   justify-content: start;
   align-items: center;
   font-weight: 500;
 }
 
-.item > a > img {
+.item a > img {
   height: 25px;
   width: 25px;
   margin-right: 6px;
 }
 
-.item > a > img:hover {
-  opacity: 0.6;
+.item a > img:hover {
+  opacity: 0.7;
   cursor: pointer;
 }
 
-[data-theme="dark"] .item > a,
-.item > a:hover {
+[data-theme="dark"] .item a,
+.item a:hover {
   color: white;
 }

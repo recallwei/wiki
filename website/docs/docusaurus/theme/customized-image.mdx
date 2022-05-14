@@ -1,0 +1,37 @@
+---
+title: Customized Image
+---
+
+import ThemedImage from "@theme/ThemedImage";
+
+## `<ThemedImage />`
+
+To supports themed images. Docusaurus provides the `ThemedImage` component.
+
+```jsx {1,5,6} showLineNumbers
+import ThemedImage from "@theme/ThemedImage";
+
+<ThemedImage
+  sources={{
+    light: require("@site/static/img/sample/batman-grey.png").default,
+    dark: require("@site/static/img/sample/batman-yellow.png").default,
+  }}
+  alt="Batman"
+  loading="lazy"
+  width="128px"
+  height="128px"
+/>;
+```
+
+Click the **"switch theme button"** to see how the image changes:
+
+<ThemedImage
+  sources={{
+    light: require("@site/static/img/sample/batman-grey.png").default,
+    dark: require("@site/static/img/sample/batman-yellow.png").default,
+  }}
+  alt="Batman"
+  loading="lazy"
+  width="128px"
+  height="128px"
+/>

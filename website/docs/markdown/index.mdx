@@ -6,9 +6,15 @@ pagination_label: Markdown
 import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import markdown from "@site/static/img/icon/markdown.png";
+import markdownDarkMode from "@site/static/img/icon-dark-mode/markdown.png";
 import html from "@site/static/img/icon/html.png";
 
-<FeatureIcon src={markdown} alt="Markdown" title="Markdown" />
+<FeatureIcon
+  src={markdown}
+  srcDark={markdownDarkMode}
+  alt="Markdown"
+  title="Markdown"
+/>
 <LinkList
   srcList={[
     {
@@ -19,20 +25,23 @@ import html from "@site/static/img/icon/html.png";
     },
     {
       title: "Headings",
-      link: "/docs/front-end/markdown/headings",
+      link: "/docs/markdown/headings",
       src: markdown,
+      srcDark: markdownDarkMode,
       alt: "Headings",
     },
     {
-      title: "Paragraph",
-      link: "/docs/front-end/markdown/paragraph",
+      title: "Paragraphs",
+      link: "/docs/markdown/paragraphs",
       src: markdown,
-      alt: "Paragraph",
+      srcDark: markdownDarkMode,
+      alt: "Paragraphs",
     },
     {
       title: "Line Breaks",
-      link: "/docs/front-end/markdown/line-breaks",
+      link: "/docs/markdown/line-breaks",
       src: markdown,
+      srcDark: markdownDarkMode,
       alt: "Line Breaks",
     },
   ]}

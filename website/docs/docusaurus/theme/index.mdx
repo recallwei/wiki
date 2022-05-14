@@ -1,0 +1,20 @@
+---
+hide_title: true
+pagination_label: Theme
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import docusaurus from "@site/static/img/icon/docusaurus.png";
+
+<FeatureIcon src={docusaurus} alt="Theme" title="Theme" />
+<LinkList
+  srcList={[
+    {
+      title: "Customized Image",
+      link: "/docs/docusaurus/theme/customized-image",
+      src: docusaurus,
+      alt: "Customized Image",
+    },
+  ]}
+/>
