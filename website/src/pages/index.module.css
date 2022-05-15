@@ -85,6 +85,11 @@
   }
 }
 
+.title,
+.subTitle {
+  color: white;
+}
+
 .buttons {
   display: flex;
   align-items: center;
