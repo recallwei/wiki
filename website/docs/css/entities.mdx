@@ -2,13 +2,26 @@
 title: Entities
 ---
 
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
 ## Definition
 
-To display any HTML entities in CSS.
+<p>
+  <TextHighlight>HTML entities is unavailable in CSS</TextHighlight>. To display
+  any HTML entities in CSS, we need to use CSS Entities.
+</p>
+
+The code doesn't work below because of using HTML Entity:
+
+```css {2}
+h2:after {
+  content: "&#36;";
+}
+```
 
 ## Syntax
 
-```css
+```css {2}
 h2:after {
   content: "\0024"; /* \0024 is $ */
 }
