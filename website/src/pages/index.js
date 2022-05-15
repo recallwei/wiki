@@ -17,7 +17,7 @@ function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header
-      className={clsx("hero hero--primary", styles.heroBanner)}
+      className={clsx("hero", styles.heroBanner)}
       style={{ position: "relative" }}
     >
       <div className={clsx("container", styles.container)}>
@@ -71,7 +71,7 @@ export default function Home() {
   return (
     <BrowserOnly fallback={null}>
       {() => {
-        // 检查是否是手机端
+        // Detect device type
         const isMobileDevice = /Mobi|Android|iPhone/i.test(navigator.userAgent);
         return (
           <Layout
