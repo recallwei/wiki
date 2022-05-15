@@ -2,10 +2,9 @@ import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-import BrowserOnly from "@docusaurus/BrowserOnly";
 import favicon from "@site/static/img/favicon/favicon.png";
 import github from "@site/static/img/icon/github.png";
 import google from "@site/static/img/icon/google.png";
@@ -79,9 +78,7 @@ export default function Home() {
             description="Description will go into a meta tag in <head />"
           >
             <HomepageHeader isMobileDevice={isMobileDevice} />
-            <main>
-              <HomepageFeatures />
-            </main>
+            <main></main>
           </Layout>
         );
       }}

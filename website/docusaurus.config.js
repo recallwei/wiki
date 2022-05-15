@@ -64,7 +64,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true, // 底部隐藏按钮
-          autoCollapseCategories: true, // 自动折叠侧边栏
+          autoCollapseCategories: false, // 自动折叠侧边栏
         },
       },
       navbar: {
