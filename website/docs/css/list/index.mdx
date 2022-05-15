@@ -1,0 +1,20 @@
+---
+hide_title: true
+pagination_label: List
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import css from "@site/static/img/icon/css.png";
+
+<FeatureIcon src={css} alt="List" title="List" />
+<LinkList
+  srcList={[
+    {
+      title: "list-style-type",
+      link: "/docs/css/list/list-style-type",
+      src: css,
+      alt: "list-style-type",
+    },
+  ]}
+/>
