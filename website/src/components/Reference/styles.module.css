@@ -1,0 +1,23 @@
+.unorderedList {
+  background-color: aqua;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.unorderedList ul {
+  list-style-type: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.listItem img {
+  height: 25px;
+  width: 25px;
+  margin-right: 6px;
+}
