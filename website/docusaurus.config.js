@@ -138,7 +138,7 @@ const config = {
       //顶部横幅
       announcementBar: {
         id: "support_us",
-        content: "I am currently learning React and WeChat Mini Program...",
+        content: "I am currently learning React and WeXin Mini Program...",
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
         isCloseable: false,

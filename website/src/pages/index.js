@@ -9,7 +9,7 @@ import favicon from "@site/static/img/favicon/favicon.png";
 import github from "@site/static/img/icon/github.png";
 import google from "@site/static/img/icon/google.png";
 import twitter from "@site/static/img/icon/twitter.png";
-import wechat from "@site/static/img/icon/wechat-mini-program.png";
+import wechat from "@site/static/img/icon/wexin-mini-program.png";
 import zhihu from "@site/static/img/icon/zhihu.png";
 
 function HomepageHeader(props) {
