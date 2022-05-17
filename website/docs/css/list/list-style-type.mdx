@@ -1,0 +1,89 @@
+---
+title: list-style-type
+---
+
+## Definition
+
+The `list-style-type` specifies the type of **list-item marker** in a list.
+
+## Syntax
+
+```css
+list-style-type: value;
+```
+
+## Values
+
+### ` disc` `[default]` `[ul]`
+
+A filled circle, also named bullet list item.
+
+### `cicle` `[ul]`
+
+A hollow circle.
+
+### `square` `[ul]`
+
+A filled square.
+
+### `decimal` `[ol]`
+
+Decimal numbers, beginning with 1.
+
+### `lower-roman` `[ol]`
+
+Lowercase roman numerals.
+
+### `upper-roman` `[ol]`
+
+Uppercase roman numerals.
+
+### `lower-alpha` `lower-latin` `[ol]`
+
+Lowercase ASCII letters.
+
+### `upper-alpha` `upper-latin` `[ol]`
+
+Uppercase ASCII letters.
+
+### `none`
+
+No marker, used to remove the style of list items.
+
+:::tip
+
+Some of the values are for unordered lists (ul) , and some for ordered lists (ol) .
+
+:::
+
+## Usage
+
+### Remove the marker of list item
+
+```css
+ul > li {
+  list-style-type: none;
+}
+```
+
+### Add bullet colors
+
+Remove their default bullets and adding a HTML entity that looks like bullets (&bull;):
+
+```css {2}
+ul {
+  list-style-type: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding-left: 16px;
+}
+
+li::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: blue;
+}
+```

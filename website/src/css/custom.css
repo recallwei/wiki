@@ -103,7 +103,7 @@ html[data-theme="dark"] blockquote {
 code {
   color: var(--ifm-color-primary);
   /* 使用 JetBrains Mono 字体 */
-  font-family: "JetBrains Mono", monospace !important;
+  /* font-family: "JetBrains Mono", monospace !important; */
   /* font-family: var(--base-font-family) !important; */
   padding-left: 3px;
   padding-right: 3px;
@@ -111,43 +111,34 @@ code {
 
 .markdown h1,
 .markdown h2,
-.markdown h3,
-.markdown h4 {
+.markdown h3 {
   font-family: var(--base-font-family);
 }
 
 .markdown h1 {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
   line-height: 100%;
   font-weight: 500;
-  margin-bottom: 10px !important;
 }
 
 .markdown h2 {
+  margin-top: 30px !important;
   padding-left: 10px;
+  padding-bottom: 8px;
   line-height: 100%;
   border-left: var(--ifm-color-primary-dark) 8px solid;
   border-radius: 1px;
   font-weight: 400;
-  padding-bottom: 0.5rem;
   border-bottom: var(--ifm-color-primary-dark) 1px solid;
-  margin-top: 20px !important;
 }
 
 .markdown h3 {
   padding-left: 10px;
+  padding-bottom: 6px;
   line-height: 100%;
   border-left: var(--ifm-color-primary-darker) 6px solid;
   border-radius: 1px;
   font-weight: 300;
-}
-
-.markdown h4 {
-  line-height: 100%;
-  border-radius: 1px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
 }
 
 .markdown img {

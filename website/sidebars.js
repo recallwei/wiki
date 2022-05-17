@@ -87,6 +87,11 @@ const sidebars = {
           ],
         },
         {
+          type: "doc",
+          id: "css/entities",
+          label: "Entities",
+        },
+        {
           type: "category",
           label: "Flex Box",
           collapsible: true,
@@ -122,6 +127,23 @@ const sidebars = {
               type: "doc",
               id: "css/font/display",
               label: "Display",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "List",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "css/list/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "css/list/list-style-type",
+              label: "list-style-type",
             },
           ],
         },

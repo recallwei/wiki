@@ -1,0 +1,36 @@
+.unorderedList {
+  background-color: white;
+  border: 0.0625rem solid rgb(215, 217, 226);
+  border-radius: var(--ifm-code-border-radius); /* 0.4rem */
+  padding: 0.8rem;
+  box-shadow: 0px 1px 2px 0px rgb(215 217 226);
+}
+
+.unorderedList ul {
+  list-style-type: none; /* Remove HTML bullets */
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-row-gap: 0.4rem;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+  font-size: 1rem;
+}
+
+.listItem img {
+  height: 30px;
+  width: 30px;
+  margin-right: 0.6rem;
+}
+
+.title {
+  font-style: monospace;
+}
+
+.subTitle {
+  font-style: italic;
+}

@@ -1,0 +1,41 @@
+---
+title: Entities
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+import ReferenceList from "@site/src/components/Reference/index.js";
+import w3schools from "@site/static/img/reference/w3schools.png";
+
+## Definition
+
+<TextHighlight>HTML entities is unavailable in CSS</TextHighlight>. To display
+any HTML entities in CSS, we need to use CSS Entities.
+
+The code doesn't work below because of using HTML Entity:
+
+```css {2}
+h2:after {
+  content: "&#36;";
+}
+```
+
+## Syntax
+
+```css {2}
+h2:after {
+  content: "\0024"; /* \0024 is $ */
+}
+```
+
+## Reference
+
+<ReferenceList
+  data={[
+    {
+      title: "w3schools",
+      subTitle: "CSS Entities",
+      src: w3schools,
+      link: "https://www.w3schools.com/cssref/css_entities.asp",
+    },
+  ]}
+/>

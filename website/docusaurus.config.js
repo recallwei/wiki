@@ -113,7 +113,7 @@ const config = {
         },
         style: "light", // "light" | "dark"
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus. Hosted by Vercel`,
+        copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus. Hosted by Vercel.`,
       },
       // code block 基于 prism.js
       prism: {
