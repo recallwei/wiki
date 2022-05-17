@@ -2,6 +2,60 @@
 title: Template
 ---
 
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
 ## Definition
 
-Template actually is a code snippet. It can reduce redundant code.
+Actually, **Template** is a code snippet. It can reduce redundant code. We can call them in different places.
+
+## Syntax
+
+### Define a Template
+
+Use the `name` property to specify the name of Template.
+
+Then, define a code snippet in `<template />`.
+
+```jsx
+// index: int
+// msg: string
+// time: string
+<template name="msgItem">
+  <view>
+    <text>
+      {{ index }}: {{ msg }}
+    </text>
+    <text> Time: {{ time }} </text>
+  </view>
+</template>
+```
+
+### Use a Template
+
+Use the `is` property to declare the Template to be used.
+
+Then, pass the data to the Template.
+
+```jsx
+<template is="template-name" data="{{...item}}" />
+```
+
+```javascript
+Page({
+  data: {
+    item: {
+      index: 0,
+      msg: "Hello world!",
+      time: "2022-07-15",
+    },
+  },
+});
+```
+
+## Template Scope
+
+Templates can only use the data passed by `data` and the `<wxs />` module defined in the file defined by the Template.
+
+### Template CSS style does't work
+
+We should import **Template** and <TextHighlight>its .css file</TextHighlight> at the same time.
