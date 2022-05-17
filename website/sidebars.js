@@ -471,6 +471,11 @@ const sidebars = {
               id: "wechat-mini-program/wxml/data-binding",
               label: "Data Binding",
             },
+            {
+              type: "doc",
+              id: "wechat-mini-program/wxml/template",
+              label: "Template",
+            },
           ],
         },
         {
