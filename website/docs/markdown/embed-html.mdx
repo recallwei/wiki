@@ -4,8 +4,8 @@ title: Embed HTML
 
 import TextHighlight from "@site/src/components/TextHighlight/index.js";
 
-## 块级元素
+## Block-level elements
 
-对于 HTML 的块级元素 `<div>`，`<table>`，`<pre>`， 和 `<p>`，请在其前后<TextHighlight>使用空行（blank lines）与其它内容进行分隔</TextHighlight>。尽量不要使用制表符（tabs）或空格（spaces）对 HTML 标签做缩进，否则将影响格式。
+HTML block-level elements like `<div>`，`<table>`，`<pre>`， and `<p>`，please use <TextHighlight>blank lines</TextHighlight> before and after them to separate from other content. Try not to use `tabs` or `spaces` to indent HTML elements, otherwise it will affect the formatting.
 
-块级元素内<TextHighlight>不能使用 Markdown 语法</TextHighlight>。`<p>italic and **bold**</p>` 将不起作用。
+We <TextHighlight>cannot use Markdown syntax</TextHighlight> inside block-level elements. `<p>italic and **bold**</p>` will not work。
