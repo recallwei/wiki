@@ -34,7 +34,7 @@ export default function Layout(props) {
   return (
     <BrowserOnly>
       {() => {
-        // 检查是否是首页
+        // Detect whether is homepage
         const isHomePage = window.location.pathname === "/";
         return (
           <LayoutProviders>

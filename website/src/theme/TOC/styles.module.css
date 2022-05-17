@@ -1,0 +1,24 @@
+.tableOfContents {
+  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  overflow-y: auto;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+/* Customized Style */
+.tableOfContents > ul {
+  border-color: rgb(208 208 208);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border: 1px solid var(--ifm-toc-border-color) !important;
+}
+
+@media (max-width: 996px) {
+  .tableOfContents {
+    display: none;
+  }
+
+  .docItemContainer {
+    padding: 0 0.3rem;
+  }
+}
