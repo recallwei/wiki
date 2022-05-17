@@ -118,7 +118,6 @@ code {
 .markdown h1 {
   padding-bottom: 1rem;
   line-height: 100%;
-  font-weight: 500;
 }
 
 .markdown h2 {
@@ -128,7 +127,6 @@ code {
   line-height: 100%;
   border-left: var(--ifm-color-primary-dark) 8px solid;
   border-radius: 1px;
-  font-weight: 400;
   border-bottom: var(--ifm-color-primary-dark) 1px solid;
 }
 
@@ -138,7 +136,6 @@ code {
   line-height: 100%;
   border-left: var(--ifm-color-primary-darker) 6px solid;
   border-radius: 1px;
-  font-weight: 300;
 }
 
 .markdown img {
