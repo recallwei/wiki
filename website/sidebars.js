@@ -515,6 +515,11 @@ const sidebars = {
               id: "wexin-mini-program/solutions/remove-style-of-button",
               label: "Remove Style Of Button",
             },
+            {
+              type: "doc",
+              id: "wexin-mini-program/solutions/url-query-string-with-special-characters",
+              label: "URL Query String With Special Characters",
+            },
           ],
         },
       ],
