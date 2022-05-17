@@ -1,29 +1,31 @@
 import React from "react";
 import styles from "./styles.module.css";
+import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 
-export function List({ style, children }) {
+export default function ReferenceList({ style, data = [] }) {
   return (
     <div style={style} className={styles.unorderedList}>
-      <ul>{children}</ul>
+      <ul>
+        {data.map((item, idx) => {
+          return (
+            <li className={styles.listItem} key={idx}>
+              <ThemedImage
+                sources={{
+                  light: item.src,
+                  dark: item.srcDark ? item.srcDark : item.src,
+                }}
+                alt={item.alt}
+                loading="lazy"
+              />
+              <text className={styles.title}>{item.title + ":"}&nbsp;</text>
+              <Link to={item.link}>
+                <text className={styles.subTitle}>{item.subTitle}</text>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
-}
-
-export function ListItem({ data = [] }) {
-  return data.map((item) => {
-    return (
-      <li className={styles.listItem}>
-        <ThemedImage
-          sources={{
-            light: item.src,
-            dark: item.srcDark ? item.srcDark : item.src,
-          }}
-          alt={item.alt}
-          loading="lazy"
-        />
-        {item.title}
-      </li>
-    );
-  });
 }
