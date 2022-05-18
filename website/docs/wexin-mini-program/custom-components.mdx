@@ -1,0 +1,40 @@
+---
+title: Custom Components
+---
+
+## Create a custom component
+
+When create a component, it will automatically create `index.js`, `index.wxml`, `index.wxss` and `index.json`. "index" is the name of component and it depends on you.
+
+### Json configuration
+
+Set the `component` property to `true`, it will turn your file into a component.
+
+```json title="index.json"
+{
+  "component": true
+}
+```
+
+Add `WXML` template in `index.wxml` and `WXSS` style in `index.wxss`.
+
+```jsx title="index.wxml"
+<view class="inner">
+    {{innerText}}
+</view>
+<slot></slot>
+```
+
+```css title="index.wxss"
+.inner {
+  color: red;
+}
+```
+
+:::caution
+
+id selectors like `.sample{}` , attribute selectors like `a[target]{}` and element name selectors like `a{}` should not be used in the component's `.wxss`.
+
+:::
+
+## Use a custom component

@@ -453,8 +453,8 @@ const sidebars = {
         },
         {
           type: "doc",
-          id: "wexin-mini-program/components",
-          label: "Components",
+          id: "wexin-mini-program/custom-components",
+          label: "Custom Components",
         },
         {
           type: "category",
