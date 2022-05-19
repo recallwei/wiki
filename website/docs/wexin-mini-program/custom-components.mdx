@@ -3,6 +3,8 @@ title: Custom Components
 ---
 
 import TextHighlight from "@site/src/components/TextHighlight/index.js";
+import ReferenceList from "@site/src/components/Reference/index.js";
+import wexinMiniProgram from "@site/static/img/icon/wexin-mini-program.png";
 
 ## Create a custom component
 
@@ -205,3 +207,16 @@ Each slot has <TextHighlight>a unique name</TextHighlight> and use `slot` proper
   </view>
 </view>
 ```
+
+## Reference
+
+<ReferenceList
+  data={[
+    {
+      title: "WeXin Public Doc",
+      subTitle: "Development Custom Components",
+      src: wexinMiniProgram,
+      link: "https://developers.weixin.qq.com/miniprogram/en/dev/framework/custom-component/",
+    },
+  ]}
+/>
