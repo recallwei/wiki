@@ -5,7 +5,7 @@ import ThemedImage from "@theme/ThemedImage";
 
 export default function LinkList({ srcList = [], style }) {
   return (
-    <div style={style}>
+    <div style={style} className={styles.list}>
       {srcList.map((item) => {
         return (
           <div key={item.title} className={styles.item}>

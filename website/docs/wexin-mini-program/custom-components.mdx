@@ -33,6 +33,29 @@ Add `WXML` template in `index.wxml` and `WXSS` style in `index.wxss`.
 }
 ```
 
+It automatically create a `index.js` file and it contains a `Component` constructor.
+
+```javascript {4-8,12,16} title="index.js" showLineNumbers
+Component({
+  properties: {
+    // The innerText property is defined here, and the property value can be specified when the component is used.
+    innerText: {
+      type: String, // Define a property and specify its type.
+      value: "default value",
+    },
+    innerHTML: null, // Define a property without specifying its type.
+  },
+  data: {
+    // Here are some component internal data.
+    someData: {},
+  },
+  methods: {
+    // Here is a custom method.
+    customMethod: function () {},
+  },
+});
+```
+
 <!-- TODO Add selectors link --->
 
 :::caution
@@ -49,3 +72,136 @@ Add `WXML` template in `index.wxml` and `WXSS` style in `index.wxss`.
 :::
 
 ## Use a custom component
+
+Before using a custom component, make a reference declaration in the `.json` file of the page.
+
+```json title="index.json"
+{
+  "usingComponents": {
+    "component-element-name": "path/to/the/custom/component" // [Component Name] : [Path]
+  }
+}
+```
+
+### Use a global component
+
+Declare a component in `usingComponents` field of `app.json`, this component will be a global component. We can use it without declaring in differnt pages repeatly.
+
+```json title="app.json"
+{
+  "usingComponents": {
+    "global-component-element-name": "path/to/the/custom/component" // [Component Name] : [Path]
+  }
+}
+```
+
+### Use a nested component
+
+We can use custom components in a custom component the same as in a page. Just declare them in `usingComponents` field of `.json`.
+
+### Name specification
+
+- Since the element name of a WXML node can only be a combination of <TextHighlight>lowercase letters</TextHighlight>, <TextHighlight>hyphens</TextHighlight> `(-)`, and <TextHighlight>underscores</TextHighlight> `(_)`, the element name of a custom component can contain these characters only.
+- The name of the project's root directory where the custom components and pages are located cannot be prefixed with `"wx-"`. Otherwise, an error will occur.
+
+## Data Binding
+
+We can pass dynamic data to child component properties. Also, we can pass functions into the component.
+
+```jsx title="page.wxml"
+<view>
+  <component-element-name prop-a="{{dataFieldA}}" prop-b="{{dataFieldB}}" />
+</view>
+```
+
+Component properties are similar to [React](/docs/react) props. But we can easily use `this.setData()` to change these properties in the component.
+
+:::caution
+
+If we pass a function into the component, we can only call the function inside the component.
+
+:::
+
+## Slot
+
+A `<slot>` node can be provided in the component template to host the child nodes provided via component reference.
+
+```jsx {3} title="component.wxml" showLineNumbers
+<view class="wrapper">
+  <view>This indicates the internal node of the component.</view>
+  <slot></slot>
+</view>
+```
+
+```jsx {3} title="page.wxml" showLineNumbers
+<view>
+  <component-element-name>
+    <view>This is inserted in the slot component.</view>
+  </component-element-name>
+</view>
+```
+
+```jsx {4} title="render-result.wxml" showLineNumbers
+<view>
+  <view class="wrapper">
+    <view>This indicates the internal node of the component.</view>
+    <view>This is inserted in the slot component.</view>
+  </view>
+</view>
+```
+
+### Use Mutiple Slots
+
+By default, a component's wxml can contain only one slot. Multiple slots can be enabled by declaring in the component `.js` if needed.
+
+```jsx {3} title="component.js" showLineNumbers
+Component({
+  options: {
+    multipleSlots: true, // Enable multiple slots in the options of component definition.
+  },
+  properties: {
+    /* ... */
+  },
+  methods: {
+    /* ... */
+  },
+});
+```
+
+Each slot has <TextHighlight>a unique name</TextHighlight> and use `slot` property to insert nodes into differnt slots.
+
+```jsx {2,4} title="component.wxml" showLineNumbers
+<view class="wrapper">
+  <slot name="before"></slot>
+  <view>This indicates the internal details of the component.</view>
+  <slot name="after"></slot>
+</view>
+```
+
+```jsx {3-5,7-9} title="page.wxml" showLineNumbers
+<view>
+  <component-element-name>
+    <view slot="before">
+      This is inserted in the slot name="before" component.
+    </view>
+
+    <view slot="after">
+      This is inserted in the slot name="after" component.
+    </view>
+  </component-element-name>
+</view>
+```
+
+```jsx {3-5,7-9} title="render-result.wxml" showLineNumbers
+<view>
+  <view class="wrapper">
+    <view slot="before">
+      This is inserted in the slot name="before" component.
+    </view>
+    <view>This indicates the internal details of the component.</view>
+    <view slot="after">
+      This is inserted in the slot name="after" component.
+    </view>
+  </view>
+</view>
+```
