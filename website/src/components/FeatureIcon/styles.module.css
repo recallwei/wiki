@@ -1,8 +1,7 @@
 .featureIconArea {
+  width: 100%;
   text-align: center;
-  min-width: 128px;
-  max-width: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .featureIconArea > img {
@@ -18,4 +17,8 @@
 .title {
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.title::selection {
+  color: var(--ifm-color-primary);
 }
