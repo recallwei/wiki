@@ -2,6 +2,8 @@
 title: Custom Components
 ---
 
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
 ## Create a custom component
 
 When create a component, it will automatically create `index.js`, `index.wxml`, `index.wxss` and `index.json`. "index" is the name of component and it depends on you.
@@ -31,9 +33,18 @@ Add `WXML` template in `index.wxml` and `WXSS` style in `index.wxss`.
 }
 ```
 
+<!-- TODO Add selectors link --->
+
 :::caution
 
-id selectors like `.sample{}` , attribute selectors like `a[target]{}` and element name selectors like `a{}` should not be used in the component's `.wxss`.
+<p>
+  <TextHighlight>Just use class selectors</TextHighlight>. Id selectors like
+  <code>.sample{"{}"}</code> , attribute selectors like <code>
+    a[target]{"{}"}
+  </code> and element name selectors like <code>a{"{}"}</code> should not be used
+  in the component's
+  <code>.wxss</code>.
+</p>
 
 :::
 
