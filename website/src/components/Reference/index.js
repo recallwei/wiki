@@ -3,9 +3,9 @@ import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 
-export default function ReferenceList({ style, data = [] }) {
+export default function ReferenceList({ customStyle, data = [] }) {
   return (
-    <div style={style} className={styles.unorderedList}>
+    <div style={customStyle} className={styles.unorderedList}>
       <ul>
         {data.map((item, idx) => {
           return (
@@ -18,9 +18,9 @@ export default function ReferenceList({ style, data = [] }) {
                 alt={item.alt}
                 loading="lazy"
               />
-              <text className={styles.title}>{item.title + ":"}&nbsp;</text>
+              <div className={styles.title}>{item.title + ":"}&nbsp;</div>
               <Link to={item.link}>
-                <text className={styles.subTitle}>{item.subTitle}</text>
+                <div className={styles.subTitle}>{item.subTitle}</div>
               </Link>
             </li>
           );

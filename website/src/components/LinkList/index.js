@@ -3,10 +3,10 @@ import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 
-export default function LinkList({ srcList = [], style }) {
+export default function LinkList({ customStyle, data = [] }) {
   return (
-    <div style={style} className={styles.list}>
-      {srcList.map((item) => {
+    <div style={customStyle} className={styles.list}>
+      {data.map((item) => {
         return (
           <div key={item.title} className={styles.item}>
             <Link to={item.link}>
@@ -15,7 +15,7 @@ export default function LinkList({ srcList = [], style }) {
                   light: item.src,
                   dark: item.srcDark ? item.srcDark : item.src,
                 }}
-                alt={item.alt}
+                alt={item.title}
                 loading="lazy"
               />
               {item.title}
