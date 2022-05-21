@@ -269,7 +269,9 @@ Component({
 
 - `isolated` indicates that the style isolation is enabled. Styles specified via class (default styles in normal cases) are <TextHighlight>not mutually affected in or outside custom components</TextHighlight>.
 - `apply-shared` indicates that the page's `.wxss` style will affect custom components. However, the style specified in the `.wxss` of custom components will <TextHighlight>not affect the page</TextHighlight>.
-- `shared` indicates that the page's `.wxss` style will affect custom components, and the style specified in the `.wxss` of custom components will also <TextHighlight>affect the page and other custom components configured with apply-shared or shared</TextHighlight>. (This option is not available in plugins.)
+- `shared` `Default` indicates that the page's `.wxss` style will affect custom components, and the style specified in the `.wxss` of custom components will also <TextHighlight>affect the page and other custom components configured with apply-shared or shared</TextHighlight>. (This option is not available in plugins.)
+
+If
 
 ## Reference
 
@@ -283,5 +285,3 @@ Component({
     },
   ]}
 />
-
-## CSS
