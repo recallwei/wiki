@@ -7,14 +7,13 @@ import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import npm from "@site/static/img/icon/npm.png";
 
-<FeatureIcon src={npm} alt="npm" title="npm" />
+<FeatureIcon src={npm} title="npm" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "patch-package",
       link: "/docs/npm/patch-package",
       src: npm,
-      alt: "patch-package",
     },
   ]}
 />

@@ -9,40 +9,31 @@ import markdown from "@site/static/img/icon/markdown.png";
 import markdownDarkMode from "@site/static/img/icon-dark-mode/markdown.png";
 import html from "@site/static/img/icon/html.png";
 
-<FeatureIcon
-  src={markdown}
-  srcDark={markdownDarkMode}
-  alt="Markdown"
-  title="Markdown"
-/>
+<FeatureIcon src={markdown} srcDark={markdownDarkMode} title="Markdown" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Embed HTML",
       link: "/docs/markdown/embed-html",
       src: html,
-      alt: "Embed HTML",
     },
     {
       title: "Headings",
       link: "/docs/markdown/headings",
       src: markdown,
       srcDark: markdownDarkMode,
-      alt: "Headings",
     },
     {
       title: "Paragraphs",
       link: "/docs/markdown/paragraphs",
       src: markdown,
       srcDark: markdownDarkMode,
-      alt: "Paragraphs",
     },
     {
       title: "Line Breaks",
       link: "/docs/markdown/line-breaks",
       src: markdown,
       srcDark: markdownDarkMode,
-      alt: "Line Breaks",
     },
   ]}
 />

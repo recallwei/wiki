@@ -7,26 +7,23 @@ import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import javascript from "@site/static/img/icon/javascript.png";
 
-<FeatureIcon src={javascript} alt="Value Types" title="Value Types" />
+<FeatureIcon src={javascript} title="Value Types" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Number",
       link: "/docs/javascript/value-types/number",
       src: javascript,
-      alt: "Number",
     },
     {
       title: "String",
       link: "/docs/javascript/value-types/string",
       src: javascript,
-      alt: "String",
     },
     {
       title: "Type Conversion",
       link: "/docs/javascript/value-types/type-conversion",
       src: javascript,
-      alt: "Type Conversion",
     },
   ]}
 />

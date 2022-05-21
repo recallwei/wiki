@@ -7,20 +7,18 @@ import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import wexinMiniProgram from "@site/static/img/icon/wexin-mini-program.png";
 
-<FeatureIcon src={wexinMiniProgram} alt="API" title="API" />
+<FeatureIcon src={wexinMiniProgram} title="API" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Clipboard",
       link: "/docs/wexin-mini-program/api/clipboard",
       src: wexinMiniProgram,
-      alt: "Clipboard",
     },
     {
       title: "Share",
       link: "/docs/wexin-mini-program/api/share",
       src: wexinMiniProgram,
-      alt: "Share",
     },
   ]}
 />

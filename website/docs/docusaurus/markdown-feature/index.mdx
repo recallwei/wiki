@@ -7,32 +7,28 @@ import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import docusaurus from "@site/static/img/icon/docusaurus.png";
 
-<FeatureIcon src={docusaurus} alt="Markdown Feature" title="Markdown Feature" />
+<FeatureIcon src={docusaurus} title="Markdown Feature" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Basic Feature",
       link: "/docs/docusaurus/markdown-feature/basic-feature",
       src: docusaurus,
-      alt: "Basic Feature",
     },
     {
       title: "Code Block",
       link: "/docs/docusaurus/markdown-feature/code-block",
       src: docusaurus,
-      alt: "Code Block",
     },
     {
       title: "Admonitions",
       link: "/docs/docusaurus/markdown-feature/admonitions",
       src: docusaurus,
-      alt: "Admonitions",
     },
     {
       title: "React Components",
       link: "/docs/docusaurus/markdown-feature/mdx-and-react-components",
       src: docusaurus,
-      alt: "React Components",
     },
   ]}
 />

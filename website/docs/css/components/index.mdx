@@ -7,20 +7,18 @@ import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import css from "@site/static/img/icon/css.png";
 
-<FeatureIcon src={css} alt="Components" title="Components" />
+<FeatureIcon src={css} title="Components" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Card",
       link: "/docs/css/components/card",
       src: css,
-      alt: "Card",
     },
     {
       title: "Ribbon",
       link: "/docs/css/components/ribbon",
       src: css,
-      alt: "Ribbon",
     },
   ]}
 />

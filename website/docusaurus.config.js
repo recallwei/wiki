@@ -110,6 +110,7 @@ const config = {
           href: "/",
           width: 40,
           height: 40,
+          alt: "bruce",
         },
         style: "light", // "light" | "dark"
         links: [],

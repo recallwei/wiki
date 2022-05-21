@@ -15,7 +15,7 @@ export default function ReferenceList({ customStyle, data = [] }) {
                   light: item.src,
                   dark: item.srcDark ? item.srcDark : item.src,
                 }}
-                alt={item.alt}
+                alt={item.title + ": " + item.subTitle}
                 loading="lazy"
               />
               <div className={styles.title}>{item.title + ":"}&nbsp;</div>
