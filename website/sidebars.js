@@ -572,6 +572,36 @@ const sidebars = {
         },
       ],
     },
+    // OS
+    {
+      type: "category",
+      label: "OS",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "os/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "macOS",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "os/mac-os/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "os/mac-os/shortcuts",
+              label: "Shortcuts",
+            },
+          ],
+        },
+      ],
+    },
     // Design
     {
       type: "category",

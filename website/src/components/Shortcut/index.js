@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-export default function Shortcut({ children, style }) {
+export default function Shortcut({ customStyle, children }) {
   return (
-    <span className={styles.shortcut} style={style}>
+    <span className={styles.shortcut} style={customStyle}>
       {children}
     </span>
   );
