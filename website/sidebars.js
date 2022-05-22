@@ -308,7 +308,7 @@ const sidebars = {
             {
               type: "doc",
               id: "react/dom/dom-elements",
-              label: "DOM 元素",
+              label: "DOM Elements",
             },
           ],
         },
