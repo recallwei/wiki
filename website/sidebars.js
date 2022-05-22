@@ -435,26 +435,26 @@ const sidebars = {
         },
       ],
     },
-    // Wechat Mini Program
+    // WeXin Mini Program
     {
       type: "category",
-      label: "Wechat Mini Program",
+      label: "WeXin Mini Program",
       collapsible: true,
       collapsed: true,
       link: {
         type: "doc",
-        id: "wechat-mini-program/index",
+        id: "wexin-mini-program/index",
       },
       items: [
         {
           type: "doc",
-          id: "wechat-mini-program/configuration",
+          id: "wexin-mini-program/configuration",
           label: "Configuration",
         },
         {
           type: "doc",
-          id: "wechat-mini-program/components",
-          label: "Components",
+          id: "wexin-mini-program/custom-components",
+          label: "Custom Components",
         },
         {
           type: "category",
@@ -463,17 +463,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "wechat-mini-program/wxml/index",
+            id: "wexin-mini-program/wxml/index",
           },
           items: [
             {
               type: "doc",
-              id: "wechat-mini-program/wxml/data-binding",
+              id: "wexin-mini-program/wxml/data-binding",
               label: "Data Binding",
             },
             {
               type: "doc",
-              id: "wechat-mini-program/wxml/template",
+              id: "wexin-mini-program/wxml/template",
               label: "Template",
             },
           ],
@@ -485,17 +485,17 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "wechat-mini-program/api/index",
+            id: "wexin-mini-program/api/index",
           },
           items: [
             {
               type: "doc",
-              id: "wechat-mini-program/api/clipboard",
+              id: "wexin-mini-program/api/clipboard",
               label: "Clipboard",
             },
             {
               type: "doc",
-              id: "wechat-mini-program/api/share",
+              id: "wexin-mini-program/api/share",
               label: "Share",
             },
           ],
@@ -507,13 +507,18 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "wechat-mini-program/solutions/index",
+            id: "wexin-mini-program/solutions/index",
           },
           items: [
             {
               type: "doc",
-              id: "wechat-mini-program/solutions/remove-style-of-button",
+              id: "wexin-mini-program/solutions/remove-style-of-button",
               label: "Remove Style Of Button",
+            },
+            {
+              type: "doc",
+              id: "wexin-mini-program/solutions/url-query-string-with-special-characters",
+              label: "URL Query String With Special Characters",
             },
           ],
         },

@@ -8,24 +8,18 @@ import LinkList from "@site/src/components/LinkList/index.js";
 import visualStudioCode from "@site/static/img/icon/visual-studio-code.png";
 import git from "@site/static/img/icon/git.png";
 
-<FeatureIcon
-  src={visualStudioCode}
-  alt="Visual Studio Code"
-  title="Visual Studio Code"
-/>
+<FeatureIcon src={visualStudioCode} title="Visual Studio Code" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Git",
       link: "/docs/ide/visual-studio-code/git",
       src: git,
-      alt: "Git",
     },
     {
       title: "Shortcuts",
       link: "/docs/ide/visual-studio-code/shortcuts",
       src: visualStudioCode,
-      alt: "Shortcuts",
     },
   ]}
 />

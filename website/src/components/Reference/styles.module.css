@@ -1,9 +1,17 @@
 .unorderedList {
-  background-color: white;
-  border: 0.0625rem solid rgb(215, 217, 226);
   border-radius: var(--ifm-code-border-radius); /* 0.4rem */
   padding: 0.8rem;
+}
+
+[data-theme="light"] .unorderedList {
+  border: 0.0625rem solid rgb(215, 217, 226);
   box-shadow: 0px 1px 2px 0px rgb(215 217 226);
+}
+
+[data-theme="dark"] .unorderedList {
+  background-color: var(--dracula-color-primary);
+  border: 0.0625rem solid var(--dracula-color-primary);
+  box-shadow: 0px 1px 2px 0px var(--dracula-color-primary);
 }
 
 .unorderedList ul {
@@ -33,4 +41,16 @@
 
 .subTitle {
   font-style: italic;
+}
+
+.linkSVG {
+  display: inline-flex;
+  align-content: center;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+[data-theme="dark"] .linkSVG [stroke="#000"] {
+  stroke: white;
 }

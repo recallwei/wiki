@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
+import LinkSVG from "@site/static/img/svg/link.svg";
 
-export default function ReferenceList({ style, data = [] }) {
+export default function ReferenceList({ customStyle, data = [] }) {
   return (
-    <div style={style} className={styles.unorderedList}>
+    <div style={customStyle} className={styles.unorderedList}>
       <ul>
         {data.map((item, idx) => {
           return (
@@ -15,12 +16,15 @@ export default function ReferenceList({ style, data = [] }) {
                   light: item.src,
                   dark: item.srcDark ? item.srcDark : item.src,
                 }}
-                alt={item.alt}
+                alt={item.title + ": " + item.subTitle}
                 loading="lazy"
               />
-              <text className={styles.title}>{item.title + ":"}&nbsp;</text>
+              <div className={styles.title}>{item.title + ":"}&nbsp;</div>
               <Link to={item.link}>
-                <text className={styles.subTitle}>{item.subTitle}</text>
+                <div className={styles.subTitle}>
+                  {item.subTitle}
+                  <LinkSVG className={styles.linkSVG} />
+                </div>
               </Link>
             </li>
           );

@@ -7,33 +7,29 @@ import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import css from "@site/static/img/icon/css.png";
 
-<FeatureIcon src={css} alt="CSS" title="CSS" />
+<FeatureIcon src={css} title="CSS" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Selectors",
       link: "/docs/css/selectors",
       src: css,
-      alt: "Selectors",
     },
     {
       title: "Flex Box",
       link: "/docs/css/flex-box",
       src: css,
-      alt: "Flex Box",
     },
-    { title: "Font", link: "/docs/css/font", src: css, alt: "Font" },
+    { title: "Font", link: "/docs/css/font", src: css },
     {
       title: "Properties",
       link: "/docs/css/properties",
       src: css,
-      alt: "Property",
     },
     {
       title: "Components",
       link: "/docs/css/components",
       src: css,
-      alt: "Components",
     },
   ]}
 />

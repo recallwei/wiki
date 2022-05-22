@@ -3,20 +3,20 @@ import styles from "./styles.module.css";
 import ThemedImage from "@theme/ThemedImage";
 
 export default function FeatureIcon({
+  customStyle,
   src,
   srcDark,
-  alt,
   title,
   onClick = () => {},
 }) {
   return (
-    <div className={styles.featureIconArea}>
+    <div className={styles.featureIconArea} style={customStyle}>
       <ThemedImage
         sources={{
           light: src,
           dark: srcDark ? srcDark : src,
         }}
-        alt={alt}
+        alt={title}
         loading="lazy"
         onClick={onClick}
       />

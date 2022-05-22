@@ -38,6 +38,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 10);
+  --dracula-color-primary: #383a59;
 }
 
 /* Header Github Icon */
@@ -105,8 +106,6 @@ code {
   /* 使用 JetBrains Mono 字体 */
   /* font-family: "JetBrains Mono", monospace !important; */
   /* font-family: var(--base-font-family) !important; */
-  padding-left: 3px;
-  padding-right: 3px;
 }
 
 .markdown h1,
@@ -132,7 +131,6 @@ code {
 
 .markdown h3 {
   padding-left: 10px;
-  padding-bottom: 6px;
   line-height: 100%;
   border-left: var(--ifm-color-primary-darker) 6px solid;
   border-radius: 1px;

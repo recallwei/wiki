@@ -1,0 +1,105 @@
+---
+title: URL Query String With Special Characters
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+## Problem description
+
+I want to navigate to this page in the code below:
+
+```javascript {2}
+wx.navigateTo({
+  url: "/page/tagPage/index?url=https://github.com/recallwei/wiki/projects?type=beta",
+});
+```
+
+## URL encoding rule
+
+Some characters cannot be part of a URL (for example, the `space`) and some other characters have a special meaning in a URL.
+
+For example, the character `#` can be used to further specify a subsection (or fragment) of a document. In HTML forms, the character `=` is used to separate a name from a value. The URI generic syntax uses URL encoding to deal with this problem, while HTML forms make some additional substitutions rather than applying `percent encoding` for all such characters. `SPACE` is encoded as `'+'` or `"%20"`.
+
+HTML 5 specifies the following transformation for submitting HTML forms with the `"GET"` method to a web server. The following is a brief summary of the algorithm:
+
+<li>
+  Characters that cannot be converted to the correct charset are replaced with
+  HTML numeric character references.
+</li>
+<li>
+  <code>SPACE</code> is encoded as <code>'+'</code> or <code>'%20'</code>.
+</li>
+<li>
+  <TextHighlight>Letters (A–Z and a–z), numbers (0–9)</TextHighlight>
+  and the characters <code>'~'</code>, <code>'-'</code>, <code>'.'</code> and <code>
+    '\_'
+  </code> are <TextHighlight>left as-is</TextHighlight>.
+</li>
+<li>
+  <code>+</code> is encoded by <code>%2B</code> - All other characters are
+  encoded as a <TextHighlight>%HH hexadecimal representation</TextHighlight>
+  with any non-ASCII characters first encoded as UTF-8 (or other specified encoding).
+</li>
+
+## Encode and decode
+
+Encode the parameter when pass the URL, and decode it after page loading.
+
+<!-- TODO Difference between these encode and decode method -->
+
+- `encodeURIComponent()` and `decodeURIComponent()`.
+- `escape()` and `unescape()`.
+
+<Tabs>
+<TabItem value="encodeURIComponent/decodeURIComponent" label="encodeURIComponent / decodeURIComponent">
+
+```javascript {3,8} showLineNumbers
+let url = "/page/tagPage/index?url=https://github.com/recallwei/wiki/projects?type=beta";
+wx.navigateTo({
+    url: `/page/tagPage/index?url=${encodeURIComponent("https://github.com/recallwei/wiki/projects?type=beta")}`,// expected: https%3A%2F%2Fgithub.com%2Frecallwei%2Fwiki%2Fprojects%3Ftype%3Dbeta
+});
+onLoad: function (options) {
+    console.log(options);
+    let query = options.url;
+    query = decodeURIComponent(query); // expected: https://github.com/recallwei/wiki/projects?type=beta
+    console.log(query);
+}
+```
+
+</TabItem >
+<TabItem value="escape/unescape" label="escape / unescape">
+
+```javascript {3,8} showLineNumbers
+let url = "/page/tagPage/index?url=https://github.com/recallwei/wiki/projects?type=beta";
+wx.navigateTo({
+    url: `/page/tagPage/index?url=${escape("https://github.com/recallwei/wiki/projects?type=beta")}`,// expected: https%3A%2F%2Fgithub.com%2Frecallwei%2Fwiki%2Fprojects%3Ftype%3Dbeta
+});
+onLoad: function (options) {
+    console.log(options);
+    let query = options.url;
+    query = unescape(query); // expected: https://github.com/recallwei/wiki/projects?type=beta
+    console.log(query);
+}
+```
+
+</TabItem >
+</Tabs>
+
+## Storage
+
+Use local storage, query string will not lost.
+
+```javascript
+wx.setStorageSync("paramName", "paramValue");
+```
+
+```javascript
+wx.getStorage({
+  key: "paramName",
+  success: function (res) {
+    console.log(res.data);
+  },
+});
+```

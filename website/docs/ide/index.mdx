@@ -8,14 +8,13 @@ import LinkList from "@site/src/components/LinkList/index.js";
 import ide from "@site/static/img/icon/ide.png";
 import visualStudioCode from "@site/static/img/icon/visual-studio-code.png";
 
-<FeatureIcon src={ide} alt="IDE" title="IDE" />
+<FeatureIcon src={ide} title="IDE" />
 <LinkList
-  srcList={[
+  data={[
     {
       title: "Visual Studio Code",
       link: "/docs/ide/visual-studio-code",
       src: visualStudioCode,
-      alt: "Visual Studio Code",
     },
   ]}
 />

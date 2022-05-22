@@ -1,6 +1,11 @@
 .highlightArea {
   border-radius: 0.2rem;
   color: #fff;
-  padding: 1.6px 3px;
-  border: 0.1rem;
+  border: 0.1rem solid;
+  background-color: var(--ifm-code-background);
+  border-radius: var(--ifm-code-border-radius);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-code-font-size);
+  padding: var(--ifm-code-padding-vertical) var(--ifm-code-padding-horizontal);
+  vertical-align: middle;
 }

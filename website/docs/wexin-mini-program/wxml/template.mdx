@@ -1,0 +1,76 @@
+---
+title: Template
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
+## Definition
+
+Actually, **Template** is a code snippet. It can reduce redundant code. We can call them in different places.
+
+## Syntax
+
+### Define a template
+
+Use the `name` property to specify the name of template.
+
+Then, define a code snippet in `<template />`.
+
+```jsx
+<template name="msgItem">
+  <view>
+    <text>
+      {{ index }}: {{ msg }}
+    </text>
+    <text> Time: {{ time }} </text>
+  </view>
+</template>
+```
+
+### Use a template
+
+Use the `is` property to declare the template to be used.
+
+Then, pass the data to the template.
+
+```jsx
+<template is="template-name" data="{{...item}}" />
+```
+
+```javascript
+Page({
+  data: {
+    item: {
+      index: 0,
+      msg: "Hello world!",
+      time: "2022-07-15",
+    },
+  },
+});
+```
+
+## Conditional rendering
+
+```jsx
+<template name="template1">
+  <view>This is template1!</view>
+</template>
+<template name="template2">
+  <view>This is template2!</view>
+</template>
+<template is="{{num>0 ? 'plus' : 'template2'}}" />;
+```
+
+## Template scope
+
+Templates can only use the data passed by `data` and the `<wxs />` module defined in the file defined by the Template.
+
+### Template CSS style does't work
+
+We should take care of the scope in WeXin Mini Program. Import **Template** and <TextHighlight>its .css file</TextHighlight> at the same time.
+
+## Templates VS Components
+
+Templates used to be using as a repeat code snippet because of its limited ablility. We can only pass data into the it to describe. But Components have its own lifetimes. So it can process or compute data independently.
+
+Commonly, we use templates to build a <TextHighlight>stateless component</TextHighlight> and use components to build a <TextHighlight>stateful component</TextHighlight>.
