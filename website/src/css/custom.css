@@ -106,7 +106,6 @@ code {
   /* 使用 JetBrains Mono 字体 */
   /* font-family: "JetBrains Mono", monospace !important; */
   /* font-family: var(--base-font-family) !important; */
-  padding: 0 3px 0 3px;
 }
 
 .markdown h1,
