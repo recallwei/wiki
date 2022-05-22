@@ -50,3 +50,7 @@
   height: 12px;
   margin: 0 5px;
 }
+
+[data-theme="dark"] .linkSVG [stroke="#000"] {
+  stroke: white;
+}
