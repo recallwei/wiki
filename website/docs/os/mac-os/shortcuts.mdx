@@ -3,16 +3,62 @@ title: Shortcuts
 ---
 
 import Shortcut from "@site/src/components/Shortcut/index.js";
+import Table from "@site/src/components/Table/index.js";
 
-Configure keyboard shortcuts in "System Preferences -> Keyboard".
+Configure keyboard shortcuts in "System Preferences - Keyboard".
 
 ## Mission Control
 
-Mission Control <Shortcut>^</Shortcut> + <Shortcut>&uarr;</Shortcut>
-Show application windows <Shortcut>^</Shortcut> + <Shortcut>&darr;</Shortcut>
-Show Desktop <Shortcut>F11</Shortcut>
-Move left a space <Shortcut>^&larr;</Shortcut> + <Shortcut>&larr;</Shortcut>
-Move right a space <Shortcut>^&rarr;</Shortcut> + <Shortcut>&rarr;</Shortcut>
-Switch to desktop 1 <Shortcut>^</Shortcut> + <Shortcut>1</Shortcut>
-Switch to desktop 'N' <Shortcut>^</Shortcut> + <Shortcut>'N'</Shortcut>
-Quick Note <Shortcut>fn</Shortcut> + <Shortcut>Q</Shortcut>
+<Table
+  data={{
+    position: ["start", "center"],
+    header: ["Function", "Keyboard"],
+    body: {
+      items: [
+        [
+          "Mission Control",
+          <div>
+            <Shortcut>^</Shortcut> + <Shortcut>&uarr;</Shortcut>
+          </div>,
+        ],
+        [
+          "Show application windows",
+          <div>
+            <Shortcut>^</Shortcut> + <Shortcut>&darr;</Shortcut>
+          </div>,
+        ],
+        ["Show Desktop", <Shortcut>F11</Shortcut>],
+        [
+          "Move left a space",
+          <div>
+            <Shortcut>^&larr;</Shortcut> + <Shortcut>&larr;</Shortcut>
+          </div>,
+        ],
+        [
+          "Move right a space",
+          <div>
+            <Shortcut>^&rarr;</Shortcut> + <Shortcut>&rarr;</Shortcut>
+          </div>,
+        ],
+        [
+          "Switch to desktop 1",
+          <div>
+            <Shortcut>^</Shortcut> + <Shortcut>1</Shortcut>
+          </div>,
+        ],
+        [
+          "Switch to desktop 'N'",
+          <div>
+            <Shortcut>^</Shortcut> + <Shortcut>'N'</Shortcut>
+          </div>,
+        ],
+        [
+          "Quick Note",
+          <div>
+            <Shortcut>fn</Shortcut> + <Shortcut>Q</Shortcut>
+          </div>,
+        ],
+      ],
+    },
+  }}
+/>

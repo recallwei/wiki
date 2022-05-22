@@ -13,3 +13,7 @@
   line-height: normal;
   white-space: nowrap;
 }
+
+[data-theme="dark"] .shortcut {
+  color: black;
+}

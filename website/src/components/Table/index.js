@@ -29,10 +29,10 @@ export default function Table({ data = [] }) {
                     <th
                       key={idx}
                       style={{
-                        textAlign: `${getPosition(x.position)}`,
+                        textAlign: `${getPosition(data.position[idx])}`,
                       }}
                     >
-                      {x.title}
+                      {x}
                     </th>
                   );
                 })}
@@ -51,9 +51,7 @@ export default function Table({ data = [] }) {
                           role="gridcell"
                           key={idx}
                           style={{
-                            textAlign: `${getPosition(
-                              data.body.position[idx]
-                            )}`,
+                            textAlign: `${getPosition(data.position[idx])}`,
                           }}
                         >
                           {y}
@@ -72,10 +70,10 @@ export default function Table({ data = [] }) {
                     <th
                       key={idx}
                       style={{
-                        textAlign: `${getPosition(x.position)}`,
+                        textAlign: `${getPosition(data.position[idx])}`,
                       }}
                     >
-                      {x.title}
+                      {x}
                     </th>
                   );
                 })}

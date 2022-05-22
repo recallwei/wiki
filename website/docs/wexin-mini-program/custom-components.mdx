@@ -270,16 +270,16 @@ Component({
 
 <Table
   data={{
+    position: ["start", "center", "center", "center", "center", "start"],
     header: [
-      { title: "Value", position: "start" },
-      { title: "ComponentType", position: "center" },
-      { title: "Affect inner style", position: "center" },
-      { title: "Affect outer style", position: "center" },
-      { title: "Affect by outer style", position: "center" },
-      { title: "Remarks", position: "start" },
+      "Value",
+      "ComponentType",
+      "Affect inner style",
+      "Affect outer style",
+      "Affect by outer style",
+      "Remarks",
     ],
     body: {
-      position: ["start", "center", "center", "center", "center", "start"],
       items: [
         [
           <code>isolated</code>,

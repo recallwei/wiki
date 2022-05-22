@@ -47,7 +47,6 @@
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   line-height: 1rem;
-  font-size: 0.9rem;
 }
 
 .tableArea tr {
@@ -60,7 +59,6 @@
 
 .tableArea tbody {
   display: table-row-group;
-  font-size: 0.75rem;
 }
 
 .tableArea tbody tr:last-child {
