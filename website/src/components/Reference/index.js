@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
+import LinkSVG from "@site/static/img/svg/link.svg";
 
 export default function ReferenceList({ customStyle, data = [] }) {
   return (
@@ -20,7 +21,10 @@ export default function ReferenceList({ customStyle, data = [] }) {
               />
               <div className={styles.title}>{item.title + ":"}&nbsp;</div>
               <Link to={item.link}>
-                <div className={styles.subTitle}>{item.subTitle}</div>
+                <div className={styles.subTitle}>
+                  {item.subTitle}
+                  <LinkSVG className={styles.linkSVG} />
+                </div>
               </Link>
             </li>
           );
