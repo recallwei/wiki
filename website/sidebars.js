@@ -56,6 +56,11 @@ const sidebars = {
           id: "html/elements",
           label: "Elements",
         },
+        {
+          type: "doc",
+          id: "html/character-entities",
+          label: "Character Entities",
+        },
       ],
     },
     // CSS
