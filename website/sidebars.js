@@ -580,6 +580,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Wechat Devtools",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "ide/wechat-dev-tools/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "ide/wechat-dev-tools/settings",
+              label: "Settings",
+            },
+          ],
+        },
       ],
     },
     // OS
