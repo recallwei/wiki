@@ -627,6 +627,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Windows",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "os/windows/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "os/windows/expose-iis-in-lan",
+              label: "Expose IIS in LAN",
+            },
+          ],
+        },
       ],
     },
     // Design
