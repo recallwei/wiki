@@ -1,0 +1,28 @@
+---
+title: Shortcuts
+---
+
+import Shortcut from "@site/src/components/Shortcut/index.js";
+import Table from "@site/src/components/Table/index.js";
+
+## Important
+
+<Table
+  data={{
+    position: ["start", "center", "center"],
+    header: ["Function", "macOS", "Windows"],
+    body: {
+      items: [
+        [
+          "Pick Color",
+          <div>
+            <Shortcut>^</Shortcut> + <Shortcut>C</Shortcut>
+          </div>,
+          <div>
+            <Shortcut>I</Shortcut>
+          </div>,
+        ],
+      ],
+    },
+  }}
+/>

@@ -656,7 +656,24 @@ const sidebars = {
         type: "doc",
         id: "design/index",
       },
-      items: [],
+      items: [
+        {
+          type: "category",
+          label: "Figma",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "design/figma/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "design/figma/shortcuts",
+            },
+          ],
+        },
+      ],
     },
   ],
   backend: [
