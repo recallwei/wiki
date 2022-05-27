@@ -1,0 +1,50 @@
+---
+title: Expose IIS in LAN
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
+My mac cannot access IIS server because of <TextHighlight>IIS server does not support running on macOS</TextHighlight>. And I want to use my mac to call the API on another Windows computer via LAN.
+
+## Get IPv4 Address on Windows
+
+We need to make sure our computers on the same LAN.
+
+Open the cmd and type `ipconfig` to check your IPv4 Address.
+
+```powershell
+ipconfig
+```
+
+```powershell
+IPv4 Address. . . . . . . . . . . : 192.168.0.112
+```
+
+## Configure IISExpress
+
+Check the file `applicationhost.config` and change the `bindingInformation`.
+
+This file is located in the hidden directory `.vs/config`.
+
+You can find the configuration file through the IIS Express icon in the bottom right corner.
+
+```xml {7} title="applicationhost.config"
+<site name="HMediaCore.Bff.MiniApp" id="9">
+<application path="/" applicationPool="HMediaCore.Bff.MiniApp AppPool">
+<virtualDirectory path="/" physicalPath="C:\repo\HMediaCore\src\HMediaCore.Bff.MiniApp" />
+</application>
+<bindings>
+<binding protocol="http" bindingInformation="*:4738:localhost" />
+<binding protocol="https" bindingInformation="*:44305:192.168.0.1" />
+<!-- *:Port:IPv4 Address -->
+</bindings>
+</site>
+```
+
+Then open Visual Studio as <TextHighlight>administrator</TextHighlight>.
+
+## Configure Firewall
+
+Open the Control Panel / System and Safe / Windows Defender Firewall. Then select advance settings and <TextHighlight>create a new inbound rule</TextHighlight>.
+
+At last, we can access the API on the windows computer via LAN. It is a good way for the front-end developer to call the back-end local API.
