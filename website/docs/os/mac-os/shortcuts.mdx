@@ -9,6 +9,8 @@ Configure keyboard shortcuts in "System Preferences - Keyboard".
 
 ## Mission Control
 
+<!-- ⌘ (command), ⌥（option/alt）, ⇧（shift）, ⌃（control）, ⎋（esc） -->
+
 <Table
   data={{
     position: ["start", "center"],
@@ -24,7 +26,7 @@ Configure keyboard shortcuts in "System Preferences - Keyboard".
         [
           "Show application windows",
           <div>
-            <Shortcut>^</Shortcut> + <Shortcut>&darr;</Shortcut>
+            <Shortcut>⌃</Shortcut> + <Shortcut>&darr;</Shortcut>
           </div>,
         ],
         ["Show Desktop", <Shortcut>F11</Shortcut>],
@@ -56,6 +58,26 @@ Configure keyboard shortcuts in "System Preferences - Keyboard".
           "Quick Note",
           <div>
             <Shortcut>fn</Shortcut> + <Shortcut>Q</Shortcut>
+          </div>,
+        ],
+      ],
+    },
+  }}
+/>
+
+## Input method editor
+
+<Table
+  data={{
+    position: ["start", "center"],
+    header: ["Function", "Keyboard"],
+    body: {
+      items: [
+        [
+          "Show Emojis & Symbols",
+          <div>
+            <Shortcut>⌘</Shortcut> + <Shortcut>⌃</Shortcut> +{" "}
+            <Shortcut>Space</Shortcut>
           </div>,
         ],
       ],

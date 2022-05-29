@@ -525,6 +525,16 @@ const sidebars = {
               id: "wexin-mini-program/solutions/url-query-string-with-special-characters",
               label: "URL Query String With Special Characters",
             },
+            {
+              type: "doc",
+              id: "wexin-mini-program/solutions/create-share-poster",
+              label: "Create Share Poster",
+            },
+            {
+              type: "doc",
+              id: "wexin-mini-program/solutions/device-adaptation",
+              label: "Device Adaptation",
+            },
           ],
         },
       ],
