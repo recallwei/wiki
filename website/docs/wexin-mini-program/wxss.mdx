@@ -1,0 +1,47 @@
+---
+title: WXSS
+---
+
+import TextHighlight from "@site/src/components/TextHighlight/index.js";
+
+## Dimension Unit
+
+WXSS use "rpx" (responsive pixel) to adapt the screen width. It specified screen width is 750 rpx. We commonly use iPhone6 as the standard of visual view design.
+
+Screen width on iPhone6 is 375px (750 physical pixels), then 750 rpx = 375 px = 750 physical pixels, i.e. 1 rpx = 0.5 px = 1 physical pixel.
+
+:::caution
+Always use `rpx` instead of using `px` or `rem`.
+:::
+
+## Style Import
+
+Use `@import` statement to import external style sheet. `@import` statement must followed by <TextHighlight>relative path</TextHighlight> and <TextHighlight>;</TextHighlight>.
+
+```css title="index.wxss"
+@import "app.wxss";
+```
+
+## Inline Style
+
+Always use `class` for static style and `style` for dynamic style.
+
+Avoid using static style in `style`, it will affect the rendering speed.
+
+```jsx title="index.wxml"
+<view class="view" style="color: {{color}};"></view>
+```
+
+```css title="index.wxss"
+view {
+  font-size: 20rpx;
+}
+```
+
+:::caution
+The style class names do not contain . and are separated with spaces.
+:::
+
+## Global and Local Styles
+
+A global style is defined in `app.wxss` and applies to every page, while a local one is defined in the page's `.wxss` and only applies to the current page (overrides the same selector in `app.wxss`).

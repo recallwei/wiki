@@ -484,6 +484,11 @@ const sidebars = {
           ],
         },
         {
+          type: "doc",
+          id: "wexin-mini-program/wxss",
+          label: "WXSS",
+        },
+        {
           type: "category",
           label: "API",
           collapsible: true,
