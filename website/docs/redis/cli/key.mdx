@@ -1,0 +1,17 @@
+---
+title: Key
+---
+
+## DEL
+
+Delete one or more of the given keys. If the key is not exsist, this operation will fail.
+
+DEL key [key ...]
+
+```cmd
+redis> DEL key1
+(integer) 1
+
+redis> DEL key1, key2, key3
+(integer) 3
+```

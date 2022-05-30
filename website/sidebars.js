@@ -698,6 +698,34 @@ const sidebars = {
       id: "back-end",
       label: "Back-end",
     },
+    {
+      type: "category",
+      label: "Redis",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "redis/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "CLI",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "redis/cli/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "redis/cli/key",
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 module.exports = sidebars;
