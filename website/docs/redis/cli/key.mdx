@@ -4,14 +4,16 @@ title: Key
 
 ## DEL
 
-Delete one or more of the given keys. If the key is not exsist, this operation will fail.
+删除一个或多个 Key，如果 Key 不存在，则此次操作会失败。
 
-DEL key [key ...]
+返回 integer 为成功删除 Key 的数量。
 
 ```cmd
 redis> DEL key1
 (integer) 1
+```
 
+```cmd
 redis> DEL key1, key2, key3
 (integer) 3
 ```
