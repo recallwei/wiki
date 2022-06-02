@@ -692,12 +692,13 @@ const sidebars = {
     },
   ],
   backend: [
-    //Home
+    // Home
     {
       type: "doc",
       id: "back-end",
       label: "Back-end",
     },
+    // Redis
     {
       type: "category",
       label: "Redis",
@@ -721,6 +722,34 @@ const sidebars = {
             {
               type: "doc",
               id: "redis/cli/key",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Network",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "network/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "DNS",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "network/dns/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "network/dns/flush-cache",
             },
           ],
         },
