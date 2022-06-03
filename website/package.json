@@ -35,5 +35,6 @@
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^2.0.0-beta.20"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
