@@ -20,7 +20,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Yarn
-# .pnp.*
+.pnp.*
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
