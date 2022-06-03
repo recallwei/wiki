@@ -1,0 +1,26 @@
+---
+title: Solutions
+hide_title: true
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import css from "@site/static/img/icon/css.png";
+import bootstrap from "@site/static/img/icon/bootstrap.png";
+import svg from "@site/static/img/icon/svg.png";
+
+<FeatureIcon src={css} title="Solutions" />
+<LinkList
+  data={[
+    {
+      title: "Bootstrap",
+      link: "/docs/css/solutions/bootstrap",
+      src: bootstrap,
+    },
+    {
+      title: "修改 SVG 样式",
+      link: "/docs/css/solutions/svg",
+      src: svg,
+    },
+  ]}
+/>

@@ -23,7 +23,9 @@ export default function ReferenceList({ customStyle, data = [] }) {
               <Link to={item.link}>
                 <div className={styles.subTitle}>
                   {item.subTitle}
-                  <LinkSVG className={styles.linkSVG} />
+                  <div className={styles.linkSVG}>
+                    <LinkSVG />
+                  </div>
                 </div>
               </Link>
             </li>

@@ -196,6 +196,28 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Solutions",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "css/solutions/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "css/solutions/bootstrap",
+              label: "Bootstrap",
+            },
+            {
+              type: "doc",
+              id: "css/solutions/svg",
+              label: "修改 SVG 样式",
+            },
+          ],
+        },
       ],
     },
     // Javascript
