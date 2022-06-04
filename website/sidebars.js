@@ -579,8 +579,35 @@ const sidebars = {
       items: [
         {
           type: "doc",
+          id: "npm/upgrade-node",
+          label: "升级 Node 版本",
+        },
+        {
+          type: "doc",
+          id: "npm/upgrade-npm",
+          label: "升级 npm 版本",
+        },
+        {
+          type: "doc",
           id: "npm/patch-package",
           label: "patch-package",
+        },
+        {
+          type: "category",
+          label: "Yarn",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "npm/yarn/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "npm/yarn/cli",
+              label: "CLI",
+            },
+          ],
         },
       ],
     },

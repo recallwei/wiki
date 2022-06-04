@@ -2,7 +2,7 @@
 title: Template
 ---
 
-import TextHighlight from "@site/src/components/TextHighlight/index.js";
+import TH from "@site/src/components/TextHighlight/index.js";
 
 ## Definition
 
@@ -67,10 +67,10 @@ Templates can only use the data passed by `data` and the `<wxs />` module define
 
 ### Template CSS style does't work
 
-We should take care of the scope in WeXin Mini Program. Import **Template** and <TextHighlight>its .css file</TextHighlight> at the same time.
+We should take care of the scope in WeXin Mini Program. Import **Template** and <TH>its .css file</TH> at the same time.
 
 ## Templates VS Components
 
 Templates used to be using as a repeat code snippet because of its limited ablility. We can only pass data into the it to describe. But Components have its own lifetimes. So it can process or compute data independently.
 
-Commonly, we use templates to build a <TextHighlight>stateless component</TextHighlight> and use components to build a <TextHighlight>stateful component</TextHighlight>.
+Commonly, we use templates to build a <TH>stateless component</TH> and use components to build a <TH>stateful component</TH>.

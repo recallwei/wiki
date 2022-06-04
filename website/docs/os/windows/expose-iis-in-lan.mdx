@@ -2,9 +2,9 @@
 title: Expose IIS in LAN
 ---
 
-import TextHighlight from "@site/src/components/TextHighlight/index.js";
+import TH from "@site/src/components/TextHighlight/index.js";
 
-My mac cannot access IIS server because of <TextHighlight>IIS server does not support running on macOS</TextHighlight>. And I want to use my mac to call the API on another Windows computer via LAN.
+My mac cannot access IIS server because of <TH>IIS server does not support running on macOS</TH>. And I want to use my mac to call the API on another Windows computer via LAN.
 
 ## Get IPv4 Address on Windows
 
@@ -41,10 +41,10 @@ You can find the configuration file through the IIS Express icon in the bottom r
 </site>
 ```
 
-Then open Visual Studio as <TextHighlight>administrator</TextHighlight>.
+Then open Visual Studio as <TH>administrator</TH>.
 
 ## Configure Firewall
 
-Open the "Control Panel - System and Safe - Windows Defender Firewall". Then select advance settings and <TextHighlight>create a new inbound rule</TextHighlight>.
+Open the "Control Panel - System and Safe - Windows Defender Firewall". Then select advance settings and <TH>create a new inbound rule</TH>.
 
 At last, we can access the API on the windows computer via LAN. It is a good way for the front-end developer to call the back-end local API.

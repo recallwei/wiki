@@ -2,7 +2,7 @@
 title: Type Conversion
 ---
 
-import TextHighlight from "@site/src/components/TextHighlight/index.js";
+import TH from "@site/src/components/TextHighlight/index.js";
 
 ## Convert String to Number
 
@@ -17,13 +17,13 @@ console.log(parseInt("0xF", 16)); // expected: 15
 
 #### 返回 NaN
 
-- 可选参数 radix <TextHighlight>小于 2 或大于 36</TextHighlight>。
-- 第一个<TextHighlight>非空格字符</TextHighlight>不能转换为数字。
+- 可选参数 radix <TH>小于 2 或大于 36</TH>。
+- 第一个<TH>非空格字符</TH>不能转换为数字。
 
 #### 参数 radix 是 undefined、0 或未指定时
 
 - 若输入的 string 以 `0x` 或 `0X` 开头，那么 radix 被假定为 16，字符串的其余部分被当做十六进制数去解析。
-- 若输入的 string 以 `0` 开头，radix 会被假定为 8 或 10，ECMAScript5 澄清了应该使用十进制，但并非所有浏览器都支持。因此，<TextHighlight>任何时候都需要指定一个 radix</TextHighlight>。
+- 若输入的 string 以 `0` 开头，radix 会被假定为 8 或 10，ECMAScript5 澄清了应该使用十进制，但并非所有浏览器都支持。因此，<TH>任何时候都需要指定一个 radix</TH>。
 - 若输入的 string 以任何其他值开头，会把字符串当做十进制数去解析。
 
 :::danger 警告

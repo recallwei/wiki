@@ -2,7 +2,7 @@
 title: Custom Components
 ---
 
-import TextHighlight from "@site/src/components/TextHighlight/index.js";
+import TH from "@site/src/components/TextHighlight/index.js";
 import Table from "@site/src/components/Table/index.js";
 import ReferenceList from "@site/src/components/Reference/index.js";
 import Link from "@docusaurus/Link";
@@ -65,7 +65,7 @@ Component({
 :::caution
 
 <p>
-  <TextHighlight>Just use class selectors</TextHighlight>. Id selectors like
+  <TH>Just use class selectors</TH>. Id selectors like
   <code>.sample{"{}"}</code> , attribute selectors like <code>
     a[target]{"{}"}
   </code> and element name selectors like <code>a{"{}"}</code> should not be used
@@ -105,7 +105,7 @@ We can use custom components in a custom component the same as in a page. Just d
 
 ### Name specification
 
-- Since the element name of a WXML node can only be a combination of <TextHighlight>lowercase letters</TextHighlight>, <TextHighlight>hyphens</TextHighlight> `(-)`, and <TextHighlight>underscores</TextHighlight> `(_)`, the element name of a custom component can contain these characters only.
+- Since the element name of a WXML node can only be a combination of <TH>lowercase letters</TH>, <TH>hyphens</TH> `(-)`, and <TH>underscores</TH> `(_)`, the element name of a custom component can contain these characters only.
 - The name of the project's root directory where the custom components and pages are located cannot be prefixed with `"wx-"`. Otherwise, an error will occur.
 
 ## Data Binding
@@ -172,7 +172,7 @@ Component({
 });
 ```
 
-Each slot has <TextHighlight>a unique name</TextHighlight> and use `slot` property to insert nodes into differnt slots.
+Each slot has <TH>a unique name</TH> and use `slot` property to insert nodes into differnt slots.
 
 ```jsx {2,4} title="component.wxml" showLineNumbers
 <view class="wrapper">
@@ -214,7 +214,7 @@ Each slot has <TextHighlight>a unique name</TextHighlight> and use `slot` proper
 
 The style of component in its `.wxss` is only valid for the nodes in its `.wxml`.
 
-Avoid using <TextHighlight>id selectors</TextHighlight>, <TextHighlight>attribute selectors</TextHighlight>,<TextHighlight>element name selectors</TextHighlight>, <TextHighlight>descendant selector</TextHighlight> and <TextHighlight>child selectors</TextHighlight> in `.wxss`. Only use <TextHighlight>class selectors</TextHighlight>.
+Avoid using <TH>id selectors</TH>, <TH>attribute selectors</TH>,<TH>element name selectors</TH>, <TH>descendant selector</TH> and <TH>child selectors</TH> in `.wxss`. Only use <TH>class selectors</TH>.
 
 ```css
 #a {
@@ -229,7 +229,7 @@ button {
 } /* Child selectors: Invalid unless .a is view component node */
 ```
 
-The child selector `.a> .b` can be only used for the <TextHighlight>view component</TextHighlight> and its child nodes, unexpected behaviors may occur if it is used in other components.
+The child selector `.a> .b` can be only used for the <TH>view component</TH> and its child nodes, unexpected behaviors may occur if it is used in other components.
 
 Inheritance styles, such as `font` and `color`, are inherited into the components from outside the components.
 
