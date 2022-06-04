@@ -747,6 +747,23 @@ const sidebars = {
       id: "back-end",
       label: "Back-end",
     },
+    // Go
+    {
+      type: "category",
+      label: "Go",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "go/index",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "go/environment",
+        },
+      ],
+    },
     // Redis
     {
       type: "category",
