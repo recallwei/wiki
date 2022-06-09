@@ -378,6 +378,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Redux",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "react/redux/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "react/redux/installation",
+              label: "安装 Redux",
+            },
+          ],
+        },
       ],
     },
     // Docusaurus
