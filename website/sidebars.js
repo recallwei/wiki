@@ -642,6 +642,11 @@ const sidebars = {
               id: "ide/visual-studio-code/shortcuts",
               label: "Shortcuts",
             },
+            {
+              type: "doc",
+              id: "ide/visual-studio-code/proxy",
+              label: "设置代理",
+            },
           ],
         },
         {
