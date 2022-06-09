@@ -218,6 +218,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "Sass",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "css/sass/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "css/sass/installation",
+              label: "安装 Sass",
+            },
+          ],
+        },
       ],
     },
     // Javascript
