@@ -645,7 +645,7 @@ const sidebars = {
             {
               type: "doc",
               id: "ide/visual-studio-code/proxy",
-              label: "设置代理",
+              label: "设置代理服务器",
             },
           ],
         },
