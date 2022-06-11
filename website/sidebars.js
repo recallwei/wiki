@@ -153,6 +153,11 @@ const sidebars = {
           ],
         },
         {
+          type: "doc",
+          id: "css/transform",
+          label: "Transform",
+        },
+        {
           type: "category",
           label: "Properties",
           collapsible: true,
