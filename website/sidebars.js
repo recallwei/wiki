@@ -690,6 +690,16 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "WebStorm",
+          collapsible: true,
+          collapsed: true,
+          link: { type: "doc", id: "ide/webstorm/index" },
+          items: [
+            { type: "doc", id: "ide/webstorm/environment", label: "搭建环境" },
+          ],
+        },
+        {
+          type: "category",
           label: "Wechat Devtools",
           collapsible: true,
           collapsed: true,
@@ -791,6 +801,35 @@ const sidebars = {
       id: "back-end",
       label: "Back-end",
     },
+    // Network
+    {
+      type: "category",
+      label: "Network",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "network/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "DNS",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "network/dns/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "network/dns/flush-cache",
+            },
+          ],
+        },
+      ],
+    },
     // Go
     {
       type: "category",
@@ -837,29 +876,30 @@ const sidebars = {
         },
       ],
     },
+    // Microsoft Azure
     {
       type: "category",
-      label: "Network",
+      label: "Microsoft Azure",
       collapsible: true,
       collapsed: true,
       link: {
         type: "doc",
-        id: "network/index",
+        id: "microsoft-azure/index",
       },
       items: [
         {
           type: "category",
-          label: "DNS",
+          label: "CLI",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "network/dns/index",
+            id: "microsoft-azure/index",
           },
           items: [
             {
               type: "doc",
-              id: "network/dns/flush-cache",
+              id: "microsoft-azure/login-azure-cn",
             },
           ],
         },

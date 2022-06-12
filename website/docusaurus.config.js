@@ -20,7 +20,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon/favicon.png",
-  organizationName: "Bruce Song", // Usually your GitHub org/user name.
+  organizationName: "Bruce Song", // Usually your GitHub org/username.
   projectName: "blog", // Usually your repo name.
 
   themes: ["@docusaurus/theme-live-codeblock"],
