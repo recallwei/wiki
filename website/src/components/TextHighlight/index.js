@@ -5,8 +5,10 @@ import colorSwitch from "@site/src/util/color-switch.js";
 export default function TextHighlight({ bgColor, children }) {
   const bgStyle = { color: `${colorSwitch(bgColor)}` };
   return (
-    <div className={styles.highlightArea} style={bgStyle}>
-      {children}
-    </div>
+    <span
+      className={styles.highlightArea}
+      style={bgStyle}
+      dangerouslySetInnerHTML={{ __html: children }}
+    />
   );
 }

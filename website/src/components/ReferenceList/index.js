@@ -20,12 +20,10 @@ export default function ReferenceList({ customStyle, data = [] }) {
                 loading="lazy"
               />
               <div className={styles.title}>{item.title + ":"}&nbsp;</div>
-              <Link to={item.link}>
-                <div className={styles.subTitle}>
-                  {item.subTitle}
-                  <div className={styles.linkSVG}>
-                    <LinkSVG />
-                  </div>
+              <Link to={item.link} className={styles.subTitleArea}>
+                <div className={styles.subTitle}>{item.subTitle}</div>
+                <div className={styles.linkSVG}>
+                  <LinkSVG />
                 </div>
               </Link>
             </li>
