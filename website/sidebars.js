@@ -638,7 +638,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Yarn",
+          label: "yarn",
           collapsible: true,
           collapsed: true,
           link: {
