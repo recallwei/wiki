@@ -363,7 +363,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Solutions",
+          label: "解决方案",
           collapsible: true,
           collapsed: true,
           link: {
@@ -374,28 +374,28 @@ const sidebars = {
             {
               type: "doc",
               id: "react/solutions/download-file",
-              label: "Download File",
+              label: "文件下载",
             },
             {
               type: "doc",
               id: "react/solutions/import-image",
-              label: "Import Image",
+              label: "图片导入",
             },
           ],
         },
         {
           type: "category",
-          label: "Experience",
+          label: "最佳实践",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "react/experience/index",
+            id: "react/best-practice/index",
           },
           items: [
             {
               type: "doc",
-              id: "react/experience/component-design",
+              id: "react/best-practice/component-design",
               label: "组件设计",
             },
           ],
@@ -898,20 +898,8 @@ const sidebars = {
       },
       items: [
         {
-          type: "category",
-          label: "CLI",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "microsoft-azure/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "microsoft-azure/login-azure-cn",
-            },
-          ],
+          type: "doc",
+          id: "microsoft-azure/login-azure-cn",
         },
       ],
     },
