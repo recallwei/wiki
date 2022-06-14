@@ -1,0 +1,32 @@
+---
+title: 振动反馈
+---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+微信小程序中为了增强用户交互反馈，一些按钮点击事件可以添加**振动反馈**。
+
+## wx.vibrateShort
+
+让手机发生 15ms 的较短时间的振动。
+
+```javascript
+wx.vibrateShort({
+  type: "heavy",
+  success: () => {},
+  fail: () => {},
+  complete: () => {},
+});
+```
+
+`type` 参数为**振动强度类型**，有效值为：**<TH>heavy</TH>**、**<TH>medium</TH>**、**<TH>light</TH>**。
+
+## wx.vibrateLong
+
+让手机发生 400ms 的较长时间的振动。
+
+```javascript
+wx.vibrateLong();
+```
+
+`wx.vibrateLong` 无法指定振动强度类型。
