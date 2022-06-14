@@ -689,7 +689,7 @@ const sidebars = {
             {
               type: "doc",
               id: "ide/visual-studio-code/shortcuts",
-              label: "Shortcuts",
+              label: "快捷键",
             },
             {
               type: "doc",
@@ -751,7 +751,7 @@ const sidebars = {
             {
               type: "doc",
               id: "os/mac-os/shortcuts",
-              label: "Shortcuts",
+              label: "快捷键",
             },
           ],
         },
@@ -768,7 +768,7 @@ const sidebars = {
             {
               type: "doc",
               id: "os/windows/expose-iis-in-lan",
-              label: "Expose IIS in LAN",
+              label: "将 IIS 暴露在局域网内",
             },
           ],
         },
