@@ -633,12 +633,17 @@ const sidebars = {
         },
         {
           type: "doc",
+          id: "npm/n-module",
+          label: "n module",
+        },
+        {
+          type: "doc",
           id: "npm/patch-package",
           label: "patch-package",
         },
         {
           type: "category",
-          label: "Yarn",
+          label: "yarn",
           collapsible: true,
           collapsed: true,
           link: {

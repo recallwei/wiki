@@ -1,3 +1,67 @@
 ---
 title: 升级 Node 版本
 ---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+## 使用 npm 升级 Node 版本
+
+首先，用 npm 安装 n 模块：
+
+```bash
+npm install -g n
+```
+
+如果使用 **<TH>macOS</TH>** ，需要在该命令前添加 **<TH>sudo</TH>**：
+
+```bash
+sudo npm install -g n
+```
+
+使用 n 模块安装对应的 Node 版本：
+
+```bash
+n lts
+n stable
+n latest
+```
+
+- `lts` : 安装长期维护 (long-term support) 版本。\
+- `stable` : 安装稳定版本。
+- `latest` : 安装最新版本。
+
+移除之前安装 Node 旧版本的缓存，仅保留最新版本：
+
+```bash
+n prune
+```
+
+## 使用 nvm 升级 Node 版本
+
+安装 nvm：
+
+⌛️ 待完善...
+
+安装指定版本：
+
+```bash
+nvm install [version]
+```
+
+安装最新版本：
+
+```bash
+nvm install node
+```
+
+卸载指定版本：
+
+```bash
+nvm uninstall [version]
+```
+
+使用指定版本的 Node，Node 会使用指定版本执行：
+
+```bash
+nvm alias default [version]
+```
