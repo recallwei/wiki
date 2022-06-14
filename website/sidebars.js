@@ -569,6 +569,11 @@ const sidebars = {
               id: "wexin-mini-program/api/share",
               label: "Share",
             },
+            {
+              type: "doc",
+              id: "wexin-mini-program/api/vibration",
+              label: "振动反馈",
+            },
           ],
         },
         {
