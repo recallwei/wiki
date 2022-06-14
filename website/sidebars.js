@@ -396,7 +396,7 @@ const sidebars = {
             {
               type: "doc",
               id: "react/experience/component-design",
-              label: "Component Design",
+              label: "组件设计",
             },
           ],
         },
