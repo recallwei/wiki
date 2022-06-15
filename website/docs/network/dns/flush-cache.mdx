@@ -12,10 +12,12 @@ import TabItem from "@theme/TabItem";
     在 Chrome 地址栏输入 <code>chrome://net-internals/#dns</code> 来查看当前 DNS
     缓存记录。
   </TabItem>
-  <TabItem value="Safari">Safari 快捷栏中的偏好设置</TabItem>
+  <TabItem value="Safari">「快捷栏 - 开发 - 清除缓存」</TabItem>
 </Tabs>
 
 ## 在 macOS 中清除 DNS 缓存
+
+在终端里执行：
 
 ```bash
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
