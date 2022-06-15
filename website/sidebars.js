@@ -696,6 +696,11 @@ const sidebars = {
               id: "ide/visual-studio-code/proxy",
               label: "设置代理服务器",
             },
+            {
+              type: "doc",
+              id: "ide/visual-studio-code/user-code-snippets",
+              label: "用户代码片段",
+            },
           ],
         },
         {
