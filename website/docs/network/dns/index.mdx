@@ -1,0 +1,15 @@
+---
+title: DNS
+hide_title: true
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import dns from "@site/static/img/icon/dns.png";
+
+<FeatureIcon src={dns} title="dns" />
+<LinkList
+  data={[
+    { title: "清除 DNS 缓存", link: "/docs/network/dns/flush-cache", src: dns },
+  ]}
+/>

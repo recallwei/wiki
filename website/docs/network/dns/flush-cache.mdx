@@ -1,19 +1,22 @@
 ---
-title: Flush Cache
+title: 清除 DNS 缓存
 ---
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-## Flush DNS cache in browser
+## 在浏览器中清除 DNS 缓存
 
 <Tabs groupId="browser">
   <TabItem value="Chrome">
-    在 Chrome 地址栏输入 `chrome://net-internals/#dns` 来查看当前 DNS 缓存记录。
+    在 Chrome 地址栏输入 <code>chrome://net-internals/#dns</code> 来查看当前 DNS
+    缓存记录。
   </TabItem>
   <TabItem value="Safari">Safari 快捷栏中的偏好设置</TabItem>
 </Tabs>
 
-## Flush DNS cache in OS
+## 在 macOS 中清除 DNS 缓存
 
-`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`
+```bash
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+```

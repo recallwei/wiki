@@ -803,6 +803,7 @@ const sidebars = {
             {
               type: "doc",
               id: "design/figma/shortcuts",
+              label: "快捷键",
             },
           ],
         },
@@ -840,6 +841,7 @@ const sidebars = {
             {
               type: "doc",
               id: "network/dns/flush-cache",
+              label: "清除 DNS 缓存",
             },
           ],
         },
