@@ -11,11 +11,26 @@
       "$0"
     ]
   },
+  "Feature Icon": {
+    "prefix": "fi",
+    "body": ["<FeatureIcon src={$1} title='$2' />", "$3"]
+  },
   "Import Component Link List": {
     "prefix": "ill",
     "body": [
-      "import LinkList from '@site/src/components/Badge/LinkList.js'",
+      "import LinkList from '@site/src/components/LinkList/index.js'",
       "$0"
+    ]
+  },
+  "Link List": {
+    "prefix": "ll",
+    "body": [
+      "<LinkList",
+      "data={[",
+      "{ title: '$1', link: '/docs/$2', src: $3 },",
+      "]}",
+      "/>",
+      "$4"
     ]
   },
   "Import Component Reference List": {
