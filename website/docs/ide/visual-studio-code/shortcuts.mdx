@@ -1,20 +1,20 @@
 ---
-title: Shortcuts
+title: 快捷键
 ---
 
 import Shortcut from "@site/src/components/Shortcut/index.js";
 import Table from "@site/src/components/Table/index.js";
 
-## Collapse code block
+## 折叠代码块
 
 <Table
   data={{
     position: ["start", "center", "center", "start"],
-    header: ["Function", "macOS", "Windows", "Remarks"],
+    header: ["功能", "macOS", "Windows", "备注"],
     body: {
       items: [
         [
-          "Collapse all functions",
+          "折叠所有方法",
           <div>
             <Shortcut>⌘</Shortcut> + <Shortcut>K</Shortcut>
             {" , "}
@@ -26,12 +26,11 @@ import Table from "@site/src/components/Table/index.js";
             <Shortcut>Ctrl</Shortcut> + <Shortcut>n</Shortcut>
           </div>,
           <div>
-            <code>n</code> represents the number of levels to which it is
-            collapsed.
+            <b>n</b> 代表折叠的层级
           </div>,
         ],
         [
-          "Expand all functions",
+          "展开所有方法",
           <div>
             <Shortcut>⌘</Shortcut> + <Shortcut>K</Shortcut>
             {" , "}
@@ -54,21 +53,21 @@ import Table from "@site/src/components/Table/index.js";
 <Table
   data={{
     position: ["start", "center", "center", "start"],
-    header: ["Function", "macOS", "Windows", "Remarks"],
+    header: ["功能", "macOS", "Windows", "备注"],
     body: {
       items: [
         [
-          "Copy the whole line",
+          "复制整行",
           <div>
             <Shortcut>⌘</Shortcut> + <Shortcut>C</Shortcut>
           </div>,
           <div>
             <Shortcut>Ctrl</Shortcut> + <Shortcut>C</Shortcut>
           </div>,
-          "Mouse unchecked state",
+          "必须在鼠标未选中的状态下使用",
         ],
         [
-          "Select more left area text",
+          "👈向左选择更多文本",
           <div>
             <Shortcut>⌥</Shortcut> + <Shortcut>⇧</Shortcut> +{" "}
             <Shortcut>&larr;</Shortcut>
@@ -80,7 +79,7 @@ import Table from "@site/src/components/Table/index.js";
           "",
         ],
         [
-          "Select more right area text",
+          "👉向右选择更多文本",
           <div>
             <Shortcut>⌘</Shortcut> + <Shortcut>C</Shortcut>
           </div>,
