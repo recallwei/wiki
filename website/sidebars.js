@@ -539,6 +539,11 @@ const sidebars = {
             },
             {
               type: "doc",
+              id: "wexin-mini-program/wxml/list-rendering",
+              label: "列表渲染",
+            },
+            {
+              type: "doc",
               id: "wexin-mini-program/wxml/template",
               label: "Template",
             },

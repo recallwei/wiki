@@ -1,0 +1,53 @@
+---
+title: 列表渲染
+---
+
+## wx:for
+
+`wx:for` 控制属性绑定一个数组，重复将该数组的每一项数据渲染。
+
+默认数组当前项的下标变量名默认为 **`index`**，数组当前项的变量名默认为 **`item`**。
+
+```jsx
+<view wx:for="{{array}}">
+  {{index}}: {{item.message}}
+</view>
+```
+
+当 `wx:for` 中嵌套 `wx:for` 时，不能在子循环中通过默认变量名获取父循环的 `index` 和 `item`。
+
+<p style={{ marginBottom: "5px" }}>
+  使用 <code>wx:for-item</code> 可以指定数组当前元素的变量名，使用{" "}
+  <code>wx:for-index</code> 可以指定数组当前下标的变量名：
+</p>
+
+```jsx
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName.message}}
+</view>
+```
+
+<p style={{ marginBottom: "5px" }}>
+  <code>wx:for</code> 嵌套实现九九乘法表：
+</p>
+
+```jsx
+<view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view>
+```
+
+## block wx:for
+
+类似 block `wx:if`，也可以将 `wx:for` 用在 <code>&lt;block/&gt;</code> 标签上，以渲染一个包含多节点的结构块。
+
+```jsx
+<block wx:for="{{[1, 2, 3]}}">
+  <view> {{ index }}: </view>
+  <view> {{ item }} </view>
+</block>
+```
