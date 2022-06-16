@@ -88,12 +88,12 @@ const config = {
             position: "left",
           },
           // { to: "/blog", label: "Blog", position: "left" },
-          // {
-          //   type: "doc",
-          //   docId: "todo",
-          //   label: "To Do",
-          //   position: "left",
-          // },
+          {
+            type: "doc",
+            docId: "todo",
+            label: "To Do",
+            position: "left",
+          },
           // Right
           {
             href: "https://github.com/recallwei/",
