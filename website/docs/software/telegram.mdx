@@ -1,19 +1,22 @@
 ---
 title: Telegram
-hide_title: true
 ---
 
-import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
-import telegram from "@site/static/img/icon/telegram.png";
+import TH from "@site/src/components/TextHighlight/index.js";
 
-<FeatureIcon src={telegram} title="Telegram" />
+App Store 中的 Telegram 版本较老，不建议从 App Store 下载。  
+Telegram 官方下载地址：https://macos.telegram.org/
 
-App Store 中的 Telegram 版本较老，不建议从 App Store 下载。
+## 无法连接到 Telegram
 
-官方下载地址：https://macos.telegram.org/
-
-## 配置代理
+### 配置代理
 
 App Store 中下载的 Telegram 不会尊重全局代理，需要手动配置代理。
 
-添加 SOCKS5 Proxy，选择指定 IP 地址和端口。
+添加 **<TH>SOCKS5 Proxy</TH>** ，选择指定 **<TH>IP 地址 </TH>**(127.0.0.1) 和**<TH>端口</TH>** (可在 VPN 代理软件上查看)。
+
+### 无法收到验证码短信
+
+PC 端获取验证码的短信无法收到，手机端可以正常收到验证码。
+
+可以先登录手机端，然后扫码登录 PC 端。
