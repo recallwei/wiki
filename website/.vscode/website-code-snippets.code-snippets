@@ -30,11 +30,15 @@
     "prefix": "ll",
     "body": [
       "<LinkList",
-      "data={[",
-      "{ title: '$1', link: '/docs/$2', src: $3 },",
-      "]}",
+      "  data={[",
+      "    {",
+      "      title: \"$1\",",
+      "      link: \"/docs/$2\",",
+      "      src: ${3:src},",
+      "    },",
+      "  ]}",
       "/>",
-      "$4"
+      "$0"
     ],
     "description": "Insert a Link List component"
   },
@@ -54,7 +58,7 @@
       "    {",
       "      title: \"$1\",",
       "      subTitle: \"$2\",",
-      "      src:$3,",
+      "      src:${3:src},",
       "      link: \"$4\",",
       "    },",
       "  ]}",
