@@ -984,10 +984,10 @@ const sidebars = {
     { type: "doc", id: "vpn", label: "VPN" },
   ],
   design: [
-    // 优质网站设计
-    { type: "doc", id: "best-website-design", label: "优质网站设计" },
     // 文案排版指南
     { type: "doc", id: "copywriting-guide", label: "文案排版指南" },
+    // 优质网站设计
+    { type: "doc", id: "best-website-design", label: "优质网站设计" },
     // Figma
     {
       type: "category",

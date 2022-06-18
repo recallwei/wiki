@@ -95,7 +95,7 @@ const config = {
           },
           {
             type: "doc",
-            docId: "best-website-design",
+            docId: "copywriting-guide",
             label: "设计",
             position: "left",
           },

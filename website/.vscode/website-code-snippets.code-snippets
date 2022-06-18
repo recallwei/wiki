@@ -40,6 +40,22 @@
       "$0"
     ]
   },
+  "Reference List": {
+    "prefix": "rl",
+    "body": [
+      "<ReferenceList",
+      "  data={[",
+      "    {",
+      "      title: \"$1\",",
+      "      subTitle: \"$2\",",
+      "      src:$3,",
+      "      link: \"$4\",",
+      "    },",
+      "  ]}",
+      "/>",
+      "$0"
+    ]
+  },
   "Import Component Shortcut": {
     "prefix": "isc",
     "body": [
@@ -58,9 +74,13 @@
       "$0"
     ]
   },
-  "Import Image": {
-    "prefix": "iim",
+  "Import Icon Image": {
+    "prefix": "iiim",
     "body": ["import $1 from '@site/static/img/icon/$2.png';", "$3"]
+  },
+  "Import Reference Image": {
+    "prefix": "irim",
+    "body": ["import $1 from '@site/static/img/reference/$2.png';", "$3"]
   }
   // .json
 }
