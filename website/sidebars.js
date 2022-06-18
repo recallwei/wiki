@@ -966,7 +966,7 @@ const sidebars = {
     },
   ],
   software: [
-    // Home
+    // 软件测评
     {
       type: "category",
       label: "软件测评",
@@ -984,8 +984,10 @@ const sidebars = {
     { type: "doc", id: "vpn", label: "VPN" },
   ],
   design: [
-    // Home
+    // 优质网站设计
     { type: "doc", id: "best-website-design", label: "优质网站设计" },
+    // 文案排版指南
+    { type: "doc", id: "copywriting-guide", label: "文案排版指南" },
     // Figma
     {
       type: "category",
