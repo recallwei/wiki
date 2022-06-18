@@ -24,6 +24,25 @@ Visual Studio Code 也支持使用制表符补全提示的代码，在 **setting
 
 ## 创建代码片段
 
+「**首选项** - **配置代码片段**」中选择语言类型创建对应语言的代码片段。
+
+如下创建一个 **Javascript** 的 For 循环代码片段：
+
+```json
+// in file 'Code/User/snippets/javascript.json'
+{
+  "For Loop": {
+    "prefix": ["for", "for-const"],
+    "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+    "description": "A for loop."
+  }
+}
+```
+
+- prefix : 触发智能提示的数组或字符串，由于智能提示是以前缀匹配，上述代码片段可以由 `fc` 触发。
+- body : 代码片段的内容。
+- description : 智能提示显示的简介。
+
 ## 工具：Snippet Generator
 
 Snippet Generator by Pawel Grzybek: https://snippet-generator.app/
