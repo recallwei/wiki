@@ -77,12 +77,6 @@ const config = {
           // Left
           {
             type: "doc",
-            docId: "code-specification",
-            label: "代码规范",
-            position: "left",
-          },
-          {
-            type: "doc",
             docId: "front-end",
             label: "前端",
             position: "left",
@@ -91,6 +85,12 @@ const config = {
             type: "doc",
             docId: "back-end",
             label: "后端",
+            position: "left",
+          },
+          {
+            type: "doc",
+            docId: "code-specification",
+            label: "代码规范",
             position: "left",
           },
           {
