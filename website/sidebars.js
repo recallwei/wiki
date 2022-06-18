@@ -755,10 +755,18 @@ const sidebars = {
         },
       ],
     },
-    // OS
+  ],
+  backend: [
+    // Home
+    {
+      type: "doc",
+      id: "back-end",
+      label: "后端",
+    },
+    // 操作系统
     {
       type: "category",
-      label: "OS",
+      label: "操作系统",
       collapsible: true,
       collapsed: true,
       link: {
@@ -802,48 +810,10 @@ const sidebars = {
         },
       ],
     },
-    // Design
-    {
-      type: "category",
-      label: "Design",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "design/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "Figma",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "design/figma/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "design/figma/shortcuts",
-              label: "快捷键",
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  backend: [
-    // Home
-    {
-      type: "doc",
-      id: "back-end",
-      label: "后端",
-    },
     // Network
     {
       type: "category",
-      label: "Network",
+      label: "计算机网络",
       collapsible: true,
       collapsed: true,
       link: {
@@ -1011,8 +981,29 @@ const sidebars = {
         },
       ],
     },
-    { type: "doc", id: "best-website-design", label: "优质网站设计" },
     { type: "doc", id: "vpn", label: "VPN" },
+  ],
+  design: [
+    // Home
+    { type: "doc", id: "best-website-design", label: "优质网站设计" },
+    // Figma
+    {
+      type: "category",
+      label: "Figma",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "figma/index",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "figma/shortcuts",
+          label: "快捷键",
+        },
+      ],
+    },
   ],
 };
 module.exports = sidebars;

@@ -89,6 +89,12 @@ const config = {
           },
           {
             type: "doc",
+            docId: "best-website-design",
+            label: "设计",
+            position: "left",
+          },
+          {
+            type: "doc",
             docId: "software/index",
             label: "软件",
             position: "left",
