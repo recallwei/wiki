@@ -665,6 +665,24 @@ const sidebars = {
         },
       ],
     },
+    // GraphQL
+    {
+      type: "category",
+      label: "GraphQL",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "graphql/index",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "graphql/installation",
+          label: "安装",
+        },
+      ],
+    },
     // IDE
     {
       type: "category",
@@ -852,6 +870,15 @@ const sidebars = {
         },
       ],
     },
+    // C#
+    {
+      type: "category",
+      label: "C#",
+      collapsible: true,
+      collapsed: true,
+      link: { type: "doc", id: "csharp/index" },
+      items: [{ type: "doc", id: "csharp/environment", label: "搭建环境" }],
+    },
     // Go
     {
       type: "category",
@@ -866,6 +893,56 @@ const sidebars = {
         {
           type: "doc",
           id: "go/environment",
+          label: "搭建环境",
+        },
+      ],
+    },
+    // Node.js
+    {
+      type: "category",
+      label: "Node.js",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "nodejs/index",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "nodejs/environment",
+          label: "搭建环境",
+        },
+        {
+          type: "category",
+          label: "Express",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "nodejs/express/index",
+          },
+          items: [
+            { type: "doc", id: "nodejs/express/installation", label: "安装" },
+          ],
+        },
+      ],
+    },
+    // MongoDB
+    {
+      type: "category",
+      label: "MongoDB",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "mongodb/index",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "mongodb/environment",
+          label: "搭建环境",
         },
       ],
     },
@@ -893,6 +970,7 @@ const sidebars = {
             {
               type: "doc",
               id: "redis/cli/key",
+              label: "Key",
             },
           ],
         },
@@ -912,6 +990,7 @@ const sidebars = {
         {
           type: "doc",
           id: "microsoft-azure/login-azure-cn",
+          label: "使用中国区 Azure",
         },
       ],
     },
