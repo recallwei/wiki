@@ -90,7 +90,7 @@ const config = {
           {
             type: "doc",
             docId: "software/index",
-            label: "软件测评",
+            label: "软件",
             position: "left",
           },
           // { to: "/blog", label: "Blog", position: "left" },

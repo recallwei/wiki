@@ -1012,6 +1012,7 @@ const sidebars = {
       ],
     },
     { type: "doc", id: "best-website-design", label: "优质网站设计" },
+    { type: "doc", id: "vpn", label: "VPN" },
   ],
 };
 module.exports = sidebars;
