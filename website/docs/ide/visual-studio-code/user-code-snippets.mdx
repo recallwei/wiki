@@ -1,3 +1,55 @@
 ---
 title: 代码片段
 ---
+
+import Shortcut from "@site/src/components/Shortcut/index.js";
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
+import vscode from "@site/static/img/icon/visual-studio-code.png";
+
+string a = '${1:example}'
+
+## Insert Snippet
+
+在命令面板中使用 `Insert Snippet` 来查看当前文件语言支持的代码片段列表（包括用户自定义代码片段）。
+
+## 制表符补全
+
+Visual Studio Code 也支持使用制表符补全提示的代码，在 **settings.json** 中添加如下配置启用该功能：
+
+```json
+{
+  "editor.tabCompletion": "on"
+}
+```
+
+## 创建代码片段
+
+## 工具：Snippet Generator
+
+Snippet Generator by Pawel Grzybek: https://snippet-generator.app/
+
+<p style={{ display: "flex", alignItems: "center" }}>
+  插入一个 Placeholder：<Shortcut>⌘</Shortcut>&nbsp;/&nbsp;
+  <Shortcut>Ctrl</Shortcut>&nbsp;+&nbsp;<Shortcut>i</Shortcut>
+</p>
+
+<iframe
+  width="100%"
+  height="700px"
+  src="https://snippet-generator.app/"
+  loading="eager"
+  style={{ borderRadius: "8px" }}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Visual Studio Code Docs",
+      subTitle: "Snippets",
+      src: vscode,
+      link: "https://code.visualstudio.com/docs/editor/userdefinedsnippets",
+    },
+  ]}
+/>
