@@ -5,7 +5,7 @@ const sidebars = {
     {
       type: "doc",
       id: "front-end",
-      label: "Front-end",
+      label: "前端",
     },
     // Markdown
     {
@@ -838,7 +838,7 @@ const sidebars = {
     {
       type: "doc",
       id: "back-end",
-      label: "Back-end",
+      label: "后端",
     },
     // Network
     {
@@ -994,6 +994,24 @@ const sidebars = {
         },
       ],
     },
+  ],
+  software: [
+    // Home
+    {
+      type: "category",
+      label: "软件测评",
+      collapsible: true,
+      collapsed: true,
+      link: { type: "doc", id: "software/index" },
+      items: [
+        {
+          type: "doc",
+          id: "software/telegram",
+          label: "Telegram",
+        },
+      ],
+    },
+    { type: "doc", id: "best-website-design", label: "优质网站设计" },
   ],
 };
 module.exports = sidebars;
