@@ -78,13 +78,19 @@ const config = {
           {
             type: "doc",
             docId: "front-end",
-            label: "Front-end",
+            label: "前端",
             position: "left",
           },
           {
             type: "doc",
             docId: "back-end",
-            label: "Back-end",
+            label: "后端",
+            position: "left",
+          },
+          {
+            type: "doc",
+            docId: "back-end",
+            label: "后端",
             position: "left",
           },
           // { to: "/blog", label: "Blog", position: "left" },
