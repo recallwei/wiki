@@ -89,8 +89,8 @@ const config = {
           },
           {
             type: "doc",
-            docId: "software",
-            label: "软件",
+            docId: "software/index",
+            label: "软件测评",
             position: "left",
           },
           // { to: "/blog", label: "Blog", position: "left" },
