@@ -9,7 +9,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   customFields: {
-    githubLink: "https://github.com/recallwei/",
+    githubLink: "https://github.com/recallwei",
+    telegramLink: "https://t.me/recallwei",
     primaryColor: "#25c2a0",
   },
   title: "Bruce Song",
