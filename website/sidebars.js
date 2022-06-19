@@ -501,8 +501,8 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              id: "docusaurus/theme/customized-image",
-              label: "Customized Image",
+              id: "docusaurus/theme/assets",
+              label: "静态资源",
             },
           ],
         },
