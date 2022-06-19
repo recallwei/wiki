@@ -52,14 +52,36 @@ const sidebars = {
       },
       items: [
         {
-          type: "doc",
-          id: "html/elements",
-          label: "Elements",
+          type: "category",
+          label: "标签",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "html/elements/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "html/elements/text",
+              label: "文本",
+            },
+            {
+              type: "doc",
+              id: "html/elements/hyperlink",
+              label: "超链接",
+            },
+            {
+              type: "doc",
+              id: "html/elements/img",
+              label: "图片",
+            },
+          ],
         },
         {
           type: "doc",
           id: "html/character-entities",
-          label: "Character Entities",
+          label: "字符实体",
         },
       ],
     },
