@@ -24,6 +24,16 @@ const config = {
   organizationName: "Bruce Song", // Usually your GitHub org/username.
   projectName: "blog", // Usually your repo name.
 
+  i18n: {
+    defaultLocale: "zh-CN",
+    locales: ["zh-CN", "en"],
+    localeConfigs: {
+      "zh-CN": {
+        label: "简体中文",
+      },
+    },
+  },
+
   themes: ["@docusaurus/theme-live-codeblock"],
 
   presets: [
@@ -114,11 +124,12 @@ const config = {
             position: "left",
           },
           // Right
+          { type: "localeDropdown", position: "right" },
           {
             href: "https://github.com/recallwei/",
             position: "right",
             className: "header-github-link",
-            title: "Go to Bruce's Github homepage.",
+            title: "前往 Bruce 的 GitHub 主页",
             "aria-label": "GitHub repository",
           },
         ],

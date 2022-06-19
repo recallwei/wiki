@@ -1,0 +1,198 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.frontend.category.Markdown": {
+    "message": "Markdown",
+    "description": "The label for category Markdown in sidebar frontend"
+  },
+  "sidebar.frontend.category.HTML": {
+    "message": "HTML",
+    "description": "The label for category HTML in sidebar frontend"
+  },
+  "sidebar.frontend.category.标签": {
+    "message": "标签",
+    "description": "The label for category 标签 in sidebar frontend"
+  },
+  "sidebar.frontend.category.CSS": {
+    "message": "CSS",
+    "description": "The label for category CSS in sidebar frontend"
+  },
+  "sidebar.frontend.category.Selectors": {
+    "message": "Selectors",
+    "description": "The label for category Selectors in sidebar frontend"
+  },
+  "sidebar.frontend.category.Flex Box": {
+    "message": "Flex Box",
+    "description": "The label for category Flex Box in sidebar frontend"
+  },
+  "sidebar.frontend.category.Font": {
+    "message": "Font",
+    "description": "The label for category Font in sidebar frontend"
+  },
+  "sidebar.frontend.category.List": {
+    "message": "List",
+    "description": "The label for category List in sidebar frontend"
+  },
+  "sidebar.frontend.category.Properties": {
+    "message": "Properties",
+    "description": "The label for category Properties in sidebar frontend"
+  },
+  "sidebar.frontend.category.Components": {
+    "message": "Components",
+    "description": "The label for category Components in sidebar frontend"
+  },
+  "sidebar.frontend.category.Solutions": {
+    "message": "Solutions",
+    "description": "The label for category Solutions in sidebar frontend"
+  },
+  "sidebar.frontend.category.Sass": {
+    "message": "Sass",
+    "description": "The label for category Sass in sidebar frontend"
+  },
+  "sidebar.frontend.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar frontend"
+  },
+  "sidebar.frontend.category.Value Types": {
+    "message": "Value Types",
+    "description": "The label for category Value Types in sidebar frontend"
+  },
+  "sidebar.frontend.category.Reference Types": {
+    "message": "Reference Types",
+    "description": "The label for category Reference Types in sidebar frontend"
+  },
+  "sidebar.frontend.category.Operators": {
+    "message": "Operators",
+    "description": "The label for category Operators in sidebar frontend"
+  },
+  "sidebar.frontend.category.React": {
+    "message": "React",
+    "description": "The label for category React in sidebar frontend"
+  },
+  "sidebar.frontend.category.DOM": {
+    "message": "DOM",
+    "description": "The label for category DOM in sidebar frontend"
+  },
+  "sidebar.frontend.category.解决方案": {
+    "message": "解决方案",
+    "description": "The label for category 解决方案 in sidebar frontend"
+  },
+  "sidebar.frontend.category.最佳实践": {
+    "message": "最佳实践",
+    "description": "The label for category 最佳实践 in sidebar frontend"
+  },
+  "sidebar.frontend.category.Redux": {
+    "message": "Redux",
+    "description": "The label for category Redux in sidebar frontend"
+  },
+  "sidebar.frontend.category.Docusaurus": {
+    "message": "Docusaurus",
+    "description": "The label for category Docusaurus in sidebar frontend"
+  },
+  "sidebar.frontend.category.Markdown 特性": {
+    "message": "Markdown 特性",
+    "description": "The label for category Markdown 特性 in sidebar frontend"
+  },
+  "sidebar.frontend.category.WeXin Mini Program": {
+    "message": "WeXin Mini Program",
+    "description": "The label for category WeXin Mini Program in sidebar frontend"
+  },
+  "sidebar.frontend.category.WXML": {
+    "message": "WXML",
+    "description": "The label for category WXML in sidebar frontend"
+  },
+  "sidebar.frontend.category.API": {
+    "message": "API",
+    "description": "The label for category API in sidebar frontend"
+  },
+  "sidebar.frontend.category.npm": {
+    "message": "npm",
+    "description": "The label for category npm in sidebar frontend"
+  },
+  "sidebar.frontend.category.yarn": {
+    "message": "yarn",
+    "description": "The label for category yarn in sidebar frontend"
+  },
+  "sidebar.frontend.category.GraphQL": {
+    "message": "GraphQL",
+    "description": "The label for category GraphQL in sidebar frontend"
+  },
+  "sidebar.frontend.category.IDE": {
+    "message": "IDE",
+    "description": "The label for category IDE in sidebar frontend"
+  },
+  "sidebar.frontend.category.Visual Studio Code": {
+    "message": "Visual Studio Code",
+    "description": "The label for category Visual Studio Code in sidebar frontend"
+  },
+  "sidebar.frontend.category.WebStorm": {
+    "message": "WebStorm",
+    "description": "The label for category WebStorm in sidebar frontend"
+  },
+  "sidebar.frontend.category.Wechat Devtools": {
+    "message": "Wechat Devtools",
+    "description": "The label for category Wechat Devtools in sidebar frontend"
+  },
+  "sidebar.backend.category.操作系统": {
+    "message": "操作系统",
+    "description": "The label for category 操作系统 in sidebar backend"
+  },
+  "sidebar.backend.category.macOS": {
+    "message": "macOS",
+    "description": "The label for category macOS in sidebar backend"
+  },
+  "sidebar.backend.category.Windows": {
+    "message": "Windows",
+    "description": "The label for category Windows in sidebar backend"
+  },
+  "sidebar.backend.category.计算机网络": {
+    "message": "计算机网络",
+    "description": "The label for category 计算机网络 in sidebar backend"
+  },
+  "sidebar.backend.category.DNS": {
+    "message": "DNS",
+    "description": "The label for category DNS in sidebar backend"
+  },
+  "sidebar.backend.category.C#": {
+    "message": "C#",
+    "description": "The label for category C# in sidebar backend"
+  },
+  "sidebar.backend.category.Go": {
+    "message": "Go",
+    "description": "The label for category Go in sidebar backend"
+  },
+  "sidebar.backend.category.Node.js": {
+    "message": "Node.js",
+    "description": "The label for category Node.js in sidebar backend"
+  },
+  "sidebar.backend.category.Express": {
+    "message": "Express",
+    "description": "The label for category Express in sidebar backend"
+  },
+  "sidebar.backend.category.MongoDB": {
+    "message": "MongoDB",
+    "description": "The label for category MongoDB in sidebar backend"
+  },
+  "sidebar.backend.category.Redis": {
+    "message": "Redis",
+    "description": "The label for category Redis in sidebar backend"
+  },
+  "sidebar.backend.category.CLI": {
+    "message": "CLI",
+    "description": "The label for category CLI in sidebar backend"
+  },
+  "sidebar.backend.category.Microsoft Azure": {
+    "message": "Microsoft Azure",
+    "description": "The label for category Microsoft Azure in sidebar backend"
+  },
+  "sidebar.software.category.软件测评": {
+    "message": "软件测评",
+    "description": "The label for category 软件测评 in sidebar software"
+  },
+  "sidebar.design.category.Figma": {
+    "message": "Figma",
+    "description": "The label for category Figma in sidebar design"
+  }
+}

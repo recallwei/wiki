@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Bruce's Wiki",
+    "description": "The title in the navbar"
+  },
+  "item.label.前端": {
+    "message": "前端",
+    "description": "Navbar item with label 前端"
+  },
+  "item.label.后端": {
+    "message": "后端",
+    "description": "Navbar item with label 后端"
+  },
+  "item.label.代码规范": {
+    "message": "代码规范",
+    "description": "Navbar item with label 代码规范"
+  },
+  "item.label.设计": {
+    "message": "设计",
+    "description": "Navbar item with label 设计"
+  },
+  "item.label.软件": {
+    "message": "软件",
+    "description": "Navbar item with label 软件"
+  },
+  "item.label.To Do": {
+    "message": "To Do",
+    "description": "Navbar item with label To Do"
+  }
+}
