@@ -514,12 +514,12 @@ const sidebars = {
         {
           type: "doc",
           id: "docusaurus/rename-project-name",
-          label: "Rename Project Name",
+          label: "项目重命名",
         },
         {
           type: "doc",
           id: "docusaurus/integrate-tailwind-css",
-          label: "Integrate TailwindCSS",
+          label: "🚀 集成 TailwindCSS",
         },
       ],
     },
