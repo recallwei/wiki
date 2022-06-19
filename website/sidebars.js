@@ -484,25 +484,13 @@ const sidebars = {
             },
             {
               type: "doc",
-              id: "docusaurus/markdown-feature/mdx-and-react-components",
-              label: "React Components",
+              id: "docusaurus/markdown-feature/assets",
+              label: "静态资源",
             },
-          ],
-        },
-        {
-          type: "category",
-          label: "Theme",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "docusaurus/theme/index",
-          },
-          items: [
             {
               type: "doc",
-              id: "docusaurus/theme/assets",
-              label: "静态资源",
+              id: "docusaurus/markdown-feature/mdx-components",
+              label: "MDX Components",
             },
           ],
         },
