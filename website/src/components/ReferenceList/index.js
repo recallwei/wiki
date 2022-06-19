@@ -3,8 +3,10 @@ import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/img/svg/link.svg";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 export default function ReferenceList({ customStyle, data = [] }) {
+  const isMobileDevice = /Mobi|Android|iPhone/i.test(navigator.userAgent);
   return (
     <div style={customStyle} className={styles.unorderedList}>
       <ul>
@@ -19,7 +21,9 @@ export default function ReferenceList({ customStyle, data = [] }) {
                 alt={item.title + ": " + item.subTitle}
                 loading="lazy"
               />
-              <div className={styles.title}>{item.title + ":"}&nbsp;</div>
+              {!isMobileDevice && (
+                <div className={styles.title}>{item.title + ":"}&nbsp;</div>
+              )}
               <Link to={item.link} className={styles.subTitleArea}>
                 <div className={styles.subTitle}>{item.subTitle}</div>
                 <div className={styles.linkSVG}>
