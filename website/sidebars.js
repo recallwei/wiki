@@ -501,6 +501,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          id: "docusaurus/i18n",
+          label: "多语言",
+        },
+        {
+          type: "doc",
           id: "docusaurus/rename-project-name",
           label: "项目重命名",
         },

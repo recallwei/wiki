@@ -1,0 +1,101 @@
+---
+title: 国际化
+---
+
+本文添加 i18n 使用的 Node 版本为 **v16.15.1**，yarn 版本为 **3.2.1**，CLI 命令可能与低版本 Node 有些许出入。
+
+## 站点配置
+
+编辑 `docusaurus.config.js`，添加 `i18n` 配置：
+
+```javascript title="docusaurus.config.js"
+const config = {
+  i18n: {
+    defaultLocale: "zh-CN",
+    locales: ["zh-CN", "en"],
+    localeConfigs: {
+      "zh-CN": {
+        label: "简体中文",
+      },
+    },
+  },
+};
+```
+
+- `defaultLocale`：站点的默认语言。
+- `localeConfigs.[language].label`：导航栏下拉框菜单显示文本。
+
+添加导航栏多语言下拉框：
+
+```javascript title="docusaurus.config.js"
+const config = {
+  themeConfig: {
+    navbar: {
+      items: [
+        {
+          type: "localeDropdown",
+          position: "left",
+        },
+      ],
+    },
+  },
+};
+```
+
+## 配置脚本
+
+在 `package.json` 中配置 i18n 的翻译脚本：
+
+```json {10} title="package.json" showLineNumbers
+{
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "translate": "docusaurus write-translations"
+  }
+}
+```
+
+## 生成翻译文件
+
+`locale` 参数默认值是 `defaultLocale`，使用如下命令生成简体中文和英文的翻译文件：
+
+```bash
+yarn translate --locale
+yarn translate --locale=en
+```
+
+翻译文件会生成在 **website/i18n** 目录下。
+
+## 启动站点
+
+选择语言，以开发模式启动指定语言的本地化站点：
+
+```bash
+yarn start --locale=en
+```
+
+上述命令会启动英文翻译的站点，如果使用 `yarn start` 则会启动默认语言（简体中文）翻译的站点。
+
+## 翻译站点
+
+⌛️ 待完善...
+
+<!--
+
+### 翻译 React 代码
+
+### 翻译插件数据
+
+### 翻译 Markdown 文件
+
+-->
+
+## 部署站点
+
+⌛️ 待完善...
