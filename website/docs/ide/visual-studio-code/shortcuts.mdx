@@ -57,6 +57,16 @@ import Table from "@site/src/components/Table/index.js";
     body: {
       items: [
         [
+          "选中整行",
+          <div>
+            <Shortcut>⌘</Shortcut> + <Shortcut>L</Shortcut>
+          </div>,
+          <div>
+            <Shortcut>Ctrl</Shortcut> + <Shortcut>L</Shortcut>
+          </div>,
+          "也可以鼠标左键连续点击三次",
+        ],
+        [
           "复制整行",
           <div>
             <Shortcut>⌘</Shortcut> + <Shortcut>C</Shortcut>
@@ -65,6 +75,18 @@ import Table from "@site/src/components/Table/index.js";
             <Shortcut>Ctrl</Shortcut> + <Shortcut>C</Shortcut>
           </div>,
           "必须在鼠标未选中的状态下使用",
+        ],
+        [
+          "向下复制整行",
+          <div>
+            <Shortcut>⇧</Shortcut> + <Shortcut>⌥</Shortcut> +{" "}
+            <Shortcut>&darr;</Shortcut>
+          </div>,
+          <div>
+            <Shortcut>Shift</Shortcut> + <Shortcut>Alt</Shortcut> +{" "}
+            <Shortcut>&darr;</Shortcut>
+          </div>,
+          "",
         ],
         [
           "👈向左选择更多文本",
