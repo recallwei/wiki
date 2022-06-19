@@ -459,7 +459,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Markdown Feature",
+          label: "Markdown 特性",
           collapsible: true,
           collapsed: true,
           link: {
@@ -470,7 +470,7 @@ const sidebars = {
             {
               type: "doc",
               id: "docusaurus/markdown-feature/basic-feature",
-              label: "Basic Feature",
+              label: "基本特性",
             },
             {
               type: "doc",
