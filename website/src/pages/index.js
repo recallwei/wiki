@@ -43,6 +43,7 @@ function HomepageHeader(props) {
         {() => {
           const openLink = (url) => {
             const w = window.open("about:blank");
+            w.opener = null;
             w.location.href = url;
           };
           return (

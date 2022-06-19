@@ -2,6 +2,38 @@
 title: 超链接
 ---
 
-## &lt;a&gt;
-
 **&lt;a&gt;** 标签定义了一个超链接，用于从一个页面链接到另一页。
+
+## 添加为链接目标
+
+<p style={{ marginBottom: "6px" }}>
+  使用 <code>target</code> 属性规定在何处打开链接：
+</p>
+
+- **\_self**：默认属性，在当前窗口打开链接。
+- **\_blank**：在新窗口中打开链接。
+- **\_parent**：在父窗口中打开链接。
+- **\_top**：整个窗口中打开链接。
+- **framename**：在指定的框架中打开链接。
+
+## 新标签打开链接的安全问题
+
+为 &lt;a&gt; 标签添加 `target="_blank` ，该链接会使用新的标签页打开。打开的子窗口可以获得创建窗口的 `opener` 句柄。子窗口通过此句柄可以访问到父窗口的一些属性，可以修改父窗口的页面地址让父窗口显示指定的页面，很显然这会构成一个安全问题。
+
+为了解决此问题，我们可以通过 JavaScript 来控制句柄的访问：
+
+```javascript {3}
+const openLink = (url) => {
+  const w = window.open("about:blank");
+  w.opener = null;
+  w.location.href = url;
+};
+```
+
+如果是 &lt;a&gt; 标签添加 `target="_blank`，我们需要为其添加一个 `rel="noopener"` 属性。但火狐不支持此属性，在火狐浏览器中要写成 `rel="noreferrer"`。
+
+```html
+<a href="https://www.google.com/" target="_blank" rel="noreferrer noopener" />
+```
+
+为了兼容性，我们在使用 `target="_blank"` 时，都建议加上 `rel="noreferrer noopener"`。
