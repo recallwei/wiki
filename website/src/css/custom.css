@@ -63,6 +63,7 @@
 /* 全局字体 */
 html {
   font-family: var(--base-font-family);
+  letter-spacing: 0.2px;
 }
 
 hr {

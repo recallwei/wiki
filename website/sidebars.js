@@ -264,10 +264,10 @@ const sidebars = {
         },
       ],
     },
-    // Javascript
+    // JavaScript
     {
       type: "category",
-      label: "Javascript",
+      label: "JavaScript",
       collapsible: true,
       collapsed: true,
       link: {
