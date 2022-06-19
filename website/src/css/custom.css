@@ -26,6 +26,7 @@
   --site-announcement-bar-stripe-color2: hsl(167deg 68% 95%);
   --link-list-hover: rgb(102, 212, 189);
   --base-font-family: "Noto Sans", sans-serif;
+  --ifm-list-left-padding: 1.2rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
