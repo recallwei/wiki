@@ -351,6 +351,11 @@ const sidebars = {
                 },
               ],
             },
+            {
+              type: "doc",
+              id: "javascript/reference-types/shallowcopy-and-deepcopy",
+              label: "浅复制与深复制",
+            },
           ],
         },
         {
