@@ -203,23 +203,28 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Components",
+          label: "UI",
           collapsible: true,
           collapsed: true,
           link: {
             type: "doc",
-            id: "css/components/index",
+            id: "css/ui/index",
           },
           items: [
             {
               type: "doc",
-              id: "css/components/card",
+              id: "css/ui/card",
               label: "Card",
             },
             {
               type: "doc",
-              id: "css/components/ribbon",
+              id: "css/ui/ribbon",
               label: "Ribbon",
+            },
+            {
+              type: "doc",
+              id: "css/ui/divider",
+              label: "分隔线",
             },
           ],
         },
