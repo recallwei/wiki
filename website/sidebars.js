@@ -282,7 +282,24 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "Value Types",
+          label: "操作符",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/operators/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "javascript/operators/bitwise-not",
+              label: "Bitwise Not(~)",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "值类型",
           collapsible: true,
           collapsed: true,
           link: {
@@ -303,13 +320,13 @@ const sidebars = {
             {
               type: "doc",
               id: "javascript/value-types/type-conversion",
-              label: "Type Conversion",
+              label: "类型转换",
             },
           ],
         },
         {
           type: "category",
-          label: "Reference Types",
+          label: "引用类型",
           collapsible: true,
           collapsed: true,
           link: {
@@ -320,30 +337,13 @@ const sidebars = {
             {
               type: "doc",
               id: "javascript/reference-types/array",
-              label: "Array",
+              label: "数组",
             },
           ],
         },
         {
           type: "category",
-          label: "Operators",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/operators/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "javascript/operators/bitwise-not",
-              label: "Bitwise Not(~)",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Solutions",
+          label: "解决方案",
           collapsible: true,
           collapsed: true,
           link: {
@@ -354,7 +354,7 @@ const sidebars = {
             {
               type: "doc",
               id: "javascript/solutions/get-file-type",
-              label: "Get File Type",
+              label: "获取文件类型",
             },
             {
               type: "doc",
