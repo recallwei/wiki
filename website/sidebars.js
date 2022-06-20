@@ -356,6 +356,11 @@ const sidebars = {
               id: "javascript/solutions/get-file-type",
               label: "Get File Type",
             },
+            {
+              type: "doc",
+              id: "javascript/solutions/get-text-from-html",
+              label: "从 HTML 中提取文字",
+            },
           ],
         },
       ],

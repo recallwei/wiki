@@ -1,0 +1,14 @@
+---
+title: 从 HTML 中提取文字
+---
+
+从富文本中提取出纯文字，需要过滤 HTML 标签等内容。
+
+## 正则表达式
+
+```javascript
+getSimpleText(HTML) {
+    let str = html.replace(/<[^>]+>|&[^>]+;/g, "").trim();
+    return str;
+  },
+```
