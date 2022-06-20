@@ -335,9 +335,21 @@ const sidebars = {
           },
           items: [
             {
-              type: "doc",
-              id: "javascript/reference-types/array",
+              type: "category",
               label: "数组",
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: "doc",
+                id: "javascript/reference-types/array/index",
+              },
+              items: [
+                {
+                  type: "doc",
+                  id: "javascript/reference-types/array/method-splice",
+                  label: "splice",
+                },
+              ],
             },
           ],
         },

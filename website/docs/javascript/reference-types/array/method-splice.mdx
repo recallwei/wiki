@@ -1,0 +1,77 @@
+---
+title: splice
+---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+`splice()` 方法通过<TH>删除</TH>或<TH>替换</TH>现有元素、<TH>添加</TH>新的元素来修改数组，并<TH>返回修改（删除）内容的数组</TH>，此方法<TH>会改变原数组</TH>。
+
+## 截取数组前 n 项
+
+如下 superHero 数组，我想将其中的 DC 超级英雄和漫威超级英雄分开，使用 `splice()` 方法，从 0 下标的元素开始
+
+```javascript
+const superHeros = [
+  "Batman",
+  "Superman",
+  "Wonderwoman",
+  "Ironman",
+  "Spiderman",
+];
+let deleteItems = superHeros.splice(0, 3);
+console.log(superHeros); // expected output: Array ["Ironman", "Spiderman"]
+console.log(deleteItems); // expected output: Array ["Batman", "Superman", "Wonderwoman"]
+```
+
+## 截取数组后 n 项
+
+上述 superHero 数组，也可以去除前面的漫威超级英雄，来得到 DC 超级英雄的数组。
+
+```javascript
+let deleteItems = superHeros.splice(3, 2);
+console.log(superHeros); // expected output: Array ["Batman", "Superman", "Wonderwoman"]
+console.log(deleteItems); // expected output: Array ["Ironman", "Spiderman"]
+```
+
+`splice()` 方法的第一个参数 `start:int` 如果**超过数组长度**，则从**数组末尾开始添加内容**；如果是**负数**，则表示**从末尾开始**的第几位，如果负数的绝对值大于数组长度，则表示开始位置为下标为 0 的元素。
+
+同理上述方法也可以写成，`start` 参数取其绝对值 2，表示从末尾第二个元素开始：
+
+```javascript
+let deleteItems = superHero.splice(-2, 2);
+console.log(deleteItems); // expect output: Array ["Ironman", "Spiderman"]
+```
+
+## 插入 n 个元素
+
+在索引为 0 处，插入一个元素 "Aquaman"：
+
+```javascript
+let deleteItems = superHeros.splice(0, 0, "Aquaman");
+console.log(superHeros); // expect output: Array ["Aquaman", "Batman", "Superman", "Wonderwoman", "Ironman", "Spiderman"]
+console.log(deleteItems); // expect output: Array []
+```
+
+插入 n 个元素：
+
+```javascript
+let deleteItems = superHeros.splice(0, 0, "Aquaman", "Aquaman", "Aquaman");
+console.log(superHeros); // expect output: Array ["Aquaman", "Aquaman", "Aquaman", "Batman", "Superman", "Wonderwoman", "Ironman", "Spiderman"]
+console.log(deleteItems); // expect output: Array []
+```
+
+:::info 提示
+第二个参数 `deleteCount` 为 0，表示不删除元素，所以会返回空数组。
+:::
+
+## 替换 n 个元素
+
+```javascript
+let deleteItems = superHeros.splice(0, 1, "Aquaman");
+console.log(superHeros); // expect output: Array ["Aquaman", "Superman", "Wonderwoman", "Ironman", "Spiderman"]
+console.log(deleteItems); // expect output: Array ["Batman"]
+```
+
+:::tip 提示
+会<TH>先执行删除操作</TH>再执行添加操作。
+:::
