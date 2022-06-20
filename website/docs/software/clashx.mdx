@@ -1,0 +1,16 @@
+---
+title: ClashX
+---
+
+## 配置默认代理端口
+
+设置中的 **Socks5 代理端口** 和 **HTTP 代理端口** 在默认情况下都是无法修改的，我们需要手动修改配置文件。我们导入的配置文件里的端口设置是不生效的，只有 `config.yaml` 中的端口设置会随 ClashX 启动生效。
+
+在配置文件中添加 **Socks5 代理端口** 和 **HTTP 代理端口**：
+
+```yaml title="config.yaml"
+socks-port: 7891    //Socks5 代理端口
+port: 7982          //HTTP 代理端口
+```
+
+添加完端口设置后重启 ClashX，接着就可指定使用 **Socks5 代理端口** 或 **HTTP 代理端口**。

@@ -994,6 +994,11 @@ const sidebars = {
           id: "software/telegram",
           label: "Telegram",
         },
+        {
+          type: "doc",
+          id: "software/clashx",
+          label: "ClashX",
+        },
       ],
     },
     { type: "doc", id: "vpn", label: "VPN" },
