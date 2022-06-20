@@ -293,7 +293,7 @@ const sidebars = {
             {
               type: "doc",
               id: "javascript/operators/bitwise-not",
-              label: "Bitwise Not(~)",
+              label: "按位非",
             },
           ],
         },
