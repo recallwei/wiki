@@ -6,7 +6,7 @@ hide_title: true
 import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import react from "@site/static/img/icon/react.png";
-import Link from "@docusaurus/Link";
+import HyperLink from "@site/src/components/HyperLink/index.js";
 
 <FeatureIcon src={react} title="样式和 CSS" />
 
@@ -42,7 +42,7 @@ const [lightColor, setLightColor] = useState(0);
 
 ## className 工具包
 
-如果需要频繁使用状态控制 `className` 属性，可以引入 npm 包 <Link to="/docs/npm/classnames">classnames</Link> 或 <Link to="/docs/npm/clsx">clsx</Link>。
+如果需要频繁使用状态控制 `className` 属性，可以引入 npm 包 <HyperLink link="/docs/npm/classnames" bold>classnames</HyperLink> 或 <HyperLink link="/docs/npm/clsx" bold>clsx</HyperLink>。
 
 ## 行内样式
 

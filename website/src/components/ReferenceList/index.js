@@ -3,7 +3,6 @@ import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/img/svg/link.svg";
-import BrowserOnly from "@docusaurus/BrowserOnly";
 
 export default function ReferenceList({ customStyle, data = [] }) {
   const isMobileDevice = /Mobi|Android|iPhone/i.test(navigator.userAgent);
