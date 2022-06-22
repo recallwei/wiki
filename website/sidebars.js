@@ -412,6 +412,23 @@ const sidebars = {
         },
         {
           type: "category",
+          label: "样式和 CSS",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "react/style-and-css/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "react/style-and-css/css-in-javascript",
+              label: "CSS in JavaScript",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "解决方案",
           collapsible: true,
           collapsed: true,

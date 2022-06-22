@@ -1,0 +1,26 @@
+---
+title: 样式和 CSS
+hide_title: true
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
+import LinkList from "@site/src/components/LinkList/index.js";
+import react from "@site/static/img/icon/react.png";
+
+<FeatureIcon src={react} title="样式和 CSS" />
+
+在 React 中，推荐将 CSS 样式写入 `.css` 文件，通过 `className` 属性引入。而不是将行内样式写在 `.js` 文件中。因为考虑性能，CSS 的 `class` 通常要**好于**行内样式。
+
+但是有时我们需要通过状态来控制样式，例如加载动画，点赞、收藏状态，此时行内样式的重要性不言而喻。
+
+## 行内样式
+
+<LinkList
+  data={[
+    {
+      title: "CSS in JavaScript",
+      link: "/docs/react/style-and-css/css-in-javascript",
+      src: react,
+    },
+  ]}
+/>
