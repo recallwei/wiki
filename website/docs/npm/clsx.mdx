@@ -2,9 +2,25 @@
 title: clsx
 ---
 
-<!-- TODO: Add reference list -->
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
+import npm from "@site/static/img/icon/npm.png";
+import yarn from "@site/static/img/icon/yarn.png";
 
-reference:
+## 参考
 
-- https://www.npmjs.com/package/clsx
-- https://yarnpkg.com/package/clsx
+<ReferenceList
+  data={[
+    {
+      title: "npm",
+      subTitle: "clsx",
+      src: npm,
+      link: "https://www.npmjs.com/package/clsx",
+    },
+    {
+      title: "yarn",
+      subTitle: "clsx",
+      src: yarn,
+      link: "https://yarnpkg.com/package/clsx",
+    },
+  ]}
+/>

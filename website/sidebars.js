@@ -697,13 +697,23 @@ const sidebars = {
         },
         {
           type: "doc",
-          id: "npm/n-module",
-          label: "n module",
+          id: "npm/classnames",
+          label: "classnames",
+        },
+        {
+          type: "doc",
+          id: "npm/clsx",
+          label: "clsx",
         },
         {
           type: "doc",
           id: "npm/patch-package",
           label: "patch-package",
+        },
+        {
+          type: "doc",
+          id: "npm/n-module",
+          label: "n module",
         },
         {
           type: "category",
