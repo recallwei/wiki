@@ -5,7 +5,14 @@ title: XOR 算法
 import ReferenceList from "@site/src/components/ReferenceList/index.js";
 import wikipedia from "@site/static/img/reference/wikipedia.png";
 
-XOR 算法即为异或算法（同 0 异 1）。
+XOR（Exclusive or） 算法即为异或算法（同 0 异 1）。
+
+## 运算规则
+
+- 任意变量 x 与自身异或结果为 0，即：`x^x = 0`
+- 任意变量 x 与 0 进行异或运算，结果不变，即：`x^0 = x`
+- 异或运算的结合性：`a^b^c = (a^b)^c = a^(b^c)`
+- 异或运算的交换性：`a^b = b^a`
 
 ## 交换变量
 
@@ -22,6 +29,12 @@ function swapWithXOR(num1, num2) {
 ```
 
 此方法只可以交换整数，无法处理浮点数（会丢失精度）。
+
+### 交换原理
+
+- `a = a^b`
+- `b = a^b` 即 `b = (a^b)^b = a^(b^b) = a^0 = a`
+- `a = a^b` 即 `a = (a^b)^a = (b^a)^a = b^(a^a) = b^0 = b`
 
 :::caution 注意
 虽然 XOR 运算可用来交换变量，但比起使用额外变量来交换变量的做法相比，性能反而比较差。
