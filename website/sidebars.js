@@ -299,7 +299,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "操作符",
+          label: "运算符",
           collapsible: true,
           collapsed: true,
           link: {
@@ -791,78 +791,6 @@ const sidebars = {
         },
       ],
     },
-    // IDE
-    {
-      type: "category",
-      label: "IDE",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "ide/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "Visual Studio Code",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "ide/visual-studio-code/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/git",
-              label: "Git",
-            },
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/shortcuts",
-              label: "快捷键",
-            },
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/proxy",
-              label: "设置代理服务器",
-            },
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/user-code-snippets",
-              label: "用户代码片段",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "WebStorm",
-          collapsible: true,
-          collapsed: true,
-          link: { type: "doc", id: "ide/webstorm/index" },
-          items: [
-            { type: "doc", id: "ide/webstorm/environment", label: "搭建环境" },
-          ],
-        },
-        {
-          type: "category",
-          label: "Wechat Devtools",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "ide/wechat-dev-tools/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "ide/wechat-dev-tools/settings",
-              label: "Settings",
-            },
-          ],
-        },
-      ],
-    },
   ],
   backend: [
     // Home
@@ -870,83 +798,6 @@ const sidebars = {
       type: "doc",
       id: "back-end",
       label: "后端",
-    },
-    // 操作系统
-    {
-      type: "category",
-      label: "操作系统",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "os/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "macOS",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "os/mac-os/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "os/mac-os/shortcuts",
-              label: "快捷键",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Windows",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "os/windows/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "os/windows/expose-iis-in-lan",
-              label: "将 IIS 暴露在局域网内",
-            },
-          ],
-        },
-      ],
-    },
-    // Network
-    {
-      type: "category",
-      label: "计算机网络",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "network/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "DNS",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "network/dns/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "network/dns/flush-cache",
-              label: "清除 DNS 缓存",
-            },
-          ],
-        },
-      ],
     },
     // C#
     {
@@ -1073,6 +924,100 @@ const sidebars = {
       ],
     },
   ],
+  cs: [
+    // 算法
+    {
+      type: "category",
+      label: "算法",
+      collapsible: true,
+      collapsed: true,
+      link: { type: "doc", id: "algorithm/index" },
+      items: [
+        {
+          type: "doc",
+          id: "algorithm/xor",
+          label: "XOR 算法",
+        },
+      ],
+    },
+    // 操作系统
+    {
+      type: "category",
+      label: "操作系统",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "os/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "macOS",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "os/mac-os/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "os/mac-os/shortcuts",
+              label: "快捷键",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Windows",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "os/windows/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "os/windows/expose-iis-in-lan",
+              label: "将 IIS 暴露在局域网内",
+            },
+          ],
+        },
+      ],
+    },
+    // Network
+    {
+      type: "category",
+      label: "计算机网络",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "network/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "DNS",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "network/dns/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "network/dns/flush-cache",
+              label: "清除 DNS 缓存",
+            },
+          ],
+        },
+      ],
+    },
+  ],
   software: [
     // 软件测评
     {
@@ -1095,6 +1040,78 @@ const sidebars = {
       ],
     },
     { type: "doc", id: "vpn", label: "VPN" },
+    // IDE
+    {
+      type: "category",
+      label: "IDE",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "ide/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Visual Studio Code",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "ide/visual-studio-code/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "ide/visual-studio-code/git",
+              label: "Git",
+            },
+            {
+              type: "doc",
+              id: "ide/visual-studio-code/shortcuts",
+              label: "快捷键",
+            },
+            {
+              type: "doc",
+              id: "ide/visual-studio-code/proxy",
+              label: "设置代理服务器",
+            },
+            {
+              type: "doc",
+              id: "ide/visual-studio-code/user-code-snippets",
+              label: "用户代码片段",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "WebStorm",
+          collapsible: true,
+          collapsed: true,
+          link: { type: "doc", id: "ide/webstorm/index" },
+          items: [
+            { type: "doc", id: "ide/webstorm/environment", label: "搭建环境" },
+          ],
+        },
+        {
+          type: "category",
+          label: "Wechat Devtools",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "ide/wechat-dev-tools/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "ide/wechat-dev-tools/settings",
+              label: "Settings",
+            },
+          ],
+        },
+      ],
+    },
   ],
   design: [
     // 文案排版指南

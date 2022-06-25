@@ -100,6 +100,12 @@ const config = {
           },
           {
             type: "doc",
+            docId: "algorithm/index",
+            label: "计算机",
+            position: "left",
+          },
+          {
+            type: "doc",
             docId: "code-specification",
             label: "代码规范",
             position: "left",
