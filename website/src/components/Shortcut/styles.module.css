@@ -12,6 +12,7 @@
   font-weight: 800;
   line-height: normal;
   white-space: nowrap;
+  vertical-align: text-bottom;
 }
 
 [data-theme="dark"] .shortcut {
