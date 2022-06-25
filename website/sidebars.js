@@ -282,6 +282,23 @@ const sidebars = {
       items: [
         {
           type: "category",
+          label: "表达式",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/expressions/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "javascript/expressions/destructuring-assignment",
+              label: "解构赋值",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "操作符",
           collapsible: true,
           collapsed: true,
@@ -403,6 +420,11 @@ const sidebars = {
             id: "react/hooks/index",
           },
           items: [
+            {
+              type: "doc",
+              id: "react/hooks/useState",
+              label: "useState",
+            },
             {
               type: "doc",
               id: "react/hooks/useEffect",
