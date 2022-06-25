@@ -5,12 +5,18 @@ hide_title: true
 
 import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
 import react from "@site/static/img/icon/react.png";
 import redux from "@site/static/img/icon/redux.png";
 
 <FeatureIcon src={react} title="React" />
 <LinkList
   data={[
+    {
+      title: "Hooks",
+      link: "/docs/react/hooks",
+      src: react,
+    },
     {
       title: "DOM",
       link: "/docs/react/dom",
@@ -35,6 +41,25 @@ import redux from "@site/static/img/icon/redux.png";
       title: "Redux",
       link: "/docs/react/redux",
       src: redux,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "React",
+      subTitle: "React Docs",
+      src: react,
+      link: "https://reactjs.org/",
+    },
+    {
+      title: "React",
+      subTitle: "React Docs Beta",
+      src: react,
+      link: "https://beta.reactjs.org/",
     },
   ]}
 />
