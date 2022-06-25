@@ -5,6 +5,31 @@ title: 快捷键
 import Shortcut from "@site/src/components/Shortcut/index.js";
 import Table from "@site/src/components/Table/index.js";
 
+## 窗口切换
+
+<Table
+  data={{
+    position: ["start", "center", "center", "start"],
+    header: ["功能", "macOS", "Windows", "备注"],
+    body: {
+      items: [
+        [
+          "向左/右切换窗口",
+          <div>
+            <Shortcut>⌘</Shortcut> + <Shortcut>⌥</Shortcut> +{" "}
+            <Shortcut>&larr;</Shortcut> / <Shortcut>&rarr;</Shortcut>
+          </div>,
+          <div>
+            <Shortcut>Alt</Shortcut> + <Shortcut>&larr;</Shortcut> /{" "}
+            <Shortcut>&rarr;</Shortcut>
+          </div>,
+          "",
+        ],
+      ],
+    },
+  }}
+/>
+
 ## 折叠代码块
 
 <Table
