@@ -395,6 +395,23 @@ const sidebars = {
       items: [
         {
           type: "category",
+          label: "Hooks",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "react/hooks/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "react/hooks/useEffect",
+              label: "useEffect",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "DOM",
           collapsible: true,
           collapsed: true,
