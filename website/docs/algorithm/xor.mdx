@@ -2,8 +2,40 @@
 title: XOR 算法
 ---
 
-XOR 算法即为异或算法。
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
+import wikipedia from "@site/static/img/reference/wikipedia.png";
+
+XOR 算法即为异或算法（同 0 异 1）。
 
 ## 交换变量
 
-XOR 算法可以实现交换两个变量值，不需要声明一个新的中间变量。
+XOR 算法可以实现交换两个变量值，不需要额外声明一个中间变量。
+
+如下是 JavaScript 使用 XOR 算法实现的函：
+
+```javascript title="swap.js"
+function swapWithXOR(num1, num2) {
+  num1 = num1 ^ num2;
+  num2 = num1 ^ num2;
+  num1 = num1 ^ num2;
+}
+```
+
+此方法只可以交换整数，无法处理浮点数（会丢失精度）。
+
+:::caution 注意
+虽然 XOR 运算可用来交换变量，但比起使用额外变量来交换变量的做法相比，性能反而比较差。
+:::
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Wikipedia",
+      subTitle: "逻辑异或",
+      src: wikipedia,
+      link: "https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E5%BC%82%E6%88%96",
+    },
+  ]}
+/>
