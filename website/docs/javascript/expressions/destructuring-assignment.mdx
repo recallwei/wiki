@@ -16,6 +16,7 @@ const secondElement = list[1];
 ```
 
 ```javascript
+// 剩余模式
 const [firstElement, secondElement, ...restElements] = [10, 20, 30, 40, 50];
 // is equivalent to:
 const firstElement = 10;
@@ -25,6 +26,70 @@ const restElements = [30, 40, 50];
 
 若解构一个指定长度为 N 的数组，若赋值运算符左侧的变量数大于 N，则只有前 N 个变量会被赋值，剩余的变量为 `undefined`。
 
-## 交换变量
+### 交换变量
 
-使用解构赋值，在交换两个变量时，可以省去声明一个中间变量。
+使用解构赋值，在交换两个变量时，可以省去额外声明一个中间变量。
+
+```javascript {4,9} showLineNumbers
+let a = 1;
+let b = 3;
+
+[a, b] = [b, a];
+console.log(a); // expected: 3
+console.log(b); // expected: 1
+
+const arr = [1, 2, 3];
+[arr[2], arr[1]] = [arr[1], arr[2]];
+console.log(arr); // expected: [1,3,2]
+```
+
+### 解析一个函数返回的数组
+
+```javascript {5} showLineNumbers
+function f() {
+  return [1, 2];
+}
+
+var a, b;
+[a, b] = f();
+console.log(a); // expected: 1
+console.log(b); // expected: 2
+```
+
+### 忽略返回值
+
+```javascript {5} showLineNumbers
+function f() {
+  return [1, 2, 3];
+}
+
+var [a, , b] = f();
+console.log(a); // expected: 1
+console.log(b); // expected: 3
+[, ,] = f(); // 忽略全部返回值
+```
+
+### 用正则表达式匹配提取值
+
+用正则表达式的 `exec()` 方法匹配字符串会返回一个数组，该数组第一个值是完全匹配正则表达式的字符串，然后的值是匹配正则表达式括号内内容部分。解构赋值允许你轻易地提取出需要的部分，忽略完全匹配的字符串。
+
+如下 `parseProtocol` 函数用于提取 URL 中使用的协议：
+
+```javascript showLineNumbers
+function parseProtocol(url) {
+  var parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
+  if (!parsedURL) {
+    return false;
+  }
+  console.log(parsedURL); // ["https://developer.mozilla.org/en-US/Web/JavaScript", "https", "developer.mozilla.org", "en-US/Web/JavaScript"]
+
+  var [, protocol, fullhost, fullpath] = parsedURL;
+  return protocol;
+}
+
+console.log(
+  parseProtocol("https://developer.mozilla.org/en-US/Web/JavaScript")
+); // "https"
+```
+
+## 对象解构
