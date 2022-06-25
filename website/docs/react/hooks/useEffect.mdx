@@ -1,0 +1,75 @@
+---
+title: useEffect
+---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+**Effects** 的作用是让我们在渲染完成后运行一段代码，来保持组件状态与外部数据源同步。
+
+## 何时执行 Effect
+
+**useEffect** 可以直接访问到组件的 **props** 和 **state**，当它们发生改变的时候，会执行重新渲染，在更新完 **DOM** 后会执行 **useEffect**。  
+默认情况下，它在<TH>第一次渲染之后</TH>和<TH>每次更新之后</TH>都会执行。
+
+:::info 提示
+**useEffect Hook** 是 **React Class** 生命周期函数 **componentDidMount**，**componentDidUpdate** 和 **componentWillUnmount** 这三个函数的组合。
+:::
+
+## 跳过 Effect 执行
+
+传递数组作为 **useEffect** 的第二个可选参数，如果特定值在两次渲染间没有发生变化，则跳过 Effect 的执行。
+
+如下仅当 `count` 状态改变时才会执行 **useEffect**：
+
+```jsx
+useEffect(() => {
+  document.title = `You clicked ${count} times`;
+}, [count]);
+```
+
+## 仅执行一次的 Effect
+
+为 **useEffect** 的第二个可选参数传递一个<TH>空数组</TH>，即告诉 React 该 Effect 不依赖于任何 **props** 和 **state**，且永远不会重复执行：
+
+```jsx
+useEffect(() => {
+  // 此处代码仅在组件挂载和卸载时执行
+}, []);
+```
+
+## 清除 Effect
+
+当<TH>数据源来自外部</TH>时，比如 API 调用。组件卸载时，API 调用过程没有结束，所以需要清除此处的 Effect。
+
+如下是一个查看好友状态的组件，使用 **useEffect** 返回一个清除函数，在组件卸载的时候执行清除操作，初始化其在线状态：
+
+```jsx {11-13} title="FriendStatus.js" showLineNumbers
+import React, { useState, useEffect } from "react";
+
+function FriendStatus(props) {
+  const [isOnline, setIsOnline] = useState(null);
+
+  useEffect(() => {
+    function handleStatusChange(status) {
+      setIsOnline(status.isOnline);
+    }
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+    return () => {
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+    };
+  });
+
+  if (isOnline === null) {
+    return "Loading...";
+  }
+  return isOnline ? "Online" : "Offline";
+}
+```
+
+## 分离逻辑
+
+Class 组件通常会将不同的组件逻辑分散到各个生命周期函数中，**useEffect Hook** 很好地解决了这个问题，我们可以声明多个 **useEffect** 在同一个 Function 组件之中，且它们之间互不干扰，各自处理各自的逻辑。
+
+:::caution 注意
+**React** 会按照 **useEffect** 声明的顺序进行调用。
+:::
