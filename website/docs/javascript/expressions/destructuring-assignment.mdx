@@ -1,0 +1,30 @@
+---
+title: 解构赋值
+---
+
+**解构**是一种 JavaScript 表达式，可以通过**数组**或**对象**的属性将值分解为不同的变量。
+
+## 数组解构
+
+### 语法
+
+```javascript
+const [firstElement, secondElement] = list;
+// is equivalent to:
+const firstElement = list[0];
+const secondElement = list[1];
+```
+
+```javascript
+const [firstElement, secondElement, ...restElements] = [10, 20, 30, 40, 50];
+// is equivalent to:
+const firstElement = 10;
+const secondElement = 20;
+const restElements = [30, 40, 50];
+```
+
+若解构一个指定长度为 N 的数组，若赋值运算符左侧的变量数大于 N，则只有前 N 个变量会被赋值，剩余的变量为 `undefined`。
+
+## 交换变量
+
+使用解构赋值，在交换两个变量时，可以省去声明一个中间变量。
