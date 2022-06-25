@@ -56,17 +56,6 @@ console.log(a); // expected: 1
 console.log(b); // expected: 2
 ```
 
-### 剩余参数匹配
-
-```javascript showLineNumbers
-const [a, b, ...[c, d, ...[e, f]]] = [1, 2, 3, 4, 5, 6];
-console.log(a, b, c, d, e, f); // expected: 1 2 3 4 5 6
-const [h, i, ...[j, ...[k]]] = [1, 2, 3, 4, 5, 6];
-console.log(h, i, j, k); // expected: 1 2 3 4
-const [h, i, ...[j, ...k]] = [1, 2, 3, 4, 5, 6];
-console.log(h, i, j, k); // expected: 1 2 3 [4, 5, 6]
-```
-
 ### 忽略返回值
 
 ```javascript {5} showLineNumbers
@@ -78,6 +67,17 @@ var [a, , b] = f();
 console.log(a); // expected: 1
 console.log(b); // expected: 3
 [, ,] = f(); // 忽略全部返回值
+```
+
+### 剩余参数匹配
+
+```javascript showLineNumbers
+const [a, b, ...[c, d, ...[e, f]]] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c, d, e, f); // expected: 1 2 3 4 5 6
+const [h, i, ...[j, ...[k]]] = [1, 2, 3, 4, 5, 6];
+console.log(h, i, j, k); // expected: 1 2 3 4
+const [h, i, ...[j, ...k]] = [1, 2, 3, 4, 5, 6];
+console.log(h, i, j, k); // expected: 1 2 3 [4, 5, 6]
 ```
 
 ### 用正则表达式匹配提取值
