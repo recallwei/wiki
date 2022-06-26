@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 9rem;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.mobileGrid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 5rem;
+}
+
+.cardWrapper {
+  position: relative;
+}
+
+.card {
+  background-color: var(--ifm-color-primary-lighter);
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  /* opacity: 0;
+  transition: opacity 0.3s; */
+}
+
+/* .image:hover {
+  opacity: 1;
+} */
+
+.imageMobile {
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  font-size: 15px;
+  font-weight: 600;
+}
