@@ -787,7 +787,7 @@ const sidebars = {
         {
           type: "doc",
           id: "graphql/installation",
-          label: "安装",
+          label: "🚀 安装",
         },
       ],
     },
@@ -806,7 +806,7 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       link: { type: "doc", id: "csharp/index" },
-      items: [{ type: "doc", id: "csharp/environment", label: "搭建环境" }],
+      items: [{ type: "doc", id: "csharp/environment", label: "🚀 搭建环境" }],
     },
     // Go
     {
@@ -822,7 +822,7 @@ const sidebars = {
         {
           type: "doc",
           id: "go/environment",
-          label: "搭建环境",
+          label: "🚀 搭建环境",
         },
       ],
     },
@@ -840,11 +840,11 @@ const sidebars = {
         {
           type: "doc",
           id: "nodejs/environment",
-          label: "搭建环境",
+          label: "🚀 搭建环境",
         },
         {
           type: "category",
-          label: "Express",
+          label: "🚀 Express",
           collapsible: true,
           collapsed: true,
           link: {
@@ -852,7 +852,11 @@ const sidebars = {
             id: "nodejs/express/index",
           },
           items: [
-            { type: "doc", id: "nodejs/express/installation", label: "安装" },
+            {
+              type: "doc",
+              id: "nodejs/express/installation",
+              label: "🚀 安装",
+            },
           ],
         },
       ],
@@ -871,7 +875,7 @@ const sidebars = {
         {
           type: "doc",
           id: "mongodb/environment",
-          label: "搭建环境",
+          label: "🚀 搭建环境",
         },
       ],
     },
@@ -888,7 +892,7 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "CLI",
+          label: "🚀 CLI",
           collapsible: true,
           collapsed: true,
           link: {
@@ -899,7 +903,7 @@ const sidebars = {
             {
               type: "doc",
               id: "redis/cli/key",
-              label: "Key",
+              label: "🚀 Key",
             },
           ],
         },
@@ -919,7 +923,7 @@ const sidebars = {
         {
           type: "doc",
           id: "microsoft-azure/login-azure-cn",
-          label: "使用中国区 Azure",
+          label: "🚀 使用中国区 Azure",
         },
       ],
     },
