@@ -5,7 +5,7 @@ title: 快捷键
 import Shortcut from "@site/src/components/Shortcut/index.js";
 import Table from "@site/src/components/Table/index.js";
 
-## 窗口切换
+## 窗口
 
 <Table
   data={{
@@ -24,6 +24,18 @@ import Table from "@site/src/components/Table/index.js";
             <Shortcut>&rarr;</Shortcut>
           </div>,
           "",
+        ],
+        [
+          "放大/缩小窗口字体",
+          <div>
+            <Shortcut>⌘</Shortcut> + <Shortcut>=</Shortcut> /{" "}
+            <Shortcut>-</Shortcut>
+          </div>,
+          <div>
+            <Shortcut>Ctrl</Shortcut> + <Shortcut>=</Shortcut> /{" "}
+            <Shortcut>-</Shortcut>
+          </div>,
+          "会放大/缩小所有字体",
         ],
       ],
     },
@@ -81,6 +93,16 @@ import Table from "@site/src/components/Table/index.js";
     header: ["功能", "macOS", "Windows", "备注"],
     body: {
       items: [
+        [
+          "放大/缩小编辑器字体",
+          <div>
+            <Shortcut>⌘</Shortcut> + <Shortcut>鼠标滚轮向上/下滚动</Shortcut>
+          </div>,
+          <div>
+            <Shortcut>Ctrl</Shortcut> + <Shortcut>鼠标滚轮向上/下滚动</Shortcut>
+          </div>,
+          "仅放大/缩小编辑器字体",
+        ],
         [
           "选中整行",
           <div>
