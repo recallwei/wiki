@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./styles.module.css";
-import { colorSwitch } from "@site/src/utils/style-util.js";
+import { switchColor } from "@site/src/utils/style-util";
 
 export default function TextHighlight({ bgColor, children }) {
-  const bgStyle = { backgroundColor: `${colorSwitch(bgColor)}` };
+  const bgStyle = { backgroundColor: `${switchColor(bgColor)}` };
   return (
     <span
       className={styles.highlightArea}
