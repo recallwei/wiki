@@ -4,4 +4,4 @@ function openWindow(url) {
   w.location.href = url;
 }
 
-module.exports = { openWindow };
+exports = { openWindow };

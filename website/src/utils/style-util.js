@@ -22,4 +22,4 @@ function switchColor(color) {
   }
 }
 
-module.exports = { switchColor };
+export { switchColor };
