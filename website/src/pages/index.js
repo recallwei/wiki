@@ -4,6 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { openWindow } from "@site/src/utils/func-util";
 import styles from "./index.module.css";
 import favicon from "@site/static/img/favicon/favicon.png";
 import github from "@site/static/img/icon/github.png";
@@ -41,11 +42,6 @@ function HomepageHeader(props) {
       </div>
       <BrowserOnly fallback={null}>
         {() => {
-          const openLink = (url) => {
-            const w = window.open("about:blank");
-            w.opener = null;
-            w.location.href = url;
-          };
           return (
             <div className={styles.navLinkIconArea}>
               <img
@@ -53,7 +49,7 @@ function HomepageHeader(props) {
                 alt="Github"
                 title="Github"
                 onClick={() => {
-                  openLink(siteConfig.customFields.githubLink);
+                  openWindow(siteConfig.customFields.githubLink);
                 }}
               />
               <img

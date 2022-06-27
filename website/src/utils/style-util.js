@@ -1,5 +1,6 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-export default (color) => {
+
+function switchColor(color) {
   const { siteConfig } = useDocusaurusContext();
   switch (color) {
     case "primary":
@@ -19,4 +20,6 @@ export default (color) => {
     default:
       return color;
   }
-};
+}
+
+module.exports = { switchColor: switchColor };
