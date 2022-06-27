@@ -31,6 +31,11 @@
 
 .card:hover {
   background-color: var(--ifm-color-primary-lightest);
+  box-shadow: black 0px 0px 10px;
+}
+
+[data-theme="dark"] .card:hover {
+  box-shadow: white 0px 0px 10px;
 }
 
 .image {
