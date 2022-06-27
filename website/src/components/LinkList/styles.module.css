@@ -4,7 +4,6 @@
 
 .item {
   border-radius: 4px;
-  padding: 3px;
 }
 
 .item:hover {
@@ -16,6 +15,7 @@
   justify-content: start;
   align-items: center;
   font-weight: 500;
+  padding: 3px;
 }
 
 .item a > img {
