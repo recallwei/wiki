@@ -282,6 +282,23 @@ const sidebars = {
       items: [
         {
           type: "category",
+          label: "数据类型",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/data-type/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "javascript/data-type/number",
+              label: "Number",
+            },
+          ],
+        },
+        {
+          type: "category",
           label: "表达式",
           collapsible: true,
           collapsed: true,

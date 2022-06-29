@@ -1,0 +1,20 @@
+---
+title: Number
+---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+## 避免测试特定的浮点值
+
+浮点数计算具有<TH>舍入错误</TH>，在算术计算中远不如整数精确。
+
+```javascript
+console.log(0.1 + 0.2);
+// expected: 0.30000000000000004
+```
+
+浮点数 **0.1** 和 **0.2** 的算术和居然不是 **0.3**，是不是很诧异，因此我们永远不要测试特定的浮点值。
+
+:::caution 注意
+之所以存在这种舍入错误，是因为使用了 **IEEE754** 数值，这种错误并非 **ECMAScript** 所独有。其他使用相同格式的语言也有这个问题。
+:::
