@@ -5,7 +5,9 @@ hide_title: true
 
 import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
 import javascript from "@site/static/img/icon/javascript.png";
+import mozilla from "@site/static/img/reference/mozilla.png";
 
 <FeatureIcon src={javascript} title="JavaScript" />
 <LinkList
@@ -29,6 +31,25 @@ import javascript from "@site/static/img/icon/javascript.png";
       title: "解决方案",
       link: "/docs/javascript/solutions",
       src: javascript,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "MDN Web Docs",
+      subTitle: "JavaScript",
+      src: mozilla,
+      link: "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
+    },
+    {
+      title: "现代 JavaScript 教程",
+      subTitle: "JavaScript",
+      src: javascript,
+      link: "https://zh.javascript.info/",
     },
   ]}
 />
