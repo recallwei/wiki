@@ -1,0 +1,48 @@
+---
+title: String
+---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+## 模版字面量标签函数
+
+模版字面量支持定义<TH>标签函数</TH>，而通过标签函数可以自定义插值行为。标签函数会接收<TH>被插值记号分隔后的模板</TH>和<TH>对每个表达式求值的结果</TH>。
+
+```javascript {13} title="simpleTag.js" showLineNumbers
+let a = 9;
+let b = 20;
+
+function simpleTag(strings, aValExpression, bValExpression, sumExpression) {
+  console.log(strings);
+  console.log(aValExpression);
+  console.log(bValExpression);
+  console.log(sumExpression);
+  return "result";
+}
+
+let untaggedResult = `${a} + ${b} = ${a + b}`;
+let taggedResult = simpleTag`${a} + ${b} = ${a + b}`;
+// expected:
+// ["", " + ", " = ", ""]
+// 9
+// 20
+// 29
+console.log(untaggedResult); // expected: "9 + 20 = 29"
+console.log(taggedResult); // expected: "result"
+```
+
+标签函数的第一个参数为<TH>模板参数</TH>和<TH>边界的间隔</TH>组成的数组，即插值符号分隔出的字符串数组。
+
+### 剩余操作符作为参数
+
+由于表达式的参数是**可变**的，所以通常应该使用<TH>剩余操作符</TH>将它们收集到一个数组中：
+
+```javascript {1} title="simpleTag.js" showLineNumbers
+function simpleTag(string, ...expressions) {
+  console.log(string);
+  for (const expression of expressions) {
+    console.log(expression);
+  }
+  return "result";
+}
+```

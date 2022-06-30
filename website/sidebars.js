@@ -295,6 +295,11 @@ const sidebars = {
               id: "javascript/data-type/number",
               label: "Number",
             },
+            {
+              type: "doc",
+              id: "javascript/data-type/string",
+              label: "String",
+            },
           ],
         },
         {
