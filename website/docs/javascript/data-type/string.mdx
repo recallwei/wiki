@@ -58,3 +58,34 @@ function zipTag(strings, ...expressions) {
   );
 }
 ```
+
+### 原始字符串
+
+使用默认的标签函数 `String.raw`，可以直接获取原始的模板字面量内容（如**换行符**或 **Unicode 字符**），而不是被转换后的字符表示。
+
+```javascript
+console.log(`\u00A9`); // expected: ©
+console.log(String.raw`\u00A9`); // expected: \u00A9
+
+console.log(`First Line\nSecond Line`);
+// expected:
+// First Line
+// Second Line
+console.log(String.raw`First Line\nSecond Line`);
+// expected: First Line\nSecond Line
+
+console.log(`First Line
+Second Line`);
+// expected:
+// First Line
+// Second Line
+console.log(String.raw`First Line
+Second Line`);
+// expected:
+// First Line
+// Second Line
+```
+
+:::caution 注意
+对实际的换行符来说是不行的，它们不会被转换成转义序列的形式。
+:::
