@@ -46,3 +46,15 @@ function simpleTag(string, ...expressions) {
   return "result";
 }
 ```
+
+### 默认返回字符串
+
+因为参数始终是 **n** 个，而传给标签函数第一个参数所包含的字符串数始终是 **n + 1** 个，把字符串和插值符号的计算结果拼接起来，可以得到默认返回字符串：
+
+```javascript title="simpleTag.js" showLineNumbers
+function zipTag(strings, ...expressions) {
+  return (
+    strings[0] + expressions.map((e, i) => `${e}${strings[i + 1]}`).join("")
+  );
+}
+```
