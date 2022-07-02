@@ -409,6 +409,11 @@ const sidebars = {
           items: [
             {
               type: "doc",
+              id: "javascript/solutions/get-device-type",
+              label: "获取设备类型",
+            },
+            {
+              type: "doc",
               id: "javascript/solutions/get-file-type",
               label: "获取文件类型",
             },
@@ -621,10 +626,10 @@ const sidebars = {
         },
       ],
     },
-    // WeXin Mini Program
+    // 微信小程序
     {
       type: "category",
-      label: "WeXin Mini Program",
+      label: "微信小程序",
       collapsible: true,
       collapsed: true,
       link: {
@@ -635,7 +640,7 @@ const sidebars = {
         {
           type: "doc",
           id: "wexin-mini-program/configuration",
-          label: "Configuration",
+          label: "配置文件",
         },
         {
           type: "doc",
