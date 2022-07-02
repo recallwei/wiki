@@ -137,7 +137,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Font",
+          label: "字体",
           collapsible: true,
           collapsed: true,
           link: {
@@ -148,12 +148,12 @@ const sidebars = {
             {
               type: "doc",
               id: "css/font/import",
-              label: "Import",
+              label: "导入",
             },
             {
               type: "doc",
               id: "css/font/display",
-              label: "Display",
+              label: "显示",
             },
           ],
         },
@@ -181,7 +181,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Properties",
+          label: "属性",
           collapsible: true,
           collapsed: true,
           link: {
@@ -191,13 +191,13 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              id: "css/properties/white-space",
-              label: "white-space",
+              id: "css/properties/box-shadow",
+              label: "box-shadow",
             },
             {
               type: "doc",
-              id: "css/properties/box-shadow",
-              label: "box-shadow",
+              id: "css/properties/white-space",
+              label: "white-space",
             },
           ],
         },

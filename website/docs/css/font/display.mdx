@@ -1,12 +1,12 @@
 ---
-title: Display
+title: 显示
 ---
 
 ## 文本过长问题
 
-div 内显示固定行数的文本，超出部分用省略号显示。
+**&lt;div&gt;** 内显示固定行数的文本，超出部分用省略号显示。
 
-```css
+```css title="text.css"
 .singleLineText {
   white-space: nowrap;
   overflow: hidden;
@@ -17,9 +17,34 @@ div 内显示固定行数的文本，超出部分用省略号显示。
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  /* 最多显示 3 行 */
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 ```
 
 ## 文本换行问题
+
+遇到英文单词因为行空间不够被截断时，影响了阅读体验，需对其样式进行特殊处理，使得可以不截断单词而换行。
+
+### word-break
+
+决定单词内该怎么换行。
+
+- `normal` - 使用浏览器默认的换行规则。
+- `break-all` - 允许在单词内换行。
+- `keep-all` - 只能在半角空格或连字符处换行。
+
+### word-wrap
+
+决定句尾放不下单词时是否换行。
+
+- `normal` - 只在允许的断字点换行（浏览器保持默认处理）。
+- `break-word` - 在长单词或 URL 地址内部进行换行。
+
+```css title="text.css"
+.textWrap {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+```

@@ -1,6 +1,10 @@
 ---
-title: Import
+title: 导入
 ---
+
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
+import google from "@site/static/img/icon/google.png";
+import jetbrains from "@site/static/img/reference/jetbrains.png";
 
 可以在 CSS 中引入自定义字体，控制字体显示效果。
 
@@ -18,5 +22,19 @@ code {
 }
 ```
 
-🔗 [Google Fonts](https://fonts.google.com/specimen/JetBrains+Mono)  
-🔗 [JetBrains Mono 官方网址](https://www.jetbrains.com/zh-cn/lp/mono/)
+<ReferenceList
+  data={[
+    {
+      title: "Google Fonts",
+      subTitle: "JetBrains+Mono",
+      src: google,
+      link: "https://fonts.google.com/specimen/JetBrains+Mono",
+    },
+    {
+      title: "JetBrains",
+      subTitle: "JetBrains Mono",
+      src: jetbrains,
+      link: "https://www.jetbrains.com/zh-cn/lp/mono/",
+    },
+  ]}
+/>
