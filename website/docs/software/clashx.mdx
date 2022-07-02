@@ -1,8 +1,11 @@
 ---
 title: ClashX
+hide_title: true
 ---
 
 import TH from "@site/src/components/TextHighlight/index.js";
+
+**ClashX** 是 Mac 端上一个基于规则的代理软件。
 
 ## 配置代理端口
 
@@ -16,3 +19,11 @@ port: 7982          //HTTP 代理端口
 ```
 
 添加完端口设置后重启 ClashX，接着就可指定使用 **Socks5 代理端口** 或 **HTTP 代理端口**。
+
+## 终端代理
+
+在 ClashX 中点击 「**复制终端代理命令**」，将复制的命令在终端中执行。
+
+```bash
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+```
