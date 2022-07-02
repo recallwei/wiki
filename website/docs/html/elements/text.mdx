@@ -6,6 +6,8 @@ import TH from "@site/src/components/TextHighlight/index.js";
 
 ## 粗体
 
+**&lt;b&gt;** 标签与 **&lt;strong&gt;** 标签的视觉效果相同，都是粗体。但是语义上并不同。
+
 ### &lt;b&gt;
 
 **&lt;b&gt;** 标签表示某些<TH>需要强调</TH>的文本。
@@ -14,7 +16,7 @@ import TH from "@site/src/components/TextHighlight/index.js";
 
 **&lt;strong&gt;** 标签表示某些<TH>具有重要性、需要加重语气</TH>的文本。
 
-### CSS font-weight
+### CSS 实现：font-weight
 
 <p style={{ marginBottom: 4 }}>
   将内容与样式隔离，使用 CSS <TH>font-weight</TH> ，可取的值有：
@@ -42,18 +44,77 @@ import TH from "@site/src/components/TextHighlight/index.js";
 
 ## 斜体
 
-**&lt;em&gt;** 标签与 **&lt;i&gt;** 标签的视觉效果相同，都是斜体字。但是语义上并不同，**&lt;em&gt;** 标签表示其内容的<TH>着重强调</TH>，而 **&lt;i&gt;** 标签表示从正常散文中区分出的文本，例如外来词，虚构人物的思想，或者当文本指的是一个词语的定义，而不是其语义含义。
+**&lt;em&gt;** 标签与 **&lt;i&gt;** 标签的视觉效果相同，都是斜体字。但是语义上并不同。
+
+### &lt;em&gt;
+
+**&lt;em&gt;** 标签表示其内容的<TH>着重强调</TH>。
+
+### &lt;i&gt;
+
+**&lt;i&gt;** 标签表示从正常散文中区分出的文本，例如外来词，虚构人物的思想，或者当文本指的是一个词语的定义，而不是其语义含义。
+
+## 下划线
+
+### &lt;u&gt;
+
+**&lt;u&gt;** 标签视觉效果为下划线，此标签的常见用途是<TH>指出拼写错误的单词</TH>。
+
+### CSS 实现：text-decoration
+
+```css
+.text {
+  text-decoration: underline;
+}
+```
+
+效果如下：
+
+<div style={{ textDecoration: "underline" }}>这句话具有下划线。</div>
 
 ## 字号
 
+### &lt;small&gt;
+
 **&lt;small&gt;** 标签将使文本的字体变小一号，有着表示边注释和附属细则，包括版权和法律文本的含义。
+
+### &lt;big&gt;（已弃用）
 
 **&lt;big&gt;** 标签已被**弃用**，建议使用 CSS 调整字号。
 
+### CSS 实现：font-size
+
+如下用 CSS 实现的视觉效果等同于 **&lt;small&gt;** 和 **&lt;big&gt;**：
+
+```css
+.small {
+  font-size: 0.8rem;
+}
+
+.big {
+  font-size: 1.2rem;
+}
+```
+
 ## 代码
+
+### &lt;code&gt;
 
 **&lt;code&gt;** 标签用于表示计算机代码，默认情况下会以等宽字体显示。
 
 ## 缩写
 
+### &lt;abbr&gt;
+
 **&lt;abbr&gt;** 标签用于表示缩写，并且可以通过可选的 `title` 属性提供完整的描述。
+
+## 删除线
+
+## 插入线
+
+<del>
+  <p>“I apologize for the delay.”</p>
+</del>
+<ins cite="../howtobeawizard.html" datetime="2018-05">
+  <p>“A wizard is never late …”</p>
+</ins>

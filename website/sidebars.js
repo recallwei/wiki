@@ -230,7 +230,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Solutions",
+          label: "解决方案",
           collapsible: true,
           collapsed: true,
           link: {
@@ -240,13 +240,18 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              id: "css/solutions/bootstrap",
-              label: "Bootstrap",
+              id: "css/solutions/code-change-design",
+              label: "代码变更效果",
             },
             {
               type: "doc",
               id: "css/solutions/svg",
               label: "修改 SVG 样式",
+            },
+            {
+              type: "doc",
+              id: "css/solutions/bootstrap",
+              label: "Bootstrap",
             },
           ],
         },

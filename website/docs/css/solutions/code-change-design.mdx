@@ -1,0 +1,85 @@
+---
+title: 代码变更效果
+---
+
+import styles from "./code-change-design.module.css";
+
+使用 **HTML &lt;del&gt;** 与 **&lt;ins&gt;** 和 **CSS 伪元素**实现一个代码变更效果的 UI：
+
+<div className={styles.codeArea}>
+  <p>.text{"{"}</p>
+  <del>
+    <p>&emsp;font-weight: 400;</p>
+  </del>
+  <ins>
+    <p>&emsp;font-weight: 500;</p>
+  </ins>
+  <p>{"}"}</p>
+</div>
+
+---
+
+<p style={{ marginTop: 4, marginBottom: 4 }}>代码如下：</p>
+
+```jsx title="code.js"
+import styles from "./code.module.css";
+function code() {
+  return;
+  <div className="{styles.code}">
+    <p>.text{"{"}</p>
+    <del>
+      <p>&emsp;font-weight: 400;</p>
+    </del>
+    <ins>
+      <p>&emsp;font-weight: 500;</p>
+    </ins>
+    <p>{"}"}</p>
+  </div>;
+}
+```
+
+```css title="code.module.css" showLineNumbers
+.code {
+  background: rgb(246, 247, 248);
+  border-radius: 0.4rem;
+  padding: 0.1rem 0;
+  vertical-align: middle;
+  margin-bottom: 1.2rem;
+}
+.code del,
+ins {
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+.code del {
+  background-color: #fbb;
+}
+
+.code ins {
+  background-color: #d4fcbc;
+}
+
+.code del::before,
+.code ins::before {
+  position: absolute;
+  left: 0.5rem;
+  font-family: monospace;
+  margin-top: 0.15rem;
+}
+
+.code del::before {
+  content: "−";
+}
+
+.code ins::before {
+  content: "+";
+}
+
+.code p {
+  margin: 0 1.8rem 0;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+```

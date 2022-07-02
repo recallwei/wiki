@@ -1,0 +1,43 @@
+.codeArea {
+  background: rgb(246, 247, 248);
+  border-radius: 0.4rem;
+  padding: 0.1rem 0;
+  vertical-align: middle;
+  margin-bottom: 1.2rem;
+}
+.codeArea del,
+ins {
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+.codeArea del {
+  background-color: #fbb;
+}
+
+.codeArea ins {
+  background-color: #d4fcbc;
+}
+
+.codeArea del::before,
+.codeArea ins::before {
+  position: absolute;
+  left: 0.5rem;
+  font-family: monospace;
+  margin-top: 0.15rem;
+}
+
+.codeArea del::before {
+  content: "−";
+}
+
+.codeArea ins::before {
+  content: "+";
+}
+
+.codeArea p {
+  margin: 0 1.8rem 0;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
