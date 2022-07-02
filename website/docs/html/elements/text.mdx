@@ -42,6 +42,22 @@ import TH from "@site/src/components/TextHighlight/index.js";
 }
 ```
 
+效果如下：
+
+<div style={{ fontWeight: "normal" }}>fontWeight = normal</div>
+<div style={{ fontWeight: "bold" }}>fontWeight = bold</div>
+<div style={{ fontWeight: "bolder" }}>fontWeight = bolder</div>
+<div style={{ fontWeight: "lighter" }}>fontWeight = lighter</div>
+<div style={{ fontWeight: 100 }}>fontWeight = 100</div>
+<div style={{ fontWeight: 200 }}>fontWeight = 200</div>
+<div style={{ fontWeight: 300 }}>fontWeight = 300</div>
+<div style={{ fontWeight: 400 }}>fontWeight = 400</div>
+<div style={{ fontWeight: 500 }}>fontWeight = 500</div>
+<div style={{ fontWeight: 600 }}>fontWeight = 600</div>
+<div style={{ fontWeight: 700 }}>fontWeight = 700</div>
+<div style={{ fontWeight: 800 }}>fontWeight = 800</div>
+<div style={{ fontWeight: 900 }}>fontWeight = 900</div>
+
 ## 斜体
 
 **&lt;em&gt;** 标签与 **&lt;i&gt;** 标签的视觉效果相同，都是斜体字。但是语义上并不同。
@@ -59,6 +75,10 @@ import TH from "@site/src/components/TextHighlight/index.js";
 ### &lt;u&gt;
 
 **&lt;u&gt;** 标签视觉效果为下划线，此标签的常见用途是<TH>指出拼写错误的单词</TH>。
+
+### &lt;ins&gt;
+
+**&lt;ins&gt;** 标签视觉效果为下划线，
 
 ### CSS 实现：text-decoration
 
@@ -110,11 +130,6 @@ import TH from "@site/src/components/TextHighlight/index.js";
 
 ## 删除线
 
-## 插入线
+### &lt;del&gt;
 
-<del>
-  <p>“I apologize for the delay.”</p>
-</del>
-<ins cite="../howtobeawizard.html" datetime="2018-05">
-  <p>“A wizard is never late …”</p>
-</ins>
+**&lt;del&gt;** 标签视觉效果为删除线。
