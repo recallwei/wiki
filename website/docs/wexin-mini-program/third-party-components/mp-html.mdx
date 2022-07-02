@@ -1,0 +1,46 @@
+---
+title: mp-html
+---
+
+import wexinMiniProgram from "@site/static/img/icon/wexin-mini-program.png";
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
+
+**mp-html** 是一个富文本组件。
+
+## tag-style 设置标签样式
+
+**&lt;a&gt;** 标签会截断英文单词而换行，为其添加自定义属性使其**不会截断单词而换行**。
+
+```javascript {5}
+// 格式为 标签名: 样式
+Page({
+  data: {
+    richTextCustomStyle: {
+      a: "word-break: keep-all;word-wrap: break-word;",
+    },
+  },
+});
+```
+
+```jsx {6}
+<mp-html
+  content="{{description}}"
+  selectable
+  copy-link="{{false}}"
+  bind:linktap="linktap"
+  tag-style="{{richTextCustomStyle}}"
+/>
+```
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "mp-html",
+      subTitle: "一个强大的小程序富文本组件",
+      src: wexinMiniProgram,
+      link: "https://jin-yufeng.gitee.io/mp-html/#/",
+    },
+  ]}
+/>

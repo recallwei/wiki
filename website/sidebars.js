@@ -743,6 +743,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "第三方组件",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "wexin-mini-program/third-party-components/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "wexin-mini-program/third-party-components/mp-html",
+              label: "mp-html",
+            },
+          ],
+        },
       ],
     },
     // npm
