@@ -17,6 +17,14 @@ go version go1.18.3 darwin/arm64
 
 ## Go 第三方包代理设置
 
-VPN 设置代理
+### 使用 VPN 代理
 
-配置镜像
+如果有可以访问国外站点权限的 VPN 代理，设置通过该 VPN 代理访问 **google.golang.org**。
+
+### 使用镜像地址
+
+<p style={{ marginBottom: 4 }}>macOS 下在终端执行如下命令：</p>
+
+```bash
+export GOPROXY=https://goproxy.cn
+```
