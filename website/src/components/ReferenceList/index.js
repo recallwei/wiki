@@ -3,9 +3,10 @@ import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/svg/link.svg";
+import { isMobile } from "@site/src/utils/func-util";
 
 export default function ReferenceList({ customStyle, data = [] }) {
-  const isMobileDevice = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+  const isMobileDevice = isMobile();
   return (
     <div style={customStyle} className={styles.unorderedList}>
       <ul>

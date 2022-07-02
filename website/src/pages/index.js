@@ -4,7 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { openWindow } from "@site/src/utils/func-util";
+import { openWindow, isMobile1 } from "@site/src/utils/func-util";
 import styles from "./index.module.css";
 import favicon from "@site/static/img/favicon/favicon.png";
 import github from "@site/static/img/icon/github.png";
@@ -57,7 +57,7 @@ function HomepageHeader(props) {
                 alt="Telegram"
                 title="Telegram"
                 onClick={() => {
-                  openLink(siteConfig.customFields.telegramLink);
+                  openWindow(siteConfig.customFields.telegramLink);
                 }}
               />
               <img src={google} alt="GMail" title="GMail" />
@@ -77,7 +77,9 @@ export default function Home() {
     <BrowserOnly fallback={null}>
       {() => {
         // Detect device type
-        const isMobileDevice = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+        console.log(isMobile);
+        const isMobileDevice = isMobile();
+
         return (
           <Layout
             title="Home"
