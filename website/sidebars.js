@@ -645,7 +645,7 @@ const sidebars = {
         {
           type: "doc",
           id: "wexin-mini-program/custom-components",
-          label: "Custom Components",
+          label: "自定义组件",
         },
         {
           type: "category",
@@ -708,7 +708,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "Solutions",
+          label: "解决方案",
           collapsible: true,
           collapsed: true,
           link: {
