@@ -4,17 +4,23 @@ title: 获取设备类型
 
 ## 使用 userAgent 判断 Mobile 设备
 
-### 识别手机端
-
-```javascript
-// Detect device type
-const isMobileDevice = /Mobi|Android|iPhone/i.test(navigator.userAgent);
-```
-
-⚠️ 该方法识别出的移动端设备不包括 **iPad**。
-
-### 识别 iPad
-
-```javascript
-const isiPad = /iPad/i.test(navigator.userAgent);
+```javascript showLineNumbers
+function getDeviceType() {
+  const userAgent = navigator.userAgent.toUpperCase();
+  if (/IPHONE|IPOD/.test(userAgent) && /MOBILE/.test(userAgent)) {
+    return "iPhone";
+  } else if (/ANDROID/.test(userAgent) && /MOBILE/.test(userAgent)) {
+    return "Android";
+  } else if (/IPAD/.test(userAgent) && /MOBILE/.test(userAgent)) {
+    return "iPad";
+  } else if (/WINODWS/.test(agent)) {
+    return "Windows PC";
+  } else if (/LINUX/.test(agent)) {
+    return "Linux PC";
+  } else if (/MAC/.test(agent)) {
+    return "Mac";
+  } else {
+    return "Others";
+  }
+}
 ```
