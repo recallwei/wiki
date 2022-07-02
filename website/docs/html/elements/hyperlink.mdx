@@ -6,15 +6,15 @@ title: 超链接
 
 ## 添加为链接目标
 
-<p style={{ marginBottom: "6px" }}>
+<p style={{ marginBottom: 4 }}>
   使用 <code>target</code> 属性规定在何处打开链接：
 </p>
 
-- **\_self**：默认属性，在当前窗口打开链接。
-- **\_blank**：在新窗口中打开链接。
-- **\_parent**：在父窗口中打开链接。
-- **\_top**：整个窗口中打开链接。
-- **framename**：在指定的框架中打开链接。
+- `_self` - 默认属性，在当前窗口打开链接。
+- `_blank` - 在新窗口中打开链接。
+- `_parent` - 在父窗口中打开链接。
+- `_top` - 整个窗口中打开链接。
+- `framename` - 在指定的框架中打开链接。
 
 ## 新标签打开链接的安全问题
 
@@ -30,7 +30,7 @@ const openLink = (url) => {
 };
 ```
 
-如果是 &lt;a&gt; 标签添加 `target="_blank`，我们需要为其添加一个 `rel="noopener"` 属性。但火狐不支持此属性，在火狐浏览器中要写成 `rel="noreferrer"`。
+如果是 &lt;a&gt; 标签添加 `target="_blank`，我们需要为其添加一个 `rel="noopener"` 属性。但火狐浏览器不支持此属性，在火狐浏览器中要写成 `rel="noreferrer"`。
 
 ```html
 <a href="https://www.google.com/" target="_blank" rel="noreferrer noopener" />

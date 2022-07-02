@@ -2,10 +2,58 @@
 title: 文本
 ---
 
+import TH from "@site/src/components/TextHighlight/index.js";
+
 ## 粗体
 
 ### &lt;b&gt;
 
+**&lt;b&gt;** 标签表示某些<TH>需要强调</TH>的文本。
+
 ### &lt;strong&gt;
 
+**&lt;strong&gt;** 标签表示某些<TH>具有重要性、需要加重语气</TH>的文本。
+
 ### CSS font-weight
+
+<p style={{ marginBottom: 4 }}>
+  将内容与样式隔离，使用 CSS <TH>font-weight</TH> ，可取的值有：
+</p>
+
+- `normal` - 默认值
+- `bold` - 粗体，值等于 700
+- `bolder` - 更粗的字体
+- `lighter` - 更细的字体
+- `100` - Thin
+- `200` - Extra Light (Ultra Light)
+- `300` - Light
+- `400` - Normal
+- `500` - Medium
+- `600` - Semi Bold (Demi Bold)
+- `700` - Bold
+- `800` - Extra Bold (Ultra Bold)
+- `900` - Black (Heavy)
+
+```css
+.text {
+  font-weight: 400;
+}
+```
+
+## 斜体
+
+**&lt;em&gt;** 标签与 **&lt;i&gt;** 标签的视觉效果相同，都是斜体字。但是语义上并不同，**&lt;em&gt;** 标签表示其内容的<TH>着重强调</TH>，而 **&lt;i&gt;** 标签表示从正常散文中区分出的文本，例如外来词，虚构人物的思想，或者当文本指的是一个词语的定义，而不是其语义含义。
+
+## 字号
+
+**&lt;small&gt;** 标签将使文本的字体变小一号，有着表示边注释和附属细则，包括版权和法律文本的含义。
+
+**&lt;big&gt;** 标签已被**弃用**，建议使用 CSS 调整字号。
+
+## 代码
+
+**&lt;code&gt;** 标签用于表示计算机代码，默认情况下会以等宽字体显示。
+
+## 缩写
+
+**&lt;abbr&gt;** 标签用于表示缩写，并且可以通过可选的 `title` 属性提供完整的描述。
