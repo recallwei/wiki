@@ -16,7 +16,7 @@ When create a component, it will automatically create `index.js`, `index.wxml`, 
 
 Set the `component` property to `true`, it will turn your file into a component.
 
-```json title="index.json"
+```json title="JSON"
 {
   "component": true
 }
@@ -24,14 +24,14 @@ Set the `component` property to `true`, it will turn your file into a component.
 
 Add `WXML` template in `index.wxml` and `WXSS` style in `index.wxss`.
 
-```jsx title="index.wxml"
+```jsx title="WXML"
 <view class="inner">
     {{innerText}}
 </view>
 <slot></slot>
 ```
 
-```css title="index.wxss"
+```css title="WXSS"
 .inner {
   color: red;
 }
@@ -39,7 +39,7 @@ Add `WXML` template in `index.wxml` and `WXSS` style in `index.wxss`.
 
 It automatically create a `index.js` file and it contains a `Component` constructor.
 
-```jsx {4-8,12,16} title="index.js" showLineNumbers
+```jsx {4-8,12,16} title="JavaScript" showLineNumbers
 Component({
   properties: {
     // The innerText property is defined here, and the property value can be specified when the component is used.
@@ -79,7 +79,7 @@ Component({
 
 Before using a custom component, make a reference declaration in the `.json` file of the page.
 
-```json title="index.json"
+```json title="JSON"
 {
   "usingComponents": {
     "component-element-name": "path/to/the/custom/component" // [Component Name] : [Path]
@@ -91,7 +91,7 @@ Before using a custom component, make a reference declaration in the `.json` fil
 
 Declare a component in `usingComponents` field of `app.json`, this component will be a global component. We can use it without declaring in differnt pages repeatly.
 
-```json title="app.json"
+```json title="JSON"
 {
   "usingComponents": {
     "global-component-element-name": "path/to/the/custom/component" // [Component Name] : [Path]
@@ -112,7 +112,7 @@ We can use custom components in a custom component the same as in a page. Just d
 
 We can pass dynamic data to child component properties. Also, we can pass functions into the component.
 
-```jsx title="page.wxml"
+```jsx title="WXML"
 <view>
   <component-element-name prop-a="{{dataFieldA}}" prop-b="{{dataFieldB}}" />
 </view>
@@ -130,14 +130,14 @@ If we pass a function into the component, we can only call the function inside t
 
 A `<slot>` node can be provided in the component template to host the child nodes provided via component reference.
 
-```jsx {3} title="component.wxml" showLineNumbers
+```jsx {3} title="WXML" showLineNumbers
 <view class="wrapper">
   <view>This indicates the internal node of the component.</view>
   <slot></slot>
 </view>
 ```
 
-```jsx {3} title="page.wxml" showLineNumbers
+```jsx {3} title="WXML" showLineNumbers
 <view>
   <component-element-name>
     <view>This is inserted in the slot component.</view>
@@ -145,7 +145,7 @@ A `<slot>` node can be provided in the component template to host the child node
 </view>
 ```
 
-```jsx {4} title="render-result.wxml" showLineNumbers
+```jsx {4} title="WXML" showLineNumbers
 <view>
   <view class="wrapper">
     <view>This indicates the internal node of the component.</view>
@@ -158,7 +158,7 @@ A `<slot>` node can be provided in the component template to host the child node
 
 By default, a component's wxml can contain only one slot. Multiple slots can be enabled by declaring in the component `.js` if needed.
 
-```jsx {3} title="component.js" showLineNumbers
+```jsx {3} title="JavaScript" showLineNumbers
 Component({
   options: {
     multipleSlots: true, // Enable multiple slots in the options of component definition.
@@ -174,7 +174,7 @@ Component({
 
 Each slot has <TH>a unique name</TH> and use `slot` property to insert nodes into differnt slots.
 
-```jsx {2,4} title="component.wxml" showLineNumbers
+```jsx {2,4} title="WXML" showLineNumbers
 <view class="wrapper">
   <slot name="before"></slot>
   <view>This indicates the internal details of the component.</view>
@@ -182,7 +182,7 @@ Each slot has <TH>a unique name</TH> and use `slot` property to insert nodes int
 </view>
 ```
 
-```jsx {3-5,7-9} title="page.wxml" showLineNumbers
+```jsx {3-5,7-9} title="WXML" showLineNumbers
 <view>
   <component-element-name>
     <view slot="before">
@@ -196,7 +196,7 @@ Each slot has <TH>a unique name</TH> and use `slot` property to insert nodes int
 </view>
 ```
 
-```jsx {3-5,7-9} title="render-result.wxml" showLineNumbers
+```jsx {3-5,7-9} title="WXML" showLineNumbers
 <view>
   <view class="wrapper">
     <view slot="before">
@@ -239,13 +239,13 @@ In addition to inheritance styles, the styles in `app.wxss` and the styles of th
 
 We can add a default style by using `:host` selector to the node where the component resides.
 
-```css title="component.wxss"
+```css title="WXSS"
 :host {
   color: blue;
 }
 ```
 
-```jsx title="component.wxml"
+```jsx title="WXML"
 <component-element-name>
   The text here is highlighted in blue.
 </component-element-name>
@@ -258,7 +258,7 @@ By default, the styles of custom components are only affected by the wxss of cus
 - The element name selector (or other special selectors) is used in `app.wxss` or `.wxss` of the page to directly specify styles, which might affect the page and all components. This is generally not recommended.
 - Specify the special style isolation option `styleIsolation`.
 
-```jsx {3} title="component.js"
+```jsx {3} title="JavaScript"
 Component({
   options: {
     styleIsolation: "isolated",

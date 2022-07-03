@@ -18,7 +18,7 @@ import HyperLink from "@site/src/components/HyperLink/index.js";
 
 可以用**条件表达式**和将 `state` 或 `props` 里的字符串传入 `className`，来动态控制样式。
 
-```css title=".css"
+```css title="CSS"
 .red {
   background-color: red;
 }
@@ -28,13 +28,13 @@ import HyperLink from "@site/src/components/HyperLink/index.js";
 }
 ```
 
-```jsx {3} title="TrafficLight.js"
+```jsx {3} title="JavaScript"
 const [lightColor, setLightColor] = useState("red");
 
 <TrafficLight className={lightColor} />;
 ```
 
-```jsx {3} title="TrafficLight.js"
+```jsx {3} title="JavaScript"
 const [lightColor, setLightColor] = useState(0);
 
 <TrafficLight className={lightColor === 0 ? "red" : "green"} />;

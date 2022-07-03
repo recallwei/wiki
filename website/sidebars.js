@@ -871,7 +871,7 @@ const sidebars = {
         {
           type: "doc",
           id: "go/environment",
-          label: "🚀 搭建环境",
+          label: "🚀搭建环境",
         },
       ],
     },

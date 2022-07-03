@@ -18,7 +18,7 @@ Always use `rpx` instead of using `px` or `rem`.
 
 Use `@import` statement to import external style sheet. `@import` statement must followed by <TH>relative path</TH> and <TH>;</TH>.
 
-```css title="index.wxss"
+```css title="WXSS"
 @import "app.wxss";
 ```
 
@@ -28,11 +28,11 @@ Always use `class` for static style and `style` for dynamic style.
 
 Avoid using static style in `style`, it will affect the rendering speed.
 
-```jsx title="index.wxml"
+```jsx title="WXML"
 <view class="view" style="color: {{color}};"></view>
 ```
 
-```css title="index.wxss"
+```css title="WXSS"
 view {
   font-size: 20rpx;
 }
