@@ -22,7 +22,7 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon/favicon.png",
   organizationName: "Bruce Song", // Usually your GitHub org/username.
-  projectName: "blog", // Usually your repo name.
+  projectName: "wiki", // Usually your repo name.
 
   i18n: {
     defaultLocale: "zh-CN",
@@ -162,14 +162,14 @@ const config = {
         additionalLanguages: [
           "aspnet", // ASP.NET
           "cpp", // C++
-          "csharp", //C#
-          "graphql", //GraphQL
-          "go", //Go
-          "http", //HTTP
-          "java", //Java
-          "powershell", //PowerShell
-          "swift", //Swift
-          "vim", //vim
+          "csharp", // C#
+          "graphql", // GraphQL
+          "go", // Go
+          "http", // HTTP
+          "java", // Java
+          "powershell", // PowerShell
+          "swift", // Swift
+          "vim", // vim
         ],
       },
       //顶部横幅
@@ -182,10 +182,10 @@ const config = {
       },
       //实时代码块
       liveCodeBlock: {
-        /**
-         * 实时效果显示的位置，可位于编辑器上方或下方。
-         * 可为："top" | "bottom"
-         */
+        /*
+          实时效果显示的位置，可位于编辑器上方或下方。
+          可为："top" | "bottom"
+        */
         playgroundPosition: "bottom",
       },
     }),
