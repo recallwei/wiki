@@ -1,0 +1,54 @@
+---
+title: 代码规范
+---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+## 文件名
+
+均由<TH>小写字母</TH>构成，多个单词由<TH>下划线</TH>（\_）分隔，如 `main_func.go`，文件名不包含空格或其他特殊字符。
+
+## 标识符
+
+<p className="md-mb-4">✅ 有效的标识符</p>
+
+- 以 **UTF-8 编码的字符**开头
+- 以 **下划线\_** 开头
+
+<p className="md-mb-4">❎ 无效的标识符</p>
+
+- 以**数字**开头
+- Go 的**关键字**
+- 包含**运算符**
+
+## 关键字
+
+<p className="md-mb-4">
+  Go 有 <b>25</b> 个关键字或保留字：
+</p>
+
+- break
+- default
+- func
+- interface
+- select
+- case
+- defer
+- go
+- map
+- struct
+- chan
+- else
+- goto
+- package
+- switch
+- const
+- fallthrough
+- if
+- range
+- type
+- continue
+- for
+- import
+- return
+- var

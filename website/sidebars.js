@@ -873,6 +873,28 @@ const sidebars = {
           id: "go/environment",
           label: "搭建环境",
         },
+        {
+          type: "doc",
+          id: "go/code-specification",
+          label: "代码规范",
+        },
+        {
+          type: "category",
+          label: "数据类型",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "go/data-type/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "go/data-type/number",
+              label: "数字类型",
+            },
+          ],
+        },
       ],
     },
     // Node.js
