@@ -41,3 +41,27 @@ func getRuneArr(str string) {
 ```
 
 ## 浮点型
+
+Go 提供两种浮点数大小的数据类型：**float32** 和 **float64**。
+
+### 获取浮点型边界值
+
+使用 **math** 包中提供的 `math.MaxFloat32`、 `math.MaxFloat64`、 `math.SmallestNonzeroFloat32`、 `math.SmallestNonzeroFloat64` 常量来查找这两种类型的限制：
+
+```go title="Go"
+func getFloatMaxValue() {
+	fmt.Println(math.MaxFloat32, math.MaxFloat64, math.SmallestNonzeroFloat32, math.SmallestNonzeroFloat64)
+}
+```
+
+## 布尔型
+
+使用 **bool** 关键字声明布尔型变量，仅可能取两个值：`true` 或 `false`。
+
+在 Go 中，不能将布尔类型隐式转换为 0 或 1，必须显式执行此操作。
+
+## 字符串
+
+## 默认值
+
+## 类型转换
