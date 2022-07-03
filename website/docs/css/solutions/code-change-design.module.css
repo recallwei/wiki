@@ -1,10 +1,15 @@
 .codeArea {
-  background: rgb(246, 247, 248);
+  background-color: rgb(246, 247, 248);
   border-radius: 0.4rem;
   padding: 0.1rem 0;
   vertical-align: middle;
   margin-bottom: 1.2rem;
 }
+
+[data-theme="dark"] .codeArea {
+  background-color: var(--dracula-color-primary);
+}
+
 .codeArea del,
 ins {
   display: block;
@@ -16,8 +21,16 @@ ins {
   background-color: #fbb;
 }
 
+[data-theme="dark"] .codeArea del {
+  background-color: rgb(224, 82, 82);
+}
+
 .codeArea ins {
   background-color: #d4fcbc;
+}
+
+[data-theme="dark"] .codeArea ins {
+  background-color: #5aa131;
 }
 
 .codeArea del::before,
