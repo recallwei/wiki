@@ -1,5 +1,6 @@
 ---
 title: 数据类型
+hide_title: true
 ---
 
 import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
@@ -7,6 +8,22 @@ import LinkList from "@site/src/components/LinkList/index.js";
 import go from "@site/static/img/icon/go.png";
 
 <FeatureIcon src={go} title="数据类型" />
+
+## 变量声明
+
+:::caution 注意
+在 Go 中，当你声明一个变量但不使用它时，Go 会抛出错误，而不是像某些其他编程语言一样抛出警告。
+:::
+
+```go title="Go"
+	a := "Unused Variable"
+```
+
+```bash title="错误信息"
+# command-line-arguments
+./hello.go:7:2: a declared but not used
+```
+
 <LinkList
   data={
     [
