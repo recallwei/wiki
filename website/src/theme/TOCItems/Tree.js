@@ -10,7 +10,11 @@ function TOCItemTree({ toc, className, linkClassName, isChild }) {
 
   return (
     <ul
-      className={isChild ? undefined : clsx(customizedStyles.text, className)}
+      className={
+        isChild
+          ? customizedStyles.childText
+          : clsx(customizedStyles.text, className)
+      }
     >
       {toc.map((heading) => (
         <li key={heading.id}>

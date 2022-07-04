@@ -1,5 +1,10 @@
 .text > li > a {
   font-size: 13.6px;
-  font-weight: bolder;
+  font-weight: bold;
+}
+
+.childText > li > a {
+  font-size: 11.6px;
+  font-weight: bold;
   font-style: italic;
 }
