@@ -893,6 +893,11 @@ const sidebars = {
               id: "go/data-type/number",
               label: "数字类型",
             },
+            {
+              type: "doc",
+              id: "go/data-type/boolean",
+              label: "布尔类型",
+            },
           ],
         },
       ],
