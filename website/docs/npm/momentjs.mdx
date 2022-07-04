@@ -2,9 +2,134 @@
 title: Moment.js
 ---
 
+import TH from "@site/src/components/TextHighlight/index.js";
 import ReferenceList from "@site/src/components/ReferenceList/index.js";
 import npm from "@site/static/img/icon/npm.png";
 import javascript from "@site/static/img/icon/javascript.png";
+
+## 格式化
+
+<p className="md-mb-4">
+  使用如下字母构造格式化字符串，<TH>不区分大小写</TH>：
+</p>
+
+- y - 年
+- m - 月
+- d - 日
+- h - 时
+- m - 分
+- s - 秒
+
+```javascript title="JavaScript"
+moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
+moment(new Date()).format("YYYY/MM/DD HH:mm:ss");
+```
+
+## 获取具体时间
+
+### 获取当前时间
+
+```javascript title="JavaScript"
+moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取当前天开始与结束时间
+
+```javascript title="JavaScript"
+moment(new Date()).startof("days").format("YYYY-MM-DD HH:mm:ss");
+moment(new Date()).endof("days").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取当前周的开始与结束
+
+```javascript title="JavaScript"
+moment(new Date()).startof("week").add(1, "days").format("YYYY-MM-DD HH:mm:ss");
+moment(new Date()).endof("week").add(1, "days").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取上周开始与结束时间
+
+```javascript title="JavaScript"
+moment(new Date())
+  .weekday(-7)
+  .startof("week")
+  .add(1, "days")
+  .format("YYYY-MM-DD HH:mm:ss");
+moment(new Date())
+  .weekday(-7)
+  .endof("week")
+  .add(1, "days")
+  .format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取下周开始与结束时间
+
+```javascript title="JavaScript"
+moment(new Date())
+  .weekday(7)
+  .startof("week")
+  .add(1, "days")
+  .format("YYYY-MM-DD HH:mm:ss");
+moment(new Date())
+  .weekday(7)
+  .endof("week")
+  .add(1, "days")
+  .format("YYYY-MM-DD HH:mm:ss");
+```
+
+:::caution 注意
+使用 `startof("week")` 或 `endof("week")` 方法时需要将得到的天数 **+ 1**。
+:::
+
+### 获取当前月开始与结束时间
+
+```javascript title="JavaScript"
+moment(new Date()).startof("months").format("YYYY-MM-DD HH:mm:ss");
+moment(new Date()).endof("months").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取当前年开始与结束时间
+
+```javascript title="JavaScript"
+moment(new Date()).startof("years").format("YYYY-MM-DD HH:mm:ss");
+moment(new Date()).endof("years").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取前一年时间
+
+```javascript title="JavaScript"
+moment(new Date()).subtract(1, "years").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取后一年时间
+
+```javascript title="JavaScript"
+moment(new Date()).add(1, "years").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取前一月时间
+
+```javascript title="JavaScript"
+moment(new Date()).subtract(1, "months").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取后一月时间
+
+```javascript title="JavaScript"
+moment(new Date()).add(1, "months").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取十天前时间
+
+```javascript title="JavaScript"
+moment(new Date()).subtract(10, "days").format("YYYY-MM-DD HH:mm:ss");
+```
+
+### 获取十天后时间
+
+```javascript title="JavaScript"
+moment(new Date()).add(10, "days").format("YYYY-MM-DD HH:mm:ss");
+```
 
 ## 参考
 
