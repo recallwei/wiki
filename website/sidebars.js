@@ -891,6 +891,11 @@ const sidebars = {
               id: "go/data-type/string",
               label: "String",
             },
+            {
+              type: "doc",
+              id: "go/data-type/type-conversion",
+              label: "类型转换",
+            },
           ],
         },
       ],

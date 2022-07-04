@@ -1,0 +1,37 @@
+---
+title: 类型转换
+---
+
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
+import go from "@site/static/img/icon/go.png";
+
+## 使用内置函数
+
+```go title="Go"
+var integer16 int16 = 127
+var integer32 int32 = 32767
+fmt.Println(int32(integer16) + integer32)
+```
+
+## 使用 strconv 包
+
+### Atoi
+
+`Atoi()` 将 string 转为 int。
+
+### Itoa
+
+`Itoa` 将 int 转为 string。
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Go pkg",
+      subTitle: "strconv",
+      src: go,
+      link: "https://pkg.go.dev/strconv",
+    },
+  ]}
+/>
