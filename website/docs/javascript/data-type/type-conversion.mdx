@@ -4,9 +4,9 @@ title: 类型转换
 
 import TH from "@site/src/components/TextHighlight/index.js";
 
-## Convert String to Number
+## String 转 Number
 
-### `parseInt()`
+### parseInt
 
 ```javascript
 parseInt("123"); // no radix
@@ -90,7 +90,7 @@ parseInt 解析 BigInt 类型时，会丢失精度，BigInt 末位 `n` 字符会
 
 MDN Web Docs:[Javascript parseInt()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 
-### `parseFloat()`
+### parseFloat
 
 <!-- TODO: Add reference list -->
 
@@ -112,7 +112,7 @@ parseFloat("-0xFF"); // excepted: 0
 
 parseFloat 解析 BigInt 类型时，会丢失精度，BigInt 末位 `n` 字符会被丢弃。
 
-### `Number()`
+### Number()
 
 ```javascript
 Number("023"); // expected: 23
@@ -124,7 +124,7 @@ Number(023); // expected: 19
 
 1. 运行效率低，几乎不用来转换类型。
 
-### `~~num`
+### ~~num
 
 [按位非](/docs/javascript/operators/bitwise-not)两次，反转两次操作数，得到该字符串对应的 number。
 

@@ -305,6 +305,11 @@ const sidebars = {
               id: "javascript/data-type/string",
               label: "String",
             },
+            {
+              type: "doc",
+              id: "javascript/data-type/type-conversion",
+              label: "🚀类型转换",
+            },
           ],
         },
         {
@@ -338,33 +343,6 @@ const sidebars = {
               type: "doc",
               id: "javascript/operators/bitwise-not",
               label: "按位非",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "值类型",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/value-types/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "javascript/value-types/number",
-              label: "Number",
-            },
-            {
-              type: "doc",
-              id: "javascript/value-types/string",
-              label: "String",
-            },
-            {
-              type: "doc",
-              id: "javascript/value-types/type-conversion",
-              label: "类型转换",
             },
           ],
         },
