@@ -1,0 +1,37 @@
+---
+title: 日期、时间处理
+---
+
+import LinkList from "@site/src/components/LinkList/index.js";
+import npm from "@site/static/img/icon/npm.png";
+
+## 获取本地时间
+
+### 获取日期
+
+使用 `getDate()`、 `getMonth()` 和 `getFullYear()` 方法获取**日**、**月**、**年**，`padStart()` 方法用于**补 0**。
+
+```javascript title="JavaScript"
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, "0");
+var mm = String(today.getMonth() + 1).padStart(2, "0");
+var yyyy = today.getFullYear();
+today = mm + "/" + dd + "/" + yyyy;
+console.log(today); // expected: 07/04/2022 (若今天为2022年7月4日)
+```
+
+:::caution 注意
+`Date.getMonth()` 方法得到的是**月份索引值**，真正的月份需要 + 1。
+:::
+
+## 使用第三方包
+
+<LinkList
+  data={[
+    {
+      title: "Moment.js",
+      link: "/docs/npm/momentjs",
+      src: npm,
+    },
+  ]}
+/>

@@ -427,6 +427,11 @@ const sidebars = {
               id: "javascript/solutions/get-text-from-html",
               label: "从 HTML 中提取文字",
             },
+            {
+              type: "doc",
+              id: "javascript/solutions/possessing-date",
+              label: "日期、时间处理",
+            },
           ],
         },
       ],
@@ -795,13 +800,18 @@ const sidebars = {
         },
         {
           type: "doc",
-          id: "npm/patch-package",
-          label: "patch-package",
+          id: "npm/momentjs",
+          label: "Moment.js",
         },
         {
           type: "doc",
           id: "npm/n-module",
           label: "n module",
+        },
+        {
+          type: "doc",
+          id: "npm/patch-package",
+          label: "patch-package",
         },
         {
           type: "category",
