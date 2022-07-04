@@ -22,7 +22,7 @@ export default function ReferenceList({ customStyle, data = [] }) {
                 loading="lazy"
               />
               {!isMobileDevice && (
-                <div className={styles.title}>{item.title + ":"}&nbsp;</div>
+                <div className={styles.title}>{item.title + " :"}&nbsp;</div>
               )}
               <Link to={item.link} className={styles.subTitleArea}>
                 <div className={styles.subTitle}>{item.subTitle}</div>
