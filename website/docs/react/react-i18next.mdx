@@ -1,0 +1,40 @@
+---
+title: React i18next
+---
+
+import i18next from "@site/static/img/icon/i18next.png";
+import ReferenceList from "@site/src/components/ReferenceList/index.js";
+
+## 字符串插值
+
+在 JSON 文件定义的 Value 字符串中添加双花括号声明多语言字符串变量。
+
+```json title="JSON"
+{
+  "Method": "Method:{{method}}"
+}
+```
+
+```jsx {6} title="JavaScript" showLineNumbers
+import React from "react";
+import { useTranslation } from "react-i18next";
+
+function Component() {
+  const { t, i18n } = useTranslation();
+  return <p>{t("Method", { method: "HighOrderFunction" })}</p>;
+  // 输出的文本结果为： Method:HighOrderFunction
+}
+```
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "React i18next",
+      subTitle: "react-i18next documentation",
+      src: i18next,
+      link: "https://react.i18next.com/",
+    },
+  ]}
+/>
