@@ -864,6 +864,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          id: "go/modules",
+          label: "模块",
+        },
+        {
+          type: "doc",
           id: "go/code-specification",
           label: "代码规范",
         },

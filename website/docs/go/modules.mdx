@@ -1,0 +1,44 @@
+---
+title: 模块
+---
+
+import TH from "@site/src/components/TextHighlight/index.js";
+
+## 工作区模式
+
+Go 于 1.18 版本添加了工作区模式（workspace mode），该模式下不需要在 `go.mod` 中使用 `replace` 指令，取而代之的是添加一个 `go.work` 文件。
+
+### 代码目录结构
+
+```text
+workspace
+|------------go.work
+|
+|------------main
+|               |---main.go
+|               |---go.mod
+|------------util
+|               |---util.go
+|               |---go.mod
+```
+
+### 生成 go.work 文件。
+
+在 workspace 目录下执行命令即可自动生成 `go.work`。
+
+```bash
+$ go work init main util
+```
+
+main 和 util 都是模块对应的目录。
+
+生成的 go.work 内容如下：
+
+```go title="go.work"
+go 1.18
+
+use(
+    ./main
+    ./util
+)
+```
