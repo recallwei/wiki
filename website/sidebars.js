@@ -898,6 +898,17 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "函数",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "go/functions/index",
+          },
+          items: [],
+        },
       ],
     },
     // Node.js

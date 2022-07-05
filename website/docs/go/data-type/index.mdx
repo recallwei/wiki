@@ -6,6 +6,7 @@ hide_title: true
 import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import go from "@site/static/img/icon/go.png";
+import TH from "@site/src/components/TextHighlight/index.js";
 
 <FeatureIcon src={go} title="数据类型" />
 
@@ -23,6 +24,8 @@ a := "Unused Variable"
 :::caution 注意
 在 Go 中，当你声明一个变量但不使用它时，Go 会抛出错误，而不是像某些其他编程语言一样抛出警告。
 :::
+
+`_` 也可以作为一个变量，通常用于<TH>忽略函数的返回值</TH>。
 
 ## 基本类型
 
