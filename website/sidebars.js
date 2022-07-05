@@ -308,7 +308,7 @@ const sidebars = {
             {
               type: "doc",
               id: "javascript/data-type/type-conversion",
-              label: "🚀类型转换",
+              label: "🚀 类型转换",
             },
           ],
         },
@@ -520,7 +520,7 @@ const sidebars = {
             },
           ],
         },
-        { type: "doc", id: "react/i18next", label: "i18next" },
+        { type: "doc", id: "react/i18next", label: "🚀 i18next" },
         {
           type: "category",
           label: "Redux",
@@ -865,7 +865,7 @@ const sidebars = {
         {
           type: "doc",
           id: "go/modules",
-          label: "模块",
+          label: "🚀 模块",
         },
         {
           type: "doc",
@@ -906,7 +906,7 @@ const sidebars = {
         },
         {
           type: "category",
-          label: "函数",
+          label: "🚀 函数",
           collapsible: true,
           collapsed: true,
           link: {
