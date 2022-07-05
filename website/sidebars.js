@@ -520,7 +520,7 @@ const sidebars = {
             },
           ],
         },
-        { type: "doc", id: "react/react-i18next", label: "React i18next" },
+        { type: "doc", id: "react/i18next", label: "i18next" },
         {
           type: "category",
           label: "Redux",
