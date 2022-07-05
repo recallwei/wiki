@@ -22,7 +22,7 @@ import visualStudioCode from "@site/static/img/icon/visual-studio-code.png";
 }
 ```
 
-此处 **port** 为代理端口号，例如：**http://127.0.0.1:8080** 。
+此处 **port** 为代理端口号，我的代理端口号是 7890，即：**http://127.0.0.1:7890** 。
 
 ### 设置 Git 代理
 
@@ -30,7 +30,7 @@ import visualStudioCode from "@site/static/img/icon/visual-studio-code.png";
 
 ```git
 git config http.sslVerify false
-git config http.proxy http://xxx.xxx.xxx.xxx:port
+git config http.proxy http://127.0.0.1:7890
 ```
 
 至此，可以成功 Push 代码到 GitHub 服务器。
