@@ -112,14 +112,14 @@ const config = {
           },
           {
             type: "doc",
-            docId: "copywriting-guide",
-            label: "设计",
+            docId: "software/index",
+            label: "软件",
             position: "left",
           },
           {
             type: "doc",
-            docId: "software/index",
-            label: "软件",
+            docId: "copywriting-guide",
+            label: "设计",
             position: "left",
           },
           // { to: "/blog", label: "Blog", position: "left" },
