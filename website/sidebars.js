@@ -520,7 +520,24 @@ const sidebars = {
             },
           ],
         },
-        { type: "doc", id: "react/i18next", label: "🚀 i18next" },
+        {
+          type: "category",
+          label: "React Router",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "react/react-router/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "react/react-router/installation",
+              label: "安装 React Router",
+            },
+          ],
+        },
+        { type: "doc", id: "react/react-i18next", label: "🚀 React i18next" },
         {
           type: "category",
           label: "Redux",
