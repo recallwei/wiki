@@ -482,6 +482,11 @@ const sidebars = {
           ],
         },
         {
+          type: "doc",
+          id: "react/components-interaction",
+          label: "组件交互",
+        },
+        {
           type: "category",
           label: "解决方案",
           collapsible: true,
