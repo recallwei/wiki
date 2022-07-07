@@ -34,20 +34,16 @@
 .listItem img {
   height: 30px;
   width: 30px;
-  margin-right: 0.6rem;
+  margin-right: 0.3rem;
+}
+
+.titleArea {
+  font-weight: bold;
+  display: flex;
+  max-width: 90%;
 }
 
 .title {
-  white-space: nowrap;
-}
-
-.subTitleArea {
-  font-style: italic;
-  display: flex;
-  max-width: 80%;
-}
-
-.subTitle {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -55,7 +51,7 @@
 }
 
 .linkSVG {
-  margin: 0 6px;
+  margin: 0 4px;
   display: flex;
   align-items: center;
 }
