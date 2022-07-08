@@ -26,7 +26,10 @@ const config = {
 
   i18n: {
     defaultLocale: "zh-CN",
-    locales: ["zh-CN", "en"],
+    locales: [
+      "zh-CN",
+      //"en"
+    ],
     localeConfigs: {
       "zh-CN": {
         label: "简体中文",
@@ -130,7 +133,7 @@ const config = {
             position: "left",
           },
           // Right
-          { type: "localeDropdown", position: "right" },
+          // { type: "localeDropdown", position: "right" },
           {
             href: "https://github.com/recallwei/",
             position: "right",
