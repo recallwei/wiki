@@ -65,18 +65,13 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
-    ],
-    [
-      "@docusaurus/preset-classic",
-      {
         sitemap: {
           changefreq: "weekly",
           priority: 0.5,
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
         },
-      },
+      }),
     ],
   ],
 
@@ -179,6 +174,11 @@ const config = {
             type: "doc",
             docId: "todo",
             label: "To Do",
+            position: "left",
+          },
+          {
+            to: "/search",
+            label: "🔍 搜索",
             position: "left",
           },
           // Right
