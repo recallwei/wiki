@@ -4,7 +4,6 @@
   position: sticky;
   top: calc(var(--ifm-navbar-height) + 1rem);
 }
-
 /* Customized Style */
 .tableOfContents > ul {
   border-color: rgb(208 208 208);
