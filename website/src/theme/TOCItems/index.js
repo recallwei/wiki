@@ -1,10 +1,10 @@
 import React, {useMemo} from 'react';
-import TOCItemTree from '@theme/TOCItems/Tree';
+import {useThemeConfig} from '@docusaurus/theme-common';
 import {
-  useThemeConfig,
   useTOCHighlight,
   useFilteredAndTreeifiedTOC,
-} from '@docusaurus/theme-common';
+} from '@docusaurus/theme-common/internal';
+import TOCItemTree from '@theme/TOCItems/Tree';
 export default function TOCItems({
   toc,
   className = 'table-of-contents table-of-contents__left-border',
@@ -33,7 +33,6 @@ export default function TOCItems({
         maxHeadingLevel,
       };
     }
-
     return undefined;
   }, [linkClassName, linkActiveClassName, minHeadingLevel, maxHeadingLevel]);
   useTOCHighlight(tocHighlightConfig);
