@@ -163,12 +163,12 @@ div[class^="announcementBar_"] {
 
 .navbarIcon {
   border-radius: 6px;
-  border: solid black;
+  border: solid black 1.5px;
   background-color: var(--ifm-color-primary-lightest);
 }
 
 [data-theme="dark"] .navbarIcon {
-  border: solid white;
+  border: solid white 1.5px;
 }
 
 /* Mobile CSS */

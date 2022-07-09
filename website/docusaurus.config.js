@@ -90,9 +90,9 @@ const config = {
         isCloseable: true,
       },
       navbar: {
-        title: "Bruce's Wiki",
+        title: "Bruce の Wiki",
         logo: {
-          alt: "Bruce's Wiki",
+          alt: "Bruce の Wiki",
           src: "img/favicon/favicon.png",
           srcDark: "img/favicon/favicon.png",
           target: "_self",
