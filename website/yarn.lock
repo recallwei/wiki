@@ -3217,7 +3217,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/plugin-sitemap@npm:2.0.0-beta.22":
+"@docusaurus/plugin-sitemap@npm:2.0.0-beta.22, @docusaurus/plugin-sitemap@npm:^2.0.0-beta.22":
   version: 2.0.0-beta.22
   resolution: "@docusaurus/plugin-sitemap@npm:2.0.0-beta.22"
   dependencies:
@@ -8851,6 +8851,7 @@ __metadata:
   dependencies:
     "@docusaurus/core": latest
     "@docusaurus/eslint-plugin": latest
+    "@docusaurus/plugin-sitemap": ^2.0.0-beta.22
     "@docusaurus/preset-classic": latest
     "@docusaurus/theme-live-codeblock": latest
     "@docusaurus/theme-search-algolia": ^2.0.0-beta.22

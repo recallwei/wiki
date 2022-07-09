@@ -14,15 +14,15 @@ const config = {
     primaryColor: "#25c2a0",
   },
   title: "Bruce Song",
-  tagline: "信じて諦めなければ、夢は必ずかなう", // motto
+  tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https:bruce-wiki.vercel.app",
   baseUrl: "/",
   baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon/favicon.png",
-  organizationName: "Bruce Song", // Usually your GitHub org/username.
-  projectName: "wiki", // Usually your repo name.
+  organizationName: "Bruce Song",
+  projectName: "wiki",
 
   i18n: {
     defaultLocale: "zh-CN",
@@ -45,13 +45,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // 将 docs URL 作为根 URL
-          //routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          // Please change this to your repo.
-          editUrl: "https://github.com/recallwei/wiki/tree/main/website", // GitHub 仓库对应文件位置
+          editUrl: "https://github.com/recallwei/wiki/tree/main/website",
           include: ["**/*.md", "**/*.mdx"],
           exclude: [
             "**/_*.{js,jsx,ts,tsx,md,mdx}",
@@ -191,8 +188,8 @@ const config = {
       },
       docs: {
         sidebar: {
-          hideable: true, // 底部隐藏按钮
-          autoCollapseCategories: false, // 自动折叠侧边栏
+          hideable: true,
+          autoCollapseCategories: false,
         },
       },
       footer: {
@@ -218,46 +215,28 @@ const config = {
         // darkTheme: oceanicNext,
         // Prism : https://prismjs.com/#supported-languages
         additionalLanguages: [
-          "aspnet", // ASP.NET
-          "cpp", // C++
-          "csharp", // C#
-          "graphql", // GraphQL
-          "go", // Go
-          "http", // HTTP
-          "java", // Java
-          "powershell", // PowerShell
-          "swift", // Swift
-          "vim", // vim
+          "aspnet",
+          "cpp",
+          "csharp",
+          "graphql",
+          "go",
+          "http",
+          "java",
+          "powershell",
+          "swift",
+          "vim",
         ],
       },
       algolia: {
-        // Algolia 提供的应用 ID
         appId: "YOUR_APP_ID",
-
-        //  公开 API 密钥：提交它没有危险
         apiKey: "YOUR_SEARCH_API_KEY",
-
         indexName: "YOUR_INDEX_NAME",
-
-        // 可选：见下文
         contextualSearch: true,
-
-        // 可选：声明哪些域名需要用 window.location 型的导航而不是 history.push。 适用于 Algolia 配置会爬取多个文档站点，而我们想要用 window.location.href 在它们之间跳转时。
         externalUrlRegex: "external\\.com|domain\\.com",
-
-        // 可选：Algolia 搜索参数
         searchParameters: {},
-
-        // 可选：搜索页面的路径，默认启用（可以用 `false` 禁用）
         searchPagePath: "search",
-
-        // ……其他 Algolia 参数
       },
       liveCodeBlock: {
-        /*
-          实时效果显示的位置，可位于编辑器上方或下方。
-          可为："top" | "bottom"
-        */
         playgroundPosition: "bottom",
       },
     }),
