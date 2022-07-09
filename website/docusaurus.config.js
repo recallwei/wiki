@@ -75,31 +75,72 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      docs: {
-        sidebar: {
-          hideable: true, // 底部隐藏按钮
-          autoCollapseCategories: false, // 自动折叠侧边栏
-        },
+      colorMode: {
+        defaultMode: "light",
+        disableSwitch: false,
+      },
+      announcementBar: {
+        id: "support_us",
+        content: "I am currently learning React and Go...",
+        backgroundColor: "#fafbfc",
+        textColor: "#091E42",
+        isCloseable: true,
       },
       navbar: {
         title: "Bruce's Wiki",
         logo: {
           alt: "Bruce's Wiki",
           src: "img/favicon/favicon.png",
+          srcDark: "img/favicon/favicon.png",
+          target: "_self",
+          className: "navbarIcon",
         },
         items: [
           // Left
           {
-            type: "doc",
-            docId: "front-end",
+            type: "dropdown",
             label: "前端",
             position: "left",
+            items: [
+              { type: "doc", label: "Home", docId: "front-end" },
+              { type: "doc", label: "Markdown", docId: "markdown/index" },
+              { type: "doc", label: "HTML", docId: "html/index" },
+              { type: "doc", label: "CSS", docId: "css/index" },
+              { type: "doc", label: "JavaScript", docId: "javascript/index" },
+              { type: "doc", label: "React", docId: "react/index" },
+              { type: "doc", label: "Docusaurus", docId: "docusaurus/index" },
+              {
+                type: "doc",
+                label: "微信小程序",
+                docId: "wexin-mini-program/index",
+              },
+              { type: "doc", label: "npm", docId: "npm/index" },
+              { type: "doc", label: "GraphQL", docId: "graphql/index" },
+            ],
           },
           {
-            type: "doc",
-            docId: "back-end",
+            type: "dropdown",
             label: "后端",
             position: "left",
+            items: [
+              { type: "doc", label: "Home", docId: "back-end" },
+              { type: "doc", label: "C#", docId: "csharp/index" },
+              { type: "doc", label: "Go", docId: "go/index" },
+              { type: "doc", label: "Node.js", docId: "nodejs/index" },
+              { type: "doc", label: "MongoDB", docId: "mongodb/index" },
+              { type: "doc", label: "Redis", docId: "redis/index" },
+              {
+                type: "doc",
+                label: "Microsoft Azure",
+                docId: "microsoft-azure/index",
+              },
+            ],
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "frontend",
+            label: "前端",
           },
           {
             type: "doc",
@@ -133,6 +174,10 @@ const config = {
             position: "left",
           },
           // Right
+          {
+            type: "search",
+            position: "right",
+          },
           // { type: "localeDropdown", position: "right" },
           {
             href: "https://github.com/recallwei/",
@@ -142,6 +187,13 @@ const config = {
             "aria-label": "GitHub repository",
           },
         ],
+        hideOnScroll: false,
+      },
+      docs: {
+        sidebar: {
+          hideable: true, // 底部隐藏按钮
+          autoCollapseCategories: false, // 自动折叠侧边栏
+        },
       },
       footer: {
         logo: {
@@ -174,14 +226,6 @@ const config = {
           "swift", // Swift
           "vim", // vim
         ],
-      },
-      //顶部横幅
-      announcementBar: {
-        id: "support_us",
-        content: "I am currently learning React and WeXin Mini Program...",
-        backgroundColor: "#fafbfc",
-        textColor: "#091E42",
-        isCloseable: false,
       },
       //实时代码块
       liveCodeBlock: {

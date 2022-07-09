@@ -150,7 +150,6 @@ img-annotation {
   font-size: 0.7rem;
 }
 
-/* 公告栏 */
 div[class^="announcementBar_"] {
   background: repeating-linear-gradient(
     35deg,
@@ -160,6 +159,16 @@ div[class^="announcementBar_"] {
     var(--site-announcement-bar-stripe-color2) 40px
   );
   font-weight: 600;
+}
+
+.navbarIcon {
+  border-radius: 6px;
+  border: solid black;
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme="dark"] .navbarIcon {
+  border: solid white;
 }
 
 /* Mobile CSS */
