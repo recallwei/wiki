@@ -13,7 +13,7 @@ const config = {
     telegramLink: "https://t.me/recallwei/",
     primaryColor: "#25c2a0",
   },
-  title: "Bruce Song",
+  title: "Bruce Song の Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https:bruce-wiki.vercel.app",
   baseUrl: "/",
@@ -98,6 +98,7 @@ const config = {
           target: "_self",
           className: "navbarIcon",
         },
+        hideOnScroll: false,
         items: [
           // Left
           {
@@ -195,7 +196,6 @@ const config = {
             "aria-label": "GitHub repository",
           },
         ],
-        hideOnScroll: false,
       },
       docs: {
         sidebar: {
