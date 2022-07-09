@@ -174,11 +174,11 @@ const config = {
             position: "left",
           },
           // Right
+          // { type: "localeDropdown", position: "right" },
           {
             type: "search",
             position: "right",
           },
-          // { type: "localeDropdown", position: "right" },
           {
             href: "https://github.com/recallwei/",
             position: "right",
@@ -207,7 +207,10 @@ const config = {
         links: [],
         copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus. Hosted by Vercel.`,
       },
-      // code block 基于 prism.js
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 3,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -227,7 +230,29 @@ const config = {
           "vim", // vim
         ],
       },
-      //实时代码块
+      algolia: {
+        // Algolia 提供的应用 ID
+        appId: "YOUR_APP_ID",
+
+        //  公开 API 密钥：提交它没有危险
+        apiKey: "YOUR_SEARCH_API_KEY",
+
+        indexName: "YOUR_INDEX_NAME",
+
+        // 可选：见下文
+        contextualSearch: true,
+
+        // 可选：声明哪些域名需要用 window.location 型的导航而不是 history.push。 适用于 Algolia 配置会爬取多个文档站点，而我们想要用 window.location.href 在它们之间跳转时。
+        externalUrlRegex: "external\\.com|domain\\.com",
+
+        // 可选：Algolia 搜索参数
+        searchParameters: {},
+
+        // 可选：搜索页面的路径，默认启用（可以用 `false` 禁用）
+        searchPagePath: "search",
+
+        // ……其他 Algolia 参数
+      },
       liveCodeBlock: {
         /*
           实时效果显示的位置，可位于编辑器上方或下方。
