@@ -35,6 +35,11 @@ const sidebars = {
     doc("sqlserver/index", "Microsoft SQL Server"),
     doc("sqlserver/guid", "GUID"),
   ],
+  csharp: [
+    doc("csharp/index", "C#"),
+    doc("csharp/environment", "🚀 搭建环境"),
+    doc("csharp/guid", "GUID"),
+  ],
 
   frontend: [
     // Home
@@ -861,15 +866,6 @@ const sidebars = {
       type: "doc",
       id: "back-end",
       label: "后端",
-    },
-    // C#
-    {
-      type: "category",
-      label: "C#",
-      collapsible: true,
-      collapsed: true,
-      link: { type: "doc", id: "csharp/index" },
-      items: [{ type: "doc", id: "csharp/environment", label: "🚀 搭建环境" }],
     },
     // Go
     {

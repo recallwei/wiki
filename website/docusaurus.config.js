@@ -146,12 +146,6 @@ const config = {
             ],
           },
           {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "sqlserver",
-            label: "SQL Server",
-          },
-          {
             type: "doc",
             docId: "algorithm/index",
             label: "计算机",

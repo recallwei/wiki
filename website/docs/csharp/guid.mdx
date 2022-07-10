@@ -2,7 +2,7 @@
 title: "GUID"
 description: "GUID 即全球唯一的标识符（globally unique identifier），也称 UUID（universal unique identifier） ，是一种 16 字节或 128 位数字。目的是唯一地标识某些东西，其在表、数据库和服务器之间是全球唯一的。"
 tags:
-  - "Microsoft SQL Server"
+  - "C#"
 last_update:
   date: "2022-07-10"
   author: "Bruce"
@@ -11,6 +11,7 @@ last_update:
 import TH from "/src/components/TextHighlight/index.js";
 import ReferenceList from "/src/components/ReferenceList/index.js";
 import wikipedia from "/static/img/reference/wikipedia.png";
+import microsoft from "/static/img/icon/microsoft.png";
 
 ## 什么是 GUID
 
@@ -22,12 +23,14 @@ import wikipedia from "/static/img/reference/wikipedia.png";
 
 例：69121893-3AFC-4F92-85F3-40BB5E7C7E29
 
-## 在 SQL Server 中创建 GUID
+## 在 C# 中创建 GUID
 
-使用 `NEWID()` 函数将 Product 表中 Code 字段更新为随机 GUID：
+使用 `Guid.NewGuid()` 方法在 C# 中生成一个新的 GUID：
 
-```sql title="SQL Server"
-UPDATE Product SET Code = NEWID()
+```csharp title="C#"
+Guid guid = Guid.NewGuid();
+Console.WriteLine(guid); // expected: 0f8fad5b-d9cb-469f-a165-70867728950e
+Console.WriteLine(Guid.NewGuid()); // expected: 7c9e6679-7425-40de-944b-e07fc1f90ae7
 ```
 
 ## 参考
@@ -38,6 +41,11 @@ UPDATE Product SET Code = NEWID()
       title: "Wikipedia : Universally unique identifier",
       src: wikipedia,
       link: "https://en.wikipedia.org/wiki/Universally_unique_identifier",
+    },
+    {
+      title: "Microsoft Docs : GUID",
+      src: microsoft,
+      link: "https://docs.microsoft.com/en-us/dotnet/api/system.guid?view=net-6.0",
     },
   ]}
 />
