@@ -1,0 +1,41 @@
+---
+title: "String"
+hide_title: true
+hide_table_of_contents: true
+description: ""
+last_update:
+  date: "2022-07-11"
+  author: "Bruce"
+---
+
+import FeatureIcon from "/src/components/FeatureIcon/index.js";
+import LinkList from "/src/components/LinkList/index.js";
+import csharp from "/static/img/icon/csharp.png";
+import ReferenceList from "/src/components/ReferenceList/index.js";
+import microsoft from "/static/img/icon/microsoft.png";
+
+<FeatureIcon src={csharp} title="String" />
+
+## 方法
+
+<LinkList
+  data={[
+    {
+      title: "Substring",
+      link: "/docs/csharp/string/substring",
+      src: csharp,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Microsoft Docs : String",
+      src: microsoft,
+      link: "https://docs.microsoft.com/zh-cn/dotnet/api/system.string?view=net-6.0",
+    },
+  ]}
+/>

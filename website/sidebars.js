@@ -38,6 +38,9 @@ const sidebars = {
   csharp: [
     doc("csharp/index", "C#"),
     doc("csharp/environment", "🚀 搭建环境"),
+    category("csharp/string/index", "String", [
+      doc("csharp/string/substring", "Substring"),
+    ]),
     doc("csharp/guid", "GUID"),
   ],
 
