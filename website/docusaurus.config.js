@@ -131,6 +131,11 @@ const config = {
               { type: "doc", label: "C#", docId: "csharp/index" },
               { type: "doc", label: "Go", docId: "go/index" },
               { type: "doc", label: "Node.js", docId: "nodejs/index" },
+              {
+                type: "doc",
+                label: "Microsoft SQL Server",
+                docId: "sqlserver/index",
+              },
               { type: "doc", label: "MongoDB", docId: "mongodb/index" },
               { type: "doc", label: "Redis", docId: "redis/index" },
               {
@@ -143,8 +148,8 @@ const config = {
           {
             type: "docSidebar",
             position: "left",
-            sidebarId: "markdown",
-            label: "Markdown",
+            sidebarId: "sqlserver",
+            label: "SQL Server",
           },
           {
             type: "doc",

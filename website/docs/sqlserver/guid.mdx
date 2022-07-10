@@ -1,0 +1,43 @@
+---
+title: "GUID"
+description: "GUID 是一种 16 字节二进制 SQL Server 数据类型，在表、数据库和服务器之间是全球唯一的。GUID 即全球唯一的标识符（globally unique identifier）。"
+tags:
+  - "Microsoft SQL Server"
+last_update:
+  date: "2022-07-10"
+  author: "Bruce"
+---
+
+import TH from "/src/components/TextHighlight/index.js";
+import ReferenceList from "/src/components/ReferenceList/index.js";
+import wikipedia from "/static/img/reference/wikipedia.png";
+
+## 什么是 GUID
+
+GUID 是一种 16 字节二进制 SQL Server 数据类型，在表、数据库和服务器之间是<TH>全球唯一</TH>的。GUID 即全球唯一的标识符（globally unique identifier）。
+
+## 格式
+
+**xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx**
+
+例：69121893-3AFC-4F92-85F3-40BB5E7C7E29
+
+## 在 SQL Server 中创建 GUID
+
+使用 `NEWID()` 函数将 Product 表中 Code 字段更新为随机 GUID。
+
+```sql title="SQL Server"
+UPDATE Product SET Code = NEWID()
+```
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Wikipedia : Universally unique identifier",
+      src: wikipedia,
+      link: "https://en.wikipedia.org/wiki/Universally_unique_identifier",
+    },
+  ]}
+/>

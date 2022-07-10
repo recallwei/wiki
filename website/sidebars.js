@@ -31,6 +31,10 @@ const sidebars = {
     doc("markdown/line-breaks", "🚀 换行符"),
   ],
   html: [doc("html/index", "HTML")],
+  sqlserver: [
+    doc("sqlserver/index", "Microsoft SQL Server"),
+    doc("sqlserver/guid", "GUID"),
+  ],
 
   frontend: [
     // Home
