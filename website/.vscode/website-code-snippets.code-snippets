@@ -106,12 +106,12 @@
   },
   "Import Icon Image": {
     "prefix": "iiim",
-    "body": ["import $1 from \"/static/img/icon/$2.png\";", "$3"],
+    "body": ["import $1 from \"/static/img/icon/$1.png\";", "$2"],
     "description": "Insert a Icon Image component import statement"
   },
   "Import Reference Image": {
     "prefix": "irim",
-    "body": ["import $1 from \"/static/img/reference/$2.png\";", "$3"],
+    "body": ["import $1 from \"/static/img/reference/$1.png\";", "$2"],
     "description": "Insert a Reference Image component import statement"
   },
   "Import Hyper Link": {
