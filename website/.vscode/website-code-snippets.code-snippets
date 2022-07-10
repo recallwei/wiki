@@ -126,6 +126,26 @@
     "prefix": "hl",
     "body": ["<HyperLink link=\"/docs/$1\" $2>$3</HyperLink>$0"],
     "description": "Insert a Hyper Link component"
+  },
+  // .yaml
+
+  "DocsMetaData": {
+    "prefix": "dmd",
+    "body": [
+      "---",
+      "title: \"\"",
+      "hide_title: true",
+      "hide_table_of_contents: true",
+      "description: \"\"",
+      "tags:",
+      "  - \"\"",
+      "last_update:",
+      "  date: \"2022-00-00\"",
+      "  author: \"Bruce\"",
+      "draft: true",
+      "---"
+    ],
+    "description": "Insert a Doc Meta Data"
   }
   // .json
 }
