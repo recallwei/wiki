@@ -1,44 +1,43 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+
+function doc(id, label) {
+  return {
+    type: "doc",
+    id: id,
+    label: label,
+  };
+}
+
+function category(id, label, items) {
+  return {
+    type: "category",
+    label: label,
+    collapsible: true,
+    collapsed: true,
+    link: {
+      type: "doc",
+      id: id,
+    },
+    items: items,
+  };
+}
+
 const sidebars = {
+  markdown: [
+    doc("markdown/index", "Markdown"),
+    doc("markdown/embed-html", "嵌入 HTML"),
+    doc("markdown/headings", "标题"),
+    doc("markdown/paragraphs", "段落"),
+    doc("markdown/line-breaks", "换行符"),
+  ],
+  html: [doc("html/index", "HTML")],
+
   frontend: [
     // Home
     {
       type: "doc",
       id: "front-end",
       label: "前端",
-    },
-    // Markdown
-    {
-      type: "category",
-      label: "Markdown",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "markdown/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "markdown/embed-html",
-          label: "Embed HTML",
-        },
-        {
-          type: "doc",
-          id: "markdown/headings",
-          label: "Headings",
-        },
-        {
-          type: "doc",
-          id: "markdown/paragraphs",
-          label: "Paragraphs",
-        },
-        {
-          type: "doc",
-          id: "markdown/line-breaks",
-          label: "Line Breaks",
-        },
-      ],
     },
     // HTML
     {

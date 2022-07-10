@@ -143,8 +143,8 @@ const config = {
           {
             type: "docSidebar",
             position: "left",
-            sidebarId: "frontend",
-            label: "前端",
+            sidebarId: "markdown",
+            label: "Markdown",
           },
           {
             type: "doc",
@@ -175,6 +175,11 @@ const config = {
             type: "doc",
             docId: "todo",
             label: "To Do",
+            position: "left",
+          },
+          {
+            to: "/docs/tags",
+            label: "🏷️ 标签",
             position: "left",
           },
           {

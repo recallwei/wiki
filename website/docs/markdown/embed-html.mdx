@@ -1,11 +1,17 @@
 ---
-title: Embed HTML
+title: "嵌入 HTML"
+description: "在 Markdown 中，我们也可以使用 HTML 元素。"
+tags:
+  - "Markdown"
+last_update:
+  date: "2022-07-10"
+  author: "Bruce"
 ---
 
 import TH from "@site/src/components/TextHighlight/index.js";
 
-## Block-level elements
+## 块级元素
 
-HTML block-level elements like `<div>`，`<table>`，`<pre>`， and `<p>`，please use <TH>blank lines</TH> before and after them to separate from other content. Try not to use `tabs` or `spaces` to indent HTML elements, otherwise it will affect the formatting.
+HTML 中的块级元素如 `<div>`，`<table>`，`<pre>` 和 `<p>`，请在它们前后插入<TH>空白行</TH>来和其他内容分隔开。请不要使用<TH>制表符</TH>或<TH>空格</TH>对 HTML 元素进行缩进, 否则会影响其格式化.
 
-We <TH>cannot use Markdown syntax</TH> inside block-level elements. `<p>italic and **bold**</p>` will not work。
+我们<TH>无法在 HTML 块级元素内部使用 Markdown 语法</TH>。例如 `<p>*italic* _italic_ and **bold**</p>` 将不会工作。

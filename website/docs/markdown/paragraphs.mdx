@@ -1,13 +1,21 @@
 ---
-title: Paragraphs
+title: "段落"
+description: ""
+tags:
+  - "Markdown"
+last_update:
+  date: 2022-07-10
+  author: "Bruce"
 ---
 
-## Wrap
+import TH from "/src/components/TextHighlight/index.js";
 
-在段落中使用末尾添加两个空格进行段落内换行，使用空行进行段落间换行。
+## 换行
 
-```markdown
-此处应该换行(space + space)
+在段落中<TH>末尾添加两个空格</TH>进行<TH>段落内换行</TH>，使用<TH>空行</TH>进行<TH>段落间换行</TH>。
+
+```markdown title="Markdown"
+此处应该换行(此处两个空格 )
 此处换行了！
 
 此处应该换行
@@ -22,59 +30,55 @@ title: Paragraphs
 
 此处换行了！
 
-## Font
+## 文本
 
-```markdown
+```markdown title="Markdown"
 _斜体文本_
 
 **粗体文本**
 
-**_粗斜体文本_**
+**_粗体加斜体文本_**
 ```
 
 _斜体文本_
 
 **粗体文本**
 
-**_粗斜体文本_**
+**_粗体加斜体文本_**
 
-## Dividing Line
+## 分隔线
 
-```markdown
+```markdown title="Markdown"
 ---
 ```
 
 ---
 
-## Strikethrough
+## 删除线（Strikethrough）
 
-```markdown
-BRUCE-WIKI.COM
-
+```markdown title="Markdown"
 ~~GOOGLE.COM~~
 ```
 
-BRUCE-WIKI.COM
-
 ~~GOOGLE.COM~~
 
-## Underscore
+## 下划线
 
-### HTML Syntax
+Markdown 语法中没有对下划线的支持，只能使用 HTML 标签。
 
-```html
+```markdown title="Markdown"
 此处需要<u>下划线</u>。
 ```
 
 此处需要<u>下划线</u>。
 
-## Footnote
+## 脚注
 
-```markdown
-创建脚注格式类似这样 [^bruce-wiki]。
+```markdown title="Markdown"
+创建脚注格式类似这样 [^「1」]。
 
-[^bruce-wiki]: Welcome To Bruce's Wiki!
+[^「1」] - Welcome To Bruce's Wiki!
 ```
 
-创建脚注格式类似这样 [^bruce-wiki]。  
-[^bruce-wiki]: Welcome To Bruce's Wiki!
+创建脚注格式类似这样 [^「1」]。  
+[^「1」] - Welcome To Bruce's Wiki!

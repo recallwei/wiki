@@ -1,64 +1,57 @@
 ---
-title: Headings
+title: "标题"
+description: ""
+tags:
+  - "Markdown"
+last_update:
+  date: 2022-07-10
+  author: "Bruce"
 ---
 
-import TH from "@site/src/components/TextHighlight/index.js";
-import Shortcut from "@site/src/components/Shortcut/index.js";
+import TH from "/src/components/TextHighlight/index.js";
+import Table from "/src/components/Table/index.js";
 
-## Markdown Syntax
+## Markdown 语法
 
-```markdown
-# Heading level 1
+```markdown title="Markdown"
+# 标题 1
 
-## Heading level 2
+## 标题 2
 
-### Heading level 3
+### 标题 3
 
-#### Heading level 4
+#### 标题 4
 
-##### Heading level 5
+##### 标题 5
 
-###### Heading level 6
+###### 标题 6
 ```
 
-## HTML Syntax
+## HTML 语法
 
-```html
-<h1>Heading level 1</h1>
-<h2>Heading level 2</h2>
-<h3>Heading level 3</h3>
-<h4>Heading level 4</h4>
-<h5>Heading level 5</h5>
-<h6>Heading level 6</h6>
+```markdown title="Markdown"
+<h1>标题 1</h1>
+<h2>标题 2</h2>
+<h3>标题 3</h3>
+<h4>标题 4</h4>
+<h5>标题 5</h5>
+<h6>标题 6</h6>
 ```
 
-## Best Practice
+## 最佳实践
 
-For compatibility, we should add a <Shortcut>space</Shortcut> between number signs `(#)` and heading name.
+为了兼容性, 我们需要在数字符号 `(#)` 和标题间添加一个<TH>空格</TH>。
 
-<table>
-  <thead>
-    <tr>
-      <th>✅</th>
-      <th>❌</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <code># heading</code>
-      </td>
-      <td>
-        <code>#heading</code>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <code>## heading</code>
-      </td>
-      <td>
-        <code>##heading</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<Table
+  wrapperStyle={{ width: "50%" }}
+  data={{
+    position: ["center", "center"],
+    header: ["✅", "❎"],
+    body: {
+      items: [
+        [<code># heading</code>, <code>#heading</code>],
+        [<code>## heading</code>, <code>##heading</code>],
+      ],
+    },
+  }}
+/>
