@@ -148,32 +148,32 @@ const config = {
           {
             type: "doc",
             docId: "algorithm/index",
-            label: "计算机",
+            label: "🖥 计算机",
             position: "left",
           },
           {
             type: "doc",
             docId: "code-specification",
-            label: "代码规范",
+            label: "🐞 代码规范",
             position: "left",
           },
           {
             type: "doc",
             docId: "software/index",
-            label: "软件",
+            label: "📱 软件",
             position: "left",
           },
           {
             type: "doc",
             docId: "copywriting-guide",
-            label: "设计",
+            label: "✏️ 设计",
             position: "left",
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
             type: "doc",
             docId: "todo",
-            label: "To Do",
+            label: "⏳ To Do",
             position: "left",
           },
           {
