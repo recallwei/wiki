@@ -75,9 +75,29 @@
     "description": "Insert a Shortcut component import statement"
   },
   "Import Component Table": {
-    "prefix": "it",
+    "prefix": "itb",
     "body": ["import Table from \"/src/components/Table/index.js\"", "$0"],
     "description": "Insert a Table component import statement"
+  },
+  "Table": {
+    "prefix": "tb",
+    "body": [
+      "<Table",
+      "  data={{",
+      "    position: [\"start\", \"center\"],",
+      "    header: [\"\", \"\"],",
+      "    body: {",
+      "      items: [",
+      "        [",
+      "          \"\",",
+      "          \"\",",
+      "        ],",
+      "      ],",
+      "    },",
+      "  }}",
+      "/>"
+    ],
+    "description": "Insert a Table component"
   },
   "Import Component TextHighlight": {
     "prefix": "ith",
