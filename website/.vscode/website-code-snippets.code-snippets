@@ -2,26 +2,26 @@
   // .mdx
   "Import Component Badge": {
     "prefix": "ibg",
-    "body": ["import Badge from '@site/src/components/Badge/index.js'", "$0"],
+    "body": ["import Badge from \"/src/components/Badge/index.js\"", "$0"],
     "description": "Insert a Badge component import statement"
   },
   "Import Component Feature Icon": {
     "prefix": "ifi",
     "body": [
-      "import FeatureIcon from '@site/src/components/FeatureIcon/index.js'",
+      "import FeatureIcon from \"/src/components/FeatureIcon/index.js\"",
       "$0"
     ],
     "description": "Insert a Feature Icon component import statement"
   },
   "Feature Icon": {
     "prefix": "fi",
-    "body": ["<FeatureIcon src={$1} title='$2' />", "$3"],
+    "body": ["<FeatureIcon src={$1} title=\"$2\" />", "$3"],
     "description": "Insert a Feature Icon component"
   },
   "Import Component Link List": {
     "prefix": "ill",
     "body": [
-      "import LinkList from '@site/src/components/LinkList/index.js'",
+      "import LinkList from \"/src/components/LinkList/index.js\"",
       "$0"
     ],
     "description": "Insert a Link List component import statement"
@@ -45,7 +45,7 @@
   "Import Component Reference List": {
     "prefix": "irl",
     "body": [
-      "import ReferenceList from '@site/src/components/ReferenceList/index.js'",
+      "import ReferenceList from \"/src/components/ReferenceList/index.js\"",
       "$0"
     ],
     "description": "Insert a Reference List component import statement"
@@ -69,38 +69,35 @@
   "Import Component Shortcut": {
     "prefix": "isc",
     "body": [
-      "import Shortcut from '@site/src/components/Shortcut/index.js'",
+      "import Shortcut from \"/src/components/Shortcut/index.js\"",
       "$0"
     ],
     "description": "Insert a Shortcut component import statement"
   },
   "Import Component Table": {
     "prefix": "it",
-    "body": ["import Table from '@site/src/components/Table/index.js'", "$0"],
+    "body": ["import Table from \"/src/components/Table/index.js\"", "$0"],
     "description": "Insert a Table component import statement"
   },
   "Import Component TextHighlight": {
     "prefix": "ith",
-    "body": [
-      "import TH from '@site/src/components/TextHighlight/index.js'",
-      "$0"
-    ],
+    "body": ["import TH from \"/src/components/TextHighlight/index.js\"", "$0"],
     "description": "Insert a TextHighlight component import statement"
   },
   "Import Icon Image": {
     "prefix": "iiim",
-    "body": ["import $1 from '@site/static/img/icon/$2.png';", "$3"],
+    "body": ["import $1 from \"/static/img/icon/$2.png\";", "$3"],
     "description": "Insert a Icon Image component import statement"
   },
   "Import Reference Image": {
     "prefix": "irim",
-    "body": ["import $1 from '@site/static/img/reference/$2.png';", "$3"],
+    "body": ["import $1 from \"/static/img/reference/$2.png\";", "$3"],
     "description": "Insert a Reference Image component import statement"
   },
   "Import Hyper Link": {
     "prefix": "ihl",
     "body": [
-      "import HyperLink from \"@site/src/components/HyperLink/index.js\";",
+      "import HyperLink from \"/src/components/HyperLink/index.js\";",
       "$0"
     ],
     "description": "Insert a Hyper Link component import statement"
