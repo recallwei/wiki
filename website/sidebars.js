@@ -28,7 +28,7 @@ const sidebars = {
     doc("markdown/embed-html", "嵌入 HTML"),
     doc("markdown/headings", "标题"),
     doc("markdown/paragraphs", "段落"),
-    doc("markdown/line-breaks", "换行符"),
+    doc("markdown/line-breaks", "🚀 换行符"),
   ],
   html: [doc("html/index", "HTML")],
 
