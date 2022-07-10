@@ -13,7 +13,7 @@ const config = {
     telegramLink: "https://t.me/recallwei/",
     primaryColor: "#25c2a0",
   },
-  title: "Bruce Song の Wiki",
+  title: "Bruce Song",
   tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https:bruce-wiki.vercel.app",
   baseUrl: "/",

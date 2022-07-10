@@ -26,6 +26,8 @@
   --site-announcement-bar-stripe-color2: hsl(167deg 68% 95%);
   --link-list-hover: rgb(102, 212, 189);
   --base-font-family: "Noto Sans", sans-serif;
+  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   --ifm-list-left-padding: 1.2rem;
 }
 
@@ -65,6 +67,7 @@
 html {
   font-family: var(--base-font-family);
   letter-spacing: 0.2px;
+  height: 100%;
 }
 
 hr {
