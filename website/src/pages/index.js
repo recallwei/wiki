@@ -16,6 +16,7 @@ import zhihu from "@site/static/img/icon/zhihu.png";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
+  const LINK_BUTTON_TEXT = "Go to Wiki";
   return (
     <header
       className={clsx("hero", styles.heroBanner)}
@@ -35,7 +36,7 @@ function HomepageHeader(props) {
               className="button button--secondary button--sm"
               to="/docs/front-end"
             >
-              Go to Wiki
+              {LINK_BUTTON_TEXT}
             </Link>
           </div>
         </div>

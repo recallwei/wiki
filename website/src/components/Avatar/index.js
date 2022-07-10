@@ -1,20 +1,28 @@
 import React from "react";
-
+import clsx from "clsx";
 export default function Avatar({
-  customStyle,
-  src,
-  name,
-  description,
-  size = "default", // default, sm, lg, xl
-  vertical = false, // position vertical
   avatarLink = false,
+  customStyle,
+  description,
+  name,
+  size = "default", // default, sm, lg, xl
+  src,
+  vertical = false, // position vertical
+  wrapperClassName,
 }) {
   return (
     <div class={`avatar ${vertical && "avatar--vertical"}`} style={customStyle}>
       <img
-        class={`avatar__photo ${
-          size !== "default" && `avatar__photo--${size}`
-        } ${avatarLink ? "avatar__photo-link" : ""}`}
+        // class={`avatar__photo ${
+        //   size !== "default" && `avatar__photo--${size}`
+        // } ${avatarLink && "avatar__photo-link"}`}
+        //TODO - Verify whether className works
+        className={clsx(
+          "avatar__photo",
+          size !== "default" && `avatar__photo--${size}`,
+          avatarLink && "avatar__photo-link",
+          wrapperClassName
+        )}
         src={src}
       />
       <div class="avatar__intro">

@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./styles.module.css";
+import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 
-export default function LinkList({ customStyle, data = [] }) {
+export default function LinkList({ customStyle, data = [], wrapperClassName }) {
   return (
-    <div style={customStyle} className={styles.list}>
+    <div style={customStyle} className={clsx(styles.list, wrapperClassName)}>
       {data.map((item) => {
         return (
           <div key={item.title} className={styles.item}>

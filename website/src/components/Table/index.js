@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./styles.module.css";
+import clsx from "clsx";
 
-export default function Table({ data = [] }) {
+export default function Table({ data = [], wrapperClassName }) {
   let getPosition = (text) => {
     switch (text) {
       case "center":
@@ -15,12 +16,12 @@ export default function Table({ data = [] }) {
     }
   };
   return (
-    <div className={styles.tableAreaWrapper}>
+    <div className={clsx(styles.tableAreaWrapper, wrapperClassName)}>
       <div className={styles.tableArea}>
         <table role="table">
-          {data.caption ? (
+          {data.caption && (
             <caption className={styles.caption}>{data.caption}</caption>
-          ) : null}
+          )}
           {data.header && data.header.length > 0 && (
             <thead>
               <tr role="row">
@@ -43,23 +44,25 @@ export default function Table({ data = [] }) {
             {data.body &&
               data.body.items.length > 0 &&
               data.body.items.map((x, idx) => {
-                return x.length > 0 ? (
-                  <tr role="row" key={idx}>
-                    {x.map((y, idx) => {
-                      return (
-                        <td
-                          role="gridcell"
-                          key={idx}
-                          style={{
-                            textAlign: `${getPosition(data.position[idx])}`,
-                          }}
-                        >
-                          {y}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                ) : null;
+                return (
+                  x.length > 0 && (
+                    <tr role="row" key={idx}>
+                      {x.map((y, idx) => {
+                        return (
+                          <td
+                            role="gridcell"
+                            key={idx}
+                            style={{
+                              textAlign: `${getPosition(data.position[idx])}`,
+                            }}
+                          >
+                            {y}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  )
+                );
               })}
           </tbody>
           {data.footer && data.footer.length > 0 && (

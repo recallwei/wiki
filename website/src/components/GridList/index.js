@@ -1,14 +1,18 @@
 import React from "react";
-import Link from "@docusaurus/Link";
-import clsx from "clsx";
 import styles from "./styles.module.css";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
 
-export default function GridList({ customStyle, data = [] }) {
+export default function GridList({ customStyle, data = [], wrapperClassName }) {
   const isMobileDevice = /Mobi|Android|iPhone/i.test(navigator.userAgent);
   return (
     <div
       style={customStyle}
-      className={clsx(styles.grid, isMobileDevice && styles.mobileGrid)}
+      className={clsx(
+        styles.grid,
+        isMobileDevice && styles.mobileGrid,
+        wrapperClassName
+      )}
     >
       {data.map((item) => {
         return (

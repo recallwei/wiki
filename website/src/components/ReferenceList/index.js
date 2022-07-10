@@ -1,12 +1,20 @@
 import React from "react";
 import styles from "./styles.module.css";
+import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/svg/link.svg";
 
-export default function ReferenceList({ customStyle, data = [] }) {
+export default function ReferenceList({
+  customStyle,
+  data = [],
+  wrapperClassName,
+}) {
   return (
-    <div style={customStyle} className={styles.unorderedList}>
+    <div
+      style={customStyle}
+      className={clsx(styles.unorderedList, wrapperClassName)}
+    >
       <ul>
         {data.map((item, idx) => {
           return (
