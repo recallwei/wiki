@@ -1,22 +1,30 @@
 import React from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
+import { isMobile } from "/src/utils/func-util.js";
 
-export default function Table({ data = [], wrapperClassName }) {
+export default function Table({
+  wrapperStyle,
+  data = [],
+  mobileWrapperStyle,
+  wrapperClassName,
+}) {
   let getPosition = (text) => {
     switch (text) {
       case "center":
         return "center";
-      case "start":
-        return "start";
       case "end":
         return "end";
+      case "start":
       default:
-        return undefined;
+        return "start";
     }
   };
   return (
-    <div className={clsx(styles.tableAreaWrapper, wrapperClassName)}>
+    <div
+      className={clsx(styles.tableAreaWrapper, wrapperClassName)}
+      style={isMobile() ? mobileWrapperStyle : wrapperStyle}
+    >
       <div className={styles.tableArea}>
         <table role="table">
           {data.caption && (
