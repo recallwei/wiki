@@ -7,3 +7,45 @@ last_update:
   date: "2022-07-11"
   author: "Bruce"
 ---
+
+import TH from "/src/components/TextHighlight/index.js";
+
+- `Substring(n)` - 取从索引第 n 个字符开始，到末尾的字符串。
+- `Substring(n, m)` - 取从索引第 n 个字符开始，连续 m 个长度的字符串。
+
+## Substring 简写，使用范围运算符
+
+使用**范围运算符** `[startIndex..endIndex]` 以省去使用 `String.Length` 的逻辑。
+
+范围运算符 `[n..m]` 取从<TH>索引第 n 个字符</TH>至<TH>索引第 m 个字符前</TH>的字符串。  
+范围运算符 `[n..^m]` 取从<TH>索引第 n 个字符</TH>至<TH>索引倒数第 m 个字符前</TH>的字符串。  
+在范围运算符中，当 <TH>n 为 0 时可以省略</TH>，当 <TH>m 为原字符串长度</TH>时<TH>可以省略</TH>。
+
+```csharp title="C#" showLineNumbers
+string s = "abcdefgh";
+
+// expected: ab
+var a1 = s.Substring(0, 2);
+var a2 = s[0..2];
+var a3 = s[..2];
+
+// expected: bcd
+var b1 = s.Substring(1, 3);
+var b2 = s[1..4];
+
+// expected: bcdefgh
+var c1 = s.Substring(1);
+var c2 = s.Substring(1, s.Length - 1);
+var c3 = s[1..];
+var c4 = s[1..8];
+var c5 = s[1..^0];
+
+// expected: abcde
+var  d1 = s.Substring(0, s.Length - 3);
+var d2 = s[0..^3];
+var d3 = s[..^3];
+
+// expected: bcdef
+var e1 = s.Substring(1, s.Length - 3);
+var e2 = s[1..^2];
+```
