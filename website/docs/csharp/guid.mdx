@@ -29,9 +29,16 @@ import microsoft from "/static/img/icon/microsoft.png";
 使用 `Guid.NewGuid()` 方法在 C# 中生成一个新的 GUID：
 
 ```csharp title="C#"
-Guid guid = Guid.NewGuid();
-Console.WriteLine(guid); // expected: 0f8fad5b-d9cb-469f-a165-70867728950e
-Console.WriteLine(Guid.NewGuid()); // expected: 7c9e6679-7425-40de-944b-e07fc1f90ae7
+using System;
+namespace GUIDTest {
+    class MainClass {
+        static void Main(string[] args) {
+            Guid guid = System.Guid.NewGuid();
+            Console.WriteLine(guid); // expected: 0f8fad5b-d9cb-469f-a165-70867728950e
+            Console.WriteLine(Guid.NewGuid()); // expected: 7c9e6679-7425-40de-944b-e07fc1f90ae7
+        }
+    }
+}
 ```
 
 ## 参考
