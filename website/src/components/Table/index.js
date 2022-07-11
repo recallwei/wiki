@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
-import { isMobile } from "/src/utils/func-util.js";
+import { isMobile } from "/src/utils/funcUtils";
 
 export default function Table({
   wrapperStyle,

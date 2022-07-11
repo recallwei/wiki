@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import { isMobile } from "/src/utils/func-util";
+import { isMobile } from "/src/utils/funcUtils";
 
 // TODO - Card Design
 
@@ -19,17 +19,16 @@ export default function GridList({ customStyle, data = [], wrapperClassName }) {
       {data.map((item) => {
         return (
           <div key={item.title} className={styles.cardWrapper}>
-            <Link to={item.link} className={styles.card}>
-              {/* <img
-                src={item.src}
-                className={clsx(
-                  isMobileDevice ? styles.imageMobile : styles.image,
-                  styles.imageActive
-                )}
-                alt={item.title}
-              /> */}
-            </Link>
+            <Link to={item.link} className={styles.card} />
             <div className={styles.title}>{item.title}</div>
+            <img
+              src={item.src}
+              className={clsx(
+                isMobile() ? styles.imageMobile : styles.image,
+                styles.imageActive
+              )}
+              alt={item.title}
+            />
           </div>
         );
       })}

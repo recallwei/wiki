@@ -119,3 +119,9 @@
 .navLinkIconArea > img:hover {
   opacity: 0.8;
 }
+
+.mainContainer {
+  padding: 40px 20px;
+  width: 61.8%;
+  margin: auto;
+}

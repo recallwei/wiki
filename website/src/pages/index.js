@@ -4,8 +4,8 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { openWindow, isMobile } from "/src/utils/func-util";
-import styles from "./index.module.css";
+import { openWindow, isMobile } from "/src/utils/funcUtils";
+import styles from "./styles.module.css";
 import favicon from "/static/img/favicon/favicon.png";
 import github from "/static/img/icon/github.png";
 import google from "/static/img/icon/google.png";
@@ -13,6 +13,8 @@ import twitter from "/static/img/icon/twitter.png";
 import telegram from "/static/img/icon/telegram.png";
 import wechat from "/static/img/icon/wexin-mini-program.png";
 import zhihu from "/static/img/icon/zhihu.png";
+import GridList from "/src/components/GridList/index.js";
+import { frontend } from "/src/data/gridListData";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
@@ -85,7 +87,11 @@ export default function Home() {
             description="Description will go into a meta tag in <head />"
           >
             <HomepageHeader isMobileDevice={isMobileDevice} />
-            <main></main>
+            <main>
+              <div className={styles.mainContainer}>
+                <GridList data={frontend} />
+              </div>
+            </main>
           </Layout>
         );
       }}
