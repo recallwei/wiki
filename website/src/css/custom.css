@@ -109,6 +109,7 @@ html[data-theme="dark"] blockquote {
 code {
   color: var(--ifm-color-primary);
   vertical-align: baseline !important;
+  font-weight: bold;
   /* 使用 JetBrains Mono 字体 */
   /* font-family: "JetBrains Mono", monospace !important; */
   /* font-family: var(--base-font-family) !important; */
