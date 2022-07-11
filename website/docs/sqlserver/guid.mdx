@@ -31,6 +31,16 @@ import wikipedia from "/static/img/reference/wikipedia.png";
 UPDATE Product SET Code = NEWID()
 ```
 
+## 在 SQL Server 中声明 GUID 类型变量
+
+使用 `UNIQUEIDENTIFIER` 关键字声明 GUID 变量：
+
+```sql
+DECLARE @UNI UNIQUEIDENTIFIER;
+SET @UNI = NEWID();
+SELECT @UNI;
+```
+
 ## 参考
 
 <ReferenceList
