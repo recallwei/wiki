@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import LinkSVG from "@site/static/svg/link.svg";
+import LinkSVG from "/static/svg/link.svg";
 
 export default function HyperLink({
   bold,

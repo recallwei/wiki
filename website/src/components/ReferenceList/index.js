@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
-import LinkSVG from "@site/static/svg/link.svg";
+import LinkSVG from "/static/svg/link.svg";
 
 export default function ReferenceList({
   customStyle,

@@ -4,15 +4,15 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { openWindow, isMobile } from "@site/src/utils/func-util";
+import { openWindow, isMobile } from "/src/utils/func-util";
 import styles from "./index.module.css";
-import favicon from "@site/static/img/favicon/favicon.png";
-import github from "@site/static/img/icon/github.png";
-import google from "@site/static/img/icon/google.png";
-import twitter from "@site/static/img/icon/twitter.png";
-import telegram from "@site/static/img/icon/telegram.png";
-import wechat from "@site/static/img/icon/wexin-mini-program.png";
-import zhihu from "@site/static/img/icon/zhihu.png";
+import favicon from "/static/img/favicon/favicon.png";
+import github from "/static/img/icon/github.png";
+import google from "/static/img/icon/google.png";
+import twitter from "/static/img/icon/twitter.png";
+import telegram from "/static/img/icon/telegram.png";
+import wechat from "/static/img/icon/wexin-mini-program.png";
+import zhihu from "/static/img/icon/zhihu.png";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();

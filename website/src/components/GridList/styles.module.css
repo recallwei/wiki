@@ -58,8 +58,9 @@
 
 .title {
   position: absolute;
-  right: 4px;
-  bottom: 2px;
-  font-size: 15px;
+  right: 8px;
+  bottom: 4px;
+  font-size: 18px;
   font-weight: 600;
+  color: white;
 }
