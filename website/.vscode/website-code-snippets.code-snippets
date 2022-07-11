@@ -127,6 +127,14 @@
     "body": ["<HyperLink link=\"/docs/$1\" $2>$3</HyperLink>$0"],
     "description": "Insert a Hyper Link component"
   },
+  "Import Grid List": {
+    "prefix": "igl",
+    "body": [
+      "import GridList from \"/src/components/GridList/index.js\";",
+      "$0"
+    ],
+    "description": "Insert a Grid List component import statement"
+  },
   // .yaml
   "DocsMetaData": {
     "prefix": "dmd",
