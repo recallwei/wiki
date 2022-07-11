@@ -1,0 +1,29 @@
+---
+title: "获取 URL Query 参数"
+description: ""
+tags:
+  - "JavaScript"
+last_update:
+  date: "2022-07-11"
+  author: "Bruce"
+---
+
+import TH from "/src/components/TextHighlight/index.js";
+
+`window.location.search` 会返回 `?` 和后面 <TH> Query 参数的键值对</TH>。
+
+如 `https://bruce-wiki.com?a=1&b=2`，`window.location.search` 的结果是 `?a=1&b=2`。  
+再使用 `substring()` 得到 `a=1&b=2`。
+
+## 使用正则表达式
+
+```javascript title="JavaScript"
+function getQueryString(para) {
+  let reg = new RegExp("(^|&)" + para + "=([^&]*)(&|$)", "i");
+  let r = window.location.search.substring(1).match(reg);
+  if (r != null) {
+    return decodeURIComponent(r[2]);
+  }
+  return null;
+}
+```

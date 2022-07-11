@@ -1,12 +1,18 @@
 ---
-title: 从 HTML 中提取文字
+title: "从 HTML 中提取文字"
+description: ""
+tags:
+  - "JavaScript"
+last_update:
+  date: "2022-07-11"
+  author: "Bruce"
 ---
 
 从富文本中提取出纯文字，需要过滤 HTML 标签等内容。
 
 ## 正则表达式
 
-```javascript
+```javascript title="JavaScript"
 getSimpleText(HTML) {
     let str = html.replace(/<[^>]+>|&[^>]+;/g, "").trim();
     return str;

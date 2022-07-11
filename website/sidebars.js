@@ -44,73 +44,22 @@ const sidebars = {
     category("javascript/operators/index", "运算符", [
       doc("javascript/operators/bitwise-not", "按位非"),
     ]),
-    category("javascript/reference-types/index", "引用类型", []),
-    {
-      type: "category",
-      label: "引用类型",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "javascript/reference-types/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "数组",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/reference-types/array/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "javascript/reference-types/array/method-splice",
-              label: "splice",
-            },
-          ],
-        },
-        {
-          type: "doc",
-          id: "javascript/reference-types/shallowcopy-and-deepcopy",
-          label: "浅复制与深复制",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "解决方案",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "javascript/solutions/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "javascript/solutions/get-device-type",
-          label: "获取设备类型",
-        },
-        {
-          type: "doc",
-          id: "javascript/solutions/get-file-type",
-          label: "获取文件类型",
-        },
-        {
-          type: "doc",
-          id: "javascript/solutions/get-text-from-html",
-          label: "从 HTML 中提取文字",
-        },
-        {
-          type: "doc",
-          id: "javascript/solutions/possessing-date",
-          label: "日期、时间处理",
-        },
-      ],
-    },
+    category("javascript/reference-types/index", "引用类型", [
+      category("javascript/reference-types/array/index", "数组", [
+        doc("javascript/reference-types/array/splice", "splice"),
+      ]),
+      doc(
+        "javascript/reference-types/shallowcopy-and-deepcopy",
+        "🚀 深复制与浅复制"
+      ),
+    ]),
+    category("javascript/solutions/index", "解决方案", [
+      doc("javascript/solutions/get-device-type", "获取设备类型"),
+      doc("javascript/solutions/get-file-type", "获取文件类型"),
+      doc("javascript/solutions/get-text-from-html", "从 HTML 中提取文字"),
+      doc("javascript/solutions/possessing-date", "日期、时间处理"),
+      doc("javascript/solutions/get-url-parameter", "获取 URL Query 参数"),
+    ]),
   ],
   csharp: [
     doc("csharp/index", "C#"),
