@@ -38,40 +38,13 @@ const sidebars = {
       doc("javascript/data-type/string", "🚀 String"),
       doc("javascript/data-type/type-conversion", "🚀 类型转换"),
     ]),
-    {
-      type: "category",
-      label: "表达式",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "javascript/expressions/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "javascript/expressions/destructuring-assignment",
-          label: "解构赋值",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "运算符",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "javascript/operators/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "javascript/operators/bitwise-not",
-          label: "按位非",
-        },
-      ],
-    },
+    category("javascript/expressions/index", "表达式", [
+      doc("javascript/expressions/destructuring-assignment", "解构赋值"),
+    ]),
+    category("javascript/operators/index", "运算符", [
+      doc("javascript/operators/bitwise-not", "按位非"),
+    ]),
+    category("javascript/reference-types/index", "引用类型", []),
     {
       type: "category",
       label: "引用类型",
