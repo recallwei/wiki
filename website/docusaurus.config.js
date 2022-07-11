@@ -243,8 +243,8 @@ const config = {
         ],
       },
       algolia: {
-        appId: "YOUR_APP_ID",
-        apiKey: "YOUR_SEARCH_API_KEY",
+        appId: "WJ7VJBYAIG",
+        apiKey: "22996f43a92d0a80f0fc7c7a1c93d8e5",
         indexName: "YOUR_INDEX_NAME",
         contextualSearch: true,
         externalUrlRegex: "external\\.com|domain\\.com",

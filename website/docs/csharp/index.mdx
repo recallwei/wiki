@@ -1,7 +1,6 @@
 ---
 title: "C#"
 hide_title: true
-hide_table_of_contents: true
 description: ""
 last_update:
   date: "2022-07-10"
@@ -11,6 +10,7 @@ last_update:
 import FeatureIcon from "@site/src/components/FeatureIcon/index.js";
 import LinkList from "@site/src/components/LinkList/index.js";
 import csharp from "@site/static/img/icon/csharp.png";
+import ReferenceList from "/src/components/ReferenceList/index.js";
 
 <FeatureIcon src={csharp} title="C#" />
 <LinkList
@@ -29,6 +29,18 @@ import csharp from "@site/static/img/icon/csharp.png";
       title: "GUID",
       link: "/docs/csharp/guid",
       src: csharp,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Microsoft Docs : .NET C#",
+      src: csharp,
+      link: "https://docs.microsoft.com/zh-cn/dotnet/csharp/",
     },
   ]}
 />
