@@ -31,6 +31,149 @@ const sidebars = {
     doc("markdown/line-breaks", "🚀 换行符"),
   ],
   html: [doc("html/index", "HTML")],
+  javascript: [
+    doc("javascript/index", "JavaScript"),
+    // JavaScript
+    {
+      type: "category",
+      label: "JavaScript",
+      collapsible: true,
+      collapsed: true,
+      link: {
+        type: "doc",
+        id: "javascript/index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "数据类型",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/data-type/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "javascript/data-type/number",
+              label: "Number",
+            },
+            {
+              type: "doc",
+              id: "javascript/data-type/string",
+              label: "String",
+            },
+            {
+              type: "doc",
+              id: "javascript/data-type/type-conversion",
+              label: "🚀 类型转换",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "表达式",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/expressions/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "javascript/expressions/destructuring-assignment",
+              label: "解构赋值",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "运算符",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/operators/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "javascript/operators/bitwise-not",
+              label: "按位非",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "引用类型",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/reference-types/index",
+          },
+          items: [
+            {
+              type: "category",
+              label: "数组",
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: "doc",
+                id: "javascript/reference-types/array/index",
+              },
+              items: [
+                {
+                  type: "doc",
+                  id: "javascript/reference-types/array/method-splice",
+                  label: "splice",
+                },
+              ],
+            },
+            {
+              type: "doc",
+              id: "javascript/reference-types/shallowcopy-and-deepcopy",
+              label: "浅复制与深复制",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "解决方案",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "javascript/solutions/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "javascript/solutions/get-device-type",
+              label: "获取设备类型",
+            },
+            {
+              type: "doc",
+              id: "javascript/solutions/get-file-type",
+              label: "获取文件类型",
+            },
+            {
+              type: "doc",
+              id: "javascript/solutions/get-text-from-html",
+              label: "从 HTML 中提取文字",
+            },
+            {
+              type: "doc",
+              id: "javascript/solutions/possessing-date",
+              label: "日期、时间处理",
+            },
+          ],
+        },
+      ],
+    },
+  ],
   csharp: [
     doc("csharp/index", "C#"),
     doc("csharp/environment", "🚀 搭建环境"),
@@ -280,146 +423,6 @@ const sidebars = {
               type: "doc",
               id: "css/sass/installation",
               label: "安装 Sass",
-            },
-          ],
-        },
-      ],
-    },
-    // JavaScript
-    {
-      type: "category",
-      label: "JavaScript",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "javascript/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "数据类型",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/data-type/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "javascript/data-type/number",
-              label: "Number",
-            },
-            {
-              type: "doc",
-              id: "javascript/data-type/string",
-              label: "String",
-            },
-            {
-              type: "doc",
-              id: "javascript/data-type/type-conversion",
-              label: "🚀 类型转换",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "表达式",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/expressions/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "javascript/expressions/destructuring-assignment",
-              label: "解构赋值",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "运算符",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/operators/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "javascript/operators/bitwise-not",
-              label: "按位非",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "引用类型",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/reference-types/index",
-          },
-          items: [
-            {
-              type: "category",
-              label: "数组",
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: "doc",
-                id: "javascript/reference-types/array/index",
-              },
-              items: [
-                {
-                  type: "doc",
-                  id: "javascript/reference-types/array/method-splice",
-                  label: "splice",
-                },
-              ],
-            },
-            {
-              type: "doc",
-              id: "javascript/reference-types/shallowcopy-and-deepcopy",
-              label: "浅复制与深复制",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "解决方案",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "javascript/solutions/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "javascript/solutions/get-device-type",
-              label: "获取设备类型",
-            },
-            {
-              type: "doc",
-              id: "javascript/solutions/get-file-type",
-              label: "获取文件类型",
-            },
-            {
-              type: "doc",
-              id: "javascript/solutions/get-text-from-html",
-              label: "从 HTML 中提取文字",
-            },
-            {
-              type: "doc",
-              id: "javascript/solutions/possessing-date",
-              label: "日期、时间处理",
             },
           ],
         },
