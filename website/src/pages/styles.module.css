@@ -125,3 +125,8 @@
   width: 61.8%;
   margin: auto;
 }
+
+.mainContainerMobile {
+  width: 100%;
+  padding: 10px;
+}

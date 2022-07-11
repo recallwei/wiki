@@ -88,7 +88,13 @@ export default function Home() {
           >
             <HomepageHeader isMobileDevice={isMobileDevice} />
             <main>
-              <div className={styles.mainContainer}>
+              <div
+                className={clsx(
+                  isMobileDevice
+                    ? styles.mainContainerMobile
+                    : styles.mainContainer
+                )}
+              >
                 <GridList data={frontend} />
               </div>
             </main>
