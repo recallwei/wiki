@@ -31,10 +31,6 @@ const sidebars = {
     doc("markdown/line-breaks", "🚀 换行符"),
   ],
   html: [doc("html/index", "HTML")],
-  sqlserver: [
-    doc("sqlserver/index", "Microsoft SQL Server"),
-    doc("sqlserver/guid", "GUID"),
-  ],
   csharp: [
     doc("csharp/index", "C#"),
     doc("csharp/environment", "🚀 搭建环境"),
@@ -42,6 +38,10 @@ const sidebars = {
       doc("csharp/string/substring", "Substring"),
     ]),
     doc("csharp/guid", "GUID"),
+  ],
+  sqlserver: [
+    doc("sqlserver/index", "Microsoft SQL Server"),
+    doc("sqlserver/guid", "GUID"),
   ],
 
   frontend: [
