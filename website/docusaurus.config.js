@@ -169,7 +169,7 @@ const config = {
             label: "✏️ 设计",
             position: "left",
           },
-          // { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "Blog", position: "left" },
           {
             type: "doc",
             docId: "todo",
