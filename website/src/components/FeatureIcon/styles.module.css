@@ -13,7 +13,15 @@
   cursor: pointer;
   transform-style: preserve-3d;
   transform: rotateZ(1turn);
+  -webkit-transform: rotateZ(1turn);
+  -moz-transform: rotateZ(1turn);
+  -o-transform: rotateZ(1turn);
+  -ms-transform: rotateZ(1turn);
   transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
+  -webkit-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
+  -moz-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
+  -o-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
+  -ms-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
 }
 
 .title {
@@ -23,4 +31,15 @@
 
 .title::selection {
   color: var(--ifm-color-primary);
+}
+
+@media screen and (max-width: 996px) {
+  .featureIconArea > img {
+    height: 96px;
+    width: 96px;
+  }
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
 }

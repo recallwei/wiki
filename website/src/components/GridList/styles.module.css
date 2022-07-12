@@ -60,22 +60,23 @@
   opacity: 0;
 }
 
-.cardWrapper:hover .image {
-  opacity: 1;
-  transition: ease-in 0.4s;
-  transform-style: preserve-3d;
-  transform: rotateZ(1turn);
-  cursor: pointer;
-}
+@media screen and (min-width: 997px) {
+  .cardWrapper:hover .image {
+    opacity: 1;
+    transition: ease-in 0.4s;
+    transform-style: preserve-3d;
+    transform: rotateZ(1turn);
+    -webkit-transform: rotateZ(1turn);
+    -moz-transform: rotateZ(1turn);
+    -o-transform: rotateZ(1turn);
+    -ms-transform: rotateZ(1turn);
+    cursor: pointer;
+  }
 
-.cardWrapper:hover .title {
-  opacity: 0;
-  transition: ease-out 0.4s;
-}
-
-.imageMobile {
-  width: 50px;
-  height: 50px;
+  .cardWrapper:hover .title {
+    opacity: 0;
+    transition: ease-out 0.4s;
+  }
 }
 
 .title {

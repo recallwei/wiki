@@ -22,10 +22,7 @@ export default function GridList({ customStyle, data = [], wrapperClassName }) {
             <Link to={item.link} className={styles.card}>
               <img
                 src={item.src}
-                className={clsx(
-                  isMobile() ? styles.imageMobile : styles.image,
-                  styles.imageActive
-                )}
+                className={clsx(styles.image)}
                 alt={item.title}
               />
             </Link>

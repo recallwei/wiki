@@ -29,7 +29,7 @@
 }
 
 .avatarArea > img:hover {
-  cursor: auto;
+  cursor: pointer;
   width: 130px;
   height: 130px;
   margin-bottom: 5px;
