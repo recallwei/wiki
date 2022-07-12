@@ -7,33 +7,51 @@ import docusaurus from "/static/img/icon/docusaurus.png";
 import wexinMiniProgram from "/static/img/icon/wexin-mini-program.png";
 import npm from "/static/img/icon/npm.png";
 import graphql from "/static/img/icon/graphql.png";
+import csharp from "/static/img/icon/csharp.png";
+import go from "/static/img/icon/go.png";
+import nodejs from "/static/img/icon/nodejs.png";
+import sqlserver from "/static/img/icon/sqlserver.png";
+import mongodb from "/static/img/icon/mongodb.png";
+import redis from "/static/img/icon/redis.png";
+import azure from "/static/img/icon/azure.png";
 
-const frontend = [
-  {
-    title: "Markdown",
-    link: "/docs/markdown",
-    src: markdown,
-  },
-  { title: "HTML", link: "/docs/html", src: html },
-  { title: "CSS", link: "/docs/css", src: css },
-  {
-    title: "JavaScript",
-    link: "/docs/javascript",
-    src: javascript,
-  },
-  { title: "React", link: "/docs/react", src: react },
-  {
-    title: "Docusaurus",
-    link: "/docs/docusaurus",
-    src: docusaurus,
-  },
-  {
-    title: "微信小程序",
-    link: "/docs/wexin-mini-program",
-    src: wexinMiniProgram,
-  },
-  { title: "npm", link: "/docs/npm", src: npm },
-  { title: "GraphQL", link: "/docs/graphql", src: graphql },
+import {
+  frontendMenuData as frontendData,
+  backendMenuData as backendData,
+} from "/src/utils/index.js";
+
+function gridItem(title, link, src) {
+  return {
+    title: title,
+    link: link,
+    src: src,
+  };
+}
+
+const frontendList = [
+  gridItem(frontendData.markdown, "/docs/markdown", markdown),
+  gridItem(frontendData.html, "/docs/html", html),
+  gridItem(frontendData.css, "/docs/css", css),
+  gridItem(frontendData.javascript, "/docs/javascript", javascript),
+  gridItem(frontendData.react, "/docs/react", react),
+  gridItem(frontendData.docusaurus, "/docs/docusaurus", docusaurus),
+  gridItem(
+    frontendData.wexinMiniprogram,
+    "/docs/wexin-mini-program",
+    wexinMiniProgram
+  ),
+  gridItem(frontendData.npm, "/docs/npm", npm),
+  gridItem(frontendData.graphql, "/docs/graphql", graphql),
 ];
 
-export { frontend };
+const backendList = [
+  gridItem(backendData.csharp, "/docs/csharp", csharp),
+  gridItem(backendData.go, "/docs/go", go),
+  gridItem(backendData.nodejs, "/docs/nodejs", nodejs),
+  gridItem(backendData.sqlserver, "/docs/sqlserver", sqlserver),
+  gridItem(backendData.mongodb, "/docs/mongodb", mongodb),
+  gridItem(backendData.redis, "/docs/redis", redis),
+  gridItem(backendData.azure, "/docs/azure", azure),
+];
+
+export { frontendList, backendList };

@@ -14,7 +14,7 @@ import telegram from "/static/img/icon/telegram.png";
 import wechat from "/static/img/icon/wexin-mini-program.png";
 import zhihu from "/static/img/icon/zhihu.png";
 import GridList from "/src/components/GridList/index.js";
-import { frontend } from "/src/data/gridListData";
+import { frontendList, backendList } from "/src/data/gridListData";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
@@ -95,7 +95,10 @@ export default function Home() {
                     : styles.mainContainer
                 )}
               >
-                <GridList data={frontend} />
+                <h1>前端</h1>
+                <GridList data={frontendList} />
+                <h1 className={styles.marginTop}>后端</h1>
+                <GridList data={backendList} />
               </div>
             </main>
           </Layout>

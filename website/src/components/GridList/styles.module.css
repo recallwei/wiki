@@ -50,11 +50,11 @@
 
 .image {
   position: absolute;
-  right: 4px;
-  bottom: 4px;
+  right: 6px;
+  top: 6px;
   width: 35px;
   height: 35px;
-  border-radius: 25%;
+  border-radius: 20%;
   background-color: white;
   padding: 2px;
   opacity: 0;
