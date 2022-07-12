@@ -10,7 +10,6 @@
 }
 
 .featureIconArea > img:hover {
-  opacity: 0.8;
   cursor: pointer;
   transform-style: preserve-3d;
   transform: rotateZ(1turn);
@@ -19,7 +18,7 @@
 
 .title {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .title::selection {
