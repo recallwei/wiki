@@ -30,70 +30,11 @@
 
 .avatarArea > img:hover {
   cursor: pointer;
-  width: 130px;
-  height: 130px;
-  margin-bottom: 5px;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
-}
-
-@media screen and (min-width: 997px) {
-  .heroBanner {
-    height: 100vh;
-  }
-
-  .container {
-    width: 38%;
-  }
-
-  .infoArea {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0.8rem;
-    letter-spacing: 0;
-    border-radius: 1rem;
-    box-sizing: initial;
-    white-space: nowrap;
-  }
-
-  .title {
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 500;
-  }
-
-  .subTitle {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    font-family: "Yusei Magic", sans-serif;
-  }
-
-  .title::selection {
-    color: var(--ifm-color-primary);
-  }
-
-  .subTitle::selection {
-    color: var(--ifm-color-primary);
-  }
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-    height: 30vh;
-  }
-
-  .title {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .subTitle {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
 }
 
 .title,
@@ -144,4 +85,70 @@
 
 .marginTop {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .heroBanner {
+    padding: 2rem;
+    height: 30vh;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .subTitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .listTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heroBanner {
+    height: 100vh;
+  }
+
+  .container {
+    width: 38%;
+  }
+
+  .infoArea {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.8rem;
+    letter-spacing: 0;
+    border-radius: 1rem;
+    box-sizing: initial;
+    white-space: nowrap;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .subTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: "Yusei Magic", sans-serif;
+  }
+
+  .title::selection {
+    color: var(--ifm-color-primary);
+  }
+
+  .subTitle::selection {
+    color: var(--ifm-color-primary);
+  }
+
+  .listTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }

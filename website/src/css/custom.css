@@ -175,8 +175,20 @@ div[class^="announcementBar_"] {
   border: solid white 1.5px;
 }
 
-/* Mobile CSS */
-@media screen and (max-width: 996px) {
+/* Media Query */
+@media (max-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
 }
 
 /* Markdown CSS */

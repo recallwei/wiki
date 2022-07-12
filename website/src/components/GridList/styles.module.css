@@ -60,7 +60,7 @@
   opacity: 0;
 }
 
-@media screen and (min-width: 997px) {
+@media screen and (min-width: 992px) {
   .cardWrapper:hover .image {
     opacity: 1;
     transition: ease-in 0.4s;

@@ -76,6 +76,8 @@ function HomepageHeader(props) {
 }
 
 export default function Home() {
+  const FRONTEND = "前端";
+  const BACKEND = "后端";
   return (
     <BrowserOnly fallback={null}>
       {() => {
@@ -95,9 +97,11 @@ export default function Home() {
                     : styles.mainContainer
                 )}
               >
-                <h1>前端</h1>
+                <div className={styles.listTitle}>{FRONTEND}</div>
                 <GridList data={frontendList} />
-                <h1 className={styles.marginTop}>后端</h1>
+                <div className={clsx(styles.listTitle, styles.marginTop)}>
+                  {BACKEND}
+                </div>
                 <GridList data={backendList} />
               </div>
             </main>
