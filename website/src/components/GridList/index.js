@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import { isMobile } from "/src/utils/funcUtils";
+import { isMobile } from "/src/utils/index";
 
 // TODO - Card Design
 

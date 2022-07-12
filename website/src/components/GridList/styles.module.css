@@ -62,7 +62,7 @@
 
 .cardWrapper:hover .image {
   opacity: 1;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.4s;
 }
 
 .imageMobile {

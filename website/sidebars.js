@@ -73,6 +73,7 @@ const sidebars = {
     doc("sqlserver/index", "Microsoft SQL Server"),
     doc("sqlserver/guid", "GUID"),
   ],
+  yaml: [doc("yaml/index", "YAML")],
 
   frontend: [
     // Home

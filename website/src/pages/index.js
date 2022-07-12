@@ -4,7 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { openWindow, isMobile } from "/src/utils/funcUtils";
+import { openWindow, isMobile } from "/src/utils/index";
 import styles from "./styles.module.css";
 import favicon from "/static/img/favicon/favicon.png";
 import github from "/static/img/icon/github.png";
