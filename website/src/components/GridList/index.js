@@ -19,16 +19,17 @@ export default function GridList({ customStyle, data = [], wrapperClassName }) {
       {data.map((item) => {
         return (
           <div key={item.title} className={styles.cardWrapper}>
-            <Link to={item.link} className={styles.card} />
+            <Link to={item.link} className={styles.card}>
+              <img
+                src={item.src}
+                className={clsx(
+                  isMobile() ? styles.imageMobile : styles.image,
+                  styles.imageActive
+                )}
+                alt={item.title}
+              />
+            </Link>
             <div className={styles.title}>{item.title}</div>
-            <img
-              src={item.src}
-              className={clsx(
-                isMobile() ? styles.imageMobile : styles.image,
-                styles.imageActive
-              )}
-              alt={item.title}
-            />
           </div>
         );
       })}
