@@ -88,11 +88,11 @@
 
 .mainContainer {
   width: 100%;
-  padding: 10px;
+  padding: 20px 15px;
 }
 
 .listTitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -172,5 +172,9 @@
     padding: 40px 20px;
     width: 61.8%;
     margin: auto;
+  }
+
+  .listTitle {
+    font-size: 1.5rem;
   }
 }
