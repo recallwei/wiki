@@ -37,8 +37,8 @@ const GITHUB = "GitHub";
 const TELEGRAM = "Telegram";
 const GMAIL = "GMail";
 const TWITTER = "Twitter";
-const WECHAT = "WeChat";
-const ZHIHU = "ZhiHu";
+const WECHAT = "微信";
+const ZHIHU = "知乎";
 
 export const frontendMenuData = {
   markdown: MARKDOWN,

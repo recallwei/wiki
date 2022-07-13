@@ -13,7 +13,7 @@ import {
 import styles from "./styles.module.css";
 import favicon from "/static/img/favicon/favicon.png";
 import github from "/static/img/icon/github.png";
-import google from "/static/img/icon/google.png";
+import gmail from "/static/img/icon/gmail.png";
 import twitter from "/static/img/icon/twitter.png";
 import telegram from "/static/img/icon/telegram.png";
 import wechat from "/static/img/icon/wexin-mini-program.png";
@@ -59,7 +59,7 @@ function HomepageHeader(props) {
             src={telegram}
             link={siteConfig.customFields.telegramLink}
           />
-          <ContactMeButton title={contactMeData.gmail} src={google} link="/" />
+          <ContactMeButton title={contactMeData.gmail} src={gmail} link="/" />
           <ContactMeButton
             title={contactMeData.twitter}
             src={twitter}
