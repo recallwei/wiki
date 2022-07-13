@@ -7,21 +7,21 @@
 .featureIconArea > img {
   height: 128px;
   width: 128px;
+  transition: ease 1s;
+  -webkit-transition: ease 1s;
+  -moz-transition: ease 1s;
+  -o-transition: ease 1s;
+  -ms-transition: ease 1s;
 }
 
 .featureIconArea > img:hover {
   cursor: pointer;
   transform-style: preserve-3d;
-  transform: rotateZ(1turn);
-  -webkit-transform: rotateZ(1turn);
-  -moz-transform: rotateZ(1turn);
-  -o-transform: rotateZ(1turn);
-  -ms-transform: rotateZ(1turn);
-  transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
-  -webkit-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
-  -moz-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
-  -o-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
-  -ms-transition: cubic-bezier(0.2, 0.1, 0.2, 0.1) 0.6s;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
 }
 
 .title {
