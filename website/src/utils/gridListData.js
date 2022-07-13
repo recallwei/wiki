@@ -2,6 +2,7 @@ import markdown from "/static/img/icon/markdown.png";
 import html from "/static/img/icon/html.png";
 import css from "/static/img/icon/css.png";
 import javascript from "/static/img/icon/javascript.png";
+import typescript from "/static/img/icon/typescript.png";
 import react from "/static/img/icon/react.png";
 import docusaurus from "/static/img/icon/docusaurus.png";
 import wexinMiniProgram from "/static/img/icon/wexin-mini-program.png";
@@ -33,6 +34,7 @@ const frontendGridList = [
   gridItem(frontendData.html, "/docs/html", html),
   gridItem(frontendData.css, "/docs/css", css),
   gridItem(frontendData.javascript, "/docs/javascript", javascript),
+  gridItem(frontendData.typescript, "/docs/typescript", typescript),
   gridItem(frontendData.react, "/docs/react", react),
   gridItem(frontendData.docusaurus, "/docs/docusaurus", docusaurus),
   gridItem(

@@ -111,6 +111,7 @@ const config = {
               { type: "doc", label: "HTML", docId: "html/index" },
               { type: "doc", label: "CSS", docId: "css/index" },
               { type: "doc", label: "JavaScript", docId: "javascript/index" },
+              { type: "doc", label: "TypeScript", docId: "typescript/index" },
               { type: "doc", label: "React", docId: "react/index" },
               { type: "doc", label: "Docusaurus", docId: "docusaurus/index" },
               {

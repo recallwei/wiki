@@ -3,6 +3,7 @@ const MARKDOWN = "Markdown";
 const HTML = "HTML";
 const CSS = "CSS";
 const JAVASCRIPT = "JavaScript";
+const TYPESCRIPT = "TypeScript";
 const REACT = "React";
 const DOCUSAURUS = "Docusaurus";
 const WEXIN_MINIPROGRAM = "微信小程序";
@@ -45,6 +46,7 @@ export const frontendMenuData = {
   html: HTML,
   css: CSS,
   javascript: JAVASCRIPT,
+  typescript: TYPESCRIPT,
   react: REACT,
   docusaurus: DOCUSAURUS,
   wexinMiniprogram: WEXIN_MINIPROGRAM,
