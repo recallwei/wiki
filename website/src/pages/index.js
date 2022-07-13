@@ -4,7 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { openWindow, isMobile } from "/src/utils/index";
+import { isMobile } from "/src/utils/index";
 import styles from "./styles.module.css";
 import favicon from "/static/img/favicon/favicon.png";
 import github from "/static/img/icon/github.png";
@@ -14,11 +14,12 @@ import telegram from "/static/img/icon/telegram.png";
 import wechat from "/static/img/icon/wexin-mini-program.png";
 import zhihu from "/static/img/icon/zhihu.png";
 import GridList from "/src/components/GridList/index.js";
-import { frontendList, backendList } from "/src/data/gridListData";
+import { frontendGridList, backendGridList } from "/src/data/gridListData.js";
+import { contactMeData } from "/src/utils/index";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
-  const LINK_BUTTON_TEXT = "Go to Wiki";
+  const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
   return (
     <header
       className={clsx("hero", styles.heroBanner)}
@@ -38,7 +39,7 @@ function HomepageHeader(props) {
               className="button button--secondary button--sm"
               to="/docs/front-end"
             >
-              {LINK_BUTTON_TEXT}
+              {TO_WIKI_BUTTON_TEXT}
             </Link>
           </div>
         </div>
@@ -47,31 +48,33 @@ function HomepageHeader(props) {
         {() => {
           return (
             <div className={styles.navLinkIconArea}>
-              <img
+              <ContactMeButton
+                title={contactMeData.github}
                 src={github}
-                alt="Github"
-                title="Github"
-                onClick={() => {
-                  openWindow(siteConfig.customFields.githubLink);
-                }}
+                link={siteConfig.customFields.githubLink}
               />
-              <img
+              <ContactMeButton
+                title={contactMeData.telegram}
                 src={telegram}
-                alt="Telegram"
-                title="Telegram"
-                onClick={() => {
-                  openWindow(siteConfig.customFields.telegramLink);
-                }}
+                link={siteConfig.customFields.telegramLink}
               />
-              <img src={google} alt="GMail" title="GMail" />
-              <img src={twitter} alt="Twitter" title="Twitter" />
-              <img src={wechat} alt="WeChat" title="WeChat" />
-              <img src={zhihu} alt="ZhiHu" title="ZhiHu" />
+              <ContactMeButton title={contactMeData.gmail} src={google} />
+              <ContactMeButton title={contactMeData.twitter} src={twitter} />
+              <ContactMeButton title={contactMeData.wechat} src={wechat} />
+              <ContactMeButton title={contactMeData.zhihu} src={zhihu} />
             </div>
           );
         }}
       </BrowserOnly>
     </header>
+  );
+}
+
+function ContactMeButton({ title, src, link }) {
+  return (
+    <Link className={styles.navLinkIconLink} to={link} href="_blank">
+      <img src={src} alt={title} title={title} />
+    </Link>
   );
 }
 
@@ -98,11 +101,11 @@ export default function Home() {
                 )}
               >
                 <div className={styles.listTitle}>{FRONTEND}</div>
-                <GridList data={frontendList} />
+                <GridList data={frontendGridList} />
                 <div className={clsx(styles.listTitle, styles.marginTop)}>
                   {BACKEND}
                 </div>
-                <GridList data={backendList} />
+                <GridList data={backendGridList} />
               </div>
             </main>
           </Layout>

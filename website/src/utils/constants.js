@@ -1,3 +1,4 @@
+// Frontend
 const MARKDOWN = "Markdown";
 const HTML = "HTML";
 const CSS = "CSS";
@@ -8,6 +9,7 @@ const WEXIN_MINIPROGRAM = "微信小程序";
 const NPM = "npm";
 const GRAPHQL = "GraphQL";
 
+// Backend
 const CSHARP = "C#";
 const GO = "Go";
 const NODE_JS = "Node.js";
@@ -30,6 +32,14 @@ const COPYWRITING_GUIDE = "文案排版指南";
 const BEST_WEBSITE_DESIGN = "优质网站设计";
 const FIGMA = "Figma";
 
+// Contact me
+const GITHUB = "GitHub";
+const TELEGRAM = "Telegram";
+const GMAIL = "GMail";
+const TWITTER = "Twitter";
+const WECHAT = "WeChat";
+const ZHIHU = "ZhiHu";
+
 export const frontendMenuData = {
   markdown: MARKDOWN,
   html: HTML,
@@ -50,4 +60,13 @@ export const backendMenuData = {
   mongodb: MONGODB,
   redis: REDIS,
   azure: MICROSOFT_AZURE,
+};
+
+export const contactMeData = {
+  github: GITHUB,
+  telegram: TELEGRAM,
+  gmail: GMAIL,
+  twitter: TWITTER,
+  wechat: WECHAT,
+  zhihu: ZHIHU,
 };

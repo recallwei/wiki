@@ -28,7 +28,7 @@ function gridItem(title, link, src) {
   };
 }
 
-const frontendList = [
+const frontendGridList = [
   gridItem(frontendData.markdown, "/docs/markdown", markdown),
   gridItem(frontendData.html, "/docs/html", html),
   gridItem(frontendData.css, "/docs/css", css),
@@ -44,7 +44,7 @@ const frontendList = [
   gridItem(frontendData.graphql, "/docs/graphql", graphql),
 ];
 
-const backendList = [
+const backendGridList = [
   gridItem(backendData.csharp, "/docs/csharp", csharp),
   gridItem(backendData.go, "/docs/go", go),
   gridItem(backendData.nodejs, "/docs/nodejs", nodejs),
@@ -54,4 +54,4 @@ const backendList = [
   gridItem(backendData.azure, "/docs/azure", azure),
 ];
 
-export { frontendList, backendList };
+export { frontendGridList, backendGridList };

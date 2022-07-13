@@ -1,5 +1,5 @@
 // Constants
-export { frontendMenuData, backendMenuData } from "./constants";
+export { frontendMenuData, backendMenuData, contactMeData } from "./constants";
 
 // Functions
 export { openWindow, isMobile } from "./funcUtils";

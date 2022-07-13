@@ -58,18 +58,36 @@
   margin: 0 0 8px 8px;
 }
 
-.navLinkIconArea img {
+.navLinkIconArea > .navLinkIconLink {
+  display: flex;
+  align-content: center;
+  position: relative;
   width: 2rem;
   height: 2rem;
+}
+
+.navLinkIconArea > .navLinkIconLink > img {
   border-radius: 100%;
   padding: 4px;
   cursor: pointer;
   background-color: darkgrey;
   box-shadow: inset 0 0 3px white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.navLinkIconArea > img:hover {
+.navLinkIconArea > .navLinkIconLink > img:hover {
   opacity: 0.8;
+  bottom: 12px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
 }
 
 .mainContainer {
