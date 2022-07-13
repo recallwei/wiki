@@ -60,6 +60,15 @@
   opacity: 0;
 }
 
+.title {
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+}
+
 @media screen and (min-width: 992px) {
   .cardWrapper:hover .image {
     opacity: 1;
@@ -73,17 +82,12 @@
     cursor: pointer;
   }
 
+  .title {
+    font-size: 1rem;
+  }
+
   .cardWrapper:hover .title {
     opacity: 0;
     transition: ease-out 0.4s;
   }
-}
-
-.title {
-  position: absolute;
-  left: 8px;
-  bottom: 4px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
 }
