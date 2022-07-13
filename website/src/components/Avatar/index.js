@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+
 export default function Avatar({
   avatarLink = false,
   customStyle,

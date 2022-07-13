@@ -21,22 +21,24 @@ function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
   const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
   return (
-    <header
-      className={clsx("hero", styles.heroBanner)}
-      style={{ position: "relative" }}
-    >
-      <div className={clsx("container", styles.container)}>
+    <header className={clsx(styles.heroBanner)}>
+      <div className={clsx(styles.heroTextContainer)}>
         {!props.isMobileDevice && (
           <div className={styles.avatarArea}>
             <img src={favicon} alt="Bruce" />
           </div>
         )}
-        <div className={styles.infoArea}>
-          <p className={styles.title}>{siteConfig.title}</p>
-          <p className={styles.subTitle}>{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
+        <div className={styles.heroTextArea}>
+          <p className={styles.heroTextTitle}>{siteConfig.title}</p>
+          <p className={styles.heroTextSubTitle}>{siteConfig.tagline}</p>
+          <div className={styles.heroTextAreaButton}>
             <Link
-              className="button button--secondary button--sm"
+              className={clsx(
+                "button",
+                "button--secondary",
+                "button--sm",
+                styles.heroTextAreaButton
+              )}
               to="/docs/front-end"
             >
               {TO_WIKI_BUTTON_TEXT}
@@ -58,10 +60,26 @@ function HomepageHeader(props) {
                 src={telegram}
                 link={siteConfig.customFields.telegramLink}
               />
-              <ContactMeButton title={contactMeData.gmail} src={google} />
-              <ContactMeButton title={contactMeData.twitter} src={twitter} />
-              <ContactMeButton title={contactMeData.wechat} src={wechat} />
-              <ContactMeButton title={contactMeData.zhihu} src={zhihu} />
+              <ContactMeButton
+                title={contactMeData.gmail}
+                src={google}
+                link="/"
+              />
+              <ContactMeButton
+                title={contactMeData.twitter}
+                src={twitter}
+                link="/"
+              />
+              <ContactMeButton
+                title={contactMeData.wechat}
+                src={wechat}
+                link="/"
+              />
+              <ContactMeButton
+                title={contactMeData.zhihu}
+                src={zhihu}
+                link="/"
+              />
             </div>
           );
         }}
@@ -72,8 +90,10 @@ function HomepageHeader(props) {
 
 function ContactMeButton({ title, src, link }) {
   return (
-    <Link className={styles.navLinkIconLink} to={link} href="_blank">
-      <img src={src} alt={title} title={title} />
+    <Link className={styles.navLink} to={link} href="_blank">
+      <div className={styles.imageWrapper}>
+        <img src={src} alt={title} title={title} />
+      </div>
     </Link>
   );
 }
@@ -93,13 +113,7 @@ export default function Home() {
           >
             <HomepageHeader isMobileDevice={isMobileDevice} />
             <main>
-              <div
-                className={clsx(
-                  isMobileDevice
-                    ? styles.mainContainerMobile
-                    : styles.mainContainer
-                )}
-              >
+              <div className={styles.mainContainer}>
                 <div className={styles.listTitle}>{FRONTEND}</div>
                 <GridList data={frontendGridList} />
                 <div className={clsx(styles.listTitle, styles.marginTop)}>

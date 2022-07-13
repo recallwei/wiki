@@ -4,45 +4,43 @@
  */
 
 .heroBanner {
-  margin: 0 auto;
   position: relative;
-  box-sizing: border-box;
+  display: flex;
+  align-items: center;
   text-align: center;
-  overflow: hidden;
   background-position: center;
   background-size: cover;
   background-image: url("../../static/img/background/home-background.jpeg");
+  background-color: var(--ifm-hero-background-color);
+  color: var(--ifm-hero-text-color);
+  /* Mobile Only */
+  height: 30vh;
 }
 
-.avatarArea > img {
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-  padding: 6px;
-  background-color: darkgrey;
-  box-shadow: inset 0 0 10px white;
-  transition: ease 1s;
-  -webkit-transition: ease 1s;
-  -moz-transition: ease 1s;
-  -o-transition: ease 1s;
-  -ms-transition: ease 1s;
+.heroTextContainer {
+  margin: 0 auto;
+  max-width: var(--ifm-container-width);
+  padding: 0 var(--ifm-spacing-horizontal);
 }
 
-.avatarArea > img:hover {
-  cursor: pointer;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-}
-
-.title,
-.subTitle {
+.heroTextArea {
   color: white;
+  margin-bottom: 40px;
 }
 
-.buttons {
+.heroTextTitle {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.heroTextSubTitle {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.heroTextAreaButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,73 +56,50 @@
   margin: 0 0 8px 8px;
 }
 
-.navLinkIconArea > .navLinkIconLink {
+.navLinkIconArea .navLink {
   display: flex;
   align-content: center;
   position: relative;
-  width: 2rem;
-  height: 2rem;
+  width: 32px;
+  height: 32px;
 }
 
-.navLinkIconArea > .navLinkIconLink > img {
-  border-radius: 100%;
-  padding: 4px;
-  cursor: pointer;
-  background-color: darkgrey;
-  box-shadow: inset 0 0 3px white;
+.navLinkIconArea .navLink .imageWrapper {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all ease-in 0.3s;
+  -webkit-transition: all ease-in 0.3s;
+  -moz-transition: all ease-in 0.3s;
+  -o-transition: all ease-in 0.3s;
+  -ms-transition: all ease-in 0.3s;
 }
 
-.navLinkIconArea > .navLinkIconLink > img:hover {
-  opacity: 0.8;
-  bottom: 12px;
-  transition: all linear 0.4s;
-  -webkit-transition: all linear 0.4s;
-  -moz-transition: all linear 0.4s;
-  -o-transition: all linear 0.4s;
-  -ms-transition: all linear 0.4s;
+.navLinkIconArea .navLink img {
+  border-radius: 20%;
+  padding: 2px;
+  background-color: darkgrey;
+  box-shadow: inset 0 0 3px white;
 }
 
 .mainContainer {
-  padding: 40px 20px;
-  width: 61.8%;
-  margin: auto;
-}
-
-.mainContainerMobile {
   width: 100%;
   padding: 10px;
 }
 
-.marginTop {
-  margin-top: 30px;
+.listTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 576px) {
-  .heroBanner {
-    padding: 2rem;
-    height: 30vh;
-  }
-
-  .title {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .subTitle {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .listTitle {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
+.marginTop {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 992px) {
@@ -132,41 +107,64 @@
     height: 100vh;
   }
 
-  .container {
+  .heroTextContainer {
     width: 38%;
   }
 
-  .infoArea {
+  .avatarArea > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    padding: 6px;
+    background-color: darkgrey;
+    box-shadow: inset 0 0 10px white;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+    -o-transition: ease 1s;
+    -ms-transition: ease 1s;
+  }
+
+  .avatarArea > img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+
+  .heroTextArea {
     background: rgba(0, 0, 0, 0.5);
-    padding: 0.8rem;
-    letter-spacing: 0;
+    padding-top: 20px;
+    padding-bottom: 25px;
     border-radius: 1rem;
-    box-sizing: initial;
+    letter-spacing: 0;
     white-space: nowrap;
+    margin-bottom: 0;
   }
 
-  .title {
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 500;
-  }
-
-  .subTitle {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    font-family: "Yusei Magic", sans-serif;
-  }
-
-  .title::selection {
+  .heroTextTitle::selection {
     color: var(--ifm-color-primary);
   }
 
-  .subTitle::selection {
+  .heroTextSubTitle::selection {
     color: var(--ifm-color-primary);
   }
 
-  .listTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
+  .navLinkIconArea .navLink .imageWrapper:hover {
+    opacity: 0.8;
+    bottom: 18px;
+    transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+  }
+
+  .mainContainer {
+    padding: 40px 20px;
+    width: 61.8%;
+    margin: auto;
   }
 }
