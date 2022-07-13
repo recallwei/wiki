@@ -61,7 +61,10 @@ const sidebars = {
       doc("javascript/solutions/get-url-parameter", "获取 URL Query 参数"),
     ]),
   ],
-  typescript: [doc("typescript/index", "TypeScript")],
+  typescript: [
+    doc("typescript/index", "TypeScript"),
+    doc("typescript/environment", "搭建环境"),
+  ],
   csharp: [
     doc("csharp/index", "C#"),
     doc("csharp/environment", "🚀 搭建环境"),
