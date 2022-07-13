@@ -79,6 +79,7 @@
 }
 
 .navLinkIconArea .navLink img {
+  object-fit: cover;
   border-radius: 20%;
   padding: 2px;
   background-color: darkgrey;
