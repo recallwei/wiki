@@ -44,7 +44,13 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        pages: {
+          remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")],
+        },
         docs: {
+          remarkPlugins: [
+            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
+          ],
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -58,6 +64,7 @@ const config = {
           ],
         },
         blog: {
+          remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")],
           showReadingTime: true,
           // Please change this to your repo.
           editUrl: "https://github.com/recallwei/wiki/tree/main/website",

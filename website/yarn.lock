@@ -3272,6 +3272,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@docusaurus/remark-plugin-npm2yarn@npm:^2.0.0-beta.22":
+  version: 2.0.0-beta.22
+  resolution: "@docusaurus/remark-plugin-npm2yarn@npm:2.0.0-beta.22"
+  dependencies:
+    npm-to-yarn: ^1.0.1
+    tslib: ^2.4.0
+    unist-util-visit: ^2.0.3
+  checksum: b2f14f7c9113b956df061cce5973a185deef78220fd765a1fb44ac69163982834dbe867efea576205b8b95233bc8194ca8bf4b956d7f2dc1dcd8ac245da4962a
+  languageName: node
+  linkType: hard
+
 "@docusaurus/theme-classic@npm:2.0.0-beta.22":
   version: 2.0.0-beta.22
   resolution: "@docusaurus/theme-classic@npm:2.0.0-beta.22"
@@ -8853,6 +8864,7 @@ __metadata:
     "@docusaurus/eslint-plugin": latest
     "@docusaurus/plugin-sitemap": ^2.0.0-beta.22
     "@docusaurus/preset-classic": latest
+    "@docusaurus/remark-plugin-npm2yarn": ^2.0.0-beta.22
     "@docusaurus/theme-live-codeblock": latest
     "@docusaurus/theme-search-algolia": ^2.0.0-beta.22
     "@mdx-js/react": ^1.6.22
@@ -9014,6 +9026,13 @@ __metadata:
   dependencies:
     path-key: ^3.0.0
   checksum: 5374c0cea4b0bbfdfae62da7bbdf1e1558d338335f4cacf2515c282ff358ff27b2ecb91ffa5330a8b14390ac66a1e146e10700440c1ab868208430f56b5f4d23
+  languageName: node
+  linkType: hard
+
+"npm-to-yarn@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "npm-to-yarn@npm:1.0.1"
+  checksum: b34958ddfc7a5e4ce3012f1bdf60d448c2a5027e10b733aad0462fbd0de0354b8cd27abde8b36691f9fc970660f48bbec86516ec4e07c36be63375ee9e1d37d9
   languageName: node
   linkType: hard
 

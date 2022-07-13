@@ -16,6 +16,7 @@
     "@docusaurus/core": "latest",
     "@docusaurus/plugin-sitemap": "^2.0.0-beta.22",
     "@docusaurus/preset-classic": "latest",
+    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-beta.22",
     "@docusaurus/theme-live-codeblock": "latest",
     "@docusaurus/theme-search-algolia": "^2.0.0-beta.22",
     "@mdx-js/react": "^1.6.22",
