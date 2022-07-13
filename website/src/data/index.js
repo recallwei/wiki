@@ -1,2 +1,2 @@
-export { frontend, backend } from "./gridListData";
-export { tagList } from "./tagListData";
+export { frontendGridList, backendGridList } from "./gridListData";
+export { tagListData } from "./tagListData";

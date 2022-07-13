@@ -4,7 +4,12 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { isMobile } from "/src/utils/index";
+import {
+  isMobile,
+  contactMeData,
+  frontendGridList,
+  backendGridList,
+} from "/src/utils/index";
 import styles from "./styles.module.css";
 import favicon from "/static/img/favicon/favicon.png";
 import github from "/static/img/icon/github.png";
@@ -14,8 +19,6 @@ import telegram from "/static/img/icon/telegram.png";
 import wechat from "/static/img/icon/wexin-mini-program.png";
 import zhihu from "/static/img/icon/zhihu.png";
 import GridList from "/src/components/GridList/index.js";
-import { frontendGridList, backendGridList } from "/src/data/gridListData.js";
-import { contactMeData } from "/src/utils/index";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
@@ -45,45 +48,27 @@ function HomepageHeader(props) {
             </Link>
           </div>
         </div>
+        <div className={styles.navLinkIconArea}>
+          <ContactMeButton
+            title={contactMeData.github}
+            src={github}
+            link={siteConfig.customFields.githubLink}
+          />
+          <ContactMeButton
+            title={contactMeData.telegram}
+            src={telegram}
+            link={siteConfig.customFields.telegramLink}
+          />
+          <ContactMeButton title={contactMeData.gmail} src={google} link="/" />
+          <ContactMeButton
+            title={contactMeData.twitter}
+            src={twitter}
+            link="/"
+          />
+          <ContactMeButton title={contactMeData.wechat} src={wechat} link="/" />
+          <ContactMeButton title={contactMeData.zhihu} src={zhihu} link="/" />
+        </div>
       </div>
-      <BrowserOnly fallback={null}>
-        {() => {
-          return (
-            <div className={styles.navLinkIconArea}>
-              <ContactMeButton
-                title={contactMeData.github}
-                src={github}
-                link={siteConfig.customFields.githubLink}
-              />
-              <ContactMeButton
-                title={contactMeData.telegram}
-                src={telegram}
-                link={siteConfig.customFields.telegramLink}
-              />
-              <ContactMeButton
-                title={contactMeData.gmail}
-                src={google}
-                link="/"
-              />
-              <ContactMeButton
-                title={contactMeData.twitter}
-                src={twitter}
-                link="/"
-              />
-              <ContactMeButton
-                title={contactMeData.wechat}
-                src={wechat}
-                link="/"
-              />
-              <ContactMeButton
-                title={contactMeData.zhihu}
-                src={zhihu}
-                link="/"
-              />
-            </div>
-          );
-        }}
-      </BrowserOnly>
     </header>
   );
 }
