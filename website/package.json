@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "@docusaurus/core": "latest",
-    "@docusaurus/plugin-sitemap": "^2.0.0-beta.22",
+    "@docusaurus/plugin-sitemap": "latest",
     "@docusaurus/preset-classic": "latest",
-    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-beta.22",
+    "@docusaurus/remark-plugin-npm2yarn": "latest",
     "@docusaurus/theme-live-codeblock": "latest",
-    "@docusaurus/theme-search-algolia": "^2.0.0-beta.22",
+    "@docusaurus/theme-search-algolia": "latest",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.1",
     "cspell": "^6.2.3",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "latest",
-    "@docusaurus/module-type-aliases": "^2.0.0-beta.22",
+    "@docusaurus/module-type-aliases": "latest",
     "@tsconfig/docusaurus": "^1.0.6",
     "typescript": "^4.7.4"
   },
