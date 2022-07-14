@@ -19,9 +19,15 @@ import azure from "/static/img/icon/azure.png";
 import {
   frontendMenuData as frontendData,
   backendMenuData as backendData,
-} from "/src/utils/index";
+} from "./index";
 
-function gridItem(title, link, src) {
+interface GridItem {
+  readonly title: string;
+  readonly link: string;
+  readonly src: any;
+}
+
+function gridItem(title: string, link: string, src: any): GridItem {
   return {
     title: title,
     link: link,
@@ -29,7 +35,7 @@ function gridItem(title, link, src) {
   };
 }
 
-const frontendGridList = [
+const frontendGridList: Array<GridItem> = [
   gridItem(frontendData.markdown, "/docs/markdown", markdown),
   gridItem(frontendData.html, "/docs/html", html),
   gridItem(frontendData.css, "/docs/css", css),
@@ -46,7 +52,7 @@ const frontendGridList = [
   gridItem(frontendData.graphql, "/docs/graphql", graphql),
 ];
 
-const backendGridList = [
+const backendGridList: Array<GridItem> = [
   gridItem(backendData.csharp, "/docs/csharp", csharp),
   gridItem(backendData.go, "/docs/go", go),
   gridItem(backendData.nodejs, "/docs/nodejs", nodejs),
