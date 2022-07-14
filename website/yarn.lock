@@ -3078,7 +3078,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@docusaurus/module-type-aliases@npm:2.0.0-beta.22":
+"@docusaurus/module-type-aliases@npm:2.0.0-beta.22, @docusaurus/module-type-aliases@npm:^2.0.0-beta.22":
   version: 2.0.0-beta.22
   resolution: "@docusaurus/module-type-aliases@npm:2.0.0-beta.22"
   dependencies:
@@ -3898,6 +3898,13 @@ __metadata:
   version: 0.2.0
   resolution: "@trysound/sax@npm:0.2.0"
   checksum: 11226c39b52b391719a2a92e10183e4260d9651f86edced166da1d95f39a0a1eaa470e44d14ac685ccd6d3df7e2002433782872c0feeb260d61e80f21250e65c
+  languageName: node
+  linkType: hard
+
+"@tsconfig/docusaurus@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "@tsconfig/docusaurus@npm:1.0.6"
+  checksum: fb0d7965c01fe64fc6369a72695b903d654bd5fb145f373d707c2bae3c2d828703517d812cef1c041ae44b108f44e52778b9d9837a54fdf782e68e6619a90a4d
   languageName: node
   linkType: hard
 
@@ -8862,16 +8869,19 @@ __metadata:
   dependencies:
     "@docusaurus/core": latest
     "@docusaurus/eslint-plugin": latest
+    "@docusaurus/module-type-aliases": ^2.0.0-beta.22
     "@docusaurus/plugin-sitemap": ^2.0.0-beta.22
     "@docusaurus/preset-classic": latest
     "@docusaurus/remark-plugin-npm2yarn": ^2.0.0-beta.22
     "@docusaurus/theme-live-codeblock": latest
     "@docusaurus/theme-search-algolia": ^2.0.0-beta.22
     "@mdx-js/react": ^1.6.22
+    "@tsconfig/docusaurus": ^1.0.6
     clsx: ^1.1.1
     prism-react-renderer: ^1.3.1
     react: ^17.0.2
     react-dom: ^17.0.2
+    typescript: ^4.7.4
   languageName: unknown
   linkType: soft
 
@@ -11799,6 +11809,26 @@ __metadata:
   dependencies:
     is-typedarray: ^1.0.0
   checksum: 99c11aaa8f45189fcfba6b8a4825fd684a321caa9bd7a76a27cf0c7732c174d198b99f449c52c3818107430b5f41c0ccbbfb75cb2ee3ca4a9451710986d61a60
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.7.4":
+  version: 4.7.4
+  resolution: "typescript@npm:4.7.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 5750181b1cd7e6482c4195825547e70f944114fb47e58e4aa7553e62f11b3f3173766aef9c281783edfd881f7b8299cf35e3ca8caebe73d8464528c907a164df
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
+  version: 4.7.4
+  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 9096d8f6c16cb80ef3bf96fcbbd055bf1c4a43bd14f3b7be45a9fbe7ada46ec977f604d5feed3263b4f2aa7d4c7477ce5f9cd87de0d6feedec69a983f3a4f93e
   languageName: node
   linkType: hard
 
