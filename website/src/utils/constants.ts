@@ -41,7 +41,7 @@ const TWITTER = "Twitter";
 const WECHAT = "微信";
 const ZHIHU = "知乎";
 
-interface frontendMenuData {
+interface FrontendMenuData {
   readonly markdown: string;
   readonly html: string;
   readonly css: string;
@@ -54,7 +54,7 @@ interface frontendMenuData {
   readonly graphql: string;
 }
 
-interface backendMenuData {
+interface BackendMenuData {
   readonly csharp: string;
   readonly go: string;
   readonly nodejs: string;
@@ -64,7 +64,7 @@ interface backendMenuData {
   readonly azure: string;
 }
 
-interface contactMeData {
+interface ContactMeData {
   readonly github: string;
   readonly telegram: string;
   readonly gmail: string;
@@ -73,7 +73,7 @@ interface contactMeData {
   readonly zhihu: string;
 }
 
-export const frontendMenuData: frontendMenuData = {
+export const frontendMenuData: FrontendMenuData = {
   markdown: MARKDOWN,
   html: HTML,
   css: CSS,
@@ -86,7 +86,7 @@ export const frontendMenuData: frontendMenuData = {
   graphql: GRAPHQL,
 };
 
-export const backendMenuData: backendMenuData = {
+export const backendMenuData: BackendMenuData = {
   csharp: CSHARP,
   go: GO,
   nodejs: NODE_JS,
@@ -96,7 +96,7 @@ export const backendMenuData: backendMenuData = {
   azure: MICROSOFT_AZURE,
 };
 
-export const contactMeData: contactMeData = {
+export const contactMeData: ContactMeData = {
   github: GITHUB,
   telegram: TELEGRAM,
   gmail: GMAIL,
