@@ -1,12 +1,13 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-function switchColor(color) {
+function switchColor(color?: string) {
   const { siteConfig } = useDocusaurusContext();
   switch (color) {
     case "primary":
     case "":
     case undefined:
-      return siteConfig.customFields.primaryColor;
+    case null:
+      return siteConfig.customFields?.primaryColor;
     case "red":
       return "#e53935";
     case "pink":

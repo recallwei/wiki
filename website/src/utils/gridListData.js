@@ -19,7 +19,7 @@ import azure from "/static/img/icon/azure.png";
 import {
   frontendMenuData as frontendData,
   backendMenuData as backendData,
-} from "/src/utils/index.js";
+} from "/src/utils/index.ts";
 
 function gridItem(title, link, src) {
   return {
