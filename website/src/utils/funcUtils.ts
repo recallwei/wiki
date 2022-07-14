@@ -1,14 +1,16 @@
 // 打开新页面
-function openWindow(url) {
-  const w = window.open("about:blank");
-  w.opener = null;
-  w.location.href = url;
+function openWindow(url: string): void {
+  const w: Window | null = window.open("about:blank");
+  if (w) {
+    w.opener = null;
+    w.location.href = url;
+  }
   return;
 }
 
 // 移动端检测
-function isMobile() {
-  const userAgent = navigator.userAgent.toUpperCase();
+function isMobile(): boolean {
+  const userAgent: string = navigator.userAgent.toUpperCase();
   if (/IPHONE|IPOD/.test(userAgent) && /MOBILE/.test(userAgent)) {
     return true;
   } else if (/ANDROID/.test(userAgent) && /MOBILE/.test(userAgent)) {
