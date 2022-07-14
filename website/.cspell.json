@@ -7,8 +7,15 @@
     "wechat",
     "zhihu",
     "wexin",
-    "MINIPROGRAM",
-    "sqlserver"
+    "miniprogram",
+    "sqlserver",
+    "shallowcopy",
+    "deepcopy",
+    "wxml",
+    "wxss",
+    "momentjs",
+    "clashx",
+    "webstorm"
   ],
   "flagWords": []
 }
