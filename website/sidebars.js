@@ -59,6 +59,7 @@ const sidebars = {
       doc("javascript/solutions/get-text-from-html", "从 HTML 中提取文字"),
       doc("javascript/solutions/possessing-date", "日期、时间处理"),
       doc("javascript/solutions/get-url-parameter", "获取 URL Query 参数"),
+      doc("javascript/solutions/copy-text-to-clipboard", "复制文本至剪切板"),
     ]),
   ],
   typescript: [
