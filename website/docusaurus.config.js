@@ -16,7 +16,7 @@ const config = {
   },
   title: "Bruce Song",
   tagline: "信じて諦めなければ、夢は必ずかなう",
-  url: "https//:bruce-wiki.vercel.app",
+  url: "https://bruce-wiki.vercel.app",
   baseUrl: "/",
   baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
