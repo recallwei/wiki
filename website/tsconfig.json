@@ -1,12 +1,5 @@
 {
   "extends": "@tsconfig/docusaurus/tsconfig.json",
-  "include": [
-    "src/**/*.d.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx"
-    // "tests/**/*.ts",
-    // "tests/**/*.tsx",
-  ],
   "exclude": ["node_modules"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
