@@ -11,6 +11,7 @@ const config = {
   customFields: {
     githubLink: "https://github.com/recallwei/",
     telegramLink: "https://t.me/recallwei/",
+    gmailAddress: "recall4056@gmail.com",
     primaryColor: "#25c2a0",
   },
   title: "Bruce Song",

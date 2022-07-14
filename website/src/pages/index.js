@@ -6,6 +6,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import {
   isMobile,
+  setClipBoardText,
   contactMeData,
   frontendGridList,
   backendGridList,
@@ -59,7 +60,12 @@ function HomepageHeader(props) {
             src={telegram}
             link={siteConfig.customFields.telegramLink}
           />
-          <ContactMeButton title={contactMeData.gmail} src={gmail} link="/" />
+          <ContactMeButton
+            title={contactMeData.gmail}
+            src={gmail}
+            link={siteConfig.customFields.gmailAddress}
+            isCopyBtn
+          />
           <ContactMeButton
             title={contactMeData.twitter}
             src={twitter}
@@ -73,7 +79,22 @@ function HomepageHeader(props) {
   );
 }
 
-function ContactMeButton({ title, src, link }) {
+function ContactMeButton({ title, src, link, isCopyBtn }) {
+  // TODO - Add a tip for copy action
+  if (isCopyBtn) {
+    return (
+      <div
+        className={styles.navLink}
+        onClick={() => {
+          setClipBoardText(link);
+        }}
+      >
+        <div className={styles.imageWrapper}>
+          <img src={src} alt={title} title={title} />
+        </div>
+      </div>
+    );
+  }
   return (
     <Link className={styles.navLink} to={link} href="_blank">
       <div className={styles.imageWrapper}>

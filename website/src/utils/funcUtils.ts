@@ -22,4 +22,9 @@ function isMobile(): boolean {
   }
 }
 
-export { openWindow, isMobile };
+// 复制文本
+function setClipBoardText(text: string) {
+  navigator.clipboard.writeText(text);
+}
+
+export { openWindow, isMobile, setClipBoardText };

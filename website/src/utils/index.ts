@@ -5,5 +5,5 @@ export { frontendMenuData, backendMenuData, contactMeData } from "./constants";
 export { frontendGridList, backendGridList } from "./gridListData";
 
 // Functions
-export { openWindow, isMobile } from "./funcUtils";
+export { openWindow, isMobile, setClipBoardText } from "./funcUtils";
 export { switchColor } from "./styleUtils";
