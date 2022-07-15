@@ -65,6 +65,7 @@ const sidebars = {
   typescript: [
     doc("typescript/index", "TypeScript"),
     doc("typescript/environment", "搭建环境"),
+    doc("typescript/debug", "调试"),
   ],
   csharp: [
     doc("csharp/index", "C#"),
