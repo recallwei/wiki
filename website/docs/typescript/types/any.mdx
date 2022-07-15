@@ -1,0 +1,33 @@
+---
+title: "any"
+description: ""
+tags: ["TypeScript"]
+last_update:
+  date: "2022-07-15"
+  author: "Bruce"
+---
+
+> `any` 类型是 **TypeScript** 中最灵活的类型，但是滥用它会丧失 **TypeScript** 强大的类型检测和推断能力。在 **Object** 或**复杂的 JSON** 中，有些属性我们并不能确其类型，声明一个 `any` 类型的属性，我们不需要耗费时间去推断。
+
+## 未指定类型的变量
+
+在 **TypeScript** 中，为指定类型的变量将自动声明 `any` 类型。
+
+```typescript title="TypeScript"
+let a = 123;
+a = "123";
+```
+
+> 上述变量 **a** 是 `any` 类型，与用法 **JavaScript** 几乎无异。
+
+## 检查隐式声明的 any 类型
+
+在 `tsconfig.json` 中启用 `noImplicitAny` 属性：
+
+```json title="JSON" {3}
+{
+  "compilerOptions": {
+    "noImplicitAny": true
+  }
+}
+```

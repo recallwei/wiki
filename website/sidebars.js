@@ -66,6 +66,10 @@ const sidebars = {
     doc("typescript/index", "TypeScript"),
     doc("typescript/environment", "搭建环境"),
     doc("typescript/debug", "调试"),
+    category("typescript/types/index", "类型", [
+      doc("typescript/types/any", "any"),
+      doc("typescript/types/array", "Array"),
+    ]),
   ],
   csharp: [
     doc("csharp/index", "C#"),
@@ -1154,4 +1158,5 @@ const sidebars = {
     },
   ],
 };
+
 module.exports = sidebars;
