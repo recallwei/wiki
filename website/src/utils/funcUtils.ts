@@ -23,7 +23,7 @@ function isMobile(): boolean {
 }
 
 // 复制文本
-function setClipBoardText(text: string) {
+function setClipBoardText(text: string): void {
   navigator.clipboard.writeText(text);
 }
 
