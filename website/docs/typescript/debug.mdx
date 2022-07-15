@@ -6,3 +6,35 @@ last_update:
   date: "2022-07-15"
   author: "Bruce"
 ---
+
+import TH from "/src/components/TextHighlight/index.js";
+
+## 使用 Visual Studio Code 调试
+
+### 创建调试配置文件
+
+在 Visual Studio Code 侧边栏「运行与调试」中创建调试配置文件 `launch.json`，选择调试器 <TH>Node.js</TH>，生成如下文件：
+
+```json title="JSON"
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/index.ts",
+      "outFiles": ["${workspaceFolder}/**/*.js"]
+    }
+  ]
+}
+```
+
+### 变量
+
+在侧边栏「运行与调试 - 变量」中可以看到全部变量在调试过程中的值。
+
+### 监视表达式
+
+在侧边栏「运行与调试 - 监视」中添加监视表达式，可以根据断点监视该表达式的变化。
