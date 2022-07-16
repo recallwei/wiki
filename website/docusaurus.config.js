@@ -14,7 +14,7 @@ const config = {
     gmailAddress: "recall4056@gmail.com",
     primaryColor: "#25c2a0",
   },
-  title: "Bruce Song",
+  title: "Bruce's Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https://bruce-wiki.vercel.app",
   baseUrl: "/",
