@@ -67,8 +67,18 @@ const sidebars = {
     doc("typescript/environment", "搭建环境"),
     doc("typescript/debug", "调试"),
     category("typescript/types/index", "类型", [
+      doc("typescript/types/built-in", "内置类型"),
       doc("typescript/types/any", "any"),
+      doc("typescript/types/enum", "enum"),
+      doc("typescript/types/tuple", "Tuple"),
       doc("typescript/types/array", "Array"),
+      doc("typescript/types/object", "Object"),
+      doc("typescript/types/function", "Function"),
+      doc("typescript/types/type-alias", "类型别名"),
+      doc("typescript/types/union-type", "联合类型"),
+      doc("typescript/types/intersection-type", "交叉类型"),
+      doc("typescript/types/literal-type", "字面量类型"),
+      doc("typescript/types/nullable-type", "可空类型"),
     ]),
   ],
   csharp: [
