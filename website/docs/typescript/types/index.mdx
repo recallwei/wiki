@@ -11,19 +11,92 @@ last_update:
 import FeatureIcon from "/src/components/FeatureIcon/index.js";
 import LinkList from "/src/components/LinkList/index.js";
 import typescript from "/static/img/icon/typescript.png";
+import ReferenceList from "/src/components/ReferenceList/index.js";
 
 <FeatureIcon src={typescript} title="类型" />
+
+## 基本
+
 <LinkList
   data={[
+    {
+      title: "内置类型",
+      link: "/docs/typescript/types/built-in",
+      src: typescript,
+    },
     {
       title: "any",
       link: "/docs/typescript/types/any",
       src: typescript,
     },
     {
+      title: "Enum",
+      link: "/docs/typescript/types/enum",
+      src: typescript,
+    },
+    {
+      title: "Tuple",
+      link: "/docs/typescript/types/tuple",
+      src: typescript,
+    },
+    {
       title: "Array",
       link: "/docs/typescript/types/array",
       src: typescript,
+    },
+    {
+      title: "Object",
+      link: "/docs/typescript/types/object",
+      src: typescript,
+    },
+    {
+      title: "Function",
+      link: "/docs/typescript/types/function",
+      src: typescript,
+    },
+  ]}
+/>
+
+## 高级
+
+<LinkList
+  data={[
+    {
+      title: "类型别名",
+      link: "/docs/typescript/types/type-alias",
+      src: typescript,
+    },
+    {
+      title: "联合类型",
+      link: "/docs/typescript/types/union-type",
+      src: typescript,
+    },
+    {
+      title: "交叉类型",
+      link: "/docs/typescript/types/intersection-type",
+      src: typescript,
+    },
+    {
+      title: "字面量类型",
+      link: "/docs/typescript/types/literal-type",
+      src: typescript,
+    },
+    {
+      title: "可空类型",
+      link: "/docs/typescript/types/nullable-type",
+      src: typescript,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "TypeScript Docs",
+      src: typescript,
+      link: "https://www.typescriptlang.org/docs/",
     },
   ]}
 />

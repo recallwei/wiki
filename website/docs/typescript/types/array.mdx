@@ -1,8 +1,28 @@
 ---
-title: "Array"
+title: "数组"
 description: ""
 tags: ["TypeScript"]
 last_update:
   date: "2022-07-15"
   author: "Bruce"
 ---
+
+import HyperLink from "/src/components/HyperLink/index.js";
+
+> 在 **JavaScript** 中，我们这样声明一个数组：`let array = [1, 2, "3"]` ，注意到这个数组的索引为 **2** 的元素是 **string** 类型，而其他元素则是 **number** 类型。当我们处理该数组元素时，我们无法知道某个元素的类型，这往往会产生一些**不可控的错误**。
+
+## 声明数组类型
+
+在 **TypeScript** 中，我们可以在声明一个数组的同时，为其指定数组元素的类型。
+
+```typescript title="TypeScript"
+let array: number[] = [1, 2, 3];
+```
+
+## 声明联合类型的数组
+
+借助<HyperLink link="/docs/typescript/types/union-type" openWindow>联合类型</HyperLink>，我们可以声明一个元素是联合类型的数组，如下数组元素既可以是 **number** 类型，也可以是 **string** 类型。
+
+```typescript title="TypeScript"
+let array: (number | string)[] = [1, 2, "3"];
+```

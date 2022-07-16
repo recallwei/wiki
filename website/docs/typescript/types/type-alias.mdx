@@ -1,0 +1,34 @@
+---
+title: "类型别名"
+description: "为了遵循 DRY 原则，在 TypeScript 中，我们可以使用 type 关键字来声明一个类型，以便于重用该类型。"
+tags: ["TypeScript"]
+last_update:
+  date: "2022-07-16"
+  author: "Bruce"
+---
+
+> 为了遵循 **[DRY 原则](/docs/code-specification#dry)**，在 **TypeScript** 中，我们可以使用 `type` 关键字来声明一个类型，以便于重用该类型。
+
+## 使用 Type 声明类型
+
+如下定义了一个 `User` 类型，其拥有三个属性分别是 `number` 类型的 `id`，`string` 类型的 `name` 和 `(date: Date) => void` 类型的 `creationTime`：
+
+```typescript title="TypeScript"
+type User = {
+  id: number;
+  name: string;
+  creationTime: (date: Date) => void;
+};
+```
+
+声明一个`user` 变量，使用上述定义的 `User` 类型：
+
+```typescript title="TypeScript"
+let user: User = {
+  id: 1,
+  name: "Bruce",
+  creationTime: (date: Date) => {
+    console.log(date);
+  },
+};
+```
