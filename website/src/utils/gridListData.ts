@@ -21,13 +21,13 @@ import {
   backendMenuData as backendData,
 } from "./index";
 
-interface GridItem {
+export interface GridItemType {
   readonly title: string;
   readonly link: string;
   readonly src: any;
 }
 
-function gridItem(title: string, link: string, src: any): GridItem {
+function gridItem(title: string, link: string, src: any): GridItemType {
   return {
     title: title,
     link: link,
@@ -35,7 +35,7 @@ function gridItem(title: string, link: string, src: any): GridItem {
   };
 }
 
-const frontendGridList: Array<GridItem> = [
+const frontendGridList: Array<GridItemType> = [
   gridItem(frontendData.markdown, "/docs/markdown", markdown),
   gridItem(frontendData.html, "/docs/html", html),
   gridItem(frontendData.css, "/docs/css", css),
@@ -52,7 +52,7 @@ const frontendGridList: Array<GridItem> = [
   gridItem(frontendData.graphql, "/docs/graphql", graphql),
 ];
 
-const backendGridList: Array<GridItem> = [
+const backendGridList: Array<GridItemType> = [
   gridItem(backendData.csharp, "/docs/csharp", csharp),
   gridItem(backendData.go, "/docs/go", go),
   gridItem(backendData.nodejs, "/docs/nodejs", nodejs),

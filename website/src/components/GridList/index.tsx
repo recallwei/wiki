@@ -1,12 +1,23 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import { isMobile } from "/src/utils/index";
+import { isMobile } from "@site/src/utils/index";
+import { GridItemType } from "@site/src/utils/index";
+
+type GridListProps = {
+  customStyle?: CSSProperties;
+  data: Array<GridItemType>;
+  wrapperClassName?: string;
+};
 
 // TODO - Card Design
 
-export default function GridList({ customStyle, data = [], wrapperClassName }) {
+export default function GridList({
+  customStyle,
+  data = [],
+  wrapperClassName,
+}: GridListProps): JSX.Element {
   return (
     <div
       style={customStyle}

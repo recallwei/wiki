@@ -5,14 +5,14 @@ import Link from "@docusaurus/Link";
 import LinkSVG from "/static/svg/link.svg";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-interface HyperLinkProps {
-  bold: boolean;
+type HyperLinkProps = {
+  bold?: boolean;
   children: ReactNode;
   customStyle?: any;
   link: string;
-  openWindow: boolean;
+  openWindow?: boolean;
   wrapperClassName?: string;
-}
+};
 
 export default function HyperLink({
   bold = false,

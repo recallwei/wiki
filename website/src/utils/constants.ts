@@ -1,4 +1,5 @@
 // Frontend
+const FRONTEND: string = "前端";
 const MARKDOWN: string = "Markdown";
 const HTML: string = "HTML";
 const CSS: string = "CSS";
@@ -11,6 +12,7 @@ const NPM: string = "npm";
 const GRAPHQL: string = "GraphQL";
 
 // Backend
+const BACKEND: string = "后端";
 const CSHARP: string = "C#";
 const GO: string = "Go";
 const NODE_JS: string = "Node.js";
@@ -40,8 +42,12 @@ const GMAIL: string = "GMail";
 const TWITTER: string = "Twitter";
 const WECHAT: string = "微信";
 const ZHIHU: string = "知乎";
+const GITHUB_LINK: string = "https://github.com/recallwei/";
+const TELEGRAM_LINK: string = "https://t.me/recallwei/";
+const GMAIL_ADDRESS: string = "recall4056@gmail.com";
 
 interface FrontendMenuData {
+  readonly frontend: string;
   readonly markdown: string;
   readonly html: string;
   readonly css: string;
@@ -55,6 +61,7 @@ interface FrontendMenuData {
 }
 
 interface BackendMenuData {
+  readonly backend: string;
   readonly csharp: string;
   readonly go: string;
   readonly nodejs: string;
@@ -71,9 +78,13 @@ interface ContactMeData {
   readonly twitter: string;
   readonly wechat: string;
   readonly zhihu: string;
+  readonly githubLink: string;
+  readonly telegramLink: string;
+  readonly gmailAddress: string;
 }
 
 export const frontendMenuData: FrontendMenuData = {
+  frontend: FRONTEND,
   markdown: MARKDOWN,
   html: HTML,
   css: CSS,
@@ -87,6 +98,7 @@ export const frontendMenuData: FrontendMenuData = {
 };
 
 export const backendMenuData: BackendMenuData = {
+  backend: BACKEND,
   csharp: CSHARP,
   go: GO,
   nodejs: NODE_JS,
@@ -103,4 +115,7 @@ export const contactMeData: ContactMeData = {
   twitter: TWITTER,
   wechat: WECHAT,
   zhihu: ZHIHU,
+  githubLink: GITHUB_LINK,
+  telegramLink: TELEGRAM_LINK,
+  gmailAddress: GMAIL_ADDRESS,
 };

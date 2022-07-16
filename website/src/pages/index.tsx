@@ -10,7 +10,10 @@ import {
   contactMeData,
   frontendGridList,
   backendGridList,
-} from "/src/utils/index";
+  frontendMenuData,
+  backendMenuData,
+} from "@site/src/utils/index";
+import GridList from "@site/src/components/GridList/index";
 import styles from "./styles.module.css";
 import favicon from "/static/img/favicon/favicon.png";
 import github from "/static/img/icon/github.png";
@@ -19,16 +22,26 @@ import twitter from "/static/img/icon/twitter.png";
 import telegram from "/static/img/icon/telegram.png";
 import wechat from "/static/img/icon/wexin-mini-program.png";
 import zhihu from "/static/img/icon/zhihu.png";
-import GridList from "/src/components/GridList/index.js";
 
-function HomepageHeader(props) {
+type HomepageHeaderProps = {
+  isMobileDevice: boolean;
+};
+
+type ContactMeBtnProps = {
+  readonly title?: string;
+  readonly src: any;
+  link: string;
+  isCopyBtn?: boolean;
+};
+
+function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const BRUCE = "Bruce Song";
   const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
   return (
     <header className={clsx(styles.heroBanner)}>
       <div className={clsx(styles.heroTextContainer)}>
-        {!props.isMobileDevice && (
+        {!isMobileDevice && (
           <div className={styles.avatarArea}>
             <img src={favicon} alt="Bruce" />
           </div>
@@ -51,38 +64,39 @@ function HomepageHeader(props) {
           </div>
         </div>
         <div className={styles.navLinkIconArea}>
-          <ContactMeButton
+          <ContactMeBtn
             title={contactMeData.github}
             src={github}
-            link={siteConfig.customFields.githubLink}
+            link={contactMeData.githubLink}
           />
-          <ContactMeButton
+          <ContactMeBtn
             title={contactMeData.telegram}
             src={telegram}
-            link={siteConfig.customFields.telegramLink}
+            link={contactMeData.telegramLink}
           />
-          <ContactMeButton
+          <ContactMeBtn
             title={contactMeData.gmail}
             src={gmail}
-            link={siteConfig.customFields.gmailAddress}
+            link={contactMeData.gmailAddress}
             isCopyBtn
           />
-          <ContactMeButton
-            title={contactMeData.twitter}
-            src={twitter}
-            link="/"
-          />
-          <ContactMeButton title={contactMeData.wechat} src={wechat} link="/" />
-          <ContactMeButton title={contactMeData.zhihu} src={zhihu} link="/" />
+          <ContactMeBtn title={contactMeData.twitter} src={twitter} link="/" />
+          <ContactMeBtn title={contactMeData.wechat} src={wechat} link="/" />
+          <ContactMeBtn title={contactMeData.zhihu} src={zhihu} link="/" />
         </div>
       </div>
     </header>
   );
 }
 
-function ContactMeButton({ title, src, link, isCopyBtn }) {
+function ContactMeBtn({
+  title,
+  src,
+  link,
+  isCopyBtn = false,
+}: ContactMeBtnProps): JSX.Element {
   // TODO - Add a tip for copy action
-  if (isCopyBtn) {
+  if (isCopyBtn && typeof link !== "undefined") {
     return (
       <div
         className={styles.navLink}
@@ -105,14 +119,12 @@ function ContactMeButton({ title, src, link, isCopyBtn }) {
   );
 }
 
-export default function Home() {
-  const FRONTEND = "前端";
-  const BACKEND = "后端";
+export default function Home(): JSX.Element {
   return (
-    <BrowserOnly fallback={null}>
+    <BrowserOnly fallback={undefined}>
       {() => {
         // Detect device type
-        const isMobileDevice = isMobile();
+        const isMobileDevice: boolean = isMobile();
         return (
           <Layout
             title="Home"
@@ -121,10 +133,12 @@ export default function Home() {
             <HomepageHeader isMobileDevice={isMobileDevice} />
             <main>
               <div className={styles.mainContainer}>
-                <div className={styles.listTitle}>{FRONTEND}</div>
+                <div className={styles.listTitle}>
+                  {frontendMenuData.frontend}
+                </div>
                 <GridList data={frontendGridList} />
                 <div className={clsx(styles.listTitle, styles.marginTop)}>
-                  {BACKEND}
+                  {backendMenuData.backend}
                 </div>
                 <GridList data={backendGridList} />
               </div>

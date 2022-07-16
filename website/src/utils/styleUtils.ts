@@ -1,13 +1,12 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { themeColor } from "./styleConstants";
 
-function switchColor(color?: string) {
-  const { siteConfig } = useDocusaurusContext();
+function switchColor(color: string | undefined | null): string {
   switch (color) {
     case "primary":
     case "":
     case undefined:
     case null:
-      return siteConfig.customFields?.primaryColor;
+      return themeColor;
     case "red":
       return "#e53935";
     case "pink":
