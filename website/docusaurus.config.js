@@ -109,6 +109,7 @@ const config = {
         hideOnScroll: false,
         items: [
           // Left
+          { type: "doc", label: "TypeScript", docId: "typescript/index" },
           {
             type: "dropdown",
             label: "前端",
