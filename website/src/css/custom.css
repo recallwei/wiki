@@ -67,7 +67,6 @@
 html {
   font-family: var(--base-font-family);
   letter-spacing: 0.2px;
-  height: 100%;
 }
 
 hr {
