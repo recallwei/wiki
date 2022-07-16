@@ -1,18 +1,35 @@
-import React from "react";
+import React, { type ReactNode } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import LinkSVG from "/static/svg/link.svg";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
+interface HyperLinkProps {
+  bold: boolean;
+  children: ReactNode;
+  customStyle?: any;
+  link: string;
+  openWindow: boolean;
+  wrapperClassName?: string;
+}
+
+// const HyperLink: React.FC<HyperLinkProps> = ({
+//   bold = false,
+//   children,
+//   customStyle,
+//   link,
+//   openWindow = false,
+//   wrapperClassName,
+// }: HyperLinkProps) => \
 export default function HyperLink({
-  bold,
+  bold = false,
   children,
   customStyle,
   link,
   openWindow = false,
   wrapperClassName,
-}) {
+}: HyperLinkProps): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <span
@@ -32,3 +49,5 @@ export default function HyperLink({
     </span>
   );
 }
+
+// export default HyperLink;
