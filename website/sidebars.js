@@ -65,7 +65,7 @@ const sidebars = {
   typescript: [
     doc("typescript/index", "TypeScript"),
     doc("typescript/environment", "搭建环境"),
-    doc("typescript/debug", "调试"),
+    doc("typescript/debug", "运行与调试"),
     category("typescript/types/index", "类型", [
       doc("typescript/types/built-in", "内置类型"),
       doc("typescript/types/any", "any"),
