@@ -8,12 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  customFields: {
-    githubLink: "https://github.com/recallwei/",
-    telegramLink: "https://t.me/recallwei/",
-    gmailAddress: "recall4056@gmail.com",
-    primaryColor: "#25c2a0",
-  },
+  customFields: {},
   title: "Bruce's Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https://bruce-wiki.vercel.app",
