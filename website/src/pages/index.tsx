@@ -15,13 +15,13 @@ import {
 } from "@site/src/utils/index";
 import GridList from "@site/src/components/GridList/index";
 import styles from "./styles.module.css";
-import favicon from "/static/img/favicon/favicon.png";
-import github from "/static/img/icon/github.png";
-import gmail from "/static/img/icon/gmail.png";
-import twitter from "/static/img/icon/twitter.png";
-import telegram from "/static/img/icon/telegram.png";
-import wechat from "/static/img/icon/wexin-mini-program.png";
-import zhihu from "/static/img/icon/zhihu.png";
+import favicon from "@site/static/img/favicon/favicon.png";
+import github from "@site/static/img/icon/github.png";
+import gmail from "@site/static/img/icon/gmail.png";
+import twitter from "@site/static/img/icon/twitter.png";
+import telegram from "@site/static/img/icon/telegram.png";
+import wechat from "@site/static/img/icon/wexin-mini-program.png";
+import zhihu from "@site/static/img/icon/zhihu.png";
 
 type HomepageHeaderProps = {
   isMobileDevice: boolean;
