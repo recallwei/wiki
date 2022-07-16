@@ -237,7 +237,8 @@ const config = {
         darkTheme: darkCodeTheme,
         // theme: duotoneLight,
         // darkTheme: oceanicNext,
-        // Prism : https://prismjs.com/#supported-languages
+        // Prism: https://prismjs.com/#supported-languages
+        // Docusaurus Support: https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js
         additionalLanguages: [
           "aspnet",
           "cpp",
