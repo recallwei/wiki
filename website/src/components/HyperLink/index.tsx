@@ -14,14 +14,6 @@ interface HyperLinkProps {
   wrapperClassName?: string;
 }
 
-// const HyperLink: React.FC<HyperLinkProps> = ({
-//   bold = false,
-//   children,
-//   customStyle,
-//   link,
-//   openWindow = false,
-//   wrapperClassName,
-// }: HyperLinkProps) => \
 export default function HyperLink({
   bold = false,
   children,
@@ -49,5 +41,3 @@ export default function HyperLink({
     </span>
   );
 }
-
-// export default HyperLink;

@@ -482,6 +482,17 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "使用 TypeScript",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "react/use-typescript/index",
+          },
+          items: [{}],
+        },
       ],
     },
     // Docusaurus

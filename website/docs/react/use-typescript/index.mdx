@@ -1,0 +1,72 @@
+---
+title: "使用 TypeScript"
+hide_title: true
+description: ""
+tags: ["React"]
+last_update:
+  date: "2022-07-17"
+  author: "Bruce"
+---
+
+import FeatureIcon from "/src/components/FeatureIcon/index";
+import LinkList from "/src/components/LinkList/index";
+import typescript from "/static/img/icon/typescript.png";
+
+<FeatureIcon src={typescript} title="使用 TypeScript" />
+<LinkList
+  data={
+    [
+      /* {
+      title: "",
+      link: "/docs/",
+      src: src,
+    }, */
+    ]
+  }
+/>
+
+```tsx title="TSX" showLineNumbers
+import React, { type ReactNode } from "react";
+const HyperLink: React.FC<HyperLinkProps> = ({
+  bold = false,
+  children,
+  customStyle,
+  link,
+  openWindow = false,
+  wrapperClassName,
+}: HyperLinkProps) => {
+  return <></>;
+};
+export default HyperLink;
+```
+
+```tsx title="TSX" showLineNumbers
+import React, { type ReactNode } from "react";
+export default function HyperLink({
+  bold = false,
+  children,
+  customStyle,
+  link,
+  openWindow = false,
+  wrapperClassName,
+}: HyperLinkProps): JSX.Element {
+  const { siteConfig } = useDocusaurusContext();
+  return (
+    <span
+      style={customStyle}
+      className={clsx(styles.linkWrapper, wrapperClassName)}
+    >
+      <Link to={openWindow ? siteConfig.url + link : link}>
+        <span className={clsx(styles.textArea, bold && styles.textBold)}>
+          {children}
+          {openWindow && (
+            <span className={styles.linkSVG}>
+              <LinkSVG />
+            </span>
+          )}
+        </span>
+      </Link>
+    </span>
+  );
+}
+```
