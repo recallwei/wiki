@@ -23,6 +23,7 @@ import GridList from "/src/components/GridList/index.js";
 
 function HomepageHeader(props) {
   const { siteConfig } = useDocusaurusContext();
+  const BRUCE = "Bruce Song";
   const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
   return (
     <header className={clsx(styles.heroBanner)}>
@@ -33,7 +34,7 @@ function HomepageHeader(props) {
           </div>
         )}
         <div className={styles.heroTextArea}>
-          <p className={styles.heroTextTitle}>{siteConfig.title}</p>
+          <p className={styles.heroTextTitle}>{BRUCE}</p>
           <p className={styles.heroTextSubTitle}>{siteConfig.tagline}</p>
           <div className={styles.heroTextAreaButton}>
             <Link
