@@ -124,7 +124,7 @@
   },
   "Hyper Link": {
     "prefix": "hl",
-    "body": ["<HyperLink link=\"/docs/$1\" $2>$3</HyperLink>$0"],
+    "body": ["<HyperLink link=\"/docs$1\" openWindow>$2</HyperLink>$0"],
     "description": "Insert a Hyper Link component"
   },
   "Import Grid List": {
