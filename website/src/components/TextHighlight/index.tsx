@@ -8,8 +8,8 @@ type TextHighlightProps = {
    * Define the backgroundColor of TextHighlight Component.
    * If not set the value, the default color will be the themeColor `#25c2a0`.
    */
-  bgColor?: string;
   children: ReactNode;
+  bgColor?: string;
   wrapperClassName?: string;
   /**
    * If assign the `backgroundColor` property in wrapperStyle, bgColor property will be covered.
@@ -18,8 +18,8 @@ type TextHighlightProps = {
 };
 
 export default function TextHighlight({
-  bgColor,
   children,
+  bgColor,
   wrapperClassName,
   wrapperStyle,
 }: TextHighlightProps): JSX.Element {

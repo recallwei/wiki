@@ -3,7 +3,7 @@ title: white-space
 ---
 
 import TH from "@site/src/components/TextHighlight/index";
-import Table from "/src/components/Table/index.js";
+import Table from "@site/src/components/Table/index";
 
 ## 语法
 
@@ -20,16 +20,14 @@ import Table from "/src/components/Table/index.js";
   data={{
     position: ["start", "center", "center", "center", "center"],
     header: ["", "换行符", "空格和制表符", "文字换行", "行尾空格"],
-    body: {
-      items: [
-        [<code>normal</code>, "合并", "合并", "换行", "删除"],
-        [<code>nowrap</code>, "合并", "合并", "不换行", "删除"],
-        [<code>pre</code>, "保留", "保留", "不换行", "保留"],
-        [<code>pre-wrap</code>, "保留", "保留", "换行", "挂起"],
-        [<code>pre-line</code>, "保留", "合并", "换行", "删除"],
-        [<code>break-spaces</code>, "保留", "保留", "换行", "换行"],
-      ],
-    },
+    body: [
+      [<code>normal</code>, "合并", "合并", "换行", "删除"],
+      [<code>nowrap</code>, "合并", "合并", "不换行", "删除"],
+      [<code>pre</code>, "保留", "保留", "不换行", "保留"],
+      [<code>pre-wrap</code>, "保留", "保留", "换行", "挂起"],
+      [<code>pre-line</code>, "保留", "合并", "换行", "删除"],
+      [<code>break-spaces</code>, "保留", "保留", "换行", "换行"],
+    ],
   }}
 />
 

@@ -1,24 +1,50 @@
-import React from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
-import { isMobile } from "/src/utils/index";
+import { isMobile } from "@site/src/utils/index";
+
+type TableProps = {
+  data: {
+    position: Array<Position>;
+    header: string[];
+    body: Array<Array<ReactNode>>;
+    footer: string[];
+    caption: ReactNode;
+  };
+  wrapperClassName?: string;
+  wrapperStyle: CSSProperties;
+  mobileWrapperStyle: CSSProperties;
+};
+
+enum Position {
+  "Start" = 0,
+  "End" = 1,
+  "Center" = 2,
+}
 
 export default function Table({
-  wrapperStyle,
-  data = [],
-  mobileWrapperStyle,
+  data,
   wrapperClassName,
-}) {
-  let getPosition = (text) => {
+  wrapperStyle,
+  mobileWrapperStyle,
+}: TableProps): JSX.Element {
+  const getAlignStyle = (text: Position | undefined): any => {
+    let position: string;
     switch (text) {
-      case "center":
-        return "center";
-      case "end":
-        return "end";
-      case "start":
+      case Position.Center:
+        position = "center";
+        break;
+      case Position.End:
+        position = "end";
+        break;
+      case undefined:
+      case Position.Start:
       default:
-        return "start";
+        position = "start";
     }
+    return {
+      textAlign: position,
+    };
   };
   return (
     <div
@@ -33,14 +59,9 @@ export default function Table({
           {data.header && data.header.length > 0 && (
             <thead>
               <tr role="row">
-                {data.header.map((x, idx) => {
+                {data.header.map((x: string, index: number) => {
                   return (
-                    <th
-                      key={idx}
-                      style={{
-                        textAlign: `${getPosition(data.position[idx])}`,
-                      }}
-                    >
+                    <th key={index} style={getAlignStyle(data.position[index])}>
                       {x}
                     </th>
                   );
@@ -50,19 +71,17 @@ export default function Table({
           )}
           <tbody>
             {data.body &&
-              data.body.items.length > 0 &&
-              data.body.items.map((x, idx) => {
+              data.body.length > 0 &&
+              data.body.map((x: ReactNode[], index: number) => {
                 return (
                   x.length > 0 && (
-                    <tr role="row" key={idx}>
-                      {x.map((y, idx) => {
+                    <tr role="row" key={index}>
+                      {x.map((y: ReactNode, index: number) => {
                         return (
                           <td
                             role="gridcell"
-                            key={idx}
-                            style={{
-                              textAlign: `${getPosition(data.position[idx])}`,
-                            }}
+                            key={index}
+                            style={getAlignStyle(data.position[index])}
                           >
                             {y}
                           </td>
@@ -76,14 +95,9 @@ export default function Table({
           {data.footer && data.footer.length > 0 && (
             <tfoot>
               <tr role="row">
-                {data.footer.map((x, idx) => {
+                {data.footer.map((x: ReactNode, index: number) => {
                   return (
-                    <th
-                      key={idx}
-                      style={{
-                        textAlign: `${getPosition(data.position[idx])}`,
-                      }}
-                    >
+                    <th key={index} style={getAlignStyle(data.position[index])}>
                       {x}
                     </th>
                   );

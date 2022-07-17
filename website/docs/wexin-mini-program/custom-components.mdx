@@ -3,7 +3,7 @@ title: 自定义组件
 ---
 
 import TH from "@site/src/components/TextHighlight/index";
-import Table from "/src/components/Table/index.js";
+import Table from "@site/src/components/Table/index";
 import ReferenceList from "/src/components/ReferenceList/index.js";
 import Link from "@docusaurus/Link";
 import wexinMiniProgram from "@site/static/img/icon/wexin-mini-program.png";
@@ -279,34 +279,32 @@ Component({
       "Affect by outer style",
       "Remarks",
     ],
-    body: {
-      items: [
-        [
-          <code>isolated</code>,
-          "Component/Page",
-          "✅",
-          "🔴",
-          "🔴",
-          <div>
-            <code>default</code>
-          </div>,
-        ],
-        [<code>apply-shared</code>, "Component/Page", "✅", "🔴", "✅", ""],
-        [
-          <code>shared</code>,
-          "Component/Page",
-          "✅",
-          "✅",
-          "✅",
-          <div>
-            <code>default</code> if component is used to construct a page.
-          </div>,
-        ],
-        [<code>page-isolated</code>, "Page", "✅", "🔴", "🔴", ""],
-        [<code>page-apply-shared</code>, "Page", "✅", "🔴", "✅", ""],
-        [<code>page-shared</code>, "Page", "✅", "✅", "✅", ""],
+    body: [
+      [
+        <code>isolated</code>,
+        "Component/Page",
+        "✅",
+        "🔴",
+        "🔴",
+        <div>
+          <code>default</code>
+        </div>,
       ],
-    },
+      [<code>apply-shared</code>, "Component/Page", "✅", "🔴", "✅", ""],
+      [
+        <code>shared</code>,
+        "Component/Page",
+        "✅",
+        "✅",
+        "✅",
+        <div>
+          <code>default</code> if component is used to construct a page.
+        </div>,
+      ],
+      [<code>page-isolated</code>, "Page", "✅", "🔴", "🔴", ""],
+      [<code>page-apply-shared</code>, "Page", "✅", "🔴", "✅", ""],
+      [<code>page-shared</code>, "Page", "✅", "✅", "✅", ""],
+    ],
     caption: (
       <div>
         If component is used to construct a page, this page will not affect by{" "}

@@ -8,7 +8,7 @@ last_update:
 ---
 
 import TH from "@site/src/components/TextHighlight/index";
-import Table from "/src/components/Table/index.js";
+import Table from "@site/src/components/Table/index";
 
 ## Markdown 语法
 
@@ -46,11 +46,9 @@ import Table from "/src/components/Table/index.js";
   data={{
     position: ["center", "center"],
     header: ["✅", "🔴"],
-    body: {
-      items: [
-        [<code># heading</code>, <code>#heading</code>],
-        [<code>## heading</code>, <code>##heading</code>],
-      ],
-    },
+    body: [
+      [<code># heading</code>, <code>#heading</code>],
+      [<code>## heading</code>, <code>##heading</code>],
+    ],
   }}
 />
