@@ -11,10 +11,10 @@ type LinkListProps = {
 };
 
 type LinkListItemType = {
-  readonly title: string;
-  readonly link: string;
-  readonly src: any;
-  readonly srcDark?: any;
+  title: string;
+  link: string;
+  src: any;
+  srcDark?: any;
 };
 
 export default function LinkList({
