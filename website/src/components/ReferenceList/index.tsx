@@ -1,30 +1,43 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/svg/link.svg";
 
+export type ReferenceListItem = {
+  readonly title: string;
+  readonly link: string;
+  readonly src: any;
+  readonly srcDark?: any;
+};
+
+type ReferenceListProps = {
+  data: Array<ReferenceListItem>;
+  wrapperClassName?: string;
+  wrapperStyle: CSSProperties;
+};
+
 export default function ReferenceList({
-  customStyle,
   data = [],
   wrapperClassName,
-}) {
+  wrapperStyle,
+}: ReferenceListProps): JSX.Element {
   return (
     <div
-      style={customStyle}
+      style={wrapperStyle}
       className={clsx(styles.unorderedList, wrapperClassName)}
     >
       <ul>
-        {data.map((item, idx) => {
+        {data.map((item: ReferenceListItem, index: number) => {
           return (
-            <li className={styles.listItem} key={idx}>
+            <li className={styles.listItem} key={index}>
               <ThemedImage
                 sources={{
                   light: item.src,
                   dark: item.srcDark ? item.srcDark : item.src,
                 }}
-                alt={item.title + ": " + item.subTitle}
+                alt={item.title}
                 loading="lazy"
               />
               <Link to={item.link} className={styles.titleArea}>
