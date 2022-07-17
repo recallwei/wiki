@@ -1,13 +1,30 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 
-export default function LinkList({ customStyle, data = [], wrapperClassName }) {
+type LinkListProps = {
+  data: [];
+  wrapperClassName?: string;
+  wrapperStyle: CSSProperties;
+};
+
+type LinkListItemType = {
+  readonly title: string;
+  readonly link: string;
+  readonly src: any;
+  readonly srcDark?: any;
+};
+
+export default function LinkList({
+  data = [],
+  wrapperClassName,
+  wrapperStyle,
+}: LinkListProps): JSX.Element {
   return (
-    <div style={customStyle} className={clsx(styles.list, wrapperClassName)}>
-      {data.map((item) => {
+    <div style={wrapperStyle} className={clsx(styles.list, wrapperClassName)}>
+      {data.map((item: LinkListItemType) => {
         return (
           <div key={item.title} className={styles.item}>
             <Link to={item.link}>

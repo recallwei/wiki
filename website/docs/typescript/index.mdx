@@ -9,7 +9,7 @@ last_update:
 ---
 
 import FeatureIcon from "/src/components/FeatureIcon/index.js";
-import LinkList from "/src/components/LinkList/index.js";
+import LinkList from "@site/src/components/LinkList/index";
 import typescript from "@site/static/img/icon/typescript.png";
 
 <FeatureIcon src={typescript} title="TypeScript" />
@@ -17,7 +17,7 @@ import typescript from "@site/static/img/icon/typescript.png";
 > **TypeScript** 是 **JavaScript** 的严格语法超集，有着强大的**静态类型检查**能力。
 
 <LinkList
-  customStyle={{ marginTop: 40 }}
+  wrapperStyle={{ marginTop: 40 }}
   data={[
     {
       title: "搭建环境",

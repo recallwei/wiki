@@ -5,17 +5,17 @@ import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/svg/link.svg";
 
+type ReferenceListProps = {
+  data: Array<ReferenceListItem>;
+  wrapperClassName?: string;
+  wrapperStyle: CSSProperties;
+};
+
 export type ReferenceListItem = {
   readonly title: string;
   readonly link: string;
   readonly src: any;
   readonly srcDark?: any;
-};
-
-type ReferenceListProps = {
-  data: Array<ReferenceListItem>;
-  wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
 };
 
 export default function ReferenceList({
