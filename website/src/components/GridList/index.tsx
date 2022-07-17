@@ -7,8 +7,8 @@ import { GridItemType } from "@site/src/utils/index";
 
 type GridListProps = {
   data: Array<GridItemType>;
-  readonly wrapperClassName?: string;
-  readonly wrapperStyle?: CSSProperties;
+  wrapperClassName?: string;
+  wrapperStyle?: CSSProperties;
 };
 
 // TODO - Card Design
