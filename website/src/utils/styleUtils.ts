@@ -1,21 +1,30 @@
 import { themeColor } from "./styleConstants";
 
-function switchColor(color: string | undefined | null): string {
+enum Color {
+  "Primary" = 0,
+  "Red" = 1,
+  "Pink" = 2,
+  "Blue" = 3,
+  "Purple" = 4,
+  "Yellow" = 5,
+}
+
+function switchColor(color: Color | string | undefined | null): string {
   switch (color) {
-    case "primary":
+    case Color.Primary:
     case "":
     case undefined:
     case null:
       return themeColor;
-    case "red":
+    case Color.Red:
       return "#e53935";
-    case "pink":
+    case Color.Pink:
       return "#d81b60";
-    case "blue":
+    case Color.Blue:
       return "#1e88e5";
-    case "purple":
+    case Color.Purple:
       return "#ba68c8";
-    case "yellow":
+    case Color.Yellow:
       return "#ffff8d";
     default:
       return color;
