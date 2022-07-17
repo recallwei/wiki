@@ -1,15 +1,24 @@
-import React from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 
-// TODO - Use Link Component
+type BadgeType = {
+  children: ReactNode;
+  color?: string;
+  url?: string;
+  wrapperClassName?: string;
+  wrapperStyle: CSSProperties;
+};
+
+// TODO - Refactor: Use Link Component
+
 export default function Badge({
   children,
   color,
-  customStyle,
   url,
   wrapperClassName,
-}) {
+  wrapperStyle,
+}: BadgeType): JSX.Element {
   return (
     <span
       className={clsx(
@@ -19,12 +28,11 @@ export default function Badge({
         url && styles.badgeHover,
         wrapperClassName
       )}
-      style={customStyle}
+      style={wrapperStyle}
       onClick={() => {
         if (url) {
           window.location.href = url;
         }
-        return;
       }}
     >
       {children}
