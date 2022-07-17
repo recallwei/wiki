@@ -6,21 +6,21 @@ import { isMobile } from "@site/src/utils/index";
 import { GridItemType } from "@site/src/utils/index";
 
 type GridListProps = {
-  customStyle?: CSSProperties;
+  readonly wrapperStyle?: CSSProperties;
   data: Array<GridItemType>;
-  wrapperClassName?: string;
+  readonly wrapperClassName?: string;
 };
 
 // TODO - Card Design
 
 export default function GridList({
-  customStyle,
+  wrapperStyle,
   data = [],
   wrapperClassName,
 }: GridListProps): JSX.Element {
   return (
     <div
-      style={customStyle}
+      style={wrapperStyle}
       className={clsx(
         styles.grid,
         isMobile() && styles.mobileGrid,
