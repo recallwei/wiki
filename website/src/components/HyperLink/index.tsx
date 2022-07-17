@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import React, { CSSProperties, type ReactNode } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
@@ -8,24 +8,24 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 type HyperLinkProps = {
   bold?: boolean;
   children: ReactNode;
-  customStyle?: any;
   link: string;
   openWindow?: boolean;
   wrapperClassName?: string;
+  wrapperStyle: CSSProperties;
 };
 
 export default function HyperLink({
   bold = false,
   children,
-  customStyle,
   link,
   openWindow = false,
   wrapperClassName,
+  wrapperStyle,
 }: HyperLinkProps): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <span
-      style={customStyle}
+      style={wrapperStyle}
       className={clsx(styles.linkWrapper, wrapperClassName)}
     >
       <Link to={openWindow ? siteConfig.url + link : link}>
