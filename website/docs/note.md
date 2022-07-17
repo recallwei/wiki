@@ -10,7 +10,7 @@ draft: true
 - [ ] [scrollTo](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo)
 - [ ] [scrollBy](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy)
 - [ ] [可选链操作符](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
-- [ ] [bolb 地址原理](https://blog.csdn.net/m0_50618406/article/details/109814553)
+- [ ] [blob 地址原理](https://blog.csdn.net/m0_50618406/article/details/109814553)
 - [ ] [JS Number 中的下划线](https://zh.javascript.info/number)
 
 ### CSS
