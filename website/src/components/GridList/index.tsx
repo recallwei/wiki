@@ -6,17 +6,17 @@ import { isMobile } from "@site/src/utils/index";
 import { GridItemType } from "@site/src/utils/index";
 
 type GridListProps = {
-  readonly wrapperStyle?: CSSProperties;
   data: Array<GridItemType>;
   readonly wrapperClassName?: string;
+  readonly wrapperStyle?: CSSProperties;
 };
 
 // TODO - Card Design
 
 export default function GridList({
-  wrapperStyle,
   data = [],
   wrapperClassName,
+  wrapperStyle,
 }: GridListProps): JSX.Element {
   return (
     <div
