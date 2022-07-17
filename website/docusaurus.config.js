@@ -182,6 +182,12 @@ const config = {
             position: "left",
           },
           {
+            type: "doc",
+            docId: "note",
+            label: "📒 笔记",
+            position: "left",
+          },
+          {
             to: "/docs/tags",
             label: "🏷️ 标签",
             position: "left",
