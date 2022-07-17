@@ -168,6 +168,59 @@
     -ms-transition: all ease-out 0.2s;
   }
 
+  .arrowDownWrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrowDown {
+    color: white;
+    height: 30px;
+    width: 30px;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    animation: float 2s linear infinite;
+    -webkit-animation: float 2s linear infinite;
+    vertical-align: center;
+  }
+
+  .arrowDown:hover {
+    cursor: pointer;
+    color: darkgrey;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(0px, -10px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  @-webkit-keyframes float {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(0px, -10px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
   .mainContainer {
     padding: 40px 20px;
     width: 61.8%;

@@ -2,6 +2,8 @@ import React, { type ReactNode, type ComponentProps } from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
+// TODO - How to use SVG component?
+
 export type SvgIconProps = ComponentProps<"svg"> & {
   viewBox?: string;
   size?: "inherit" | "small" | "medium" | "large";
