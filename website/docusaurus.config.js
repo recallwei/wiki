@@ -104,7 +104,6 @@ const config = {
         hideOnScroll: false,
         items: [
           // Left
-          { type: "doc", label: "TypeScript", docId: "typescript/index" },
           {
             type: "dropdown",
             label: "前端",
@@ -174,7 +173,7 @@ const config = {
             label: "✏️ 设计",
             position: "left",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             type: "doc",
             docId: "todo",
