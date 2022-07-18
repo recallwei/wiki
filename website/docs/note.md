@@ -9,6 +9,11 @@ draft: true
 
 - [x] [禁用浏览器的自动补全](https://blog.csdn.net/Yang950831/article/details/100927530)
 
+### JavaScript
+
+- [ ] [深入理解 ES6 Async Functions](https://zhuanlan.zhihu.com/p/30688707)
+- [ ] [异步箭头功能的语法](https://blog.csdn.net/xfxf996/article/details/106231830)
+
 ## 7.17
 
 ### JavaScript
