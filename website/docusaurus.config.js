@@ -255,9 +255,9 @@ const config = {
         ],
       },
       algolia: {
-        appId: "WJ7VJBYAIG",
-        apiKey: "22996f43a92d0a80f0fc7c7a1c93d8e5",
-        indexName: "YOUR_INDEX_NAME",
+        appId: "2MFWID6114",
+        apiKey: "73035bd8b4198d6a191e424ced0b641b",
+        indexName: "bruce-wiki",
         contextualSearch: true,
         externalUrlRegex: "external\\.com|domain\\.com",
         searchParameters: {},
