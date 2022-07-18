@@ -145,6 +145,10 @@ code {
   display: block;
 }
 
+.markdown strong {
+  color: var(--ifm-color-primary-light);
+}
+
 img-annotation {
   display: block;
   color: #a9b1bb;

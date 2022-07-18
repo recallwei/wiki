@@ -30,7 +30,19 @@ const sidebars = {
     doc("markdown/paragraphs", "段落"),
     doc("markdown/line-breaks", "🚀 换行符"),
   ],
-  html: [doc("html/index", "HTML")],
+  html: [
+    doc("html/index", "HTML"),
+    category("html/elements/index", "标签", [
+      doc("html/elements/text", "文本"),
+      doc("html/elements/hyperlink", "超链接"),
+      doc("html/elements/img", "图片"),
+    ]),
+    doc("html/character-entities", "字符实体"),
+
+    category("html/solutions/index", "解决方案", [
+      doc("html/solutions/autocomplete", "禁用浏览器的自动补全"),
+    ]),
+  ],
   javascript: [
     doc("javascript/index", "JavaScript"),
     category("javascript/data-type/index", "数据类型", [
@@ -101,51 +113,6 @@ const sidebars = {
       type: "doc",
       id: "front-end",
       label: "前端",
-    },
-    // HTML
-    {
-      type: "category",
-      label: "HTML",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "html/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "标签",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "html/elements/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "html/elements/text",
-              label: "文本",
-            },
-            {
-              type: "doc",
-              id: "html/elements/hyperlink",
-              label: "超链接",
-            },
-            {
-              type: "doc",
-              id: "html/elements/img",
-              label: "图片",
-            },
-          ],
-        },
-        {
-          type: "doc",
-          id: "html/character-entities",
-          label: "字符实体",
-        },
-      ],
     },
     // CSS
     {
