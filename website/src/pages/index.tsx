@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -33,6 +33,37 @@ type ContactMeBtnProps = {
   link: string;
   isCopyBtn?: boolean;
 };
+
+export default function Home(): JSX.Element {
+  return (
+    <BrowserOnly fallback={undefined}>
+      {() => {
+        // Detect device type
+        const isMobileDevice: boolean = isMobile();
+        return (
+          <Layout
+            title="Home"
+            description="Description will go into a meta tag in <head />"
+          >
+            <HomepageHeader isMobileDevice={isMobileDevice} />
+            <main>
+              <div className={styles.mainContainer}>
+                <div className={styles.listTitle}>
+                  {frontendMenuData.frontend}
+                </div>
+                <GridList data={frontendGridList} />
+                <div className={clsx(styles.listTitle, styles.marginTop)}>
+                  {backendMenuData.backend}
+                </div>
+                <GridList data={backendGridList} />
+              </div>
+            </main>
+          </Layout>
+        );
+      }}
+    </BrowserOnly>
+  );
+}
 
 function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -85,22 +116,10 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
           <ContactMeBtn title={contactMeData.zhihu} src={zhihu} link="/" />
         </div>
         {!isMobileDevice && (
-          <span className={styles.arrowDownWrapper}>
-            <svg
-              className={styles.arrowDown}
-              aria-hidden="true"
-              viewBox="-75.52 -43.52 599.04 599.04"
-              fill="currentColor"
-              onClick={() => {
-                window.scrollTo({
-                  top: window.innerHeight,
-                  behavior: "smooth",
-                });
-              }}
-            >
-              <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-            </svg>
-          </span>
+          <>
+            <ArrowDownBtn />
+            <MenuBtn />
+          </>
         )}
       </div>
     </header>
@@ -137,33 +156,69 @@ function ContactMeBtn({
   );
 }
 
-export default function Home(): JSX.Element {
+function ArrowDownBtn(): JSX.Element {
   return (
-    <BrowserOnly fallback={undefined}>
-      {() => {
-        // Detect device type
-        const isMobileDevice: boolean = isMobile();
-        return (
-          <Layout
-            title="Home"
-            description="Description will go into a meta tag in <head />"
-          >
-            <HomepageHeader isMobileDevice={isMobileDevice} />
-            <main>
-              <div className={styles.mainContainer}>
-                <div className={styles.listTitle}>
-                  {frontendMenuData.frontend}
-                </div>
-                <GridList data={frontendGridList} />
-                <div className={clsx(styles.listTitle, styles.marginTop)}>
-                  {backendMenuData.backend}
-                </div>
-                <GridList data={backendGridList} />
-              </div>
-            </main>
-          </Layout>
-        );
-      }}
-    </BrowserOnly>
+    <span className={styles.arrowDownBtnWrapper}>
+      <svg
+        className={styles.arrowDownBtn}
+        aria-hidden="true"
+        viewBox="-75.52 -43.52 599.04 599.04"
+        fill="currentColor"
+        onClick={() => {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
+        }}
+      >
+        <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+      </svg>
+    </span>
+  );
+}
+
+function MenuBtn(): JSX.Element {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    setProgress(
+      +(
+        (document.documentElement.scrollTop /
+          (document.documentElement.scrollHeight -
+            document.documentElement.clientHeight)) *
+        100
+      ).toFixed(0)
+    );
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  function handleScroll() {
+    setProgress(
+      +(
+        (document.documentElement.scrollTop /
+          (document.documentElement.scrollHeight -
+            document.documentElement.clientHeight)) *
+        100
+      ).toFixed(0)
+    );
+  }
+
+  return (
+    <div className={styles.menuBtnContainer}>
+      <div className={styles.menuBtn}>
+        <div
+          className={styles.progressBarText}
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
+          {progress}%
+        </div>
+      </div>
+    </div>
   );
 }

@@ -33,9 +33,12 @@ export default function Layout(props: Props): JSX.Element {
 
             <SkipToContent />
 
-            {!isHomePage && <AnnouncementBar />}
-
-            {!isHomePage && <Navbar />}
+            {!isHomePage && (
+              <>
+                <AnnouncementBar />
+                <Navbar />
+              </>
+            )}
 
             <div
               className={clsx(
