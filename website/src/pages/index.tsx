@@ -22,6 +22,7 @@ import twitter from "@site/static/img/icon/twitter.png";
 import telegram from "@site/static/img/icon/telegram.png";
 import wechat from "@site/static/img/icon/wexin-mini-program.png";
 import zhihu from "@site/static/img/icon/zhihu.png";
+import ReadProgressBar from "@site/src/components/ReadProgressBar/index";
 
 type HomepageHeaderProps = {
   isMobileDevice: boolean;
@@ -118,7 +119,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
         {!isMobileDevice && (
           <>
             <ArrowDownBtn />
-            <MenuBtn />
+            <ReadProgressBar />
           </>
         )}
       </div>
@@ -174,51 +175,5 @@ function ArrowDownBtn(): JSX.Element {
         <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
       </svg>
     </span>
-  );
-}
-
-function MenuBtn(): JSX.Element {
-  const [progress, setProgress] = useState(0);
-
-  useEffect(() => {
-    setProgress(
-      +(
-        (document.documentElement.scrollTop /
-          (document.documentElement.scrollHeight -
-            document.documentElement.clientHeight)) *
-        100
-      ).toFixed(0)
-    );
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  function handleScroll() {
-    setProgress(
-      +(
-        (document.documentElement.scrollTop /
-          (document.documentElement.scrollHeight -
-            document.documentElement.clientHeight)) *
-        100
-      ).toFixed(0)
-    );
-  }
-
-  return (
-    <div className={styles.menuBtnContainer}>
-      <div className={styles.menuBtn}>
-        <div
-          className={styles.progressBarText}
-          onClick={() => {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-          }}
-        >
-          {progress}%
-        </div>
-      </div>
-    </div>
   );
 }

@@ -1,0 +1,28 @@
+.menuBtnContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 40;
+}
+
+.menuBtn {
+  border-radius: 50%;
+  background-color: var(--ifm-color-primary);
+  z-index: 5;
+  box-shadow: 0 0 5px 1px #0003;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.progressBarText {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+}
