@@ -10,23 +10,23 @@ export default function PageProgressBar(): JSX.Element {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  function handleScroll() {
+  function handleScroll(): void {
     setProgress(
       +(
-        (document.documentElement.scrollTop /
+        ((document.documentElement.scrollTop || document.body.scrollTop) /
           (document.documentElement.scrollHeight -
-            document.documentElement.clientHeight)) *
+            document.documentElement.clientHeight ||
+            document.body.scrollHeight - document.body.clientHeight)) *
         100
       ).toFixed(0)
     );
   }
 
-  function handleScrollToTop() {
-    document.documentElement.scrollTop &&
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+  function handleScrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
 
   return (
