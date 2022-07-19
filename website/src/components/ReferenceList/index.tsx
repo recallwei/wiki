@@ -4,18 +4,12 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/svg/link.svg";
+import type { LinkItemType } from "@components/LinkItem";
 
 type ReferenceListProps = {
-  data: Array<ReferenceListItem>;
+  data: Array<LinkItemType>;
   wrapperClassName?: string;
   wrapperStyle: CSSProperties;
-};
-
-export type ReferenceListItem = {
-  title: string;
-  link: string;
-  src: any;
-  srcDark?: any;
 };
 
 export default function ReferenceList({
@@ -29,7 +23,7 @@ export default function ReferenceList({
       className={clsx(styles.unorderedList, wrapperClassName)}
     >
       <ul>
-        {data.map((item: ReferenceListItem, index: number) => {
+        {data.map((item: LinkItemType, index: number) => {
           return (
             <li className={styles.listItem} key={index}>
               <ThemedImage

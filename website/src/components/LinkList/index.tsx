@@ -3,18 +3,12 @@ import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
+import type { LinkItemType } from "@components/LinkItem";
 
 type LinkListProps = {
   data: [];
   wrapperClassName?: string;
   wrapperStyle: CSSProperties;
-};
-
-type LinkListItemType = {
-  title: string;
-  link: string;
-  src: any;
-  srcDark?: any;
 };
 
 export default function LinkList({
@@ -24,7 +18,7 @@ export default function LinkList({
 }: LinkListProps): JSX.Element {
   return (
     <div style={wrapperStyle} className={clsx(styles.list, wrapperClassName)}>
-      {data.map((item: LinkListItemType) => {
+      {data.map((item: LinkItemType) => {
         return (
           <div key={item.title} className={styles.item}>
             <Link to={item.link}>
