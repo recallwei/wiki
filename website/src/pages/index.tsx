@@ -22,7 +22,7 @@ import twitter from "@site/static/img/icon/twitter.png";
 import telegram from "@site/static/img/icon/telegram.png";
 import wechat from "@site/static/img/icon/wexin-mini-program.png";
 import zhihu from "@site/static/img/icon/zhihu.png";
-import ReadProgressBar from "@site/src/components/ReadProgressBar/index";
+import PageProgressBar from "@site/src/components/PageProgressBar/index";
 
 type HomepageHeaderProps = {
   isMobileDevice: boolean;
@@ -119,7 +119,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
         {!isMobileDevice && (
           <>
             <ArrowDownBtn />
-            <ReadProgressBar />
+            <PageProgressBar />
           </>
         )}
       </div>
