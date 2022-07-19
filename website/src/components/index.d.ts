@@ -8,5 +8,5 @@ declare module "@components/LinkItem" {
 }
 
 declare module "@components/ReadProgressBar" {
-  export default function ReadProgressBar() {}
+  export default function ReadProgressBar(props: Props) {}
 }
