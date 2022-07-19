@@ -6,3 +6,7 @@ declare module "@components/LinkItem" {
     srcDark?: any;
   }
 }
+
+declare module "@components/ReadProgressBar" {
+  export default function ReadProgressBar() {}
+}
