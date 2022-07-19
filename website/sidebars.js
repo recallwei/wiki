@@ -93,6 +93,39 @@ const sidebars = {
       doc("typescript/types/nullable-type", "可空类型"),
     ]),
   ],
+  react: [
+    doc("react/index", "React"),
+    category("react/hooks/index", "Hooks", [
+      doc("react/hooks/useState", "useState"),
+      doc("react/hooks/useEffect", "useEffect"),
+    ]),
+    category("react/dom/index", "DOM", [
+      doc("react/dom/dom-elements", "DOM 元素"),
+    ]),
+    category("react/style-and-css/index", "样式和 CSS", [
+      doc("react/style-and-css/css-in-javascript", "CSS in JavaScript"),
+    ]),
+    doc("react/components-interaction", "组件交互"),
+    category("react/solutions/index", "解决方案", [
+      doc("react/solutions/download-file", "文件下载"),
+      doc("react/solutions/import-image", "图片导入"),
+    ]),
+    category("react/best-practice/index", "最佳实践", [
+      doc("react/best-practice/component-design", "组件设计"),
+    ]),
+    category("react/react-router/index", "React Router", [
+      doc("react/react-router/installation", "安装 React Router"),
+      category("react/react-router/components/index", "组件", [
+        doc("react/react-router/components/link", "Link"),
+      ]),
+    ]),
+    category("react/redux/index", "Redux", [
+      doc("react/redux/installation", "安装 Redux"),
+    ]),
+    category("react/use-typescript/index", "使用 TypeScript", [
+      doc("react/use-typescript/types-in-react", "React 中的类型"),
+    ]),
+  ],
   csharp: [
     doc("csharp/index", "C#"),
     doc("csharp/environment", "🚀 搭建环境"),
@@ -300,165 +333,6 @@ const sidebars = {
               label: "安装 Sass",
             },
           ],
-        },
-      ],
-    },
-    // React
-    {
-      type: "category",
-      label: "React",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "react/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "Hooks",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/hooks/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "react/hooks/useState",
-              label: "useState",
-            },
-            {
-              type: "doc",
-              id: "react/hooks/useEffect",
-              label: "useEffect",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "DOM",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/dom/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "react/dom/dom-elements",
-              label: "DOM Elements",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "样式和 CSS",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/style-and-css/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "react/style-and-css/css-in-javascript",
-              label: "CSS in JavaScript",
-            },
-          ],
-        },
-        {
-          type: "doc",
-          id: "react/components-interaction",
-          label: "组件交互",
-        },
-        {
-          type: "category",
-          label: "解决方案",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/solutions/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "react/solutions/download-file",
-              label: "文件下载",
-            },
-            {
-              type: "doc",
-              id: "react/solutions/import-image",
-              label: "图片导入",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "最佳实践",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/best-practice/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "react/best-practice/component-design",
-              label: "组件设计",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "React Router",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/react-router/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "react/react-router/installation",
-              label: "安装 React Router",
-            },
-          ],
-        },
-        { type: "doc", id: "react/react-i18next", label: "🚀 React i18next" },
-        {
-          type: "category",
-          label: "Redux",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/redux/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "react/redux/installation",
-              label: "安装 Redux",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "使用 TypeScript",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "react/use-typescript/index",
-          },
-          items: [{}],
         },
       ],
     },
