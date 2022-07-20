@@ -75,6 +75,8 @@ const sidebars = {
     category("react/hooks/index", "Hooks", [
       doc("react/hooks/useState", "useState"),
       doc("react/hooks/useEffect", "useEffect"),
+      doc("react/hooks/useEffect", "useRef"),
+      doc("react/hooks/useEffect", "useContext"),
     ]),
     category("react/dom/index", "DOM", [
       doc("react/dom/dom-elements", "DOM 元素"),
