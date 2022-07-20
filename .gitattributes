@@ -1,5 +1,6 @@
+*.tsx linguist-detectable
 *.tsx linguist-language=ts
 # *.mdx linguist-detectable
 # *.md linguist-detectable
-*.yaml linguist-detectable
+# *.yaml linguist-detectable
 # *.json linguist-detectable
