@@ -31,6 +31,10 @@ import HyperLink from "@site/src/components/HyperLink/index";
 - `exclude` - 编译会忽略的文件列表
 - `include` - 指定全局模式，编译会包含的文件列表
 
+:::caution 注意
+**Create React App** 暂不支持 `jsconfig.json` 中的 `path` 属性，所以不能像 **TypeScript** 那样定义模块别名(alias)。
+:::
+
 <blockquote>
   💡 <code>jsconfig.json</code> 是 <code>tsconfig.json</code>
   &nbsp;的子集，关于配置信息详情请见 <HyperLink
