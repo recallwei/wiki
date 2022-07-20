@@ -1,1 +1,5 @@
 *.tsx linguist-language=TypeScript
+*.mdx linguist-detectable
+*.md linguist-detectable
+*.yaml linguist-detectable
+*.json linguist-detectable
