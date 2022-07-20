@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
-import type { LinkItemType } from "@components/LinkItem";
+import type LinkItemType from "@components/LinkItem";
 
 type LinkListProps = {
   data: [];
