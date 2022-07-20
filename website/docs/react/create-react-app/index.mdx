@@ -11,6 +11,7 @@ last_update:
 import FeatureIcon from "@site/src/components/FeatureIcon/index";
 import LinkList from "@site/src/components/LinkList/index";
 import create_react_app from "@site/static/img/icon/create_react_app.png";
+import ReferenceList from "@site/src/components/ReferenceList/index";
 
 <FeatureIcon src={create_react_app} title="Create React App" />
 <LinkList
@@ -18,6 +19,18 @@ import create_react_app from "@site/static/img/icon/create_react_app.png";
     {
       title: "配置绝对路径",
       link: "/docs/react/create-react-app/configure-absolute-path",
+      src: create_react_app,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Create React App Docs",
+      link: "https://create-react-app.dev/",
       src: create_react_app,
     },
   ]}
