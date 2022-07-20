@@ -150,10 +150,23 @@ const config = {
             ],
           },
           {
-            type: "doc",
-            docId: "algorithm/index",
+            type: "dropdown",
             label: "🖥 计算机",
             position: "left",
+            items: [
+              { type: "doc", label: "算法", docId: "algorithm/index" },
+              {
+                type: "doc",
+                label: "操作系统",
+                docId: "operating-system/index",
+              },
+              {
+                type: "doc",
+                label: "计算机网络",
+                docId: "computer-network/index",
+              },
+              { type: "doc", label: "YAML", docId: "yaml/index" },
+            ],
           },
           {
             type: "doc",

@@ -4,15 +4,14 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { isMobile, setClipBoardText } from "@site/src/utils/index";
 import {
-  isMobile,
-  setClipBoardText,
   contactMeData,
   frontendGridList,
   backendGridList,
   frontendMenuData,
   backendMenuData,
-} from "@site/src/utils/index";
+} from "@site/src/data/index";
 import GridList from "@site/src/components/GridList/index";
 import styles from "./styles.module.css";
 import favicon from "@site/static/img/favicon/favicon.png";

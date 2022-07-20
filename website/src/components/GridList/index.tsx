@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import { isMobile } from "@site/src/utils/index";
-import { GridItemType } from "@site/src/utils/index";
+import { GridItemType } from "@site/src/data/index";
 
 type GridListProps = {
   data: Array<GridItemType>;

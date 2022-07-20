@@ -812,7 +812,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "os/index",
+        id: "operating-system/index",
       },
       items: [
         {
@@ -822,12 +822,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "os/mac-os/index",
+            id: "operating-system/mac-os/index",
           },
           items: [
             {
               type: "doc",
-              id: "os/mac-os/shortcuts",
+              id: "operating-system/mac-os/shortcuts",
               label: "快捷键",
             },
           ],
@@ -839,19 +839,19 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "os/windows/index",
+            id: "operating-system/windows/index",
           },
           items: [
             {
               type: "doc",
-              id: "os/windows/expose-iis-in-lan",
+              id: "operating-system/windows/expose-iis-in-lan",
               label: "将 IIS 暴露在局域网内",
             },
           ],
         },
       ],
     },
-    // Network
+    // 计算机网络
     {
       type: "category",
       label: "计算机网络",
@@ -859,7 +859,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: "doc",
-        id: "network/index",
+        id: "computer-network/index",
       },
       items: [
         {
@@ -869,12 +869,12 @@ const sidebars = {
           collapsed: true,
           link: {
             type: "doc",
-            id: "network/dns/index",
+            id: "computer-network/dns/index",
           },
           items: [
             {
               type: "doc",
-              id: "network/dns/flush-cache",
+              id: "computer-network/dns/flush-cache",
               label: "清除 DNS 缓存",
             },
           ],
