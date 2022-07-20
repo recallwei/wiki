@@ -2,4 +2,4 @@
 # *.mdx linguist-detectable
 # *.md linguist-detectable
 *.yaml linguist-detectable
-*.json linguist-detectable
+# *.json linguist-detectable
