@@ -38,7 +38,6 @@ const sidebars = {
       doc("html/elements/img", "图片"),
     ]),
     doc("html/character-entities", "字符实体"),
-
     category("html/solutions/index", "解决方案", [
       doc("html/solutions/autocomplete", "禁用浏览器的自动补全"),
     ]),
@@ -78,6 +77,7 @@ const sidebars = {
     doc("typescript/index", "TypeScript"),
     doc("typescript/environment", "搭建环境"),
     doc("typescript/debug", "运行与调试"),
+    doc("typescript/configuration", "🚀 配置"),
     category("typescript/types/index", "类型", [
       doc("typescript/types/built-in", "内置类型"),
       doc("typescript/types/any", "any"),
@@ -112,6 +112,9 @@ const sidebars = {
     ]),
     category("react/best-practice/index", "最佳实践", [
       doc("react/best-practice/component-design", "组件设计"),
+    ]),
+    category("react/create-react-app/index", "Create React App", [
+      doc("react/create-react-app/configure-absolute-path", "配置绝对路径"),
     ]),
     category("react/react-router/index", "React Router", [
       doc("react/react-router/installation", "安装 React Router"),
