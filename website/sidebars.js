@@ -116,7 +116,7 @@ const sidebars = {
     category("react/react-router/index", "React Router", [
       doc("react/react-router/installation", "安装 React Router"),
       category("react/react-router/components/index", "组件", [
-        doc("react/react-router/components/link", "Link"),
+        doc("react/react-router/components/link", "🚀 Link"),
       ]),
     ]),
     category("react/redux/index", "Redux", [
