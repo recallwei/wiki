@@ -16,7 +16,7 @@ const BACKEND: string = "后端";
 const CSHARP: string = "C#";
 const GO: string = "Go";
 const NODE_JS: string = "Node.js";
-const MICROSOFT_SQL_SERVER: string = "Microsoft SQL Server";
+const MICROSOFT_SQLSERVER: string = "Microsoft SQL Server";
 const MONGODB: string = "MongoDB";
 const REDIS: string = "Redis";
 const MICROSOFT_AZURE: string = "Microsoft Azure";
@@ -65,7 +65,7 @@ interface BackendMenuData {
   readonly csharp: string;
   readonly go: string;
   readonly nodejs: string;
-  readonly sqlserver: string;
+  readonly microsoft_sqlserver: string;
   readonly mongodb: string;
   readonly redis: string;
   readonly azure: string;
@@ -102,7 +102,7 @@ export const backendMenuData: BackendMenuData = {
   csharp: CSHARP,
   go: GO,
   nodejs: NODE_JS,
-  sqlserver: MICROSOFT_SQL_SERVER,
+  microsoft_sqlserver: MICROSOFT_SQLSERVER,
   mongodb: MONGODB,
   redis: REDIS,
   azure: MICROSOFT_AZURE,

@@ -138,7 +138,7 @@ const config = {
               {
                 type: "doc",
                 label: "Microsoft SQL Server",
-                docId: "sqlserver/index",
+                docId: "microsoft-sqlserver/index",
               },
               { type: "doc", label: "MongoDB", docId: "mongodb/index" },
               { type: "doc", label: "Redis", docId: "redis/index" },

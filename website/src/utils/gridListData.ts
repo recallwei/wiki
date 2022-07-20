@@ -11,7 +11,7 @@ import graphql from "@site/static/img/icon/graphql.png";
 import csharp from "@site/static/img/icon/csharp.png";
 import go from "@site/static/img/icon/go.png";
 import nodejs from "@site/static/img/icon/nodejs.png";
-import sqlserver from "@site/static/img/icon/sqlserver.png";
+import microsoft_sqlserver from "@site/static/img/icon/microsoft_sqlserver.png";
 import mongodb from "@site/static/img/icon/mongodb.png";
 import redis from "@site/static/img/icon/redis.png";
 import azure from "@site/static/img/icon/azure.png";
@@ -56,7 +56,11 @@ const backendGridList: Array<GridItemType> = [
   gridItem(backendData.csharp, "/docs/csharp", csharp),
   gridItem(backendData.go, "/docs/go", go),
   gridItem(backendData.nodejs, "/docs/nodejs", nodejs),
-  gridItem(backendData.sqlserver, "/docs/sqlserver", sqlserver),
+  gridItem(
+    backendData.microsoft_sqlserver,
+    "/docs/microsoft-sqlserver",
+    microsoft_sqlserver
+  ),
   gridItem(backendData.mongodb, "/docs/mongodb", mongodb),
   gridItem(backendData.redis, "/docs/redis", redis),
   gridItem(backendData.azure, "/docs/azure", azure),

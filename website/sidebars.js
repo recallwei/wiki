@@ -116,9 +116,9 @@ const sidebars = {
     ]),
     doc("csharp/guid", "GUID"),
   ],
-  sqlserver: [
-    doc("sqlserver/index", "Microsoft SQL Server"),
-    doc("sqlserver/guid", "GUID"),
+  microsoft_sqlserver: [
+    doc("microsoft-sqlserver/index", "Microsoft SQL Server"),
+    doc("microsoft-sqlserver/guid", "GUID"),
   ],
   yaml: [doc("yaml/index", "YAML")],
 

@@ -2,7 +2,9 @@
 title: "Microsoft SQL Server"
 hide_title: true
 description: ""
-tags: ["Microsoft SQL Server"]
+tags:
+  - label: "Microsoft SQL Server"
+    permalink: "microsoft-sqlserver"
 last_update:
   date: "2022-07-10"
   author: "Bruce"
@@ -10,15 +12,15 @@ last_update:
 
 import FeatureIcon from "@site/src/components/FeatureIcon/index";
 import LinkList from "@site/src/components/LinkList/index";
-import sqlserver from "@site/static/img/icon/sqlserver.png";
+import microsoft_sqlserver from "@site/static/img/icon/microsoft_sqlserver.png";
 
-<FeatureIcon src={sqlserver} title="Microsoft SQL Server" />
+<FeatureIcon src={microsoft_sqlserver} title="Microsoft SQL Server" />
 <LinkList
   data={[
     {
       title: "GUID",
-      link: "/docs/sqlserver/guid",
-      src: sqlserver,
+      link: "/docs/microsoft-sqlserver/guid",
+      src: microsoft_sqlserver,
     },
   ]}
 />
