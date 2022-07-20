@@ -15,10 +15,6 @@
   position: relative;
 }
 
-.cardWrapper:hover .title {
-  text-decoration: underline;
-}
-
 .card {
   background-image: linear-gradient(
     25deg,
