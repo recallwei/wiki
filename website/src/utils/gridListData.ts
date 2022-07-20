@@ -5,7 +5,7 @@ import javascript from "@site/static/img/icon/javascript.png";
 import typescript from "@site/static/img/icon/typescript.png";
 import react from "@site/static/img/icon/react.png";
 import docusaurus from "@site/static/img/icon/docusaurus.png";
-import wexinMiniProgram from "@site/static/img/icon/wexin-mini-program.png";
+import wexin_mini_program from "@site/static/img/icon/wexin_mini_program.png";
 import npm from "@site/static/img/icon/npm.png";
 import graphql from "@site/static/img/icon/graphql.png";
 import csharp from "@site/static/img/icon/csharp.png";
@@ -46,7 +46,7 @@ const frontendGridList: Array<GridItemType> = [
   gridItem(
     frontendData.wexinMiniprogram,
     "/docs/wexin-mini-program",
-    wexinMiniProgram
+    wexin_mini_program
   ),
   gridItem(frontendData.npm, "/docs/npm", npm),
   gridItem(frontendData.graphql, "/docs/graphql", graphql),

@@ -10,7 +10,7 @@
   text-align: center;
   background-position: center;
   background-size: cover;
-  background-image: url("/static/img/background/home-background.jpeg");
+  background-image: url("/static/img/background/home_background.jpeg");
   background-color: var(--ifm-hero-background-color);
   color: var(--ifm-hero-text-color);
   height: 30vh;
