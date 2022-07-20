@@ -6,7 +6,7 @@ export { themeColor } from "./styleConstants";
 export {
   frontendGridList,
   backendGridList,
-  GridItemType,
+  type GridItemType,
 } from "./gridListData";
 
 // Functions
