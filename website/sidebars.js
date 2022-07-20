@@ -1,27 +1,4 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-
-function doc(id, label) {
-  return {
-    type: "doc",
-    id: id,
-    label: label,
-  };
-}
-
-function category(id, label, items) {
-  return {
-    type: "category",
-    label: label,
-    collapsible: true,
-    collapsed: true,
-    link: {
-      type: "doc",
-      id: id,
-    },
-    items: items,
-  };
-}
-
 const sidebars = {
   markdown: [
     doc("markdown/index", "Markdown"),
@@ -1023,5 +1000,27 @@ const sidebars = {
     },
   ],
 };
+
+function doc(id, label) {
+  return {
+    type: "doc",
+    id: id,
+    label: label,
+  };
+}
+
+function category(id, label, items) {
+  return {
+    type: "category",
+    label: label,
+    collapsible: true,
+    collapsed: true,
+    link: {
+      type: "doc",
+      id: id,
+    },
+    items: items,
+  };
+}
 
 module.exports = sidebars;
