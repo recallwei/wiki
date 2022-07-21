@@ -122,6 +122,7 @@ const sidebars = {
   ],
   yaml: [
     doc("yaml/index", "YAML"),
+    doc("yaml/scalars", "纯量"),
     doc("yaml/array", "数组"),
     doc("yaml/object", "对象"),
     doc("yaml/composite-structure", "复合结构"),
