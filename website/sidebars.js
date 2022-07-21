@@ -528,6 +528,23 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: "category",
+          label: "运维",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "wexin-mini-program/operation-and-maintenance/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "wexin-mini-program/operation-and-maintenance/security-detection",
+              label: "微信小程序审核的安全检测",
+            },
+          ],
+        },
       ],
     },
     // npm

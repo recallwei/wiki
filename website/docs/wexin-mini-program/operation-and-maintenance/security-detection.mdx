@@ -1,0 +1,48 @@
+---
+title: "微信小程序审核的安全检测"
+description: ""
+tags:
+  - label: "微信小程序"
+    permalink: "wechat-mini-program"
+last_update:
+  date: "2022-07-21"
+  author: "Bruce"
+---
+
+import TH from "@site/src/components/TextHighlight/index";
+import ReferenceList from "@site/src/components/ReferenceList/index";
+import wexin_mini_program from "@site/static/img/icon/wexin_mini_program.png";
+
+> **微信小程序** 在提交审核后，微信官方会对微信小程序的服务器发起安全检测，会在短时间发起大量的请求。
+
+## 检测类型
+
+<p className="md-mb-4">漏洞风险类型包括：</p>
+
+- SQL 注入
+- XSS
+- CORS 配置不当
+- 敏感信息泄露
+
+## 检测时间
+
+检测时间约 <TH>3 个小时以内</TH>，我们需要注意这段时间大量的请求会对服务器造成影响。  
+由于我司微信小程序的服务器部署在 **Azure** 上，使用了 **APIM**，我们在 **Application Insight** 上看到了大量的 **401** 错误。
+
+![Application Insight Error](./application_insight_error.png)
+
+可以看到发起的请求大多被拼接上了 SQL 语句，很显然是 **SQL 注入攻击**。
+
+![Error Message](./error_message.png)
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "小程序安全检测上线公告",
+      link: "https://developers.weixin.qq.com/community/minihome/doc/0008ea401c89c02cff2d1345051001",
+      src: wexin_mini_program,
+    },
+  ]}
+/>
