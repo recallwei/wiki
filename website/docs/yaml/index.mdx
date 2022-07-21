@@ -12,7 +12,49 @@ last_update:
 
 import FeatureIcon from "@site/src/components/FeatureIcon/index";
 import yaml from "@site/static/img/icon/yaml.png";
+import yaml_dark from "@site/static/img/icon-dark-mode/yaml_dark.png";
 
-<FeatureIcon src={yaml} title="YAML" />
+import LinkList from "@site/src/components/LinkList/index";
 
-> YAML 是一种数据序列化语言，通常用于编写配置文件。
+<FeatureIcon src={yaml} srcDark={yaml_dark} title="YAML" />
+
+> YAML 是一种可读性高的数据序列化语言，通常用于编写配置文件。
+
+## 基本特性
+
+- 大小写**敏感**
+- 使用**缩进**示层级关系
+- 缩进不允许使用 `tab`，只允许空格
+- 缩进的空格数不重要，只要相同层级的元素**左对齐**即可
+- `#` 表示注释
+
+## 数据类型
+
+<LinkList
+  data={[
+    {
+      title: "纯量",
+      link: "/docs/yaml/scalars",
+      src: yaml,
+      srcDark: yaml_dark,
+    },
+    {
+      title: "数组",
+      link: "/docs/yaml/array",
+      src: yaml,
+      srcDark: yaml_dark,
+    },
+    {
+      title: "对象",
+      link: "/docs/yaml/object",
+      src: yaml,
+      srcDark: yaml_dark,
+    },
+    {
+      title: "复合结构",
+      link: "/docs/yaml/composite-structure",
+      src: yaml,
+      srcDark: yaml_dark,
+    },
+  ]}
+/>

@@ -120,7 +120,12 @@ const sidebars = {
     doc("microsoft-sqlserver/index", "Microsoft SQL Server"),
     doc("microsoft-sqlserver/guid", "GUID"),
   ],
-  yaml: [doc("yaml/index", "YAML")],
+  yaml: [
+    doc("yaml/index", "YAML"),
+    doc("yaml/array", "数组"),
+    doc("yaml/object", "对象"),
+    doc("yaml/composite-structure", "复合结构"),
+  ],
 
   frontend: [
     // Home

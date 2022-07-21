@@ -13,13 +13,13 @@ last_update:
 import FeatureIcon from "@site/src/components/FeatureIcon/index";
 import LinkList from "@site/src/components/LinkList/index";
 import markdown from "@site/static/img/icon/markdown.png";
-import markdownDarkMode from "@site/static/img/icon-dark-mode/markdown.png";
+import markdown_dark from "@site/static/img/icon-dark-mode/markdown_dark.png";
 import html from "@site/static/img/icon/html.png";
-import markdownReact from "@site/static/img/icon/mdx.png";
-import markdownReactDarkMode from "@site/static/img/icon-dark-mode/mdx.png";
+import MDX from "@site/static/img/icon/mdx.png";
+import mdx_dark from "@site/static/img/icon-dark-mode/mdx_dark.png";
 import ReferenceList from "@site/src/components/ReferenceList/index";
 
-<FeatureIcon src={markdown} srcDark={markdownDarkMode} title="Markdown" />
+<FeatureIcon src={markdown} srcDark={markdown_dark} title="Markdown" />
 <LinkList
   data={[
     {
@@ -31,19 +31,19 @@ import ReferenceList from "@site/src/components/ReferenceList/index";
       title: "标题",
       link: "/docs/markdown/headings",
       src: markdown,
-      srcDark: markdownDarkMode,
+      srcDark: markdown_dark,
     },
     {
       title: "段落",
       link: "/docs/markdown/paragraphs",
       src: markdown,
-      srcDark: markdownDarkMode,
+      srcDark: markdown_dark,
     },
     {
       title: "换行",
       link: "/docs/markdown/line-breaks",
       src: markdown,
-      srcDark: markdownDarkMode,
+      srcDark: markdown_dark,
     },
   ]}
 />
@@ -56,19 +56,19 @@ import ReferenceList from "@site/src/components/ReferenceList/index";
       title: "Markdown Guide",
       link: "https://www.markdownguide.org/",
       src: markdown,
-      srcDark: markdownDarkMode,
+      srcDark: markdown_dark,
     },
     {
       title: "MDX.js",
       link: "https://mdxjs.com/",
-      src: markdownReact,
-      srcDark: markdownReactDarkMode,
+      src: MDX,
+      srcDark: mdx_dark,
     },
     {
       title: "MDX",
       link: "https://mdx-git-renovate-babel-monorepo-mdx.vercel.app/",
-      src: markdownReact,
-      srcDark: markdownReactDarkMode,
+      src: MDX,
+      srcDark: mdx_dark,
     },
   ]}
 />
