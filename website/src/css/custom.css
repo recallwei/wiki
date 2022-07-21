@@ -141,14 +141,17 @@ code {
   border-radius: 1px;
 }
 
+/* TODO - Content image Component */
+
 .markdown img {
   display: block;
-  border-radius: 4px;
-  box-shadow: 0 0 5px 1px #0003;
+  /* border-radius: 4px;
+  box-shadow: 0 0 5px 1px #0003; */
 }
-[data-theme="dark"] .markdown img {
+
+/* [data-theme="dark"] .markdown img {
   box-shadow: 0 0 5px 1px #fff;
-}
+} */
 
 .markdown strong {
   color: var(--ifm-color-primary-light);

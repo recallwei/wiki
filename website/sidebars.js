@@ -541,7 +541,7 @@ const sidebars = {
             {
               type: "doc",
               id: "wexin-mini-program/operation-and-maintenance/security-detection",
-              label: "微信小程序审核的安全检测",
+              label: "审核的安全检测",
             },
           ],
         },
