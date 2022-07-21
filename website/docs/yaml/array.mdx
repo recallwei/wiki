@@ -1,0 +1,40 @@
+---
+title: "数组"
+description: ""
+tags:
+  - label: "YAML"
+    permalink: "yaml"
+last_update:
+  date: "2022-07-21"
+  author: "Bruce"
+---
+
+## 语法
+
+由连词线开头组成的行表示数组：
+
+```yaml title="YAML"
+- Breakfast
+- Lunch
+- Supper
+```
+
+转化为 **JavaScript** 为：
+
+```javascript title="JavaScript"
+let meal = ["Breakfast", "Lunch", "Supper"];
+```
+
+## 行内表示
+
+**YAML** 也允许数组的行内写法：
+
+```yaml title="YAML"
+Meal: [Breakfast, Lunch, Supper]
+```
+
+转成 **JSON** 等同于：
+
+```json title="JSON"
+{ "Meal": ["Breakfast", "Lunch", "Supper"] }
+```

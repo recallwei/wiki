@@ -1,0 +1,120 @@
+---
+title: "纯量"
+description: ""
+tags:
+  - label: "YAML"
+    permalink: "yaml"
+last_update:
+  date: "2022-07-21"
+  author: "Bruce"
+---
+
+> 纯量是**最基本的**、**不可再分**的值，包括：
+
+- 布尔值
+- 整数
+- 浮点数
+- Null
+- 字符串
+- 日期
+- 时间
+
+## 布尔值
+
+布尔值用 `true` 和 `false` 表示。
+
+```yaml title="YAML"
+boolean:
+  - true
+  - false
+  - True
+  - False
+  - TRUE
+  - FALSE
+```
+
+:::tip 提示
+
+大写或小写的 `true` 和 `false` 都可以表示布尔值。
+
+:::
+
+## 整数
+
+```yaml title="YAML"
+number:
+  - 123
+  - 0b1010_0111_0100_1010_1110
+```
+
+:::tip 提示
+
+可以使用**二进制数**。
+
+:::
+
+## 浮点数
+
+```yaml title="YAML"
+float:
+  - 3.14
+  - 6.8523015e+5
+```
+
+:::tip 提示
+
+可以使用**科学计数法**。
+
+:::
+
+## Null
+
+**null** 用 `~` 表示：
+
+```yaml title="YAML"
+null: ~
+```
+
+## 字符串
+
+```yaml title="YAML"
+string:
+  - Bruce
+  - "Hello world"
+  - "Hello \n\t world!"
+  - newline
+    newline2 # 字符串可以拆成多行，每一行会被转化成一个空格
+```
+
+:::tip 提示
+
+- 可以使用可以使用**双引号**或者**单引号**包裹**特殊字符**。
+- 字符串可以**拆成多行**，每一行会被**转化成一个空格**。
+
+:::
+
+## 日期
+
+```yaml title="YAML"
+date:
+  - 2022-07-21
+```
+
+:::tip 提示
+
+日期必须使用 **ISO 8601** 格式，即 `yyyy-MM-dd`。
+
+:::
+
+## 时间
+
+```yaml title="YAML"
+datetime:
+  - 2022-07-21T09:00:00+08:00
+```
+
+:::tip 提示
+
+时间使用 **ISO 8601** 格式，时间和日期之间使用 **T** 连接，最后使用 **+** 代表时区。
+
+:::

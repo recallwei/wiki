@@ -1,0 +1,34 @@
+---
+title: "复合结构"
+description: ""
+tags:
+  - label: "YAML"
+    permalink: "yaml"
+last_update:
+  date: "2022-07-21"
+  author: "Bruce"
+---
+
+在 **YAML** 中，对象和数组可以结合使用，形成复合结构。
+
+```yaml title="YAML"
+Frameworks:
+  - React
+  - Vue
+  - Angular
+websites:
+  React: reactjs.org
+  Vue: vuejs.org
+  Angular: angular.io
+```
+
+```json title="JSON"
+{
+  "Frameworks": ["React", "Vue", "Angular"],
+  "websites": {
+    "React": "reactjs.org",
+    "Vue": "vuejs.org",
+    "Angular": "angular.io"
+  }
+}
+```

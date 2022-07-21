@@ -1,0 +1,42 @@
+---
+title: "对象"
+description: ""
+tags:
+  - label: "YAML"
+    permalink: "yaml"
+last_update:
+  date: "2022-07-21"
+  author: "Bruce"
+---
+
+## 语法
+
+对象键值对以冒号结构 `key: value` 的形式表示，在 **YAML** 中与 **JSON** 中的表示方法如下：
+
+```yaml title="YAML"
+username: Bruce
+```
+
+```json title="JSON"
+{ "username": "Bruce" }
+```
+
+:::caution 注意
+
+冒号后要**添加一个空格**。
+
+:::
+
+## 行内表示
+
+**YAML** 也允许对象的行内写法：
+
+```yaml title="YAML"
+user: { id:1, name:Bruce }
+```
+
+转成 **JSON** 等同于：
+
+```json title="JSON"
+{ "user": { "id": 1, "name": "Bruce" } }
+```
