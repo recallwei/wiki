@@ -1,0 +1,48 @@
+.cardWrapper {
+  position: fixed;
+  z-index: 1024;
+  right: 10px;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: #00000014 0px 0px 10px;
+  padding: 12px 12px 12px 14px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.closeBtn {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+}

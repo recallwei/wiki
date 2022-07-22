@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -22,6 +22,7 @@ import telegram from "@site/static/img/icon/telegram.png";
 import wechat from "@site/static/img/icon/wexin_mini_program.png";
 import zhihu from "@site/static/img/icon/zhihu.png";
 import PageProgressBar from "@site/src/components/PageProgressBar/index";
+import Notification from "@site/src/components/Notification/index";
 
 type HomepageHeaderProps = {
   isMobileDevice: boolean;
@@ -32,6 +33,7 @@ type ContactMeBtnProps = {
   readonly src: any;
   link: string;
   isCopyBtn?: boolean;
+  changeShow?: any;
 };
 
 export default function Home(): JSX.Element {
@@ -69,6 +71,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const BRUCE = "Bruce Song";
   const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
+  const [show, setShow] = useState(false);
   return (
     <header className={clsx(styles.heroBanner)}>
       <div className={clsx(styles.heroTextContainer)}>
@@ -110,6 +113,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
             src={gmail}
             link={contactMeData.gmailAddress}
             isCopyBtn
+            changeShow={setShow}
           />
           <ContactMeBtn title={contactMeData.twitter} src={twitter} link="/" />
           <ContactMeBtn title={contactMeData.wechat} src={wechat} link="/" />
@@ -121,6 +125,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
             <PageProgressBar />
           </>
         )}
+        <Notification show={show} changeShow={setShow} />
       </div>
     </header>
   );
@@ -131,6 +136,7 @@ function ContactMeBtn({
   src,
   link,
   isCopyBtn = false,
+  changeShow,
 }: ContactMeBtnProps): JSX.Element {
   // TODO - Add a tip for copy action
   if (isCopyBtn && typeof link !== "undefined") {
@@ -139,6 +145,7 @@ function ContactMeBtn({
         className={styles.navLink}
         onClick={() => {
           setClipBoardText(link);
+          changeShow(true);
         }}
       >
         <div className={styles.imageWrapper}>
