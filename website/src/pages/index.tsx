@@ -33,7 +33,7 @@ type ContactMeBtnProps = {
   readonly src: any;
   link: string;
   isCopyBtn?: boolean;
-  changeShow?: any;
+  copySuccess?: () => void;
 };
 
 export default function Home(): JSX.Element {
@@ -71,7 +71,15 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const BRUCE = "Bruce Song";
   const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
+
+  function copySuccess(): void {
+    setShow(true);
+    setTimeout(() => {
+      setShow(false);
+    }, 3000);
+  }
+
   return (
     <header className={clsx(styles.heroBanner)}>
       <div className={clsx(styles.heroTextContainer)}>
@@ -113,7 +121,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
             src={gmail}
             link={contactMeData.gmailAddress}
             isCopyBtn
-            changeShow={setShow}
+            copySuccess={copySuccess}
           />
           <ContactMeBtn title={contactMeData.twitter} src={twitter} link="/" />
           <ContactMeBtn title={contactMeData.wechat} src={wechat} link="/" />
@@ -136,7 +144,7 @@ function ContactMeBtn({
   src,
   link,
   isCopyBtn = false,
-  changeShow,
+  copySuccess,
 }: ContactMeBtnProps): JSX.Element {
   // TODO - Add a tip for copy action
   if (isCopyBtn && typeof link !== "undefined") {
@@ -145,7 +153,7 @@ function ContactMeBtn({
         className={styles.navLink}
         onClick={() => {
           setClipBoardText(link);
-          changeShow(true);
+          copySuccess && copySuccess();
         }}
       >
         <div className={styles.imageWrapper}>

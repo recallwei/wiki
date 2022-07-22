@@ -9,7 +9,7 @@ type FeatureIconType = {
   srcDark?: any;
   title: string;
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
 };
 
 export default function FeatureIcon({

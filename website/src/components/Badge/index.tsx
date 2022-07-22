@@ -7,7 +7,7 @@ type BadgeType = {
   color?: string;
   url?: string;
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
 };
 
 // TODO - Refactor: Use Link Component

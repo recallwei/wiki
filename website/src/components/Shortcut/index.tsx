@@ -5,7 +5,7 @@ import clsx from "clsx";
 type ShortcutProps = {
   children: ReactNode;
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
 };
 
 export default function Shortcut({

@@ -8,7 +8,7 @@ import type LinkItemType from "@components/LinkItem";
 type LinkListProps = {
   data: [];
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
 };
 
 export default function LinkList({

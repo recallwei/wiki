@@ -4,12 +4,12 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import ThemedImage from "@theme/ThemedImage";
 import LinkSVG from "@site/static/svg/link.svg";
-import type { LinkItemType } from "@components/LinkItem";
+import type LinkItemType from "@components/LinkItem";
 
 type ReferenceListProps = {
   data: Array<LinkItemType>;
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
 };
 
 export default function ReferenceList({

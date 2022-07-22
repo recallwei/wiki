@@ -12,8 +12,8 @@ type TableProps = {
     caption: ReactNode;
   };
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
-  mobileWrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
+  mobileWrapperStyle?: CSSProperties;
 };
 
 enum Position {

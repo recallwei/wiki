@@ -11,7 +11,7 @@ type HyperLinkProps = {
   link: string;
   openWindow?: boolean;
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
 };
 
 export default function HyperLink({

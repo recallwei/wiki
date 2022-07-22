@@ -9,7 +9,7 @@ type AvatarType = {
   src: any;
   positionVertical: boolean;
   wrapperClassName?: string;
-  wrapperStyle: CSSProperties;
+  wrapperStyle?: CSSProperties;
 };
 
 export default function Avatar({
