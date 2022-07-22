@@ -270,7 +270,7 @@ const config = {
         appId: "2MFWID6114",
         apiKey: "73035bd8b4198d6a191e424ced0b641b",
         indexName: "bruce-wiki",
-        contextualSearch: true,
+        contextualSearch: false,
         externalUrlRegex: "external\\.com|domain\\.com",
         searchParameters: {},
         searchPagePath: "search",
