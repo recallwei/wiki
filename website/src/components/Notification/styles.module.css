@@ -6,7 +6,7 @@
   background-color: #fff;
   border-radius: 4px;
   box-shadow: #00000014 0px 0px 10px;
-  padding: 12px 12px 12px 14px;
+  padding: 4px 4px 4px 6px;
 }
 
 .contentWrapper {
@@ -14,6 +14,12 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  gap: 4px;
+}
+
+.checkSvg {
+  height: 20px;
+  width: 20px;
 }
 
 .title {
@@ -45,4 +51,10 @@
   -moz-transition: all ease 1s;
   -o-transition: all ease 1s;
   -ms-transition: all ease 1s;
+}
+
+@media screen and (min-width: 992px) {
+  .cardWrapper {
+    padding: 12px 12px 12px 14px;
+  }
 }

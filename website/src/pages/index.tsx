@@ -77,7 +77,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
     setShow(true);
     setTimeout(() => {
       setShow(false);
-    }, 3000);
+    }, 4000);
   }
 
   return (
