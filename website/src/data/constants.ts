@@ -45,6 +45,7 @@ const ZHIHU: string = "知乎";
 const GITHUB_LINK: string = "https://github.com/recallwei/";
 const TELEGRAM_LINK: string = "https://t.me/recallwei/";
 const GMAIL_ADDRESS: string = "recall4056@gmail.com";
+const WECHAT_ACCOUNT: string = "LastAdieus";
 
 interface FrontendMenuData {
   readonly frontend: string;
@@ -81,6 +82,7 @@ interface ContactMeData {
   readonly githubLink: string;
   readonly telegramLink: string;
   readonly gmailAddress: string;
+  readonly wechatAccount: string;
 }
 
 export const frontendMenuData: FrontendMenuData = {
@@ -118,4 +120,5 @@ export const contactMeData: ContactMeData = {
   githubLink: GITHUB_LINK,
   telegramLink: TELEGRAM_LINK,
   gmailAddress: GMAIL_ADDRESS,
+  wechatAccount: WECHAT_ACCOUNT,
 };

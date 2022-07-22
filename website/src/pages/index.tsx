@@ -31,7 +31,7 @@ type HomepageHeaderProps = {
 type ContactMeBtnProps = {
   readonly title?: string;
   readonly src: any;
-  link: string;
+  link?: string;
   isCopyBtn?: boolean;
   copySuccess?: () => void;
 };
@@ -124,8 +124,18 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
             copySuccess={copySuccess}
           />
           <ContactMeBtn title={contactMeData.twitter} src={twitter} link="/" />
-          <ContactMeBtn title={contactMeData.wechat} src={wechat} link="/" />
-          <ContactMeBtn title={contactMeData.zhihu} src={zhihu} link="/" />
+          <ContactMeBtn
+            title={contactMeData.wechat}
+            src={wechat}
+            link={contactMeData.wechatAccount}
+            isCopyBtn
+            copySuccess={copySuccess}
+          />
+          <ContactMeBtn
+            title={contactMeData.zhihu}
+            src={zhihu}
+            link={contactMeData.gmailAddress}
+          />
         </div>
         {!isMobileDevice && (
           <>
