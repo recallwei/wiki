@@ -6,9 +6,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 // const oceanicNext = require("prism-react-renderer/themes/oceanicNext");
 // const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 
+require("dotenv").config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  customFields: {},
+  customFields: { apiBaseUrl: process.env },
   title: "Bruce's Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https://bruce-wiki.vercel.app",
