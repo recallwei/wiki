@@ -10,7 +10,7 @@ require("dotenv").config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  customFields: { apiBaseUrl: process.env },
+  customFields: { apiBaseUrl: process.env.API_BASE_URL },
   title: "Bruce's Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https://bruce-wiki.vercel.app",
