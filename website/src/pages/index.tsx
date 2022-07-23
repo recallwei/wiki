@@ -72,7 +72,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
   const BRUCE = "Bruce Song";
   const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
   const [show, setShow] = useState<boolean>(false);
-
+  console.log(siteConfig.customFields?.apiBaseUrl);
   function copySuccess(): void {
     setShow(true);
     setTimeout(() => {
