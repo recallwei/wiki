@@ -116,6 +116,14 @@ const sidebars = {
     ]),
     doc("csharp/guid", "GUID"),
   ],
+  nodejs: [
+    doc("nodejs/index", "Node.js"),
+    doc("nodejs/environment", "🚀 搭建环境"),
+    doc("nodejs/environment-variable", "🚀 环境变量"),
+    category("nodejs/express/index", "🚀 Express", [
+      doc("nodejs/express/installation", "安装"),
+    ]),
+  ],
   microsoft_sqlserver: [
     doc("microsoft-sqlserver/index", "Microsoft SQL Server"),
     doc("microsoft-sqlserver/guid", "GUID"),
@@ -706,41 +714,6 @@ const sidebars = {
             id: "go/functions/index",
           },
           items: [],
-        },
-      ],
-    },
-    // Node.js
-    {
-      type: "category",
-      label: "Node.js",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "nodejs/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "nodejs/environment",
-          label: "🚀 搭建环境",
-        },
-        {
-          type: "category",
-          label: "🚀 Express",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "nodejs/express/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "nodejs/express/installation",
-              label: "🚀 安装",
-            },
-          ],
         },
       ],
     },
