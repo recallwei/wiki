@@ -87,7 +87,8 @@ const config = {
       },
       announcementBar: {
         id: "support_us",
-        content: "I am currently learning React and Go...",
+        content:
+          "I am currently learning TypeScript and building a RESTful API...",
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
         isCloseable: true,
