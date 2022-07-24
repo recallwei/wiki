@@ -11,7 +11,8 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "translate": "docusaurus write-translations",
-    "lint": "npx eslint . --ext .ts"
+    "lint": "npx eslint . --ext .ts",
+    "dev": "yarn lint && yarn start"
   },
   "dependencies": {
     "@docusaurus/core": "latest",
