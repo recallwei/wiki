@@ -1,8 +1,14 @@
 module.exports = {
-  extends: ["plugin:@docusaurus/recommended"],
-  plugins: ["@docusaurus"],
-  rules: {
-    "@docusaurus/string-literal-i18n-messages": "error",
-    "@docusaurus/no-untranslated-text": "warn",
+  env: {
+    node: true,
+    es2021: true,
   },
+  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  plugins: ["@typescript-eslint"],
+  rules: {},
 };

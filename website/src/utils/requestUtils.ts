@@ -9,6 +9,7 @@ export enum RequestMethod {
 export async function sendRequest(
   url: string,
   method: RequestMethod,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any
 ) {
   return fetch(url, {

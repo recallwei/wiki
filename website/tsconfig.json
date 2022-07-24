@@ -1,6 +1,7 @@
 {
   // "extends": "@tsconfig/docusaurus/tsconfig.json",
-  // "exclude": ["node_modules"],
+  "exclude": ["node_modules", ".eslintrc.js"],
+  "include": ["./**/*"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 

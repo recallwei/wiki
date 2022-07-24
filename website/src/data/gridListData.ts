@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import markdown from "@site/static/img/icon/markdown.png";
 import html from "@site/static/img/icon/html.png";
 import css from "@site/static/img/icon/css.png";
