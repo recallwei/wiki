@@ -135,6 +135,10 @@ const sidebars = {
     doc("yaml/object", "对象"),
     doc("yaml/composite-structure", "复合结构"),
   ],
+  microsoft_azure: [
+    doc("microsoft-azure/index", "Microsoft Azure"),
+    doc("microsoft-azure/login-azure-cn", "🚀使用中国区 Azure"),
+  ],
 
   frontend: [
     // Home
@@ -762,24 +766,6 @@ const sidebars = {
               label: "🚀 Key",
             },
           ],
-        },
-      ],
-    },
-    // Microsoft Azure
-    {
-      type: "category",
-      label: "Microsoft Azure",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "microsoft-azure/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "microsoft-azure/login-azure-cn",
-          label: "🚀 使用中国区 Azure",
         },
       ],
     },
