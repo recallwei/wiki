@@ -1,0 +1,48 @@
+---
+title: "uuid"
+description: "npm uuid"
+tags:
+  - label: "npm"
+    permalink: "npm"
+  - label: "GUID"
+    permalink: "guid"
+last_update:
+  date: "2022-07-27"
+  author: "Bruce"
+---
+
+import ReferenceList from "@site/src/components/ReferenceList/index";
+import npm from "@site/static/img/icon/npm.png";
+
+> 支持 **TypeScript** 声明 - `@types/uuid`
+
+> **uuid** 用于在 node 或浏览器环境生成 UUID。
+
+## 安装
+
+```bash npm2yarn
+npm install uuid
+```
+
+```javascript title="JavaScript"
+import { v4 as uuidv4 } from "uuid";
+const uuid = uuidv4();
+console.log(uuid);
+// expected: 6212eac1-cc00-43d6-a7bd-8aa5fa032450
+```
+
+## uuid v4
+
+`uuid v4()` 方法用于生成**完全随机**的 UUID，这是最通用的一个生成 UUID 的方法，其他方法例如 `uuid.v1()`，`uuid.v3()`，`uuid.v5()` 均是基于时间戳或命名空间来生成的。
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "npm : uuid",
+      link: "https://www.npmjs.com/package/uuid",
+      src: npm,
+    },
+  ]}
+/>

@@ -48,6 +48,7 @@ const sidebars = {
       doc("javascript/solutions/possessing-date", "日期、时间处理"),
       doc("javascript/solutions/get-url-parameter", "获取 URL Query 参数"),
       doc("javascript/solutions/copy-text-to-clipboard", "复制文本至剪切板"),
+      doc("javascript/solutions/generate-a-guid", "生成 GUID"),
     ]),
   ],
   typescript: [
@@ -604,6 +605,11 @@ const sidebars = {
           type: "doc",
           id: "npm/patch-package",
           label: "patch-package",
+        },
+        {
+          type: "doc",
+          id: "npm/uuid",
+          label: "uuid",
         },
         {
           type: "category",
