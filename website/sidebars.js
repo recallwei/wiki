@@ -27,7 +27,13 @@ const sidebars = {
       doc("javascript/data-type/type-conversion", "🚀 类型转换"),
     ]),
     category("javascript/operators-and-expressions/index", "运算符和表达式", [
-      doc("javascript/operators-and-expressions/bitwise-not", "按位非"),
+      doc("javascript/operators-and-expressions/bitwise-not", "按位非 ~"),
+      doc("javascript/operators-and-expressions/logic-or", "逻辑或 ||"),
+      doc(
+        "javascript/operators-and-expressions/nullish-coalescing",
+        "空值合并 ??"
+      ),
+      doc("javascript/operators-and-expressions/option-chaining", "可选链 ?."),
       doc(
         "javascript/operators-and-expressions/destructuring-assignment",
         "解构赋值"
