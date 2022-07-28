@@ -1,0 +1,35 @@
+---
+title: "ExecutionPolicy"
+description: ""
+tags:
+  - label: "PowerShell"
+    permalink: "powershell"
+last_update:
+  date: "2022-07-28"
+  author: "Bruce"
+---
+
+import ReferenceList from "@site/src/components/ReferenceList/index";
+import microsoft from "@site/static/img/icon/microsoft.png";
+
+> **PowerShell** 执行策略是一项安全功能，用于控制 **PowerShell** 加载配置文件和运行脚本的条件。 此功能有助于防止恶意脚本的执行。
+
+可以使用 `Get-ExecutionPolicy` 来检测当前使用的执行策略。使用 `Set-ExecutionPolicy` 来更改执行策略，绕过执行策略以执行脚本。
+
+## 无法执行 npm install --location=global yarn
+
+由于我的 Windows 笔记本上安装了 PowerShell，其默认的执行策略不允许我在 cmd 中执行 `npm install --location=global yarn`，因为该脚本不是受信任的。
+
+我通过执行 `Set-ExecutionPolicy RemoteSigned` 改变了默认的执行策略，便可在全局安装 yarn package。
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Microsoft Docs - about_Execution_Policies",
+      link: "https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2",
+      src: microsoft,
+    },
+  ]}
+/>

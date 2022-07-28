@@ -7,6 +7,7 @@ const sidebars = {
     doc("markdown/paragraphs", "段落"),
     doc("markdown/line-breaks", "🚀 换行符"),
   ],
+
   html: [
     doc("html/index", "HTML"),
     category("html/elements/index", "标签", [
@@ -19,6 +20,9 @@ const sidebars = {
       doc("html/solutions/autocomplete", "禁用浏览器的自动补全"),
     ]),
   ],
+
+  css: [doc("css/index", "CSS")],
+
   javascript: [
     doc("javascript/index", "JavaScript"),
     category("javascript/data-type/index", "数据类型", [
@@ -58,6 +62,7 @@ const sidebars = {
       doc("javascript/solutions/generate-a-guid", "生成 GUID"),
     ]),
   ],
+
   typescript: [
     doc("typescript/index", "TypeScript"),
     doc("typescript/environment", "搭建环境"),
@@ -78,6 +83,7 @@ const sidebars = {
       doc("typescript/types/nullable-type", "可空类型"),
     ]),
   ],
+
   react: [
     doc("react/index", "React"),
     category("react/hooks/index", "Hooks", [
@@ -116,6 +122,17 @@ const sidebars = {
       doc("react/use-typescript/types-in-react", "React 中的类型"),
     ]),
   ],
+
+  docusaurus: [doc("docusaurus/index", "Docusaurus")],
+
+  wexin_mini_program: [doc("wexin-mini-program/index", "微信小程序")],
+
+  npm: [doc("npm/index", "npm")],
+
+  yarn: [doc("yarn/index", "Yarn"), doc("yarn/cli", "CLI")],
+
+  graphql: [doc("graphql/index", "GraphQL")],
+
   csharp: [
     doc("csharp/index", "C#"),
     doc("csharp/environment", "🚀 搭建环境"),
@@ -124,6 +141,9 @@ const sidebars = {
     ]),
     doc("csharp/guid", "GUID"),
   ],
+
+  go: [doc("go/index", "Go")],
+
   nodejs: [
     doc("nodejs/index", "Node.js"),
     doc("nodejs/environment", "🚀 搭建环境"),
@@ -132,10 +152,21 @@ const sidebars = {
       doc("nodejs/express/installation", "安装"),
     ]),
   ],
+
   microsoft_sqlserver: [
     doc("microsoft-sqlserver/index", "Microsoft SQL Server"),
     doc("microsoft-sqlserver/guid", "GUID"),
   ],
+
+  mongodb: [doc("mongodb/index", "MongoDB")],
+
+  redis: [doc("redis/index", "Redis")],
+
+  microsoft_azure: [
+    doc("microsoft-azure/index", "Microsoft Azure"),
+    doc("microsoft-azure/login-azure-cn", "🚀使用中国区 Azure"),
+  ],
+
   yaml: [
     doc("yaml/index", "YAML"),
     doc("yaml/scalars", "纯量"),
@@ -143,10 +174,17 @@ const sidebars = {
     doc("yaml/object", "对象"),
     doc("yaml/composite-structure", "复合结构"),
   ],
-  microsoft_azure: [
-    doc("microsoft-azure/index", "Microsoft Azure"),
-    doc("microsoft-azure/login-azure-cn", "🚀使用中国区 Azure"),
+
+  powershell: [
+    doc("powershell/index", "PowerShell"),
+    doc("powershell/execution-policy", "ExecutionPolicy"),
   ],
+
+  algorithm: [doc("algorithm/index", "算法")],
+
+  operating_system: [doc("operating-system/index", "操作系统")],
+
+  computer_network: [doc("computer-network/index", "计算机网络")],
 
   frontend: [
     // Home
@@ -617,23 +655,6 @@ const sidebars = {
           type: "doc",
           id: "npm/uuid",
           label: "uuid",
-        },
-        {
-          type: "category",
-          label: "yarn",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "npm/yarn/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "npm/yarn/cli",
-              label: "CLI",
-            },
-          ],
         },
       ],
     },

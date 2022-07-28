@@ -9,6 +9,7 @@ const REACT = "React";
 const DOCUSAURUS = "Docusaurus";
 const WEXIN_MINIPROGRAM = "微信小程序";
 const NPM = "npm";
+const YARN = "Yarn";
 const GRAPHQL = "GraphQL";
 
 // Backend
@@ -27,6 +28,7 @@ const COMPUTER_NETWORK = "计算机网络";
 
 const JSON = "JSON";
 const YAML = "YAML";
+const POWERSHELL = "PowerShell";
 
 const SOFTWARE_TESTING = "软件测评";
 const INTEGRATED_DEVELOPMENT_ENVIRONMENT = "IDE";
@@ -58,6 +60,7 @@ interface FrontendMenuData {
   readonly docusaurus: string;
   readonly wexinMiniprogram: string;
   readonly npm: string;
+  readonly yarn: string;
   readonly graphql: string;
 }
 
@@ -96,6 +99,7 @@ export const frontendMenuData: FrontendMenuData = {
   docusaurus: DOCUSAURUS,
   wexinMiniprogram: WEXIN_MINIPROGRAM,
   npm: NPM,
+  yarn: YARN,
   graphql: GRAPHQL,
 };
 
