@@ -26,11 +26,12 @@ const sidebars = {
       doc("javascript/data-type/string", "🚀 String"),
       doc("javascript/data-type/type-conversion", "🚀 类型转换"),
     ]),
-    category("javascript/expressions/index", "表达式", [
-      doc("javascript/expressions/destructuring-assignment", "解构赋值"),
-    ]),
-    category("javascript/operators/index", "运算符", [
-      doc("javascript/operators/bitwise-not", "按位非"),
+    category("javascript/operators-and-expressions/index", "运算符和表达式", [
+      doc("javascript/operators-and-expressions/bitwise-not", "按位非"),
+      doc(
+        "javascript/operators-and-expressions/destructuring-assignment",
+        "解构赋值"
+      ),
     ]),
     category("javascript/reference-types/index", "引用类型", [
       category("javascript/reference-types/array/index", "数组", [
