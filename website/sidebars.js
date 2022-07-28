@@ -131,7 +131,10 @@ const sidebars = {
 
   yarn: [doc("yarn/index", "Yarn"), doc("yarn/cli", "CLI")],
 
-  graphql: [doc("graphql/index", "GraphQL")],
+  graphql: [
+    doc("graphql/index", "GraphQL"),
+    doc("graphql/installation", "🚀 安装"),
+  ],
 
   csharp: [
     doc("csharp/index", "C#"),
@@ -187,12 +190,6 @@ const sidebars = {
   computer_network: [doc("computer-network/index", "计算机网络")],
 
   frontend: [
-    // Home
-    {
-      type: "doc",
-      id: "front-end",
-      label: "前端",
-    },
     // CSS
     {
       type: "category",
@@ -658,32 +655,8 @@ const sidebars = {
         },
       ],
     },
-    // GraphQL
-    {
-      type: "category",
-      label: "GraphQL",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "graphql/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "graphql/installation",
-          label: "🚀 安装",
-        },
-      ],
-    },
   ],
   backend: [
-    // Home
-    {
-      type: "doc",
-      id: "back-end",
-      label: "后端",
-    },
     // Go
     {
       type: "category",
