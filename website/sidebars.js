@@ -127,7 +127,18 @@ const sidebars = {
 
   wexin_mini_program: [doc("wexin-mini-program/index", "微信小程序")],
 
-  npm: [doc("npm/index", "npm")],
+  npm: [
+    doc("npm/index", "npm"),
+    doc("npm/upgrade-node", "升级 Node 版本"),
+    doc("npm/upgrade-npm", "升级 npm 版本"),
+    doc("npm/classnames", "classnames"),
+    doc("npm/clsx", "clsx"),
+    doc("npm/dotenv", "dotenv"),
+    doc("npm/momentjs", "Moment.js"),
+    doc("npm/n-module", "N Module"),
+    doc("npm/patch-package", "patch-package"),
+    doc("npm/uuid", "uuid"),
+  ],
 
   yarn: [doc("yarn/index", "Yarn"), doc("yarn/cli", "CLI")],
 
@@ -599,59 +610,6 @@ const sidebars = {
               label: "审核的安全检测",
             },
           ],
-        },
-      ],
-    },
-    // npm
-    {
-      type: "category",
-      label: "npm",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "npm/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "npm/upgrade-node",
-          label: "升级 Node 版本",
-        },
-        {
-          type: "doc",
-          id: "npm/upgrade-npm",
-          label: "升级 npm 版本",
-        },
-        {
-          type: "doc",
-          id: "npm/classnames",
-          label: "classnames",
-        },
-        {
-          type: "doc",
-          id: "npm/clsx",
-          label: "clsx",
-        },
-        {
-          type: "doc",
-          id: "npm/momentjs",
-          label: "Moment.js",
-        },
-        {
-          type: "doc",
-          id: "npm/n-module",
-          label: "n module",
-        },
-        {
-          type: "doc",
-          id: "npm/patch-package",
-          label: "patch-package",
-        },
-        {
-          type: "doc",
-          id: "npm/uuid",
-          label: "uuid",
         },
       ],
     },
