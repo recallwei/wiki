@@ -165,6 +165,7 @@ const sidebars = {
     category("nodejs/express/index", "🚀 Express", [
       doc("nodejs/express/installation", "安装"),
     ]),
+    category("nodejs/prisma/index", "🚀 Prisma", []),
   ],
 
   postgresql: [doc("postgresql/index", "PostgreSQL")],
