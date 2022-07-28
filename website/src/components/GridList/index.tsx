@@ -2,7 +2,6 @@ import React, { CSSProperties } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import { isMobile } from "@site/src/utils/index";
 import { GridItemType } from "@site/src/data/index";
 
 type GridListProps = {
@@ -19,14 +18,7 @@ export default function GridList({
   wrapperStyle,
 }: GridListProps): JSX.Element {
   return (
-    <div
-      style={wrapperStyle}
-      className={clsx(
-        styles.grid,
-        isMobile() && styles.mobileGrid,
-        wrapperClassName
-      )}
-    >
+    <div style={wrapperStyle} className={clsx(styles.grid, wrapperClassName)}>
       {data.map((item) => {
         return (
           <div key={item.title} className={styles.cardWrapper}>
