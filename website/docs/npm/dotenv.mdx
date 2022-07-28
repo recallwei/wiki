@@ -8,3 +8,66 @@ last_update:
   date: "2022-07-28"
   author: "Bruce"
 ---
+
+import ReferenceList from "@site/src/components/ReferenceList/index";
+import npm from "@site/static/img/icon/npm.png";
+
+> **dotenv** 包用于在 Node 或浏览器下配置**环境变量**，提供了一个便捷的方法供我们访问环境变量。
+
+## 安装
+
+```bash npm2yarn
+npm install dotenv
+```
+
+:::tip 建议
+
+仅在项目中安装 **dotenv**。
+
+:::
+
+## 创建 .env 文件
+
+```env title=".env"
+SECRECT_KEY="YOURSECRECTKEY"
+HOST=8080
+```
+
+## CommonJS 方式引入
+
+```javascript title="JavaScript"
+require("dotenv").config();
+console.log(process.env); // Expected: 在 .env 文件中设置的环境变量
+```
+
+## ES6 方式引入
+
+```javascript title="JavaScript"
+import "dotenv/config";
+console.log(process.env); // Expected: 在 .env 文件中设置的环境变量
+```
+
+## 注释
+
+使用 `#` 在 `.env` 文件中添加行注释。
+
+```env title=".env"
+# This is a comment.
+HOST=8080 # 主机名称
+```
+
+## 应该使用 Git 提交 .env 文件吗？
+
+及其不推荐！
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "npm - dotenv",
+      link: "https://www.npmjs.com/package/dotenv",
+      src: npm,
+    },
+  ]}
+/>
