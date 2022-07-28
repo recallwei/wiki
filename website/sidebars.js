@@ -167,6 +167,8 @@ const sidebars = {
     ]),
   ],
 
+  postgresql: [doc("postgresql/index", "PostgreSQL")],
+
   microsoft_sqlserver: [
     doc("microsoft-sqlserver/index", "Microsoft SQL Server"),
     doc("microsoft-sqlserver/guid", "GUID"),

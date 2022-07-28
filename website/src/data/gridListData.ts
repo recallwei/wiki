@@ -13,6 +13,7 @@ import graphql from "@site/static/img/icon/graphql.png";
 import csharp from "@site/static/img/icon/csharp.png";
 import go from "@site/static/img/icon/go.png";
 import nodejs from "@site/static/img/icon/nodejs.png";
+import postgresql from "@site/static/img/icon/postgresql.png";
 import microsoft_sqlserver from "@site/static/img/icon/microsoft_sqlserver.png";
 import mongodb from "@site/static/img/icon/mongodb.png";
 import redis from "@site/static/img/icon/redis.png";
@@ -59,6 +60,7 @@ const backendGridList: Array<GridItemType> = [
   gridItem(backendData.csharp, "/docs/csharp", csharp),
   gridItem(backendData.go, "/docs/go", go),
   gridItem(backendData.nodejs, "/docs/nodejs", nodejs),
+  gridItem(backendData.postgresql, "/docs/postgresql", postgresql),
   gridItem(
     backendData.microsoft_sqlserver,
     "/docs/microsoft-sqlserver",

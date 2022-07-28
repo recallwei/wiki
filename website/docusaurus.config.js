@@ -157,6 +157,11 @@ const config = {
               { type: "docSidebar", label: "Node.js", sidebarId: "nodejs" },
               {
                 type: "docSidebar",
+                label: "PostgreSQL",
+                sidebarId: "postgresql",
+              },
+              {
+                type: "docSidebar",
                 label: "Microsoft SQL Server",
                 sidebarId: "microsoft_sqlserver",
               },
