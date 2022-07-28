@@ -1,6 +1,9 @@
 .grid {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 5rem;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 .cardWrapper {
@@ -59,11 +62,10 @@
 
 @media screen and (min-width: 992px) {
   .grid {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 11rem;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 
   .cardWrapper:hover .image {
