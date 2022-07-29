@@ -12,6 +12,9 @@ last_update:
 import TH from "@site/src/components/TextHighlight/index";
 import ReferenceList from "@site/src/components/ReferenceList/index";
 import wexin_mini_program from "@site/static/img/icon/wexin_mini_program.png";
+import Image from "@site/src/components/Image/index";
+import application_insight_error from "./application_insight_error.png";
+import error_message from "./error_message.png";
 
 > **微信小程序** 在提交审核后，微信官方会对微信小程序的服务器发起安全检测，会在短时间发起大量的请求。
 
@@ -29,11 +32,11 @@ import wexin_mini_program from "@site/static/img/icon/wexin_mini_program.png";
 检测时间约 <TH>3 个小时以内</TH>，我们需要注意这段时间大量的请求会对服务器造成影响。  
 由于我司微信小程序的服务器部署在 **Azure** 上，使用了 **APIM**，我们在 **Application Insight** 上看到了大量的 **401** 错误。
 
-![Application Insight Error](./application_insight_error.png)
+<Image src={application_insight_error} title="Application Insight 错误信息" />
 
 可以看到发起的请求大多被拼接上了 SQL 语句，很显然是 **SQL 注入攻击**。
 
-![Error Message](./error_message.png)
+<Image src={error_message} title="错误信息" />
 
 ## 参考
 

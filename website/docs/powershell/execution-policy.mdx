@@ -11,6 +11,8 @@ last_update:
 
 import ReferenceList from "@site/src/components/ReferenceList/index";
 import microsoft from "@site/static/img/icon/microsoft.png";
+import Image from "@site/src/components/Image/index";
+import errorMessage from "./error_message.png";
 
 > **PowerShell** 执行策略是一项安全功能，用于控制 **PowerShell** 加载配置文件和运行脚本的条件。 此功能有助于防止恶意脚本的执行。
 
@@ -20,7 +22,7 @@ import microsoft from "@site/static/img/icon/microsoft.png";
 
 由于我的 Windows 笔记本上安装了 PowerShell，其默认的执行策略不允许我在 cmd 中执行 `npm install --location=global yarn`，因为该脚本不是受信任的。
 
-![Error Message](./error_message.png)
+<Image src={errorMessage} title="错误信息" />
 
 我通过执行 `Set-ExecutionPolicy RemoteSigned` 改变了默认的执行策略，便可在全局安装 yarn package。
 
