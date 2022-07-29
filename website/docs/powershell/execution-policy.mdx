@@ -20,6 +20,8 @@ import microsoft from "@site/static/img/icon/microsoft.png";
 
 由于我的 Windows 笔记本上安装了 PowerShell，其默认的执行策略不允许我在 cmd 中执行 `npm install --location=global yarn`，因为该脚本不是受信任的。
 
+![Error Message](./error_message.png)
+
 我通过执行 `Set-ExecutionPolicy RemoteSigned` 改变了默认的执行策略，便可在全局安装 yarn package。
 
 ## 参考
