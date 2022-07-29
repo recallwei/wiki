@@ -168,7 +168,10 @@ const sidebars = {
     category("nodejs/prisma/index", "🚀 Prisma", []),
   ],
 
-  postgresql: [doc("postgresql/index", "PostgreSQL")],
+  postgresql: [
+    doc("postgresql/index", "PostgreSQL"),
+    doc("postgresql/connection", "连接数据库"),
+  ],
 
   microsoft_sqlserver: [
     doc("microsoft-sqlserver/index", "Microsoft SQL Server"),

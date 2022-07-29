@@ -1,0 +1,36 @@
+---
+title: "连接数据库"
+description: ""
+tags:
+  - label: "PostgreSQL"
+    permalink: "postgresql"
+last_update:
+  date: "2022-07-28"
+  author: "Bruce"
+---
+
+## 数据库连接字符串
+
+PostgreSQL 将连接 URL 分为如下几个部分。
+
+**PROTOCOL**://**USER**:**PASSWORD**@**HOST**:**PORT**/**DATABASE**?**QUERY**
+
+- PROTOCOL - 连接使用的协议，为 **postgresql**
+- USER - 用户名
+- PASSWORD - 密码
+- HOST - 域名，本地为 **localhost**
+- PORT - 端口号，PostgreSQL 使用 **5432** 作为默认端口号
+- DATABASE - 数据库名称
+- QUERY - 查询参数，如 `scheme=public`
+
+如下连接 URL 会连接到本地数据库 **brucedb**，并选择名称为 **public** 的 **scheme** ：
+
+```
+postgresql://bruce:password@localhost:5432/brucedb?scheme=public
+```
+
+:::warning 警告
+
+永远将数据库连接字符串配置在**环境变量**中，不要在代码中 Hard Code。
+
+:::
