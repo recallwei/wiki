@@ -21,7 +21,7 @@ PostgreSQL 将连接 URL 分为如下几个部分。
 - HOST - 域名，本地为 **localhost**
 - PORT - 端口号，PostgreSQL 使用 **5432** 作为默认端口号
 - DATABASE - 数据库名称
-- QUERY - 查询参数，如 `scheme=public`
+- QUERY - 查询参数，如 `scheme=public`，`sslmode=require`（允许 SSL 连接）
 
 如下连接 URL 会连接到本地数据库 **brucedb**，并选择名称为 **public** 的 **scheme** ：
 
