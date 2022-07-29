@@ -186,7 +186,7 @@ const sidebars = {
 
   git: [
     doc("git/index", "Git"),
-    doc("git/gitignore-not-work", ".gitignore 不工作"),
+    doc("git/gitignore-not-working", ".gitignore 不工作"),
   ],
 
   yaml: [
