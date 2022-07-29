@@ -197,6 +197,7 @@ const config = {
             label: "其他",
             position: "left",
             items: [
+              { type: "docSidebar", label: "Git", sidebarId: "git" },
               {
                 type: "docSidebar",
                 label: "YAML",

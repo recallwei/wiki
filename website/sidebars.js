@@ -184,6 +184,11 @@ const sidebars = {
     doc("microsoft-azure/login-azure-cn", "🚀使用中国区 Azure"),
   ],
 
+  git: [
+    doc("git/index", "Git"),
+    doc("git/gitignore-not-work", ".gitignore 不工作"),
+  ],
+
   yaml: [
     doc("yaml/index", "YAML"),
     doc("yaml/scalars", "纯量"),
