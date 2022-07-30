@@ -22,3 +22,31 @@ export default prisma;
 ```
 
 随后，我们需要导入该模块，该模块缓存了 `PrismaClient` 对象，避免了我们创建新的 `PrismaClient`。
+
+### 不需要手动关闭数据库连接
+
+服务器上会持续不断地接受到请求，打开一个新的数据库连接需要花费时间，如果每次查询后都关闭数据库连接，那么会减慢应用的速度。
+
+### 预防热重载
+
+在开发环境中，使用类似 Next.js 这种支持热重载的框架，如果刷新了导出的模块实例，也会重新创建实例。
+
+我们利用环境变量的控制，在开发环境中，将 PrismaClient 存储到全局变量中（因为全局变量不会热重载）。
+
+```typescript title="prisma.ts"
+import { PrismaClient } from "@prisma/client";
+
+interface CustomNodeJSGlobal extends Global {
+  prisma: PrismaClient;
+}
+
+declare const global: CustomNodeJSGlobal;
+
+const prisma: PrismaClient = global.prisma || new PrismaClient();
+
+if (process.env.NODE_ENV === "development") {
+  global.prisma = prisma;
+}
+
+export { prisma };
+```

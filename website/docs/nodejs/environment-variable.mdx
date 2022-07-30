@@ -5,9 +5,16 @@ tags:
   - label: "Node.js"
     permalink: "nodejs"
 last_update:
-  date: "2022-07-23"
+  date: "2022-07-30"
   author: "Bruce"
-draft: true
 ---
 
-<!-- TODO - Publish -->
+## 在 package.json 脚本里添加环境变量
+
+```json {3} title="package.json"
+{
+  "scripts": {
+    "dev": "export NODE_ENV=development && node src/index"
+  }
+}
+```
