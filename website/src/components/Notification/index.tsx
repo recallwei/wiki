@@ -4,6 +4,7 @@ import clsx from "clsx";
 
 type NotificationType = {
   show: boolean;
+  title?: string;
   changeShow: React.Dispatch<boolean>;
   wrapperClassName?: string;
   wrapperStyle?: CSSProperties;
@@ -11,11 +12,11 @@ type NotificationType = {
 
 export default function Notification({
   show,
+  title,
   changeShow,
   wrapperClassName,
   wrapperStyle,
 }: NotificationType): JSX.Element | null {
-  const COPY_SUCCESS = "复制成功";
   return (
     <div
       className={clsx(
@@ -50,7 +51,7 @@ export default function Notification({
             </g>
           </g>
         </svg>
-        <div className={styles.title}>{COPY_SUCCESS}</div>
+        <div className={styles.title}>{title}</div>
         <svg
           className={styles.closeBtn}
           xmlns="http://www.w3.org/2000/svg"

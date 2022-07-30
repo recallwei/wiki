@@ -71,6 +71,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const BRUCE = "Bruce Song";
   const TO_WIKI_BUTTON_TEXT = "Go to Wiki";
+  const COPY_SUCCESS = "已复制到剪切板";
   const [show, setShow] = useState<boolean>(false);
 
   function copySuccess(): void {
@@ -143,7 +144,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
             <PageProgressBar />
           </>
         )}
-        <Notification show={show} changeShow={setShow} />
+        <Notification show={show} title={COPY_SUCCESS} changeShow={setShow} />
       </div>
     </header>
   );
