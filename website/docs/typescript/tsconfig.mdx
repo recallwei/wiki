@@ -8,3 +8,45 @@ last_update:
   date: "2022-07-30"
   author: "Bruce"
 ---
+
+import HyperLink from "@site/src/components/HyperLink";
+
+## CompilerOptions - Modules
+
+### Base Url
+
+`baseUrl` - 定义一个根目录用于**解析非绝对路径**的模块名称
+
+如果你厌倦了地狱般嵌套的相对路径如 `./` 或 `../`，或者当移动文件时需要修改导入的相对路径，推荐使用根据 `baseUrl` 解析的绝对路径。
+
+### Paths
+
+`paths` - 根据 **baseUrl** 为绝对路径定义别名，避免使用过长的相对路径
+
+使用该属性的前提是定义了 `baseUrl`，使用该属性可以让 `TypeScript` 根据一些自定义的前缀去解析路径。
+
+```json title="tsconfig.json"
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "jquery": ["node_modules/jquery/dist/jquery"],
+      "src/*": ["src/*"]
+    }
+  }
+}
+```
+
+上述配置中，我们可以通过绝对路径 `src/*` 的方式来导入 src 目录中的模块。
+
+:::warning 警告
+
+需要注意的是，`paths` 只影响 `tsc` 编译，但不会对输出内容进行修改。不使用 `ts-node` 执行 `.js` 文件就会报错。推荐引入 **webpack** 之类的构建工具。
+
+:::
+
+> 💡 如何解决？
+>
+> - 引入 **webpack**
+> - 使用 <HyperLink bold openWindow link="/docs/npm/ts-node">ts-node</HyperLink>
+> - 使用 **Babel** 转换代码（转换：babel-plugin-module-resolver，lint：eslint-import-resolver-typescript）

@@ -67,7 +67,6 @@ const sidebars = {
     doc("typescript/index", "TypeScript"),
     doc("typescript/environment", "搭建环境"),
     doc("typescript/debug", "运行与调试"),
-    doc("typescript/configuration", "🚀 配置"),
     category("typescript/types/index", "类型", [
       doc("typescript/types/built-in", "内置类型"),
       doc("typescript/types/any", "any"),
@@ -137,7 +136,9 @@ const sidebars = {
     doc("npm/dotenv", "dotenv"),
     doc("npm/momentjs", "Moment.js"),
     doc("npm/n-module", "N Module"),
+    doc("npm/nodemon", "nodemon"),
     doc("npm/patch-package", "patch-package"),
+    doc("npm/ts-node", "ts-node"),
     doc("npm/uuid", "uuid"),
   ],
 
@@ -163,7 +164,7 @@ const sidebars = {
     doc("nodejs/index", "Node.js"),
     doc("nodejs/environment", "🚀 搭建环境"),
     doc("nodejs/environment-variable", "🚀 环境变量"),
-    category("nodejs/express/index", "🚀 Express", [
+    category("nodejs/express/index", "Express", [
       doc("nodejs/express/installation", "安装"),
     ]),
     category("nodejs/prisma/index", "Prisma", [

@@ -1,0 +1,55 @@
+---
+title: "ts-node"
+hide_title: true
+description: ""
+tags:
+  - label: "npm"
+    permalink: "npm"
+  - label: "TypeScript"
+    permalink: "typescript"
+last_update:
+  date: "2022-07-30"
+  author: "Bruce"
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon";
+import ts_node from "@site/static/img/icon/ts_node.png";
+import HyperLink from "@site/src/components/HyperLink";
+import ReferenceList from "@site/src/components/ReferenceList";
+
+<FeatureIcon src={ts_node} title="ts-node" />
+
+> **ts-node** 是一个 TypeScript 执行引擎。
+
+## 安装
+
+```bash npm2yarn
+npm install ts-node
+```
+
+## 配置了解析绝对路径的 TSConfig paths
+
+需要注意的是，**paths** 只影响 `tsc` 编译，但不会对输出内容进行修改。
+
+- 需要引入 **ts-node** 和 **tsconfig-paths** 包。
+- 再将启动的脚本设置为 `node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index`，否则会解析不到设置的绝对路径。
+
+## 应该在生产环境使用吗？
+
+回答是：No!
+
+若需要在生产环境中启动项目，请使用 `node -r ts-node/register/transpile-only src/index.ts`，这仅会进行**代码转译**，而不会进行类型检查。
+
+请见 <HyperLink bold link="https://github.com/TypeStrong/ts-node/issues/104">Should I use it in production?</HyperLink>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "ts-node Docs",
+      link: "https://typestrong.org/ts-node/",
+      src: ts_node,
+    },
+  ]}
+/>
