@@ -1,0 +1,26 @@
+---
+title: "中间件"
+description: ""
+tags:
+  - label: "Prisma"
+    permalink: "prisma"
+last_update:
+  date: "2022-07-30"
+  author: "Bruce"
+---
+
+## 日志
+
+```typescript title="prisma.ts"
+const prisma = new PrismaClient();
+
+prisma.$use(async (params, next) => {
+  const before = Date.now();
+  const result = await next(params);
+  const after = Date.now();
+  console.log(
+    `Query ${params.model}.${params.action} took ${after - before}ms`
+  );
+  return result;
+});
+```

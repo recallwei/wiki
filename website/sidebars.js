@@ -168,6 +168,9 @@ const sidebars = {
       doc("nodejs/express/installation", "安装"),
     ]),
     category("nodejs/prisma/index", "Prisma", [
+      category("nodejs/prisma/prisma-client", "Prisma Client", [
+        doc("nodejs/prisma/prisma-client/middleware", "中间件"),
+      ]),
       doc("nodejs/prisma/database-connection-management", "数据库连接管理"),
     ]),
   ],
