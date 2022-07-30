@@ -1,0 +1,24 @@
+---
+title: "数据库连接管理"
+description: ""
+tags:
+  - label: "Prisma"
+    permalink: "prisma"
+last_update:
+  date: "2022-07-30"
+  author: "Bruce"
+---
+
+## 创建可重用的单一 PrismaClient 实例
+
+为了重用 `PrismaClient` 实例，需要创建一个模块并将 `PrismaClient` 对象导出。
+
+```typescript title="TypeScript"
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+export default prisma;
+```
+
+随后，我们需要导入该模块，该模块缓存了 `PrismaClient` 对象，避免了我们创建新的 `PrismaClient`。

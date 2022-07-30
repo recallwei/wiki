@@ -82,6 +82,7 @@ const sidebars = {
       doc("typescript/types/literal-type", "字面量类型"),
       doc("typescript/types/nullable-type", "可空类型"),
     ]),
+    doc("typescript/tsconfig", "TSConfig"),
   ],
 
   react: [
@@ -165,7 +166,9 @@ const sidebars = {
     category("nodejs/express/index", "🚀 Express", [
       doc("nodejs/express/installation", "安装"),
     ]),
-    category("nodejs/prisma/index", "🚀 Prisma", []),
+    category("nodejs/prisma/index", "Prisma", [
+      doc("nodejs/prisma/database-connection-management", "数据库连接管理"),
+    ]),
   ],
 
   postgresql: [
