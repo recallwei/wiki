@@ -870,6 +870,7 @@ const sidebars = {
       ],
     },
     { type: "doc", id: "vpn", label: "VPN" },
+    { type: "doc", id: "build-website", label: "建站" },
     // IDE
     {
       type: "category",
