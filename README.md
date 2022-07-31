@@ -1,5 +1,14 @@
 # wiki
 
-用于记录 Web 开发学习笔记，基于 Docusaurus 2 的 React 项目。
+This is my personal wiki website for recording web development knowledge.
 
-UI design inspired by Notion.
+## Stack
+
+- React
+- TypeScript
+- Docusaurus 2
+
+## Others
+
+- UI design inspired by Notion.
+- Host by Vercel.
