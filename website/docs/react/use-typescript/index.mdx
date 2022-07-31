@@ -13,6 +13,8 @@ last_update:
 import FeatureIcon from "/src/components/FeatureIcon/index";
 import LinkList from "/src/components/LinkList/index";
 import typescript from "@site/static/img/icon/typescript.png";
+import react_typescript from "@site/static/img/icon/react_typescript.png";
+import ReferenceList from "@site/src/components/ReferenceList";
 
 <FeatureIcon src={typescript} title="使用 TypeScript" />
 <LinkList
@@ -25,9 +27,21 @@ import typescript from "@site/static/img/icon/typescript.png";
   ]}
 />
 
+## 资源
+
+<ReferenceList
+  data={[
+    {
+      title: "React+TypeScript Cheatsheets",
+      link: "https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets",
+      src: react_typescript,
+    },
+  ]}
+/>
+
 <!-- TODO - Publish -->
 
-```tsx title="TSX" showLineNumbers
+<!-- ```tsx title="TSX" showLineNumbers
 import React, { type ReactNode } from "react";
 const HyperLink: React.FC<HyperLinkProps> = ({
   bold = false,
@@ -71,4 +85,4 @@ export default function HyperLink({
     </span>
   );
 }
-```
+``` -->
