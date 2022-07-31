@@ -169,6 +169,7 @@ const sidebars = {
     ]),
     category("nodejs/prisma/index", "Prisma", [
       category("nodejs/prisma/prisma-client/index", "Prisma Client", [
+        doc("nodejs/prisma/prisma-client/crud", "CRUD"),
         doc("nodejs/prisma/prisma-client/middleware", "中间件"),
       ]),
       doc("nodejs/prisma/database-connection-management", "数据库连接管理"),
