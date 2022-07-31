@@ -7,9 +7,10 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 type HyperLinkProps = {
   bold?: boolean;
-  children: ReactNode;
-  link: string;
+  children?: ReactNode;
+  link?: string;
   openWindow?: boolean;
+  type?: "doc" | "external";
   wrapperClassName?: string;
   wrapperStyle?: CSSProperties;
 };
@@ -19,6 +20,7 @@ export default function HyperLink({
   children,
   link,
   openWindow = false,
+  type = "doc",
   wrapperClassName,
   wrapperStyle,
 }: HyperLinkProps): JSX.Element {
@@ -31,10 +33,8 @@ export default function HyperLink({
       <Link to={openWindow ? siteConfig.url + link : link}>
         <span className={clsx(styles.textArea, bold && styles.textBold)}>
           {children}
-          {openWindow && (
-            <span className={styles.linkSVG}>
-              <LinkSVG />
-            </span>
+          {(openWindow || type === "external") && (
+            <LinkSVG className={styles.linkSVG} />
           )}
         </span>
       </Link>

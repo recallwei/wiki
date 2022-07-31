@@ -13,8 +13,6 @@
 
 .linkSVG {
   margin: 0 4px;
-  display: flex;
-  align-items: center;
 }
 
 [data-theme="dark"] .linkSVG svg {
