@@ -13,7 +13,7 @@ const config = {
   customFields: { apiBaseUrl: process.env.API_BASE_URL },
   title: "Bruce's Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
-  url: "https://bruce-wiki.vercel.app",
+  url: "https://wiki.bruceworld.top/",
   baseUrl: "/",
   baseUrlIssueBanner: true,
   onBrokenLinks: "throw",
