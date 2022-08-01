@@ -13,10 +13,11 @@ import TH from "@site/src/components/TextHighlight/index";
 
 `window.location.search` 会返回 `?` 和后面 <TH> Query 参数的键值对</TH>。
 
-如 `https://bruce-wiki.com?a=1&b=2`，`window.location.search` 的结果是 `?a=1&b=2`。  
-再使用 `substring()` 得到 `a=1&b=2`。
+如链接 `https://bruce-wiki.com?a=1&b=2`，`window.location.search` 的得到结果是 `?a=1&b=2`，再使用 `substring()` 得到 `a=1&b=2`。
 
 ## 使用正则表达式
+
+该函数中参数 `para` 为 Query 参数名称。
 
 ```javascript title="JavaScript"
 function getQueryString(para) {
@@ -27,4 +28,7 @@ function getQueryString(para) {
   }
   return null;
 }
+
+getQueryString("a"); // 若当前的链接为 "https://bruce-wiki.com?a=1&b=2"
+// Expected: 1
 ```
