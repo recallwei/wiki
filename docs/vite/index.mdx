@@ -13,13 +13,26 @@ last_update:
 import FeatureIcon from "@site/src/components/FeatureIcon";
 import LinkList from "@site/src/components/LinkList";
 import vite from "@site/static/img/icon/vite.png";
+import ReferenceList from "@site/src/components/ReferenceList";
 
 <FeatureIcon src={vite} title="Vite" />
 <LinkList
   data={[
     {
-      title: "安装",
+      title: "项目搭建",
       link: "/docs/vite/installation",
+      src: vite,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "Vite Docs",
+      link: "https://cn.vitejs.dev/",
       src: vite,
     },
   ]}
