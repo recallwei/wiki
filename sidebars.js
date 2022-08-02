@@ -144,6 +144,8 @@ const sidebars = {
 
   yarn: [doc("yarn/index", "Yarn"), doc("yarn/cli", "CLI")],
 
+  vite: [doc("vite/index", "Vite"), doc("vite/installation", "安装")],
+
   graphql: [
     doc("graphql/index", "GraphQL"),
     doc("graphql/installation", "🚀 安装"),

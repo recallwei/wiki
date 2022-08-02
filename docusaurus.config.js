@@ -143,6 +143,7 @@ const config = {
               },
               { type: "docSidebar", label: "npm", sidebarId: "npm" },
               { type: "docSidebar", label: "Yarn", sidebarId: "yarn" },
+              { type: "docSidebar", label: "Vite", sidebarId: "vite" },
               { type: "docSidebar", label: "GraphQL", sidebarId: "graphql" },
             ],
           },

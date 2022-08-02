@@ -9,6 +9,7 @@ import docusaurus from "@site/static/img/icon/docusaurus.png";
 import wexin_mini_program from "@site/static/img/icon/wexin_mini_program.png";
 import npm from "@site/static/img/icon/npm.png";
 import yarn from "@site/static/img/icon/yarn.png";
+import vite from "@site/static/img/icon/vite.png";
 import graphql from "@site/static/img/icon/graphql.png";
 import csharp from "@site/static/img/icon/csharp.png";
 import go from "@site/static/img/icon/go.png";
@@ -53,6 +54,7 @@ const frontendGridList: Array<GridItemType> = [
   ),
   gridItem(frontendData.npm, "/docs/npm", npm),
   gridItem(frontendData.yarn, "/docs/yarn", yarn),
+  gridItem(frontendData.vite, "/docs/vite", vite),
   gridItem(frontendData.graphql, "/docs/graphql", graphql),
 ];
 

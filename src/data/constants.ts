@@ -10,6 +10,7 @@ const DOCUSAURUS = "Docusaurus";
 const WEXIN_MINIPROGRAM = "微信小程序";
 const NPM = "npm";
 const YARN = "Yarn";
+const VITE = "Vite";
 const GRAPHQL = "GraphQL";
 
 // Backend
@@ -62,6 +63,7 @@ interface FrontendMenuData {
   readonly wexinMiniprogram: string;
   readonly npm: string;
   readonly yarn: string;
+  readonly vite: string;
   readonly graphql: string;
 }
 
@@ -102,6 +104,7 @@ export const frontendMenuData: FrontendMenuData = {
   wexinMiniprogram: WEXIN_MINIPROGRAM,
   npm: NPM,
   yarn: YARN,
+  vite: VITE,
   graphql: GRAPHQL,
 };
 
