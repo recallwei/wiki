@@ -31,9 +31,6 @@
     // "rootDir": "./src" /* Specify the root folder within your source files. */,
     "moduleResolution": "Node",
     "baseUrl": ".",
-    "paths": {
-      "@site/*": ["./*"]
-    },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
     "types": [
