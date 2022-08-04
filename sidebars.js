@@ -405,7 +405,24 @@ const sidebars = {
             {
               type: "doc",
               id: "css/sass/installation",
-              label: "安装 Sass",
+              label: "安装",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "TailwindCSS",
+          collapsible: true,
+          collapsed: true,
+          link: {
+            type: "doc",
+            id: "css/tailwindcss/index",
+          },
+          items: [
+            {
+              type: "doc",
+              id: "css/tailwindcss/installation",
+              label: "安装",
             },
           ],
         },
