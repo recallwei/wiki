@@ -10,5 +10,5 @@ This is my personal wiki website for recording web development knowledge.
 
 ## Others
 
-- UI design inspired by Notion
 - Host by Vercel
+- UI design inspired by Notion
