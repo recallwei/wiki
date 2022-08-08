@@ -63,7 +63,6 @@
     no-repeat;
 }
 
-/* 全局字体 */
 html {
   font-family: var(--base-font-family);
   letter-spacing: 0.2px;
@@ -194,10 +193,4 @@ div[class^="announcementBar_"] {
 }
 
 @media (min-width: 1400px) {
-}
-
-/* Markdown CSS */
-
-.md-my-4 {
-  margin: 4px 0 !important;
 }
