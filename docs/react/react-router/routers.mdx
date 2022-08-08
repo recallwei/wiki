@@ -1,0 +1,32 @@
+---
+title: "路由"
+description: ""
+tags:
+  - label: "React Router"
+    permalink: "react-router"
+last_update:
+  date: "2022-08-08"
+  author: "Bruce"
+---
+
+## 未匹配页面 (404)
+
+`path` 为 `*` 的路由放置在最底部，可以匹配其他（不存在的）路由。
+
+```tsx title="App.tsx" {11} showLineNumbers
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+export default function App(): JSX.Element {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/note" element={<Note />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
