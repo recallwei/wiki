@@ -1,0 +1,26 @@
+---
+title: "项目配置"
+description: ""
+tags:
+  - label: "Vercel"
+    permalink: "vercel"
+last_update:
+  date: "2022-08-08"
+  author: "Bruce"
+---
+
+## SPA 无法跳转到自定义 404 页面
+
+我在开发一个基于 **Vite** 和 **React** 的网站，并将其部署在 Vercel 上。虽然在 React Router 中指定了 404 页面的跳转，但是该自定义的 404 页面只在开发环境下可以访问。生产环境下， Vercel 会提示 404 错误，而不是自定义的 404 页面。
+
+### 解决方案 - rewrites
+
+在项目的根目录下添加 `vercel.json` 文件如下所示。
+
+```json title="vercel.json"
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
+```
+
+其作用是将所有的 URL 指向 `index.html` 文件。因为生产环境 SPA Build 的文件只有 `index.html`。

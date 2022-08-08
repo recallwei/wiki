@@ -170,6 +170,11 @@ const config = {
               { type: "docSidebar", label: "Redis", sidebarId: "redis" },
               {
                 type: "docSidebar",
+                label: "Vercel",
+                sidebarId: "vercel",
+              },
+              {
+                type: "docSidebar",
                 label: "Microsoft Azure",
                 sidebarId: "microsoft_azure",
               },

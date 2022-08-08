@@ -192,6 +192,11 @@ const sidebars = {
 
   redis: [doc("redis/index", "Redis")],
 
+  vercel: [
+    doc("vercel/index", "Vercel"),
+    doc("vercel/project-configuration", "项目配置"),
+  ],
+
   microsoft_azure: [
     doc("microsoft-azure/index", "Microsoft Azure"),
     doc("microsoft-azure/login-azure-cn", "🚀使用中国区 Azure"),
