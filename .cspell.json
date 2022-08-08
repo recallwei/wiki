@@ -16,7 +16,8 @@
     "momentjs",
     "clashx",
     "webstorm",
-    "tailwindcss"
+    "tailwindcss",
+    "nums"
   ],
   "flagWords": []
 }
