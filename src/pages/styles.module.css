@@ -115,7 +115,7 @@
   grid-gap: 0.5rem;
   gap: 1rem;
   padding-top: 8px;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .portfolioCardWrapper {
@@ -131,11 +131,16 @@
 }
 
 [data-theme="dark"] .portfolioCardWrapper {
+  border-color: rgb(100, 92, 92);
   color: white !important;
 }
 
 .portfolioCardWrapper:hover {
   background-color: #efefef;
+}
+
+[data-theme="dark"] .portfolioCardWrapper:hover {
+  background-color: #414141 !important;
 }
 
 .portfolioCardLeft {
