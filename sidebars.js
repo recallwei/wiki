@@ -108,6 +108,7 @@ const sidebars = {
     ]),
     category("react/create-react-app/index", "Create React App", [
       doc("react/create-react-app/configure-absolute-path", "配置绝对路径"),
+      doc("react/create-react-app/environment-variable", "环境变量"),
     ]),
     category("react/react-router/index", "React Router", [
       doc("react/react-router/installation", "安装 React Router"),
