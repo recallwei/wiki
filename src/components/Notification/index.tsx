@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import clsx from "clsx";
 
 type NotificationType = {
-  show: boolean;
+  show?: boolean;
   title?: string;
   changeShow: React.Dispatch<boolean>;
   wrapperClassName?: string;
@@ -11,7 +11,7 @@ type NotificationType = {
 };
 
 export default function Notification({
-  show,
+  show = false,
   title,
   changeShow,
   wrapperClassName,

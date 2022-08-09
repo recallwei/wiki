@@ -40,7 +40,6 @@ export default function Home(): JSX.Element {
   return (
     <BrowserOnly fallback={undefined}>
       {() => {
-        // Detect device type
         const isMobileDevice: boolean = isMobile();
         return (
           <Layout
@@ -154,7 +153,6 @@ function ContactMeBtn({
   isCopyBtn = false,
   copySuccess,
 }: ContactMeBtnProps): JSX.Element {
-  // TODO - Add a tip for copy action
   if (isCopyBtn && typeof link !== "undefined") {
     return (
       <div
