@@ -11,6 +11,9 @@ import {
   backendGridList,
   frontendMenuData,
   backendMenuData,
+  type PortfolioType,
+  type StackType,
+  portfolioListData,
 } from "@site/src/data";
 import GridList from "@site/src/components/GridList";
 import styles from "./styles.module.css";
@@ -37,6 +40,7 @@ type ContactMeBtnProps = {
 };
 
 export default function Home(): JSX.Element {
+  const PORTFOLIO = "Portfolio";
   return (
     <BrowserOnly fallback={undefined}>
       {() => {
@@ -57,6 +61,56 @@ export default function Home(): JSX.Element {
                   {backendMenuData.backend}
                 </div>
                 <GridList data={backendGridList} />
+                <div className={styles.portfolioArea}>
+                  <div className={styles.listTitle}>{PORTFOLIO}</div>
+                  <div className={styles.portfolioListWrapper}>
+                    {portfolioListData.map((item: PortfolioType) => {
+                      return (
+                        <Link
+                          className={styles.portfolioCardWrapper}
+                          key={item.name}
+                          to={item.siteLink}
+                        >
+                          <div className={styles.portfolioCardLeft}>
+                            <h4>{item.name}</h4>
+                            <div className={styles.description}>
+                              {item.description}
+                            </div>
+                            <div className={styles.tagWrapper}>
+                              {item.stackTags.map((tag: StackType) => {
+                                return (
+                                  <div
+                                    className={styles.tag}
+                                    style={{ background: tag.bgColor }}
+                                  >
+                                    <img
+                                      src={tag.iconSrc}
+                                      loading="eager"
+                                      width="12"
+                                      height="12"
+                                    />
+                                    {tag.name}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          </div>
+                          <div className={styles.portfolioCardRight}>
+                            <img
+                              src={item.src}
+                              loading="eager"
+                              width="40"
+                              height="40"
+                            />
+                            <div className={clsx(styles.status, styles.tag)}>
+                              {item.status}
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             </main>
           </Layout>

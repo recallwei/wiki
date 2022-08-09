@@ -1,8 +1,3 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
   position: relative;
   display: flex;
@@ -108,6 +103,108 @@
 
 .marginTop {
   margin-top: 30px;
+}
+
+.portfolioArea {
+  padding-top: 100px;
+}
+
+.portfolioListWrapper {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-gap: 0.5rem;
+  gap: 1rem;
+  padding-top: 8px;
+  padding: 0 1rem;
+}
+
+.portfolioCardWrapper {
+  display: flex;
+  border-radius: 6px;
+  border: 1.5px solid;
+  border-color: rgba(229, 231, 235, 1);
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  transition: all 150ms linear;
+  text-decoration: none !important;
+  color: black !important;
+}
+
+[data-theme="dark"] .portfolioCardWrapper {
+  color: white !important;
+}
+
+.portfolioCardWrapper:hover {
+  background-color: #efefef;
+}
+
+.portfolioCardLeft {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.portfolioCardLeft h4 {
+  font-weight: 500;
+  font-family: var(--ifm-font-family-monospace);
+  margin: 0;
+}
+
+.portfolioArea .description {
+  margin: 6px 0 4px 0;
+  font-size: 13px;
+}
+
+.portfolioArea .tagWrapper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolioArea .tag {
+  display: flex;
+  align-items: center;
+  text-align: baseline;
+  gap: 2px;
+  border-radius: 4px;
+  padding: 0 4px;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.portfolioArea .status {
+  background-color: orange;
+}
+
+.portfolioCardRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+
+.portfolioCardWrapper:hover .portfolioCardRight img {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -239,5 +336,9 @@
 
   .listTitle {
     font-size: 1.5rem;
+  }
+
+  .portfolioListWrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

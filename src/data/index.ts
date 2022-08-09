@@ -5,3 +5,11 @@ export {
   backendGridList,
   type GridItemType,
 } from "./gridListData";
+
+export {
+  StackType,
+  DeployType,
+  type TagType,
+  type PortfolioType,
+  portfolioListData,
+} from "./portfolioData";
