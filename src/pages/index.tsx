@@ -4,15 +4,15 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { isMobile, setClipBoardText } from "@site/src/utils/index";
+import { isMobile, setClipBoardText } from "@site/src/utils";
 import {
   contactMeData,
   frontendGridList,
   backendGridList,
   frontendMenuData,
   backendMenuData,
-} from "@site/src/data/index";
-import GridList from "@site/src/components/GridList/index";
+} from "@site/src/data";
+import GridList from "@site/src/components/GridList";
 import styles from "./styles.module.css";
 import favicon from "@site/static/img/favicon/favicon.png";
 import github from "@site/static/img/icon/github.png";
@@ -21,8 +21,8 @@ import twitter from "@site/static/img/icon/twitter.png";
 import telegram from "@site/static/img/icon/telegram.png";
 import wechat from "@site/static/img/icon/wexin_mini_program.png";
 import zhihu from "@site/static/img/icon/zhihu.png";
-import PageProgressBar from "@site/src/components/PageProgressBar/index";
-import Notification from "@site/src/components/Notification/index";
+import PageProgressBar from "@site/src/components/PageProgressBar";
+import Notification from "@site/src/components/Notification";
 
 type HomepageHeaderProps = {
   isMobileDevice: boolean;
@@ -76,9 +76,10 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
 
   function copySuccess(): void {
     setShow(true);
-    setTimeout(() => {
-      setShow(false);
-    }, 4000);
+    !show &&
+      setTimeout(() => {
+        setShow(false);
+      }, 4000);
   }
 
   return (
@@ -132,11 +133,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
             isCopyBtn
             copySuccess={copySuccess}
           />
-          <ContactMeBtn
-            title={contactMeData.zhihu}
-            src={zhihu}
-            link={contactMeData.gmailAddress}
-          />
+          <ContactMeBtn title={contactMeData.zhihu} src={zhihu} link="/" />
         </div>
         {!isMobileDevice && (
           <>

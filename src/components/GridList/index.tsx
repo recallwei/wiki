@@ -2,10 +2,10 @@ import React, { CSSProperties } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
-import { GridItemType } from "@site/src/data/index";
+import { GridItemType } from "@site/src/data";
 
 type GridListProps = {
-  data: Array<GridItemType>;
+  data?: Array<GridItemType>;
   wrapperClassName?: string;
   wrapperStyle?: CSSProperties;
 };
@@ -18,19 +18,20 @@ export default function GridList({
   wrapperStyle,
 }: GridListProps): JSX.Element {
   return (
-    <div style={wrapperStyle} className={clsx(styles.grid, wrapperClassName)}>
+    <div
+      style={wrapperStyle}
+      className={clsx(styles.listWrapper, wrapperClassName)}
+    >
       {data.map((item) => {
         return (
-          <div key={item.title} className={styles.cardWrapper}>
-            <Link to={item.link} className={styles.card}>
-              <img
-                src={item.src}
-                className={clsx(styles.image)}
-                alt={item.title}
-              />
-            </Link>
+          <Link key={item.title} className={styles.cardWrapper} to={item.link}>
+            <img
+              src={item.src}
+              className={clsx(styles.image)}
+              alt={item.title}
+            />
             <div className={styles.title}>{item.title}</div>
-          </div>
+          </Link>
         );
       })}
     </div>

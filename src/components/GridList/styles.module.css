@@ -1,16 +1,20 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 5rem;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+.listWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .cardWrapper {
-  position: relative;
-}
-
-.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
   background-image: linear-gradient(
     25deg,
     var(--ifm-color-primary),
@@ -18,56 +22,31 @@
     var(--ifm-color-primary-lighter),
     var(--ifm-color-primary-lightest)
   );
-  border-radius: 0.5rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.card:hover {
+.cardWrapper:hover {
   background-color: var(--ifm-color-primary-lightest);
   box-shadow: black 0px 0px 10px;
 }
 
-[data-theme="dark"] .card:hover {
+[data-theme="dark"] .cardWrapper:hover {
   box-shadow: white 0px 0px 10px;
 }
-
 .image {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 90px;
-  height: 90px;
-  opacity: 0;
+  width: 96px;
+  height: 96px;
+  padding: 1rem;
+  max-width: 100%;
 }
 
 .title {
-  position: absolute;
-  left: 8px;
-  bottom: 4px;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: #ffffff;
+  margin-bottom: 2px;
 }
 
 @media screen and (min-width: 992px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 11rem;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  }
-
   .cardWrapper:hover .image {
     opacity: 1;
     transition: ease-in 0.4s;
@@ -78,19 +57,5 @@
     -o-transform: rotateZ(1turn);
     -ms-transform: rotateZ(1turn);
     cursor: pointer;
-  }
-
-  .title {
-    font-size: 1.2rem;
-  }
-
-  .cardWrapper:hover .title {
-    opacity: 0;
-    transition: ease-out 0.4s;
-  }
-
-  .image {
-    width: 110px;
-    height: 110px;
   }
 }

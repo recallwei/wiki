@@ -1,0 +1,30 @@
+---
+title: "环境变量"
+description: ""
+tags:
+  - label: "Create React App"
+    permalink: "create-react-app"
+last_update:
+  date: "2022-08-09"
+  author: "Bruce"
+---
+
+本篇文章中的环境变量不需要加上 `REACT_APP_` 前缀。
+
+## 生成源代码映射 GENERATE_SOURCEMAP
+
+- Development - 🚫
+- Production - ✅
+
+生成源代码映射，默认在生产模式是开启的。
+
+:::caution 警告
+
+<p style={{ marginBottom: 4 }}>启用源代码映射，会产生如下几个问题：</p>
+
+- 不必要的内存占用
+- 打开网页时下载更多未打包的资源文件
+- 强行开源你的源代码
+
+✅ 建议在生产环境的环境变量中添加 `GENERATE_SOURCEMAP=false` 来将其禁用。
+:::

@@ -19,10 +19,11 @@ const CSHARP = "C#";
 const GO = "Go";
 const NODE_JS = "Node.js";
 const POSTGRESQL = "PostgreSQL";
-const MICROSOFT_SQLSERVER = "Microsoft SQL Server";
+const MICROSOFT_SQLSERVER = "SQL Server"; // Microsoft SQL Server
 const MONGODB = "MongoDB";
 const REDIS = "Redis";
-const MICROSOFT_AZURE = "Microsoft Azure";
+const VERCEL = "Vercel";
+const MICROSOFT_AZURE = "Azure"; // Microsoft Azure
 
 const ALGORITHM = "算法";
 const OPERATING_SYSTEM = "操作系统";
@@ -76,6 +77,7 @@ interface BackendMenuData {
   readonly microsoft_sqlserver: string;
   readonly mongodb: string;
   readonly redis: string;
+  readonly vercel: string;
   readonly azure: string;
 }
 
@@ -117,6 +119,7 @@ export const backendMenuData: BackendMenuData = {
   microsoft_sqlserver: MICROSOFT_SQLSERVER,
   mongodb: MONGODB,
   redis: REDIS,
+  vercel: VERCEL,
   azure: MICROSOFT_AZURE,
 };
 
