@@ -76,24 +76,26 @@ export default function Home(): JSX.Element {
                             <div className={styles.description}>
                               {item.description}
                             </div>
-                            <div className={styles.tagWrapper}>
-                              {item.stackTags.map((tag: StackType) => {
-                                return (
-                                  <div
-                                    className={styles.tag}
-                                    style={{ background: tag.bgColor }}
-                                  >
-                                    <img
-                                      src={tag.iconSrc}
-                                      loading="eager"
-                                      width="12"
-                                      height="12"
-                                    />
-                                    {tag.name}
-                                  </div>
-                                );
-                              })}
-                            </div>
+                            {!isMobileDevice && (
+                              <div className={styles.tagWrapper}>
+                                {item.stackTags.map((tag: StackType) => {
+                                  return (
+                                    <div
+                                      className={styles.tag}
+                                      style={{ background: tag.bgColor }}
+                                    >
+                                      <img
+                                        src={tag.iconSrc}
+                                        loading="eager"
+                                        width="12"
+                                        height="12"
+                                      />
+                                      {tag.name}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            )}
                           </div>
                           <div className={styles.portfolioCardRight}>
                             <img
@@ -102,9 +104,11 @@ export default function Home(): JSX.Element {
                               width="40"
                               height="40"
                             />
-                            <div className={clsx(styles.status, styles.tag)}>
-                              {item.status}
-                            </div>
+                            {!isMobileDevice && (
+                              <div className={clsx(styles.status, styles.tag)}>
+                                {item.status}
+                              </div>
+                            )}
                           </div>
                         </Link>
                       );
