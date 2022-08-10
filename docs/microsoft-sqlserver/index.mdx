@@ -2,9 +2,6 @@
 title: "Microsoft SQL Server"
 hide_title: true
 description: ""
-tags:
-  - label: "Microsoft SQL Server"
-    permalink: "microsoft-sqlserver"
 last_update:
   date: "2022-07-10"
   author: "Bruce"
@@ -13,6 +10,7 @@ last_update:
 import FeatureIcon from "@site/src/components/FeatureIcon";
 import LinkList from "@site/src/components/LinkList";
 import microsoft_sqlserver from "@site/static/img/icon/microsoft_sqlserver.png";
+import ReferenceList from "@site/src/components/ReferenceList";
 
 <FeatureIcon src={microsoft_sqlserver} title="Microsoft SQL Server" />
 <LinkList
@@ -20,6 +18,23 @@ import microsoft_sqlserver from "@site/static/img/icon/microsoft_sqlserver.png";
     {
       title: "GUID",
       link: "/docs/microsoft-sqlserver/guid",
+      src: microsoft_sqlserver,
+    },
+    {
+      title: "表达式",
+      link: "/docs/microsoft-sqlserver/expressions",
+      src: microsoft_sqlserver,
+    },
+  ]}
+/>
+
+## 参考
+
+<ReferenceList
+  data={[
+    {
+      title: "SQL Server Tutorial",
+      link: "https://www.sqlservertutorial.net/",
       src: microsoft_sqlserver,
     },
   ]}

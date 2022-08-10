@@ -1,0 +1,29 @@
+---
+title: "CASE"
+description: ""
+tags:
+  - label: "Microsoft SQL Server"
+    permalink: "microsoft-sqlserver"
+last_update:
+  date: "2022-08-11"
+  author: "Bruce"
+---
+
+import TH from "@site/src/components/TextHighlight";
+
+## 语法
+
+`CASE` 表达式会将输入的值 (input) 与每个 `WHEN` 子句里的表达式 (e1, e2, en) 作比较，如果匹配则返回对应 `THEN` 子句的返回值 (r1, r2, rn)。  
+如果输入的值<TH>不与任何表达式匹配</TH>，则返回 `ELSE` 子句里的返回值 (re)，`ELSE` 子句是<TH>可选的</TH>，如果都不匹配且没有 `ELSE` 子句，则会返回 `NULL`。
+
+```sql title="SQL Server"
+CASE input
+    WHEN e1 THEN r1
+    WHEN e2 THEN r2
+    ...
+    WHEN en THEN rn
+    [ ELSE re ]
+END
+```
+
+## 将查询结果重命名

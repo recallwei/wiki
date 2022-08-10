@@ -188,6 +188,9 @@ const sidebars = {
   microsoft_sqlserver: [
     doc("microsoft-sqlserver/index", "Microsoft SQL Server"),
     doc("microsoft-sqlserver/guid", "GUID"),
+    category("microsoft-sqlserver/expressions/index", "表达式", [
+      doc("microsoft-sqlserver/expressions/case", "CASE"),
+    ]),
   ],
 
   mongodb: [doc("mongodb/index", "MongoDB")],
