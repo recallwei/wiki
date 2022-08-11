@@ -12,7 +12,7 @@ import {
   frontendMenuData,
   backendMenuData,
   type PortfolioType,
-  type StackType,
+  type TagType,
   portfolioListData,
 } from "@site/src/data";
 import GridList from "@site/src/components/GridList";
@@ -78,7 +78,7 @@ export default function Home(): JSX.Element {
                             </div>
                             {!isMobileDevice && (
                               <div className={styles.tagWrapper}>
-                                {item.stackTags.map((tag: StackType) => {
+                                {item.stackTags?.map((tag: TagType) => {
                                   return (
                                     <div
                                       className={styles.tag}

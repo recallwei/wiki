@@ -8,7 +8,6 @@ export {
 
 export {
   StackType,
-  DeployType,
   type TagType,
   type PortfolioType,
   portfolioListData,
