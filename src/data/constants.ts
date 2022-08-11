@@ -21,6 +21,7 @@ const NODE_JS = "Node.js";
 const POSTGRESQL = "PostgreSQL";
 const MICROSOFT_SQLSERVER = "SQL Server"; // Microsoft SQL Server
 const MONGODB = "MongoDB";
+const COSMOSDB = "CosmosDB";
 const REDIS = "Redis";
 const VERCEL = "Vercel";
 const MICROSOFT_AZURE = "Azure"; // Microsoft Azure
@@ -76,6 +77,7 @@ interface BackendMenuData {
   readonly postgresql: string;
   readonly microsoft_sqlserver: string;
   readonly mongodb: string;
+  readonly cosmosdb: string;
   readonly redis: string;
   readonly vercel: string;
   readonly azure: string;
@@ -118,6 +120,7 @@ export const backendMenuData: BackendMenuData = {
   postgresql: POSTGRESQL,
   microsoft_sqlserver: MICROSOFT_SQLSERVER,
   mongodb: MONGODB,
+  cosmosdb: COSMOSDB,
   redis: REDIS,
   vercel: VERCEL,
   azure: MICROSOFT_AZURE,

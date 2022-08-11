@@ -1,0 +1,42 @@
+---
+title: "关键字"
+description: ""
+tags:
+  - label: "CosmosDB"
+    permalink: "cosmosdb"
+last_update:
+  date: "2022-08-11"
+  author: "Bruce"
+---
+
+## BETWEEN
+
+## DISTINCT
+
+`DISTINCT` 关键字用于去除查询中的重复项。
+
+```sql title="SQL"
+SELECT DISTINCT VALUE b.name
+FROM Books b
+```
+
+返回不包含重复项的数组，若有两本书都叫 "JavaScript Tutorial"，那么只会返回一个。
+
+```json title="JSON"
+["SQL Server Tutorial", "JavaScript Tutorial"]
+```
+
+也可以按照唯一对象去重
+
+```sql title="SQL"
+SELECT DISTINCT VALUE b.name
+FROM Books b
+```
+
+当有两本书都叫 "JavaScript Tutorial" 时，多余的
+
+## LIKE
+
+## IN
+
+## TOP

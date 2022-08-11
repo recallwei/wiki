@@ -167,6 +167,7 @@ const config = {
                 sidebarId: "microsoft_sqlserver",
               },
               { type: "docSidebar", label: "MongoDB", sidebarId: "mongodb" },
+              { type: "docSidebar", label: "CosmosDB", sidebarId: "cosmosdb" },
               { type: "docSidebar", label: "Redis", sidebarId: "redis" },
               {
                 type: "docSidebar",

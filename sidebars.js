@@ -195,6 +195,11 @@ const sidebars = {
 
   mongodb: [doc("mongodb/index", "MongoDB")],
 
+  cosmosdb: [
+    doc("cosmosdb/index", "CosmosDB"),
+    doc("cosmosdb/keywords", "关键字"),
+  ],
+
   redis: [doc("redis/index", "Redis")],
 
   vercel: [
