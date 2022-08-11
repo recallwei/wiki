@@ -142,6 +142,7 @@ const sidebars = {
     doc("npm/patch-package", "patch-package"),
     doc("npm/ts-node", "ts-node"),
     doc("npm/uuid", "uuid"),
+    doc("npm/axios", "Axios"),
   ],
 
   yarn: [doc("yarn/index", "Yarn"), doc("yarn/cli", "CLI")],
