@@ -26,4 +26,68 @@ CASE input
 END
 ```
 
-## 将查询结果重命名
+## 提升查询结果可读性
+
+对于枚举，布尔类型，我们一般会在数据库中使用数字来存储。缩小存储空间的同时但也降低了字段值的可读性。  
+我们可以用 `CASE` 表达式将枚举、布尔类型的字段值转换为具有可读性的值。
+
+例如一个待办状态的字段，有 `pending`，`doing`，`done` 这几种可取的状态。
+
+```sql title="SQL Server"
+SELECT
+  CASE todo_status
+    WHEN 0 THEN "pending"
+    WHEN 1 THEN "doing"
+    WHEN 2 THEN "done"
+  END AS todo_status
+FROM
+  todo
+```
+
+这样会将该字段值替换为 `pending`，`doing`，`done`，而不是数字 0，1，2。
+
+## 对字段值求和
+
+我们现在需要知道该待办表，每个不同状态的总和，在聚合函数中使用 `CASE` 表达式可以轻松计算出。
+
+```sql title="SQL Server"
+SELECT
+  SUM(CASE
+        WHEN todo_status = 0
+        THEN 1
+        ELSE 0
+      END) AS 'pending'
+  SUM(CASE
+        WHEN todo_status = 1
+        THEN 1
+        ELSE 0
+      END) AS 'doing'
+  SUM(CASE
+        WHEN todo_status = 2
+        THEN 1
+        ELSE 0
+      END) AS 'done',
+  COUNT(*) AS 'total'
+FROM todo
+```
+
+注意到上述 `CASE` 表达式后并没有一个字段值，这种 `CASE` 表达式又叫做 **Search CASE Expression**，通常 `WHEN` 子句后跟布尔值表达式，如果是 `true`，则返回当前 `THEN` 子句后的值。
+
+## `ORDER BY` 子句中使用 `CASE`
+
+```sql title="SQL Server"
+SELECT *
+FROM todo
+ORDER BY CASE todo_status WHEN 0 THEN create_at
+         ELSE end_at END
+```
+
+该语句查询的结果为，`pending` 状态的待办按创建时间正序，其余按结束时间正序。
+
+## 如何阅读 `CASE` 表达式
+
+从 `CASE` 到 `END` 看作是一个值，该值即为匹配的结果。
+
+## 注意
+
+- SQL Server 中 `CASE` 语句仅允许最多嵌入 10 个 `WHEN` 子句。
