@@ -217,6 +217,11 @@ const sidebars = {
     doc("git/gitignore-not-working", ".gitignore 不工作"),
   ],
 
+  github: [
+    doc("github/index", "GitHub"),
+    doc("github/authentication", "GitHub OAuth 第三方登录"),
+  ],
+
   yaml: [
     doc("yaml/index", "YAML"),
     doc("yaml/scalars", "纯量"),

@@ -64,7 +64,6 @@ const config = {
         blog: {
           remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")],
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl: "https://github.com/recallwei/wiki/tree/main/website",
         },
         theme: {
@@ -205,6 +204,7 @@ const config = {
             position: "left",
             items: [
               { type: "docSidebar", label: "Git", sidebarId: "git" },
+              { type: "docSidebar", label: "GitHub", sidebarId: "github" },
               {
                 type: "docSidebar",
                 label: "YAML",

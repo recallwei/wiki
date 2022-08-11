@@ -1,0 +1,25 @@
+---
+title: "GitHub"
+hide_title: true
+description: ""
+last_update:
+  date: "2022-08-11"
+  author: "Bruce"
+---
+
+import FeatureIcon from "@site/src/components/FeatureIcon";
+import LinkList from "@site/src/components/LinkList";
+import github from "@site/static/img/icon/github.png";
+import github_dark from "@site/static/img/icon-dark-mode/github_dark.png";
+
+<FeatureIcon src={github} srcDark={github_dark} title="GitHub" />
+<LinkList
+  data={[
+    {
+      title: "GitHub OAuth 第三方登录",
+      link: "/docs/github/authentication",
+      src: github,
+      srcDark: github_dark,
+    },
+  ]}
+/>
