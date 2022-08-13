@@ -223,6 +223,7 @@ function PortfolioArea({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
                     {item.stackTags?.map((tag: TagType) => {
                       return (
                         <div
+                          key={tag.name}
                           className={styles.tag}
                           style={{ background: tag.bgColor }}
                         >

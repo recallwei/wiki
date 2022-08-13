@@ -7,7 +7,7 @@ tags:
   - label: "React i18next"
     permalink: "react-i18next"
 last_update:
-  date: "2022-07-19"
+  date: "2022-08-14"
   author: "Bruce"
 ---
 
@@ -35,6 +35,35 @@ function Component() {
   // 输出的文本结果为： Method:HighOrderFunction
 }
 ```
+
+## Trans 组件
+
+**Trans** 组件可以让我们在多语言中插入 HTML。
+
+```jsx {7,11} title="JavaScript" showLineNumbers
+import React from "react";
+import { Trans } from "react-i18next";
+
+function Component() {
+  return (
+    <>
+      <Trans i18nKey="TASKWARD.APP.DESCRIPTION.FIRST.LINE">
+        {"Taskward means"}
+        <span className="underline">{"task-oriented"}</span>
+        {", is a Todo&Tasks App."}
+      </Trans>
+    </>
+  );
+}
+```
+
+```json title="en.json"
+{
+  "TASKWARD.APP.DESCRIPTION.FIRST.LINE": "Taskward means <1>task-oriented</1>, is a Todo&Tasks App."
+}
+```
+
+可以看到多语言文件里的值中被 `<1>` `</1>` 隔开成了三个部分，对应 `<Trans />` 组件里的三个部分，中间的 `<span />` 元素会被正确渲染出来。
 
 ## 参考
 

@@ -117,6 +117,8 @@ const sidebars = {
         doc("react/react-router/components/link", "🚀 Link"),
       ]),
     ]),
+
+    doc("react/react-i18next", "React i18next"),
     category("react/redux/index", "Redux", [
       doc("react/redux/installation", "安装 Redux"),
     ]),
