@@ -82,7 +82,7 @@ const portfolioListData: Array<PortfolioType> = [
       },
     ],
     description:
-      "Taskward is a Todo&Tasks web application in development. It can help you to record something that you are going to do later.",
+      "Taskward means task-oriented, is a Todo&Tasks App. It can help you record something you plan to do.",
   },
 ];
 
