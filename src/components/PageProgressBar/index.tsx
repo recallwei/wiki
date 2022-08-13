@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
+import clsx from "clsx";
 
-export default function PageProgressBar(): JSX.Element {
+export default function PageProgressBar(): JSX.Element | null {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -30,7 +31,12 @@ export default function PageProgressBar(): JSX.Element {
   }
 
   return (
-    <div className={styles.menuBtnContainer}>
+    <div
+      className={clsx(
+        styles.menuBtnContainer,
+        progress === 0 && styles.hideBtn
+      )}
+    >
       <div className={styles.menuBtn}>
         <div className={styles.progressBarText} onClick={handleScrollToTop}>
           {progress}%
