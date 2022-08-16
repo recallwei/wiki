@@ -14,6 +14,7 @@
 .heroTextContainer {
   margin: 0 auto;
   max-width: var(--ifm-container-width);
+  min-width: fit-content;
   padding: 0 var(--ifm-spacing-horizontal);
 }
 
@@ -212,7 +213,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .heroBanner {
     height: 100vh;
   }
@@ -246,8 +247,7 @@
 
   .heroTextArea {
     background: rgba(0, 0, 0, 0.5);
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding: 20px;
     border-radius: 1rem;
     letter-spacing: 0;
     white-space: nowrap;
