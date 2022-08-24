@@ -82,6 +82,9 @@ const sidebars = {
       doc("typescript/types/nullable-type", "可空类型"),
     ]),
     doc("typescript/tsconfig", "TSConfig"),
+    category("typescript/best-practice/index", "最佳实践", [
+      doc("typescript/best-practice/map-data-model", "实现数据模型映射"),
+    ]),
   ],
 
   react: [

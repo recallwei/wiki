@@ -1,0 +1,51 @@
+---
+title: "实现数据模型映射"
+description: ""
+tags:
+  - label: "TypeScript"
+    permalink: "typescript"
+last_update:
+  date: "2022-08-24"
+  author: "Bruce"
+---
+
+当我使用 **Prisma** 查询数据库里的 **User** 数据模型时，一个 User 对象包含了一些多余的字段如：`create_At`、`password`、`role`。  
+我不想将这些**私密**的或**与数据展示无关**的信息发送到用户端，于是就需要在服务端做一个**数据模型映射 (Map)**，以便于过滤掉那些字段。
+
+## 使用 Pick 类型
+
+TypeScript 中，`Pick` 类型可以从一个指定的对象中，挑选出其部分属性的集合从而构成新的对象。
+
+例如根据数据库中 `user` 表映射的 `User` 对象：
+
+```typescript title="TypeScript" showLineNumbers
+interface User {
+  id: int;
+  username: string;
+  password: string;
+  createAt?: DateTime;
+  email?: string;
+  role: Role;
+}
+```
+
+构造返回到客户端的 `UserInfo` 对象:
+
+```typescript title="TypeScript" showLineNumbers
+type UserInfo {
+  id: int;
+  username: string;
+  email?: string;
+}
+```
+
+使用 `Pick` 类型和 `keyof` 关键字从 `User` 类型中挑选 `UserInfo` 的类型。
+
+```typescript title="TypeScript" {6} showLineNumbers
+const user = await prisma.user.findFirst({
+  where: {
+    username: username,
+  },
+});
+const userInfo: Pick<User, keyof UserInfo> = user;
+```
