@@ -14,6 +14,8 @@ import {
   type PortfolioType,
   type TagType,
   portfolioListData,
+  othersGridList,
+  othersMenuData,
 } from "@site/src/data";
 import GridList from "@site/src/components/GridList";
 import styles from "./styles.module.css";
@@ -61,6 +63,10 @@ export default function Home(): JSX.Element {
                   {backendMenuData.backend}
                 </div>
                 <GridList data={backendGridList} />
+                <div className={clsx(styles.listTitle, styles.marginTop)}>
+                  {othersMenuData.others}
+                </div>
+                <GridList data={othersGridList} />
                 <PortfolioArea isMobileDevice={isMobileDevice} />
               </div>
             </main>

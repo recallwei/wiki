@@ -19,20 +19,29 @@ const CSHARP = "C#";
 const GO = "Go";
 const NODE_JS = "Node.js";
 const POSTGRESQL = "PostgreSQL";
-const MICROSOFT_SQLSERVER = "SQL Server"; // Microsoft SQL Server
+const MICROSOFT_SQLSERVER = "Microsoft SQL Server"; // Microsoft SQL Server
 const MONGODB = "MongoDB";
 const COSMOSDB = "CosmosDB";
 const REDIS = "Redis";
 const VERCEL = "Vercel";
-const MICROSOFT_AZURE = "Azure"; // Microsoft Azure
+const MICROSOFT_AZURE = "Microsoft Azure"; // Microsoft Azure
 
 const ALGORITHM = "算法";
 const OPERATING_SYSTEM = "操作系统";
 const COMPUTER_NETWORK = "计算机网络";
 
-const JSON = "JSON";
+// 其他
+const OTHERS = "其他";
+const GIT = "Git";
+const GITHUB = "GitHub";
+const JSON = "JSON"; // Still not use
 const YAML = "YAML";
 const POWERSHELL = "PowerShell";
+const VISUAL_STUDIO_CODE = "Visual Studio Code";
+const VISUAL_STUDIO = "Visual Studio";
+const RIDER = "Rider";
+const WEBSTORM = "WebStorm";
+const WECHAT_DEV_TOOLS = "微信开发者工具";
 
 const SOFTWARE_TESTING = "软件测评";
 const INTEGRATED_DEVELOPMENT_ENVIRONMENT = "IDE";
@@ -42,7 +51,6 @@ const BEST_WEBSITE_DESIGN = "优质网站设计";
 const FIGMA = "Figma";
 
 // Contact me
-const GITHUB = "GitHub";
 const TELEGRAM = "Telegram";
 const GMAIL = "GMail";
 const TWITTER = "Twitter";
@@ -83,6 +91,20 @@ interface BackendMenuData {
   readonly azure: string;
 }
 
+interface OthersMenuData {
+  readonly others: string;
+  readonly git: string;
+  readonly github: string;
+  readonly yaml: string;
+  readonly powershell: string;
+  readonly visual_studio_code: string;
+  readonly visual_studio: string;
+  readonly rider: string;
+  readonly webstorm: string;
+  readonly wechat_dev_tools: string;
+  readonly figma: string;
+}
+
 interface ContactMeData {
   readonly github: string;
   readonly telegram: string;
@@ -96,7 +118,7 @@ interface ContactMeData {
   readonly wechatAccount: string;
 }
 
-export const frontendMenuData: FrontendMenuData = {
+const frontendMenuData: FrontendMenuData = {
   frontend: FRONTEND,
   markdown: MARKDOWN,
   html: HTML,
@@ -112,7 +134,7 @@ export const frontendMenuData: FrontendMenuData = {
   graphql: GRAPHQL,
 };
 
-export const backendMenuData: BackendMenuData = {
+const backendMenuData: BackendMenuData = {
   backend: BACKEND,
   csharp: CSHARP,
   go: GO,
@@ -126,7 +148,21 @@ export const backendMenuData: BackendMenuData = {
   azure: MICROSOFT_AZURE,
 };
 
-export const contactMeData: ContactMeData = {
+const othersMenuData: OthersMenuData = {
+  others: OTHERS,
+  git: GIT,
+  github: GITHUB,
+  yaml: YAML,
+  powershell: POWERSHELL,
+  visual_studio_code: VISUAL_STUDIO_CODE,
+  visual_studio: VISUAL_STUDIO,
+  rider: RIDER,
+  webstorm: WEBSTORM,
+  wechat_dev_tools: WECHAT_DEV_TOOLS,
+  figma: FIGMA,
+};
+
+const contactMeData: ContactMeData = {
   github: GITHUB,
   telegram: TELEGRAM,
   gmail: GMAIL,
@@ -138,3 +174,5 @@ export const contactMeData: ContactMeData = {
   gmailAddress: GMAIL_ADDRESS,
   wechatAccount: WECHAT_ACCOUNT,
 };
+
+export { frontendMenuData, backendMenuData, othersMenuData, contactMeData };
