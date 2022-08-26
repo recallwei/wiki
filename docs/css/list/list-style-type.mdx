@@ -2,75 +2,75 @@
 title: list-style-type
 ---
 
-## Definition
+## 定义
 
-The `list-style-type` specifies the type of **list-item marker** in a list.
+`list-style-type` 指定了一个列表中 **list-item marker** 的类型.
 
-## Syntax
+## 语法
 
 ```css
 list-style-type: value;
 ```
 
-## Values
+## 赋值
 
 ### ` disc` `[default]` `[ul]`
 
-A filled circle, also named bullet list item.
+充满的圆，也被称为子弹列表。
 
 ### `cicle` `[ul]`
 
-A hollow circle.
+镂空的圆。
 
 ### `square` `[ul]`
 
-A filled square.
+充满的正方形。
 
 ### `decimal` `[ol]`
 
-Decimal numbers, beginning with 1.
+从 1 开始的数字。
 
 ### `lower-roman` `[ol]`
 
-Lowercase roman numerals.
+小写罗马数字。
 
 ### `upper-roman` `[ol]`
 
-Uppercase roman numerals.
+大写罗马数字。
 
 ### `lower-alpha` `lower-latin` `[ol]`
 
-Lowercase ASCII letters.
+小写 ASCII 码字母。
 
 ### `upper-alpha` `upper-latin` `[ol]`
 
-Uppercase ASCII letters.
+大写 ASCII 码字母。
 
 ### `none`
 
-No marker, used to remove the style of list items.
+无，通常用于移除默认样式。
 
 :::info 提示
 
-Some of the values are for unordered lists (ul) , and some for ordered lists (ol) .
+有些取值为无序列表 unordered lists (ul) ,有些是有序列表 ordered lists (ol) .
 
 :::
 
-## Usage
+## 用法
 
-### Remove the marker of list item
+### 移除列表的 Marker
 
-```css
+```css title="CSS"
 ul > li {
   list-style-type: none;
 }
 ```
 
-### Add bullet colors
+### 为 Marker 添加颜色
 
-Remove their default bullets and adding a HTML entity that looks like bullets (&bull;):
+移除默认的子弹列表，添加一个长得像 Bullet 的 HTML 字符实体 (&bull;):
 
-```css {2}
+```css {2} title="CSS"
 ul {
   list-style-type: none; /* Remove HTML bullets */
   padding: 0;

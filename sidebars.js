@@ -21,7 +21,34 @@ const sidebars = {
     ]),
   ],
 
-  css: [doc("css/index", "CSS")],
+  css: [
+    doc("css/index", "CSS"),
+    doc("css/selectors", "选择器"),
+    doc("css/entities", "字符实体"),
+    doc("css/flex-box", "Flex Box"),
+    category("css/font/index", "字体", [
+      doc("css/font/import", "导入字体"),
+      doc("css/font/display", "字体显示"),
+    ]),
+    category("css/list/index", "List", [
+      doc("css/list/list-style-type", "list-style-type"),
+    ]),
+    doc("css/transform", "Transform"),
+    category("css/properties/index", "属性", [
+      doc("css/properties/box-shadow", "box-shadow"),
+      doc("css/properties/white-space", "white-space"),
+    ]),
+    category("css/ui/index", "UI", [
+      doc("css/ui/card", "Card"),
+      doc("css/ui/ribbon", "Ribbon"),
+      doc("css/ui/divider", "分隔线"),
+    ]),
+    category("css/solutions/index", "解决方案", [
+      doc("css/solutions/code-change-design", "代码变更效果"),
+      doc("css/solutions/svg", "修改 SVG 样式"),
+      doc("css/solutions/bootstrap", "Bootstrap"),
+    ]),
+  ],
 
   javascript: [
     doc("javascript/index", "JavaScript"),
@@ -131,6 +158,10 @@ const sidebars = {
   ],
 
   docusaurus: [doc("docusaurus/index", "Docusaurus")],
+
+  tailwind: [doc("tailwind/index", "Tailwind")],
+
+  sass: [doc("sass/index", "Sass")],
 
   wexin_mini_program: [doc("wexin-mini-program/index", "微信小程序")],
 
@@ -267,212 +298,6 @@ const sidebars = {
   computer_network: [doc("computer-network/index", "计算机网络")],
 
   frontend: [
-    // CSS
-    {
-      type: "category",
-      label: "CSS",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "css/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "Selectors",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/selectors/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/selectors/simple-selectors",
-              label: "Simple Selectors",
-            },
-          ],
-        },
-        {
-          type: "doc",
-          id: "css/entities",
-          label: "Entities",
-        },
-        {
-          type: "category",
-          label: "Flex Box",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/flex-box/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/flex-box/flex",
-              label: "Flex",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "字体",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/font/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/font/import",
-              label: "导入",
-            },
-            {
-              type: "doc",
-              id: "css/font/display",
-              label: "显示",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "List",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/list/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/list/list-style-type",
-              label: "list-style-type",
-            },
-          ],
-        },
-        {
-          type: "doc",
-          id: "css/transform",
-          label: "Transform",
-        },
-        {
-          type: "category",
-          label: "属性",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/properties/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/properties/box-shadow",
-              label: "box-shadow",
-            },
-            {
-              type: "doc",
-              id: "css/properties/white-space",
-              label: "white-space",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "UI",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/ui/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/ui/card",
-              label: "Card",
-            },
-            {
-              type: "doc",
-              id: "css/ui/ribbon",
-              label: "Ribbon",
-            },
-            {
-              type: "doc",
-              id: "css/ui/divider",
-              label: "分隔线",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "解决方案",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/solutions/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/solutions/code-change-design",
-              label: "代码变更效果",
-            },
-            {
-              type: "doc",
-              id: "css/solutions/svg",
-              label: "修改 SVG 样式",
-            },
-            {
-              type: "doc",
-              id: "css/solutions/bootstrap",
-              label: "Bootstrap",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Sass",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/sass/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/sass/installation",
-              label: "安装",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "TailwindCSS",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "css/tailwindcss/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "css/tailwindcss/installation",
-              label: "安装",
-            },
-          ],
-        },
-      ],
-    },
     // Docusaurus
     {
       type: "category",

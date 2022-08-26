@@ -6,6 +6,8 @@ import javascript from "@site/static/img/icon/javascript.png";
 import typescript from "@site/static/img/icon/typescript.png";
 import react from "@site/static/img/icon/react.png";
 import docusaurus from "@site/static/img/icon/docusaurus.png";
+import tailwindcss from "@site/static/img/icon/tailwindcss.png";
+import sass from "@site/static/img/icon/sass.png";
 import wexin_mini_program from "@site/static/img/icon/wexin_mini_program.png";
 import npm from "@site/static/img/icon/npm.png";
 import yarn from "@site/static/img/icon/yarn.png";
@@ -68,6 +70,8 @@ const frontendGridList: Array<GridItemType> = [
     "/docs/wexin-mini-program",
     wexin_mini_program
   ),
+  gridItem(frontendData.tailwind, "/docs/tailwind", tailwindcss),
+  gridItem(frontendData.sass, "/docs/sass", sass),
   gridItem(frontendData.npm, "/docs/npm", npm),
   gridItem(frontendData.yarn, "/docs/yarn", yarn),
   gridItem(frontendData.vite, "/docs/vite", vite),

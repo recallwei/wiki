@@ -1,18 +1,18 @@
 ---
-title: 导入
+title: 导入字体
 ---
 
 import ReferenceList from "@site/src/components/ReferenceList";
 import google from "@site/static/img/icon/google.png";
 import jetbrains from "@site/static/img/reference/jetbrains.png";
 
-可以在 CSS 中引入自定义字体，控制字体显示效果。
+可以在 CSS 中引入**自定义字体**，控制字体显示效果。
 
 ## JetBrains Mono 字体
 
 ```css title="CSS"
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
-/* 代码块、行内代码 */
+
 code {
   color: var(--ifm-color-primary);
   /* 使用 JetBrains Mono 字体 */
@@ -25,12 +25,12 @@ code {
 <ReferenceList
   data={[
     {
-      title: "Google Fonts : JetBrains+Mono",
+      title: "Google Fonts: JetBrains+Mono",
       link: "https://fonts.google.com/specimen/JetBrains+Mono",
       src: google,
     },
     {
-      title: "JetBrains : Mono",
+      title: "JetBrains: Mono",
       link: "https://www.jetbrains.com/zh-cn/lp/mono/",
       src: jetbrains,
     },

@@ -7,6 +7,8 @@ const JAVASCRIPT = "JavaScript";
 const TYPESCRIPT = "TypeScript";
 const REACT = "React";
 const DOCUSAURUS = "Docusaurus";
+const TAILWIND = "Tailwind";
+const SASS = "Sass";
 const WEXIN_MINIPROGRAM = "微信小程序";
 const NPM = "npm";
 const YARN = "Yarn";
@@ -70,6 +72,8 @@ interface FrontendMenuData {
   readonly typescript: string;
   readonly react: string;
   readonly docusaurus: string;
+  readonly tailwind: string;
+  readonly sass: string;
   readonly wexinMiniprogram: string;
   readonly npm: string;
   readonly yarn: string;
@@ -127,6 +131,8 @@ const frontendMenuData: FrontendMenuData = {
   typescript: TYPESCRIPT,
   react: REACT,
   docusaurus: DOCUSAURUS,
+  tailwind: TAILWIND,
+  sass: SASS,
   wexinMiniprogram: WEXIN_MINIPROGRAM,
   npm: NPM,
   yarn: YARN,

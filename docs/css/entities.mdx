@@ -1,27 +1,27 @@
 ---
-title: Entities
+title: 字符实体
 ---
 
 import TH from "@site/src/components/TextHighlight/index";
 import ReferenceList from "@site/src/components/ReferenceList";
 import w3schools from "@site/static/img/reference/w3schools.png";
 
-## Definition
+<p>
+  <TH>HTML 字符实体不可以直接在 CSS 中使用。</TH>为了在 CSS 中显示
+  HTML字符实体，我们需要使用 CSS 字符实体。
+</p>
 
-<TH>HTML entities is unavailable in CSS</TH>. To display any HTML entities in
-CSS, we need to use CSS Entities.
+如下代码不工作，因为在 CSS 中使用了 HTML 字符实体:
 
-The code doesn't work below because of using HTML Entity:
-
-```css {2}
+```css {2} title="CSS"
 h2:after {
   content: "&#36;";
 }
 ```
 
-## Syntax
+改用 **CSS 字符实体**，即可正确显示：
 
-```css {2}
+```css {2} title="CSS"
 h2:after {
   content: "\0024"; /* \0024 is $ */
 }
@@ -32,7 +32,7 @@ h2:after {
 <ReferenceList
   data={[
     {
-      title: "w3schools : CSS Entities",
+      title: "w3schools: CSS Entities",
       link: "https://www.w3schools.com/cssref/css_entities.asp",
       src: w3schools,
     },

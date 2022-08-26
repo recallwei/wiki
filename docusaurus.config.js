@@ -137,6 +137,16 @@ const config = {
               },
               {
                 type: "docSidebar",
+                label: "Tailwind",
+                sidebarId: "tailwind",
+              },
+              {
+                type: "docSidebar",
+                label: "Sass",
+                sidebarId: "sass",
+              },
+              {
+                type: "docSidebar",
                 label: "微信小程序",
                 sidebarId: "wexin_mini_program",
               },
