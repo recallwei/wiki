@@ -65,13 +65,13 @@ const frontendGridList: Array<GridItemType> = [
   gridItem(frontendData.typescript, "/docs/typescript", typescript),
   gridItem(frontendData.react, "/docs/react", react),
   gridItem(frontendData.docusaurus, "/docs/docusaurus", docusaurus),
+  gridItem(frontendData.tailwind, "/docs/tailwind", tailwindcss),
+  gridItem(frontendData.sass, "/docs/sass", sass),
   gridItem(
     frontendData.wexinMiniprogram,
     "/docs/wexin-mini-program",
     wexin_mini_program
   ),
-  gridItem(frontendData.tailwind, "/docs/tailwind", tailwindcss),
-  gridItem(frontendData.sass, "/docs/sass", sass),
   gridItem(frontendData.npm, "/docs/npm", npm),
   gridItem(frontendData.yarn, "/docs/yarn", yarn),
   gridItem(frontendData.vite, "/docs/vite", vite),

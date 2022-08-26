@@ -157,7 +157,20 @@ const sidebars = {
     ]),
   ],
 
-  docusaurus: [doc("docusaurus/index", "Docusaurus")],
+  docusaurus: [
+    doc("docusaurus/index", "Docusaurus"),
+    doc("docusaurus/build", "Build"),
+    category("docusaurus/markdown-feature/index", "Markdown 特性", [
+      doc("docusaurus/markdown-feature/basic-feature", "基本特性"),
+      doc("docusaurus/markdown-feature/code-block", "Code Block"),
+      doc("docusaurus/markdown-feature/admonitions", "Admonitions"),
+      doc("docusaurus/markdown-feature/assets", "静态资源"),
+      doc("docusaurus/markdown-feature/mdx-components", "MDX Components"),
+    ]),
+    doc("docusaurus/swizzling", "Swizzling"),
+    doc("docusaurus/i18n", "多语言"),
+    doc("docusaurus/rename-project-name", "项目重命名"),
+  ],
 
   tailwind: [doc("tailwind/index", "Tailwind")],
 
@@ -298,81 +311,6 @@ const sidebars = {
   computer_network: [doc("computer-network/index", "计算机网络")],
 
   frontend: [
-    // Docusaurus
-    {
-      type: "category",
-      label: "Docusaurus",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "docusaurus/index",
-      },
-      items: [
-        {
-          type: "doc",
-          id: "docusaurus/build",
-          label: "Build",
-        },
-        {
-          type: "category",
-          label: "Markdown 特性",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "docusaurus/markdown-feature/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "docusaurus/markdown-feature/basic-feature",
-              label: "基本特性",
-            },
-            {
-              type: "doc",
-              id: "docusaurus/markdown-feature/code-block",
-              label: "Code Block",
-            },
-            {
-              type: "doc",
-              id: "docusaurus/markdown-feature/admonitions",
-              label: "Admonitions",
-            },
-            {
-              type: "doc",
-              id: "docusaurus/markdown-feature/assets",
-              label: "静态资源",
-            },
-            {
-              type: "doc",
-              id: "docusaurus/markdown-feature/mdx-components",
-              label: "MDX Components",
-            },
-          ],
-        },
-        {
-          type: "doc",
-          id: "docusaurus/swizzling",
-          label: "Swizzling",
-        },
-        {
-          type: "doc",
-          id: "docusaurus/i18n",
-          label: "多语言",
-        },
-        {
-          type: "doc",
-          id: "docusaurus/rename-project-name",
-          label: "项目重命名",
-        },
-        {
-          type: "doc",
-          id: "docusaurus/integrate-tailwind-css",
-          label: "🚀 集成 TailwindCSS",
-        },
-      ],
-    },
     // 微信小程序
     {
       type: "category",
