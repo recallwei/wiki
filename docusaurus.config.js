@@ -50,8 +50,8 @@ const config = {
             [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
           ],
           sidebarPath: require.resolve("./sidebars.js"),
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
           editUrl: "https://github.com/recallwei/wiki/tree/main/website",
           include: ["**/*.md", "**/*.mdx"],
           exclude: [
@@ -215,49 +215,58 @@ const config = {
                 label: "PowerShell",
                 sidebarId: "powershell",
               },
+              {
+                type: "docSidebar",
+                label: "Visual Studio Code",
+                sidebarId: "visual_studio_code",
+              },
+              {
+                type: "docSidebar",
+                label: "Rider",
+                sidebarId: "rider",
+              },
+              {
+                type: "docSidebar",
+                label: "Webstorm",
+                sidebarId: "webstorm",
+              },
+              {
+                type: "docSidebar",
+                label: "微信开发者工具",
+                sidebarId: "wechat_dev_tools",
+              },
             ],
           },
           {
             type: "doc",
             docId: "code-specification",
-            label: "🐞 代码规范",
+            label: "代码规范",
             position: "left",
           },
           {
             type: "doc",
             docId: "software/index",
-            label: "📱 软件",
+            label: "软件",
             position: "left",
           },
           {
             type: "doc",
             docId: "copywriting-guide",
-            label: "✏️ 设计",
+            label: "设计",
             position: "left",
           },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            type: "doc",
-            docId: "todo",
-            label: "⏳ To Do",
-            position: "left",
-          },
-          {
-            type: "doc",
-            docId: "note",
-            label: "📒 笔记",
-            position: "left",
-          },
-          {
-            to: "/docs/tags",
-            label: "🏷️ 标签",
-            position: "left",
-          },
-          {
-            to: "/search",
-            label: "🔍 搜索",
-            position: "left",
-          },
+          //{ to: "/blog", label: "Blog", position: "left" },
+          // {
+          //   to: "/docs/tags",
+          //   label: "标签",
+          //   position: "left",
+          // },
+          // {
+          //   to: "/search",
+          //   label: "搜索",
+          //   position: "left",
+          // },
+
           // Right
           // { type: "localeDropdown", position: "right" },
           {

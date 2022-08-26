@@ -126,20 +126,7 @@
   // .yaml
   "DocsMetaData": {
     "prefix": "dmd",
-    "body": [
-      "---",
-      "title: \"\"",
-      "hide_title: true",
-      "description: \"\"",
-      "tags:",
-      "  - label: \"\"",
-      "    permalink: \"\"",
-      "last_update:",
-      "  date: \"2022-01-01\"",
-      "  author: \"Bruce\"",
-      "draft: true",
-      "---"
-    ],
+    "body": ["---", "title: \"\"", "hide_title: true", "draft: true", "---"],
     "description": "Insert a Doc Meta Data"
   }
 }

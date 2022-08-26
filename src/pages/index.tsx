@@ -33,6 +33,7 @@ type HomepageHeaderProps = {
 
 type ContactMeBtnProps = {
   readonly title?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   readonly src: any;
   link?: string;
   isCopyBtn?: boolean;

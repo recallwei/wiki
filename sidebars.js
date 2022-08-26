@@ -241,6 +241,26 @@ const sidebars = {
     doc("powershell/execution-policy", "ExecutionPolicy"),
   ],
 
+  visual_studio_code: [
+    doc("visual-studio-code/index", "Visual Studio Code"),
+    doc("visual-studio-code/git", "Git"),
+    doc("visual-studio-code/shortcuts", "快捷键"),
+    doc("visual-studio-code/code-snippets", "用户代码片段"),
+    doc("visual-studio-code/proxy", "设置代理"),
+  ],
+
+  rider: [doc("rider/index", "Rider")],
+
+  webstorm: [
+    doc("webstorm/index", "WebStorm"),
+    doc("webstorm/environment", "搭建环境"),
+  ],
+
+  wechat_dev_tools: [
+    doc("wechat-dev-tools/index", "微信开发者工具"),
+    doc("wechat-dev-tools/settings", "设置"),
+  ],
+
   algorithm: [doc("algorithm/index", "算法")],
 
   operating_system: [doc("operating-system/index", "操作系统")],
@@ -916,78 +936,6 @@ const sidebars = {
     },
     { type: "doc", id: "vpn", label: "VPN" },
     { type: "doc", id: "build-website", label: "建站" },
-    // IDE
-    {
-      type: "category",
-      label: "IDE",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "ide/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "Visual Studio Code",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "ide/visual-studio-code/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/git",
-              label: "Git",
-            },
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/shortcuts",
-              label: "快捷键",
-            },
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/proxy",
-              label: "设置代理服务器",
-            },
-            {
-              type: "doc",
-              id: "ide/visual-studio-code/user-code-snippets",
-              label: "用户代码片段",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "WebStorm",
-          collapsible: true,
-          collapsed: true,
-          link: { type: "doc", id: "ide/webstorm/index" },
-          items: [
-            { type: "doc", id: "ide/webstorm/environment", label: "搭建环境" },
-          ],
-        },
-        {
-          type: "category",
-          label: "Wechat Devtools",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "ide/wechat-dev-tools/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "ide/wechat-dev-tools/settings",
-              label: "Settings",
-            },
-          ],
-        },
-      ],
-    },
   ],
   design: [
     // 文案排版指南
