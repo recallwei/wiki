@@ -245,16 +245,15 @@ const sidebars = {
     doc("visual-studio-code/index", "Visual Studio Code"),
     doc("visual-studio-code/git", "Git"),
     doc("visual-studio-code/shortcuts", "快捷键"),
-    doc("visual-studio-code/code-snippets", "用户代码片段"),
+    doc("visual-studio-code/code-snippets", "代码片段"),
     doc("visual-studio-code/proxy", "设置代理"),
   ],
 
+  visual_studio: [doc("visual-studio/index", "Visual Studio")],
+
   rider: [doc("rider/index", "Rider")],
 
-  webstorm: [
-    doc("webstorm/index", "WebStorm"),
-    doc("webstorm/environment", "搭建环境"),
-  ],
+  webstorm: [doc("webstorm/index", "WebStorm")],
 
   wechat_dev_tools: [
     doc("wechat-dev-tools/index", "微信开发者工具"),

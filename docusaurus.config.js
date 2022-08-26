@@ -222,6 +222,11 @@ const config = {
               },
               {
                 type: "docSidebar",
+                label: "Visual Studio",
+                sidebarId: "visual_studio",
+              },
+              {
+                type: "docSidebar",
                 label: "Rider",
                 sidebarId: "rider",
               },

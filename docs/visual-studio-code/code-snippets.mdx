@@ -15,7 +15,7 @@ import HyperLink from "/src/components/HyperLink/index";
 
 Visual Studio Code 也支持使用制表符补全提示的代码，在 **settings.json** 中添加如下配置启用该功能：
 
-```json
+```json title="JSON"
 {
   "editor.tabCompletion": "on"
 }
@@ -27,7 +27,7 @@ Visual Studio Code 也支持使用制表符补全提示的代码，在 **setting
 
 如下创建一个 **JavaScript** 的 For 循环代码片段：
 
-```json
+```json title="JSON"
 // in file 'Code/User/snippets/javascript.json'
 {
   "For Loop": {
@@ -38,9 +38,9 @@ Visual Studio Code 也支持使用制表符补全提示的代码，在 **setting
 }
 ```
 
-- prefix : 触发智能提示的数组或字符串，由于智能提示是以前缀匹配，上述代码片段可以由 `fc` 触发。
-- body : 代码片段的内容。
-- description : 智能提示显示的简介。
+- `prefix` - 触发智能提示的数组或字符串，由于智能提示是以**前缀匹配**，上述代码片段可以由 `fc` 触发。
+- `body` - 代码片段的内容。
+- `description` - 智能提示显示的简介。
 
 ## 工具：Snippet Generator
 
@@ -64,7 +64,7 @@ Snippet Generator by Pawel Grzybek: <HyperLink link="https://snippet-generator.a
 <ReferenceList
   data={[
     {
-      title: "Visual Studio Code Docs : Snippets",
+      title: "Visual Studio Code Docs: Snippets",
       link: "https://code.visualstudio.com/docs/editor/userdefinedsnippets",
       src: visual_studio_code,
     },

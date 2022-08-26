@@ -1,5 +1,5 @@
 ---
-title: 设置代理服务器
+title: 设置代理
 ---
 
 import ReferenceList from "@site/src/components/ReferenceList";
@@ -9,16 +9,16 @@ import visual_studio_code from "@site/static/img/icon/visual_studio_code.png";
 
 在 Push 代码到 GitHub 时遇到错误：Failed to connect to github.com port 443:connection timed out。
 
-由于我使用了代理，但 vscode 并未尊重我的全局代理设置。
+因为我使用了系统代理，但 Visual Studio Code 并未尊重我的全局代理设置。
 
 ### 配置 vscode proxy
 
-打开 **settings.json** ，添加如下 proxy 配置代码（禁用 SSL ，代理）：
+打开 **settings.json** ，添加如下 proxy 配置代码。（禁用 SSL ，配置代理）
 
-```json
+```json title="JSON"
 {
   "http.proxyStrictSSL": false,
-  "http.proxy": "http://xxx.xxx.xxx.xxx:port"
+  "http.proxy": "http://127.0.0.1:7980"
 }
 ```
 
@@ -26,9 +26,9 @@ import visual_studio_code from "@site/static/img/icon/visual_studio_code.png";
 
 ### 设置 Git 代理
 
-在根目录为项目配置 Git 代理（禁用 SSL ，代理）：
+在根目录为项目配置 Git 代理。（禁用 SSL ，配置代理）
 
-```git
+```bash
 git config http.sslVerify false
 git config http.proxy http://127.0.0.1:7890
 ```
@@ -40,7 +40,7 @@ git config http.proxy http://127.0.0.1:7890
 <ReferenceList
   data={[
     {
-      title: "Visual Studio Code Docs : Proxy server support",
+      title: "Visual Studio Code Docs: Proxy server support",
       link: "https://code.visualstudio.com/docs/setup/network#_proxy-server-support",
       src: visual_studio_code,
     },

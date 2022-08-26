@@ -108,8 +108,9 @@ code {
   color: var(--ifm-color-primary);
   font-weight: bold;
   font-size: smaller;
+  vertical-align: middle;
   /* 使用 JetBrains Mono 字体 */
-  /* font-family: "JetBrains Mono", monospace !important; */
+  font-family: "JetBrains Mono", monospace !important;
   /* font-family: var(--base-font-family) !important; */
 }
 
@@ -177,20 +178,4 @@ div[class^="announcementBar_"] {
 
 [data-theme="dark"] .navbarIcon {
   border: solid white 1.5px;
-}
-
-/* Media Query */
-@media (min-width: 576px) {
-}
-
-@media (min-width: 768px) {
-}
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
 }
