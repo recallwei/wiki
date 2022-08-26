@@ -33,6 +33,8 @@ import rider from "@site/static/img/icon/rider.png";
 import webstorm from "@site/static/img/icon/webstorm.png";
 import wechat_dev_tools from "@site/static/img/icon/wechat_dev_tools.png";
 
+import figma from "@site/static/img/icon/figma.png";
+
 import {
   frontendMenuData as frontendData,
   backendMenuData as backendData,
@@ -107,6 +109,7 @@ const othersGridList: Array<GridItemType> = [
     "/docs/wechat-dev-tools",
     wechat_dev_tools
   ),
+  gridItem(othersData.figma, "/docs/figma", figma),
 ];
 
 export { frontendGridList, backendGridList, othersGridList };
