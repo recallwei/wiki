@@ -80,6 +80,9 @@ const sidebars = {
         "🚀 深复制与浅复制"
       ),
     ]),
+    category("javascript/dom/index", "DOM", [
+      doc("javascript/dom/events", "DOM 事件"),
+    ]),
     category("javascript/solutions/index", "解决方案", [
       doc("javascript/solutions/get-device-type", "获取设备类型"),
       doc("javascript/solutions/get-file-type", "获取文件类型"),
