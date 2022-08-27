@@ -36,6 +36,7 @@ const sidebars = {
     doc("css/transform", "Transform"),
     category("css/properties/index", "属性", [
       doc("css/properties/box-shadow", "box-shadow"),
+      doc("css/properties/resize", "resize"),
       doc("css/properties/white-space", "white-space"),
     ]),
     category("css/ui/index", "UI", [

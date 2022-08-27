@@ -1,0 +1,16 @@
+---
+title: "resize"
+---
+
+import TH from "@site/src/components/TextHighlight";
+
+`resize` 属性决定一个元素是否可以<TH>被用户手动调整大小</TH>。
+
+```css title="CSS"
+.resizable {
+  resize: none;
+}
+```
+
+默认值是 `none`，即不可以调整大小。但 **textarea** 元素默认为 `vertical`，即可以调整 **textarea** 的高度。  
+常用可选的值是：`vertical`，`horizontal`，`both`。分别对应着**调整高度**、**调整宽度**、**同时调整高度和宽度**。
