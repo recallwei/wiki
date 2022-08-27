@@ -1,5 +1,5 @@
 // Frontend
-const FRONTEND = "前端";
+const FRONTEND = "Frontend";
 const MARKDOWN = "Markdown";
 const HTML = "HTML";
 const CSS = "CSS";
@@ -16,7 +16,7 @@ const VITE = "Vite";
 const GRAPHQL = "GraphQL";
 
 // Backend
-const BACKEND = "后端";
+const BACKEND = "Backend";
 const CSHARP = "C#";
 const GO = "Go";
 const NODE_JS = "Node.js";
@@ -33,7 +33,7 @@ const OPERATING_SYSTEM = "操作系统";
 const COMPUTER_NETWORK = "计算机网络";
 
 // 其他
-const OTHERS = "其他";
+const OTHERS = "Others";
 const GIT = "Git";
 const GITHUB = "GitHub";
 const JSON = "JSON"; // Still not use
