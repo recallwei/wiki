@@ -47,13 +47,22 @@ export interface GridItemType {
   readonly title: string;
   readonly link: string;
   readonly src: any;
+  readonly fontSize: FontSize;
 }
 
-function gridItem(title: string, link: string, src: any): GridItemType {
+type FontSize = "sm" | "md" | "lg";
+
+function gridItem(
+  title: string,
+  link: string,
+  src: any,
+  fontSize: FontSize = "lg"
+): GridItemType {
   return {
     title: title,
     link: link,
     src: src,
+    fontSize: fontSize,
   };
 }
 
@@ -86,13 +95,14 @@ const backendGridList: Array<GridItemType> = [
   gridItem(
     backendData.microsoft_sqlserver,
     "/docs/microsoft-sqlserver",
-    microsoft_sqlserver
+    microsoft_sqlserver,
+    "sm"
   ),
   gridItem(backendData.mongodb, "/docs/mongodb", mongodb),
   gridItem(backendData.cosmosdb, "/docs/cosmosdb", cosmosdb),
   gridItem(backendData.redis, "/docs/redis", redis),
   gridItem(backendData.vercel, "/docs/vercel", vercel),
-  gridItem(backendData.azure, "/docs/microsoft-azure", microsoft_azure),
+  gridItem(backendData.azure, "/docs/microsoft-azure", microsoft_azure, "md"),
 ];
 
 const othersGridList: Array<GridItemType> = [
@@ -103,7 +113,8 @@ const othersGridList: Array<GridItemType> = [
   gridItem(
     othersData.visual_studio_code,
     "/docs/visual-studio-code",
-    visual_studio_code
+    visual_studio_code,
+    "md"
   ),
   gridItem(othersData.visual_studio, "/docs/visual-studio", visual_studio),
   gridItem(othersData.rider, "/docs/rider", rider),

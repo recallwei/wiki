@@ -30,7 +30,15 @@ export default function GridList({
               className={clsx(styles.image)}
               alt={item.title}
             />
-            <div className={styles.title}>{item.title}</div>
+            <div
+              className={clsx(
+                styles.title,
+                item.fontSize === "md" && styles.title_md,
+                item.fontSize === "sm" && styles.title_sm
+              )}
+            >
+              {item.title}
+            </div>
           </Link>
         );
       })}

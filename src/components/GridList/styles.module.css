@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 128px;
   border-radius: 0.5rem;
   margin: 1rem;
   padding: 0 1rem;
@@ -32,6 +33,7 @@
 [data-theme="dark"] .cardWrapper:hover {
   box-shadow: white 0px 0px 10px;
 }
+
 .image {
   width: 96px;
   height: 96px;
@@ -44,6 +46,17 @@
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 2px;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.title_sm {
+  font-size: 0.6rem;
+}
+
+.title_md {
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 576px) {
