@@ -12,7 +12,7 @@
     "serve": "docusaurus serve",
     "translate": "docusaurus write-translations",
     "lint": "npx eslint . --ext .ts",
-    "dev": "yarn lint && yarn start"
+    "dev": "yarn start --port 3002"
   },
   "dependencies": {
     "@docusaurus/core": "latest",

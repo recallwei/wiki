@@ -1,0 +1,25 @@
+---
+title: 在 Docker 中运行 React 应用程序
+---
+
+## Development 环境
+
+### 创建 Dockerfile
+
+注意**首字母大写**，其余字母小写，且**无需文件扩展名**。
+
+```dockerfile title="Dockerfile"
+FROM node:16.17.0-alpine3.15
+RUN mkdir -p /appdir
+WORKDIR /appdir
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+COPY . .
+EXPOSE 5173
+CMD ["yarn","dev","--host","0.0.0.0"]
+```
+
+### 启动 Container
+
+将该应用打包为镜像，指定的容器端口号，然后在 Docker Desktop 中启动该镜像的容器实例，便可通过该端口号在本地访问该 React 应用程序。

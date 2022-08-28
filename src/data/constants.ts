@@ -25,6 +25,7 @@ const MICROSOFT_SQLSERVER = "Microsoft SQL Server"; // Microsoft SQL Server
 const MONGODB = "MongoDB";
 const COSMOSDB = "CosmosDB";
 const REDIS = "Redis";
+const DOCKER = "Docker";
 const VERCEL = "Vercel";
 const MICROSOFT_AZURE = "Microsoft Azure"; // Microsoft Azure
 
@@ -91,6 +92,7 @@ interface BackendMenuData {
   readonly mongodb: string;
   readonly cosmosdb: string;
   readonly redis: string;
+  readonly docker: string;
   readonly vercel: string;
   readonly azure: string;
 }
@@ -150,6 +152,7 @@ const backendMenuData: BackendMenuData = {
   mongodb: MONGODB,
   cosmosdb: COSMOSDB,
   redis: REDIS,
+  docker: DOCKER,
   vercel: VERCEL,
   azure: MICROSOFT_AZURE,
 };

@@ -22,6 +22,7 @@ import microsoft_sqlserver from "@site/static/img/icon/microsoft_sqlserver.png";
 import mongodb from "@site/static/img/icon/mongodb.png";
 import cosmosdb from "@site/static/img/icon/cosmosdb.png";
 import redis from "@site/static/img/icon/redis.png";
+import docker from "@site/static/img/icon/docker.png";
 import vercel from "@site/static/img/icon/vercel.png";
 import microsoft_azure from "@site/static/img/icon/microsoft_azure.png";
 
@@ -101,6 +102,7 @@ const backendGridList: Array<GridItemType> = [
   gridItem(backendData.mongodb, "/docs/mongodb", mongodb),
   gridItem(backendData.cosmosdb, "/docs/cosmosdb", cosmosdb),
   gridItem(backendData.redis, "/docs/redis", redis),
+  gridItem(backendData.docker, "/docs/docker", docker),
   gridItem(backendData.vercel, "/docs/vercel", vercel),
   gridItem(backendData.azure, "/docs/microsoft-azure", microsoft_azure, "md"),
 ];

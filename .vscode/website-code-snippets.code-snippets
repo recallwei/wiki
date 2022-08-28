@@ -126,7 +126,12 @@
   // .yaml
   "DocsMetaData": {
     "prefix": "dmd",
-    "body": ["---", "title: \"\"", "hide_title: true", "draft: true", "---"],
+    "body": ["---", "title: $1", "---", "$0"],
     "description": "Insert a Doc Meta Data"
+  },
+  "CategorysMetaData": {
+    "prefix": "cmd",
+    "body": ["---", "title: $1", "hide_title: true", "---", "$0"],
+    "description": "Insert a Category Meta Data"
   }
 }

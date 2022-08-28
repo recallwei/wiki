@@ -178,6 +178,8 @@ const config = {
               { type: "docSidebar", label: "MongoDB", sidebarId: "mongodb" },
               { type: "docSidebar", label: "CosmosDB", sidebarId: "cosmosdb" },
               { type: "docSidebar", label: "Redis", sidebarId: "redis" },
+              { type: "docSidebar", label: "Docker", sidebarId: "docker" },
+
               {
                 type: "docSidebar",
                 label: "Vercel",
@@ -337,6 +339,7 @@ const config = {
           "powershell",
           "swift",
           "vim",
+          "docker",
         ],
       },
       algolia: {

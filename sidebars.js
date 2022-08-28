@@ -256,6 +256,13 @@ const sidebars = {
 
   redis: [doc("redis/index", "Redis")],
 
+  docker: [
+    doc("docker/index", "Docker"),
+    doc("docker/basic", "基本概念"),
+    doc("docker/cli", "CLI"),
+    doc("docker/dockerize-react-app", "在 Docker 中运行 React 应用程序"),
+  ],
+
   vercel: [
     doc("vercel/index", "Vercel"),
     doc("vercel/project-configuration", "项目配置"),
