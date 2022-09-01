@@ -116,7 +116,7 @@ const othersGridList: Array<GridItemType> = [
     othersData.visual_studio_code,
     "/docs/visual-studio-code",
     visual_studio_code,
-    "md"
+    "sm"
   ),
   gridItem(othersData.visual_studio, "/docs/visual-studio", visual_studio),
   gridItem(othersData.rider, "/docs/rider", rider),
