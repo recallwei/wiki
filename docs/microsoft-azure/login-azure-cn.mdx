@@ -12,20 +12,21 @@ last_update:
 import TH from "@site/src/components/TextHighlight/index";
 import ReferenceList from "@site/src/components/ReferenceList";
 import microsoft from "@site/static/img/icon/microsoft.png";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
-## Visual Studio Code 如何登陆中国区 Azure
+## 使用不同的 IDE 登录中国区 Azure
 
-在 **设置 - 扩展 - Azure Configuration - Azure Cloud** 选择 <TH>AzureChina</TH>。
-
-接着登录 Azure 会出现中国区 Azure 的 URL，输入设备码会跳转到中国区 Azure 登录页面。
-
-## 🚀 Visual Studio 如何登录中国区 Azure
-
-⌛️ 完善中...
-
-## JetBrains 如何登录中国区 Azure
-
-在 **<用户主目录>\AzureToolsForIntelliJ** 下创建文件 **AadProvider.json**，如果是 MacOS 则文件名为 **AuthMethodDetails.json**，并按如下所示更新其内容：
+<Tabs groupId="IDE">
+  <TabItem value="Visual Studio Code">
+    在 <strong>设置 - 扩展 - Azure Configuration - Azure Cloud</strong> 选择&nbsp;
+     <TH>AzureChina</TH>。<br />
+    接着登录 Azure 会出现中国区 Azure 的 URL，输入设备码会跳转到中国区 Azure
+    登录页面。
+  </TabItem>
+  <TabItem value="Visual Studio">⌛️ 完善中...</TabItem>
+  <TabItem value="Rider">
+    在 <strong>用户主目录/AzureToolsForIntelliJ</strong> 下创建文件 <strong>AadProvider.json</strong>，如果是 <strong>MacOS</strong> 则文件名为 <strong>AuthMethodDetails.json</strong>，并按如下所示更新其内容：
 
 ```json
 {
@@ -36,6 +37,9 @@ import microsoft from "@site/static/img/icon/microsoft.png";
 <TH>重新启动</TH> IDE后，便可登录中国区 Azure。
 
 如果要切换回国际版 Azure，注释或删除该文件，然后<TH>重新启动</TH> IDE。
+
+  </TabItem>
+</Tabs>
 
 ## 参考
 
