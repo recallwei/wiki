@@ -15,8 +15,6 @@ import microsoft from "@site/static/img/icon/microsoft.png";
 
 ## Visual Studio Code 如何登陆中国区 Azure
 
-<!-- UI - Menu -->
-
 在 **设置 - 扩展 - Azure Configuration - Azure Cloud** 选择 <TH>AzureChina</TH>。
 
 接着登录 Azure 会出现中国区 Azure 的 URL，输入设备码会跳转到中国区 Azure 登录页面。
@@ -27,7 +25,7 @@ import microsoft from "@site/static/img/icon/microsoft.png";
 
 ## JetBrains 如何登录中国区 Azure
 
-在 **<用户主目录>\AzureToolsForIntelliJ** 下创建文件 **AadProvider.json**，并按如下所示更新其内容：
+在 **<用户主目录>\AzureToolsForIntelliJ** 下创建文件 **AadProvider.json**，如果是 MacOS 则文件名为 **AuthMethodDetails.json**，并按如下所示更新其内容：
 
 ```json
 {
