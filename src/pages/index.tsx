@@ -250,7 +250,13 @@ function PortfolioArea({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
               <div className={styles.portfolioCardRight}>
                 <img src={item.src} loading="eager" width="40" height="40" />
                 {!isMobileDevice && (
-                  <div className={clsx(styles.status, styles.tag)}>
+                  <div
+                    className={clsx(
+                      item.status === "In Development" && styles.development,
+                      item.status === "In Production" && styles.production,
+                      styles.tag
+                    )}
+                  >
                     {item.status}
                   </div>
                 )}

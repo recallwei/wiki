@@ -30,6 +30,7 @@ export type TagType = {
 
 type DevelopmentStatusType =
   | "In Development"
+  | "In Production"
   | "Archived"
   | "Long-term Support";
 
@@ -46,7 +47,7 @@ export interface PortfolioType {
 const portfolioListData: Array<PortfolioType> = [
   {
     name: "Taskward",
-    status: "In Development",
+    status: "In Production",
     siteLink: "https://taskward.bruceworld.top/",
     repoLink: "https://github.com/recallwei/taskward",
     src: taskward,

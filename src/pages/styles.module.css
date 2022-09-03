@@ -183,8 +183,12 @@
   font-family: var(--ifm-font-family-monospace);
 }
 
-.portfolioArea .status {
+.portfolioArea .development {
   background-color: orange;
+}
+
+.portfolioArea .production {
+  background-color: rgb(28, 194, 28);
 }
 
 .portfolioCardRight {
