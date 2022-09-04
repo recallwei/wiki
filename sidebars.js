@@ -25,7 +25,6 @@ const sidebars = {
     doc("css/index", "CSS"),
     doc("css/selectors", "选择器"),
     doc("css/entities", "字符实体"),
-    doc("css/flex-box", "Flex Box"),
     category("css/font/index", "字体", [
       doc("css/font/import", "导入字体"),
       doc("css/font/display", "字体显示"),
@@ -33,16 +32,11 @@ const sidebars = {
     category("css/list/index", "List", [
       doc("css/list/list-style-type", "list-style-type"),
     ]),
-    doc("css/transform", "Transform"),
     category("css/properties/index", "属性", [
       doc("css/properties/box-shadow", "box-shadow"),
+      doc("css/properties/overflow", "overflow"),
       doc("css/properties/resize", "resize"),
       doc("css/properties/white-space", "white-space"),
-    ]),
-    category("css/ui/index", "UI", [
-      doc("css/ui/card", "Card"),
-      doc("css/ui/ribbon", "Ribbon"),
-      doc("css/ui/divider", "分隔线"),
     ]),
     category("css/solutions/index", "解决方案", [
       doc("css/solutions/code-change-design", "代码变更效果"),
@@ -53,10 +47,11 @@ const sidebars = {
 
   javascript: [
     doc("javascript/index", "JavaScript"),
+    doc("javascript/variable", "变量"),
     category("javascript/data-type/index", "数据类型", [
       doc("javascript/data-type/number", "Number"),
-      doc("javascript/data-type/string", "🚀 String"),
-      doc("javascript/data-type/type-conversion", "🚀 类型转换"),
+      doc("javascript/data-type/string", "String"),
+      doc("javascript/data-type/type-conversion", "类型转换"),
     ]),
     category("javascript/operators-and-expressions/index", "运算符和表达式", [
       doc("javascript/operators-and-expressions/bitwise-not", "按位非 ~"),

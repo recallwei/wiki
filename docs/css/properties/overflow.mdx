@@ -1,0 +1,35 @@
+---
+title: overflow
+---
+
+import TH from "@site/src/components/TextHighlight";
+
+**overflow** 属性决定内容溢出时的行为。
+
+## 条件
+
+（满足以下任一）
+
+- 必须有指定的高度或宽度。
+- 具有 `white-space: nowrap` 属性。
+
+## 取值
+
+- `visible` - （默认值）**总是显示**溢出的内容，不会被裁剪切。
+- `hiden` - 将内容剪切，并且**溢出内容不可见**。
+- `scroll` - 剪切内容，**显示滚动条**。
+- `auto` - 让浏览器处理，如果内容被剪切，就会出现滚动条。
+- `inherit` - 继承父元素的值。
+- `overlay` - **仍属于实验性功能**，仅在基于 WebKit（例如 Safari）和基于 Blink 的（例如 Chrome 或 Opera）浏览器中受支持。行为与 `auto` 一致，但滚动条绘制在内容上，<TH>不额外占用空间</TH>。
+
+:::caution 警告
+
+`overlay` 在 **Firefox** 中未得到支持，建议不要使用该属性，可考虑修改滚动条的样式，来达到不额外占用空间的目的！
+
+:::
+
+## overflow-x / overflow-y
+
+`overflow-x` 和 `overflow-y` 分别表示 x、y 轴上溢出的情况。
+
+`overflow` 是 `overflow-x` 和 `overflow-y` 的简写，同时指定两个值，第一个应用于 `overflow-x`，第二个应用于 `overflow-y`，如果只设定一个值，将同时应用。
