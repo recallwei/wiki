@@ -47,6 +47,7 @@ const sidebars = {
 
   javascript: [
     doc("javascript/index", "JavaScript"),
+    doc("javascript/code-specification", "代码规范"),
     doc("javascript/variable", "变量"),
     category("javascript/data-type/index", "数据类型", [
       doc("javascript/data-type/number", "Number"),

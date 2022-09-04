@@ -2,8 +2,119 @@
 title: 变量
 ---
 
-# var
+## var
 
-# const
+`var` 的作用域为**函数**内部，在函数执行完毕时**会被销毁**。
 
-# let
+### 声明全局变量
+
+省略 `var` 声明变量时，会创建**全局变量**。
+
+```javascript title="JavaScript"
+function fc() {
+  a = 1;
+}
+console.log(a); // 1
+```
+
+此处的变量 a 被声明为全局变量，且定义后该全局变量**不会在函数执行完毕后被销毁**。
+
+:::caution 注意
+
+并不推荐通过省略 `var` 来操作全局变量，因为局部作用域中的全局变量很难维护。在严格模式下，给未声明的变量赋值会抛出 ReferenceError。
+
+:::
+
+### 定义多个变量
+
+可以使用一个 `var` 关键字，定义多个变量。
+
+```JavaScript title="JavaScript"
+var a = 1,b = 2,c = 3;
+```
+
+### var 的变量提升
+
+所有使用 `var` 声明的变量都会**提升到函数作用域的顶部**。
+
+```javascript title="JavaScript"
+function fc() {
+  console.log(a);
+  var a = 1;
+}
+
+function fc() {
+  var a = 1;
+  console.log(a);
+}
+```
+
+以上两个函数等价。
+
+使用 `var` 反复声明同一个变量不会出现错误。
+
+```javascript title="JavaScript"
+function fc() {
+  var a = 1;
+  var a = 2;
+  var a = 3;
+  console.log(a);
+}
+fc(); // 3
+```
+
+## let (ES6)
+
+`let` 的作用域为**块**内部，即 `{}` 内部。
+
+`let` 无法在同一个块作用域中多次声明同一个变量，会抛出语法错误。
+
+### 暂时性死区
+
+`let` 与 `var` 不同的是，`let` 声明的变量不会在其作用域中被提升。  
+在 let 声明之前的执行瞬间被称为**暂时性死区**，在此阶段引用任何后面才声明的变量都会抛出 ReferenceError。
+
+### 全局声明
+
+`let` 在全局作用域中声明的变量**不会成为 window 对象的属性**，而 `var` 声明的变量会。
+
+:::caution 注意
+
+建议禁止在全局范围内用 `let` 声明变量，仅在函数等局部作用域内声明变量，因为多次使用 `let` 声明同一个变量会抛出语法错误，在全局范围内（比如不同 JavaScript 文件中），这点很难防范。
+
+:::
+
+### 声明 for 循环中的迭代变量
+
+为了避免将迭代变量渗透到循环体外部或修改迭代变量，建议总是使用 `let` 来声明 `for` 循环中的迭代变量。
+
+## const (ES6)
+
+`const` 的行为与 `let` 基本相同，唯一一个重要的区别是用它**声明变量时必须同时初始化变量**，且 尝试修改 `const` 声明的变量会导致运行时错误。  
+但是，如果 `const` 声明的是一个引用类型，如对象，修改这个对象里的属性，并不违反 `const` 的限制。
+
+### 声明 for-in 和 for-of 循环中的迭代变量
+
+在 `for-in` 和 `for-of` 中的使用 `const` 声明迭代变量，每次迭代只是创建一个新的变量，并不会对其进行修改。
+
+```javascript title="JavaScript"
+let i = 0;
+for (const j = 7; i < 5; ++i) {
+  console.log(j);
+}
+// 7, 7, 7, 7, 7
+for (const key in { a: 1, b: 2 }) {
+  console.log(key);
+}
+// a, b
+for (const value of [1, 2, 3, 4, 5]) {
+  console.log(value);
+}
+// 1, 2, 3, 4, 5
+```
+
+:::caution 注意
+
+不建议使用 `const` 声明 `for` 循环中的迭代变量，因为迭代变量通常会自增，而 `const` 声明的变量不允许被修改。
+
+:::
