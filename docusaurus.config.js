@@ -229,6 +229,11 @@ const config = {
               },
               {
                 type: "docSidebar",
+                label: "Chrome",
+                sidebarId: "chrome",
+              },
+              {
+                type: "docSidebar",
                 label: "Visual Studio Code",
                 sidebarId: "visual_studio_code",
               },

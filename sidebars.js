@@ -292,6 +292,11 @@ const sidebars = {
     doc("powershell/execution-policy", "ExecutionPolicy"),
   ],
 
+  chrome: [
+    doc("chrome/index", "Chrome"),
+    doc("chrome/type-url-in-browser", "浏览器输入网址到页面展示的过程"),
+  ],
+
   visual_studio_code: [
     doc("visual-studio-code/index", "Visual Studio Code"),
     doc("visual-studio-code/git", "Git"),
@@ -311,11 +316,27 @@ const sidebars = {
     doc("wechat-dev-tools/settings", "设置"),
   ],
 
-  algorithm: [doc("algorithm/index", "算法")],
+  algorithm: [doc("algorithm/index", "算法"), doc("algorithm/xor", "XOR 算法")],
 
-  operating_system: [doc("operating-system/index", "操作系统")],
+  operating_system: [
+    doc("operating-system/index", "操作系统"),
+    category("operating-system/mac-os/index", "macOS", [
+      doc("operating-system/mac-os/shortcuts", "快捷键"),
+    ]),
+    category("operating-system/windows/index", "Windows", [
+      doc(
+        "operating-system/windows/expose-iis-in-lan",
+        "将 IIS 暴露在局域网内"
+      ),
+    ]),
+  ],
 
-  computer_network: [doc("computer-network/index", "计算机网络")],
+  computer_network: [
+    doc("computer-network/index", "计算机网络"),
+    category("computer-network/dns/index", "DNS", [
+      doc("computer-network/dns/flush-cache", "清除 DNS 缓存"),
+    ]),
+  ],
 
   frontend: [
     // 微信小程序
@@ -582,100 +603,6 @@ const sidebars = {
               type: "doc",
               id: "redis/cli/key",
               label: "🚀 Key",
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  cs: [
-    // 算法
-    {
-      type: "category",
-      label: "算法",
-      collapsible: true,
-      collapsed: true,
-      link: { type: "doc", id: "algorithm/index" },
-      items: [
-        {
-          type: "doc",
-          id: "algorithm/xor",
-          label: "XOR 算法",
-        },
-      ],
-    },
-    // 操作系统
-    {
-      type: "category",
-      label: "操作系统",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "operating-system/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "macOS",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "operating-system/mac-os/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "operating-system/mac-os/shortcuts",
-              label: "快捷键",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Windows",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "operating-system/windows/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "operating-system/windows/expose-iis-in-lan",
-              label: "将 IIS 暴露在局域网内",
-            },
-          ],
-        },
-      ],
-    },
-    // 计算机网络
-    {
-      type: "category",
-      label: "计算机网络",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: "doc",
-        id: "computer-network/index",
-      },
-      items: [
-        {
-          type: "category",
-          label: "DNS",
-          collapsible: true,
-          collapsed: true,
-          link: {
-            type: "doc",
-            id: "computer-network/dns/index",
-          },
-          items: [
-            {
-              type: "doc",
-              id: "computer-network/dns/flush-cache",
-              label: "清除 DNS 缓存",
             },
           ],
         },
