@@ -61,6 +61,10 @@ const sidebars = {
         "javascript/operators-and-expressions/nullish-coalescing",
         "空值合并 ??"
       ),
+      doc(
+        "javascript/operators-and-expressions/logical-nullish-assignment",
+        "逻辑空赋值 ??="
+      ),
       doc("javascript/operators-and-expressions/option-chaining", "可选链 ?."),
       doc(
         "javascript/operators-and-expressions/destructuring-assignment",

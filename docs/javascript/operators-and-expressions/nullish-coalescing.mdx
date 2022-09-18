@@ -1,3 +1,13 @@
 ---
 title: 空值合并 ??
 ---
+
+## 定义
+
+第一个参数不是 `null` 或 `undefined` ，则返回第一个参数，否则返回第二个参数。
+
+```javascript title="JavaScript" showLineNumbers
+console.log(null ?? 1); // expected: 1
+console.log(undefined ?? 1); // expected: 1
+console.log(1 ?? 2); // expected: 1
+```

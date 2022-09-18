@@ -1,0 +1,17 @@
+---
+title: 逻辑空赋值 ??=
+---
+
+## 定义
+
+仅在第一个参数是 `null` 或 `undefined` 时，为其赋值，其语法上等价于 `x ?? (x = y)`。
+
+```javascript title="JavaScript" showLineNumbers
+let a = 1;
+a ??= 2;
+let b = null;
+b ??= 2;
+let c = undefined;
+c ??= 2;
+console.log(a, b, c); // expected: 1 2 2
+```

@@ -8,7 +8,7 @@ import TH from "@site/src/components/TextHighlight";
 
 ### `Array.concat()`
 
-```javascript title="JavaScript"
+```javascript title="JavaScript" showLineNumbers
 const arrA = [1, 2, 3];
 const arrB = [4, 5, 6];
 const result = arrA.concat(arrB);
@@ -24,7 +24,7 @@ console.log(arrA.concat(arrB, arrA, arrB)); // expected: [ 1, 2, 3, 4, 5, 6, 1, 
 
 ### 剩余操作符
 
-```javascript title="JavaScript"
+```javascript title="JavaScript" showLineNumbers
 const arrA = [1, 2, 3];
 const arrB = [4, 5, 6];
 const result = [...arrA, ...arrB];
@@ -40,7 +40,7 @@ console.log([...arrB, ...arrA]); // expected: [ 4, 5, 6, 1, 2, 3 ]
 
 ### 剩余操作符
 
-```javascript title="JavaScript"
+```javascript title="JavaScript" showLineNumbers
 const objA = { a: "a", b: "b", c: "c" };
 const objB = { d: "d", e: "e", f: "f" };
 const result = { ...objA, ...objB };
