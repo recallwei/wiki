@@ -1,0 +1,46 @@
+---
+title: 类数组对象
+---
+
+## 定义
+
+类数组对象的结构与数组相似，具有 `length` 属性（用于标记该数组对象对应的数组长度），可以通过索引来访问或更改里面的元素，但是不能使用数组的方法（本质上还是对象，不是数组）。
+
+```javascript title="JavaScript" showLineNumbers
+const arrayLikeObject = {
+  0: "name",
+  1: "age",
+  2: "hobby",
+  length: 3,
+};
+console.log(result[0]); // expected: "name"
+console.log(result.length); // expected: 3
+```
+
+:::caution 注意
+
+类数组对象必须具有 `length` 属性，不可省略。
+
+:::
+
+## 合并数组对象
+
+### `Symbol.isConcatSpreadable`
+
+`Symbol.isConcatSpreadable` 是布尔类型，其用于**控制数组或类数组对象的默认的展开行为**，数组默认为 `true`，而类数组对象默认为 `false`。
+
+类数组对象默认不展开，如果需要展开其元素用于连接，需要设置 `Symbol.isConcatSpreadable` 为 `true`。
+
+使用 `concat` 合并数组对象：
+
+```javascript title="JavaScript" showLineNumbers
+const arrayLikeObject = {
+  0: "name",
+  1: "age",
+  2: "hobby",
+  length: 3,
+};
+arrayLikeObject[Symbol.isConcatSpreadable] = true;
+const result = ["birthday"].concat(arrayLikeObject);
+console.log(result); // expected: [ 'birthday', 'name', 'age', 'hobby' ]
+```

@@ -71,6 +71,8 @@ const sidebars = {
       category("javascript/reference-types/array/index", "数组", [
         doc("javascript/reference-types/array/splice", "splice"),
       ]),
+      doc("javascript/reference-types/array-like-object", "类数组对象"),
+      doc("javascript/reference-types/join", "合并数组、对象"),
       doc(
         "javascript/reference-types/shallowcopy-and-deepcopy",
         "🚀 深复制与浅复制"

@@ -1,0 +1,49 @@
+---
+title: 合并数组、对象
+---
+
+import TH from "@site/src/components/TextHighlight";
+
+## 合并数组
+
+### `Array.concat()`
+
+```javascript title="JavaScript"
+const arrA = [1, 2, 3];
+const arrB = [4, 5, 6];
+const result = arrA.concat(arrB);
+console.log(result); // expected: [ 1, 2, 3, 4, 5, 6 ]
+console.log(arrA.concat(arrB, arrA, arrB)); // expected: [ 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6 ]
+```
+
+:::caution 注意
+
+`Array.concat()` 返回一个新的数组，**不会修改原数组**，但是返回的是一个<TH>浅拷贝</TH>数组。
+
+:::
+
+### 剩余操作符
+
+```javascript title="JavaScript"
+const arrA = [1, 2, 3];
+const arrB = [4, 5, 6];
+const result = [...arrA, ...arrB];
+console.log(result); // expected: [ 1, 2, 3, 4, 5, 6 ]
+console.log([...arrB, ...arrA]); // expected: [ 4, 5, 6, 1, 2, 3 ]
+```
+
+### `Function.apply()`
+
+## 合并对象
+
+### `Object.assign()`
+
+### 剩余操作符
+
+```javascript title="JavaScript"
+const objA = { a: "a", b: "b", c: "c" };
+const objB = { d: "d", e: "e", f: "f" };
+const result = { ...objA, ...objB };
+console.log(result); // expected: { a: 'a', b: 'b', c: 'c', d: 'd', e: 'e', f: 'f' }
+console.log({ ...objB, ...objA }); // expected: { d: 'd', e: 'e', f: 'f', a: 'a', b: 'b', c: 'c' }
+```
