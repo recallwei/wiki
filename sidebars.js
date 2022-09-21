@@ -24,6 +24,7 @@ const sidebars = {
   css: [
     doc("css/index", "CSS"),
     doc("css/selectors", "选择器"),
+    doc("css/box-model", "盒子模型"),
     doc("css/entities", "字符实体"),
     category("css/font/index", "字体", [
       doc("css/font/import", "导入字体"),
