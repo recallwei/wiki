@@ -1,3 +1,16 @@
 ---
 title: 盒子模型
 ---
+
+import TH from "@site/src/components/TextHighlight";
+
+盒子模型用于表示每一个 HTML 元素，每一个盒子模型由四块区域构成，由内到外分别是 Content，Padding，Border，Margin。
+
+## Content
+
+## `box-sizing`
+
+`box-sizing` 属性决定着如何计算**元素的总宽度和高度**。默认情况下，指定的宽度和高度**只会应用到 Content Box**。
+
+- `content-box(默认值)` - 指定的宽度和高度即为 Content Box 的宽度和高度。如果元素还拥有 Margin， Padding 或 Border ，那么该盒子模型的总宽高会超出 Content Box 的区域。
+- `border-box` - 指定的宽度和高度为 Border Box 的宽度和高度。
