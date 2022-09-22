@@ -2,15 +2,30 @@
 title: 盒子模型
 ---
 
-import TH from "@site/src/components/TextHighlight";
-
 盒子模型用于表示每一个 HTML 元素，每一个盒子模型由四块区域构成，由内到外分别是 Content，Padding，Border，Margin。
-
-## Content
 
 ## `box-sizing`
 
 `box-sizing` 属性决定着如何计算**元素的总宽度和高度**。默认情况下，指定的宽度和高度**只会应用到 Content Box**。
 
-- `content-box(默认值)` - 指定的宽度和高度即为 Content Box 的宽度和高度。如果元素还拥有 Margin， Padding 或 Border ，那么该盒子模型的总宽高会超出 Content Box 的区域。
-- `border-box` - 指定的宽度和高度为 Border Box 的宽度和高度。
+- `content-box(默认值)` - 指定的宽度和高度即为 Content Box 的宽度和高度。如果元素还拥有 Margin，Padding 或 Border，那么该盒子模型的总宽高会超出 Content Box 的区域。
+- `border-box` - 指定的宽度和高度为 Border Box 的宽度和高度，覆盖该盒子模型的 Padding，Border 和 Content，如果有 Padding 和 Border，那么 Content 的宽高会被挤压。
+
+### 默认属性为 `border-box` 的元素
+
+- `<table>`
+- `<select>`
+- `<button>`
+- `<input> (当且仅当属性 type 满足如下)`
+  - `radio`
+  - `checkbox`
+  - `reset`
+  - `button`
+  - `submit`
+  - `color`
+  - `search`
+
+### 作用：便于布局元素
+
+- 使用 `border-box` 时，可以在计算宽高时**避免一些因为 Padding 和 Border 产生的陷阱**（盒子模型的实际宽高超过了 Content Box 的宽高）。
+- 在使用相对定位和绝对定位时，使用 `content-box`，可以**使子元素相对于父元素的 Content Box 定位**，从而避免 Padding、Border、Margin 对的影响。
