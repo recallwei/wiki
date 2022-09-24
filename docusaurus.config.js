@@ -130,6 +130,7 @@ const config = {
                 sidebarId: "typescript",
               },
               { type: "docSidebar", label: "React", sidebarId: "react" },
+              { type: "docSidebar", label: "Vue", sidebarId: "vue" },
               {
                 type: "docSidebar",
                 label: "Docusaurus",
@@ -179,7 +180,6 @@ const config = {
               { type: "docSidebar", label: "CosmosDB", sidebarId: "cosmosdb" },
               { type: "docSidebar", label: "Redis", sidebarId: "redis" },
               { type: "docSidebar", label: "Docker", sidebarId: "docker" },
-
               {
                 type: "docSidebar",
                 label: "Vercel",

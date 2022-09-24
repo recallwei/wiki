@@ -6,6 +6,7 @@ const CSS = "CSS";
 const JAVASCRIPT = "JavaScript";
 const TYPESCRIPT = "TypeScript";
 const REACT = "React";
+const VUE = "Vue";
 const DOCUSAURUS = "Docusaurus";
 const TAILWIND = "Tailwind";
 const SASS = "Sass";
@@ -72,6 +73,7 @@ interface FrontendMenuData {
   readonly javascript: string;
   readonly typescript: string;
   readonly react: string;
+  readonly vue: string;
   readonly docusaurus: string;
   readonly tailwind: string;
   readonly sass: string;
@@ -132,6 +134,7 @@ const frontendMenuData: FrontendMenuData = {
   javascript: JAVASCRIPT,
   typescript: TYPESCRIPT,
   react: REACT,
+  vue: VUE,
   docusaurus: DOCUSAURUS,
   tailwind: TAILWIND,
   sass: SASS,

@@ -154,7 +154,6 @@ const sidebars = {
         doc("react/react-router/components/link", "🚀 Link"),
       ]),
     ]),
-
     doc("react/react-i18next", "React i18next"),
     category("react/redux/index", "Redux", [
       doc("react/redux/installation", "安装 Redux"),
@@ -163,6 +162,8 @@ const sidebars = {
       doc("react/use-typescript/types-in-react", "React 中的类型"),
     ]),
   ],
+
+  vue: [doc("vue/index", "Vue")],
 
   docusaurus: [
     doc("docusaurus/index", "Docusaurus"),

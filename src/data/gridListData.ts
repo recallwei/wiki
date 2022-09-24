@@ -5,6 +5,7 @@ import css from "@site/static/img/icon/css.png";
 import javascript from "@site/static/img/icon/javascript.png";
 import typescript from "@site/static/img/icon/typescript.png";
 import react from "@site/static/img/icon/react.png";
+import vue from "@site/static/img/icon/vue.png";
 import docusaurus from "@site/static/img/icon/docusaurus.png";
 import tailwindcss from "@site/static/img/icon/tailwindcss.png";
 import sass from "@site/static/img/icon/sass.png";
@@ -74,6 +75,7 @@ const frontendGridList: Array<GridItemType> = [
   gridItem(frontendData.javascript, "/docs/javascript", javascript),
   gridItem(frontendData.typescript, "/docs/typescript", typescript),
   gridItem(frontendData.react, "/docs/react", react),
+  gridItem(frontendData.vue, "/docs/vue", vue),
   gridItem(frontendData.docusaurus, "/docs/docusaurus", docusaurus),
   gridItem(frontendData.tailwind, "/docs/tailwind", tailwindcss),
   gridItem(frontendData.sass, "/docs/sass", sass),
