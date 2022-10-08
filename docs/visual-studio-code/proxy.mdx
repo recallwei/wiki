@@ -35,6 +35,15 @@ git config http.proxy http://127.0.0.1:7890
 
 至此，可以成功 Push 代码到 GitHub 服务器。
 
+### 设置全局 Git 代理
+
+```bash
+git config --global http.sslVerify false
+git config --global http.proxy http://127.0.0.1:7890
+```
+
+设置全局代理后无需为每个存储库分别设置代理。
+
 ## 参考
 
 <ReferenceList

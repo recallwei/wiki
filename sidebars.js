@@ -279,6 +279,8 @@ const sidebars = {
 
   git: [
     doc("git/index", "Git"),
+    doc("git/cli", "CLI"),
+    doc("git/crlf-and-lf-conflict", "CRLF 和 LF 冲突"),
     doc("git/gitignore-not-working", ".gitignore 不工作"),
   ],
 
