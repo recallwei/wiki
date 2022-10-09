@@ -39,6 +39,7 @@ const sidebars = {
       doc("css/properties/resize", "resize"),
       doc("css/properties/white-space", "white-space"),
     ]),
+    doc("css/hide-scroll-bar-style", "隐藏滚动条样式"),
     category("css/solutions/index", "解决方案", [
       doc("css/solutions/code-change-design", "代码变更效果"),
       doc("css/solutions/svg", "修改 SVG 样式"),
