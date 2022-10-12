@@ -1,0 +1,15 @@
+---
+title: 迁移 PostgreSQL 数据库
+---
+
+由于最近我用光了 Digital Ocean 上的免费额度，我不得不将我的 PostgreSQL 数据库迁移到 AWS 上，于是我试用了 pgAdmin 来迁移数据库。
+
+## 迁移方法
+
+- 先将 Digital Ocean 上的 PostgreSQL 服务器注册到 pgAdmin 客户端，再选择其中的数据库进行 Backup（备份）。
+- Backup 会将我们的 PostgreSQL 数据库的表信息及数据打包成 .sql 文件。
+- 创建 AWS RDS PosgreSQL 数据库，同样再注册到 pgAdmin 客户端，创建对应的数据库，然后再导入备份的 .sql 文件，即 Restore（恢复）操作。
+
+## 遇到的问题
+
+注册 AWS RDS PostgreSQL 数据库到 pgAdmin 时，需要配置入站规则，否则无法在外部环境连接 AWS VPS 内部环境。

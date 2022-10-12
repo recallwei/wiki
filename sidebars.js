@@ -242,6 +242,7 @@ const sidebars = {
   postgresql: [
     doc("postgresql/index", "PostgreSQL"),
     doc("postgresql/connection", "连接数据库"),
+    doc("postgresql/database-migration", "迁移 PostgreSQL 数据库"),
   ],
 
   microsoft_sqlserver: [
