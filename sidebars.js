@@ -194,6 +194,7 @@ const sidebars = {
     doc("npm/classnames", "classnames"),
     doc("npm/clsx", "clsx"),
     doc("npm/dotenv", "dotenv"),
+    doc("npm/husky", "Husky"),
     doc("npm/momentjs", "Moment.js"),
     doc("npm/n-module", "N Module"),
     doc("npm/nodemon", "nodemon"),
