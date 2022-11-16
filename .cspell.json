@@ -1,26 +1,6 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "aspnet",
-    "browserslist",
-    "changefreq",
-    "clashx",
-    "clsx",
-    "deepcopy",
-    "miniprogram",
-    "momentjs",
-    "nums",
-    "shallowcopy",
-    "sqlserver",
-    "tailwindcss",
-    "Taskward",
-    "webstorm",
-    "wechat",
-    "wexin",
-    "wxml",
-    "wxss",
-    "zhihu"
-  ],
+  "words": [],
   "flagWords": []
 }
