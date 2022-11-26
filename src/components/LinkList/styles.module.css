@@ -12,7 +12,7 @@
 
 .item a {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   font-weight: 500;
   padding: 3px;
