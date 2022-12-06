@@ -1,0 +1,137 @@
+{
+  // .mdx
+  "Import Component Badge": {
+    "prefix": "ibg",
+    "body": ["import Badge from \"@site/src/components/Badge\"", "$0"],
+    "description": "Insert a Badge component import statement"
+  },
+  "Import Component Feature Icon": {
+    "prefix": "ifi",
+    "body": [
+      "import FeatureIcon from \"@site/src/components/FeatureIcon\"",
+      "$0"
+    ],
+    "description": "Insert a Feature Icon component import statement"
+  },
+  "Feature Icon": {
+    "prefix": "fi",
+    "body": ["<FeatureIcon src={$1} title=\"$2\" />", "$3"],
+    "description": "Insert a Feature Icon component"
+  },
+  "Import Component Link List": {
+    "prefix": "ill",
+    "body": ["import LinkList from \"@site/src/components/LinkList\"", "$0"],
+    "description": "Insert a Link List component import statement"
+  },
+  "Link List": {
+    "prefix": "ll",
+    "body": [
+      "<LinkList",
+      "  data={[",
+      "    {",
+      "      title: \"$1\",",
+      "      link: \"/docs/$2\",",
+      "      src: ${3:src},",
+      "    },",
+      "  ]}",
+      "/>",
+      "$0"
+    ],
+    "description": "Insert a Link List component"
+  },
+  "Import Component Reference List": {
+    "prefix": "irl",
+    "body": [
+      "import ReferenceList from \"@site/src/components/ReferenceList\"",
+      "$0"
+    ],
+    "description": "Insert a Reference List component import statement"
+  },
+  "Reference List": {
+    "prefix": "rl",
+    "body": [
+      "<ReferenceList",
+      "  data={[",
+      "    {",
+      "      title: \"$1\",",
+      "      link: \"$2\",",
+      "      src:${3:src},",
+      "    },",
+      "  ]}",
+      "/>",
+      "$0"
+    ],
+    "description": "Insert a Reference List component"
+  },
+  "Import Component Shortcut": {
+    "prefix": "isc",
+    "body": ["import Shortcut from \"@site/src/components/Shortcut\"", "$0"],
+    "description": "Insert a Shortcut component import statement"
+  },
+  "Import Component Table": {
+    "prefix": "itb",
+    "body": ["import Table from \"@site/src/components/Table\"", "$0"],
+    "description": "Insert a Table component import statement"
+  },
+  "Table": {
+    "prefix": "tb",
+    "body": [
+      "<Table",
+      "  data={{",
+      "    position: [\"start\", \"center\"],",
+      "    header: [\"\", \"\"],",
+      "    body: [",
+      "        [",
+      "          \"\",",
+      "          \"\",",
+      "        ],",
+      "       ],",
+      "    footer: [\"\", \"\"],",
+      "    caption: ,",
+      "    }}",
+      "/>"
+    ],
+    "description": "Insert a Table component"
+  },
+  "Import Component TextHighlight": {
+    "prefix": "ith",
+    "body": ["import TH from \"@site/src/components/TextHighlight\"", "$0"],
+    "description": "Insert a TextHighlight component import statement"
+  },
+  "Import Icon Image": {
+    "prefix": "iiim",
+    "body": ["import $1 from \"@site/static/img/icon/$1.png\";", "$2"],
+    "description": "Insert a Icon Image component import statement"
+  },
+  "Import Reference Image": {
+    "prefix": "irim",
+    "body": ["import $1 from \"@site/static/img/reference/$1.png\";", "$2"],
+    "description": "Insert a Reference Image component import statement"
+  },
+  "Import Hyper Link": {
+    "prefix": "ihl",
+    "body": ["import HyperLink from \"@site/src/components/HyperLink\";", "$0"],
+    "description": "Insert a Hyper Link component import statement"
+  },
+  "Hyper Link": {
+    "prefix": "hl",
+    "body": ["<HyperLink link=\"/docs$1\" openWindow>$2</HyperLink>$0"],
+    "description": "Insert a Hyper Link component"
+  },
+  "Import Grid List": {
+    "prefix": "igl",
+    "body": ["import GridList from \"@site/src/components/GridList\";", "$0"],
+    "description": "Insert a Grid List component import statement"
+  },
+  // .yaml
+  "DocsMetaData": {
+    "prefix": "dmd",
+    "body": ["---", "title: $1", "---", "$0"],
+    "description": "Insert a Doc Meta Data"
+  },
+  "CategorysMetaData": {
+    "prefix": "cmd",
+    "body": ["---", "title: $1", "hide_title: true", "---", "$0"],
+    "description": "Insert a Category Meta Data"
+  }
+}
