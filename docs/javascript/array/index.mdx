@@ -1,0 +1,65 @@
+---
+title: Array
+---
+
+# Array
+
+## 排序
+
+sort
+localeCompare
+
+## 判断数组相等
+
+JavaScript 中不可以使用 `==` 或 `===` 运算符来比较两个数组是否相等，因为这两个运算符比较的是数组的引用，而不是对数组的值。
+
+### 转换为字符串进行比较
+
+#### `toString()`
+
+```javascript
+console.log([1, 2, 3].toString() === ["1", 2, 3].toString()); // expected: true
+```
+
+当数组元素的顺序不同时，可以先使用 `Array.sort()` 方法对数组进行排序，再转换为字符串比较。
+
+#### `join()`
+
+```javascript
+console.log([1, 2, 3].join() === ["1", 2, 3].join()); // expected: true
+```
+
+#### `JSON.stringify()`
+
+```javascript
+const arrA = [{ name: "apple", type: "fruit" }];
+const arrB = [{ name: "apple", type: "fruit" }];
+console.log(JSON.stringify(arrA) === JSON.stringify(arrB)); // expected: true
+```
+
+### 匹配数组元素
+
+#### `filter()`
+
+```javascript
+const arrA = [1, 2, 3];
+const arrB = ["1", 2, 3];
+console.log(
+  arrA.length === arrB.length && arrA.filter((item) => !arrB.includes(item)) // expected: true
+);
+```
+
+## 修改数组元素
+
+### 移除末尾元素
+
+#### `Array.length`
+
+直接缩小数组长度，可以移除数组末尾的元素。
+
+```javascript
+const arr = [1, 2, 3];
+arr.length--;
+console.log(arr);
+// expected: [1, 2]
+```
