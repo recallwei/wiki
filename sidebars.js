@@ -1,4 +1,7 @@
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+//// @ts-check
+/**
+ * @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
+ * */
 const sidebars = {
   markdown: [
     doc("markdown/index", "Markdown"),
