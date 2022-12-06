@@ -110,7 +110,7 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
                 "button--sm",
                 styles.heroTextAreaButton,
               )}
-              to="/docs/front-end">
+              to="/docs/javascript">
               {TO_WIKI_BUTTON_TEXT}
             </Link>
           </div>
