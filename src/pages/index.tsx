@@ -54,7 +54,7 @@ export default function Home(): JSX.Element {
           >
             <HomepageHeader isMobileDevice={isMobileDevice} />
             <main>
-              <div className={styles.mainContainer}>
+              {/* <div className={styles.mainContainer}>
                 <div className={styles.listTitle}>
                   {frontendMenuData.frontend}
                 </div>
@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
                 </div>
                 <GridList data={othersGridList} />
                 <PortfolioArea isMobileDevice={isMobileDevice} />
-              </div>
+              </div> */}
             </main>
           </Layout>
         );

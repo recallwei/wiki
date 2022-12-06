@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
@@ -9,10 +9,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 require("dotenv").config();
 
-// @ts-check
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  customFields: { apiBaseUrl: process.env.API_BASE_URL },
+  // 自定义字段
+  customFields: {
+    apiBaseUrl: process.env.API_BASE_URL,
+  },
   title: "Bruce's Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
   url: "https://wiki.bruceworld.top/",
@@ -24,21 +26,24 @@ const config = {
   organizationName: "Bruce Song",
   projectName: "wiki",
 
+  // 多语言配置
   i18n: {
-    defaultLocale: "zh-CN",
+    defaultLocale: "zh-cn",
     locales: [
-      "zh-CN",
+      "zh-cn",
       //"en"
     ],
     localeConfigs: {
-      "zh-CN": {
+      "zh-cn": {
         label: "简体中文",
       },
     },
   },
 
+  // 主题插件
   themes: ["@docusaurus/theme-live-codeblock"],
 
+  // 预设
   presets: [
     [
       "classic",
@@ -51,7 +56,7 @@ const config = {
           remarkPlugins: [
             [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
           ],
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: "./sidebars.js",
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
           editUrl: "https://github.com/recallwei/wiki/tree/main/website",
@@ -69,7 +74,7 @@ const config = {
           editUrl: "https://github.com/recallwei/wiki/tree/main/website",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/style/custom.css"),
         },
         sitemap: {
           changefreq: "weekly",
@@ -81,6 +86,7 @@ const config = {
     ],
   ],
 
+  // 主题配置
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
