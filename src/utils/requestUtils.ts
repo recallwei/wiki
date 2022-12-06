@@ -10,7 +10,7 @@ export async function sendRequest(
   url: string,
   method: RequestMethod,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  data?: any
+  data?: any,
 ) {
   return fetch(url, {
     method: method,
@@ -22,7 +22,7 @@ export async function sendRequest(
     },
     redirect: "follow",
     referrerPolicy: "no-referrer",
-    body: data && JSON.stringify(data),
+    body: data ? JSON.stringify(data) : null,
   })
     .then((response) => {
       const contentType = response.headers.get("content-type");

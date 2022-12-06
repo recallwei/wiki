@@ -35,7 +35,6 @@ type HomepageHeaderProps = {
 
 type ContactMeBtnProps = {
   readonly title?: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   readonly src: any;
   link?: string;
   isCopyBtn?: boolean;
@@ -50,8 +49,7 @@ export default function Home(): JSX.Element {
         return (
           <Layout
             title="Home"
-            description="Description will go into a meta tag in <head />"
-          >
+            description="Description will go into a meta tag in <head />">
             <HomepageHeader isMobileDevice={isMobileDevice} />
             <main>
               {/* <div className={styles.mainContainer}>
@@ -84,13 +82,14 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
   const COPY_SUCCESS = "已复制到剪切板";
   const [show, setShow] = useState<boolean>(false);
 
-  function copySuccess(): void {
+  const copySuccess = (): void => {
     setShow(true);
-    !show &&
+    if (!show) {
       setTimeout(() => {
         setShow(false);
       }, 4000);
-  }
+    }
+  };
 
   return (
     <header className={clsx(styles.heroBanner)}>
@@ -109,10 +108,9 @@ function HomepageHeader({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
                 "button",
                 "button--secondary",
                 "button--sm",
-                styles.heroTextAreaButton
+                styles.heroTextAreaButton,
               )}
-              to="/docs/front-end"
-            >
+              to="/docs/front-end">
               {TO_WIKI_BUTTON_TEXT}
             </Link>
           </div>
@@ -170,9 +168,10 @@ function ContactMeBtn({
         className={styles.navLink}
         onClick={() => {
           setClipBoardText(link);
-          copySuccess && copySuccess();
-        }}
-      >
+          if (copySuccess) {
+            copySuccess();
+          }
+        }}>
         <div className={styles.imageWrapper}>
           <img src={src} alt={title} title={title} />
         </div>
@@ -201,8 +200,7 @@ function ArrowDownBtn(): JSX.Element {
             top: window.innerHeight,
             behavior: "smooth",
           });
-        }}
-      >
+        }}>
         <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
       </svg>
     </span>
@@ -220,8 +218,7 @@ function PortfolioArea({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
             <Link
               className={styles.portfolioCardWrapper}
               key={item.name}
-              to={item.siteLink}
-            >
+              to={item.siteLink}>
               <div className={styles.portfolioCardLeft}>
                 <h4>{item.name}</h4>
                 <div className={styles.description}>{item.description}</div>
@@ -232,8 +229,7 @@ function PortfolioArea({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
                         <div
                           key={tag.name}
                           className={styles.tag}
-                          style={{ background: tag.bgColor }}
-                        >
+                          style={{ background: tag.bgColor }}>
                           <img
                             src={tag.iconSrc}
                             loading="eager"
@@ -254,9 +250,8 @@ function PortfolioArea({ isMobileDevice }: HomepageHeaderProps): JSX.Element {
                     className={clsx(
                       item.status === "In Development" && styles.development,
                       item.status === "In Production" && styles.production,
-                      styles.tag
-                    )}
-                  >
+                      styles.tag,
+                    )}>
                     {item.status}
                   </div>
                 )}

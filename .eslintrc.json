@@ -3,14 +3,15 @@
     "node": true,
     "es2021": true
   },
+  "root": true,
   "extends": [
     "plugin:@docusaurus/recommended",
     "airbnb-typescript",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier",
-    "prettier/react"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    // "prettier",
+    // "prettier/react"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -19,5 +20,9 @@
     "project": "./tsconfig.eslint.json"
   },
   "plugins": ["@docusaurus", "@typescript-eslint", "prettier"],
-  "rules": {}
+  "rules": {
+    "prettier/prettier": "error",
+    "quotes": "off",
+    "@typescript-eslint/quotes": "off"
+  }
 }

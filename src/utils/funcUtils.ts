@@ -23,8 +23,8 @@ function isMobile(): boolean {
 }
 
 // 复制文本
-function setClipBoardText(text: string): void {
-  navigator.clipboard.writeText(text);
+async function setClipBoardText(text: string): Promise<void> {
+  await navigator.clipboard.writeText(text);
 }
 
 export { openWindow, isMobile, setClipBoardText };
