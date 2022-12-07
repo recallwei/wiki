@@ -5,7 +5,8 @@
     "aspnet",
     "changefreq",
     "clsx",
-    "hideable"
+    "hideable",
+    "stylelint"
   ],
   "flagWords": []
 }
