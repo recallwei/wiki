@@ -5,6 +5,7 @@
     "aspnet",
     "changefreq",
     "clsx",
+    "commitlint",
     "hideable",
     "stylelint"
   ],
