@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yusei+Magic&family=ZCOOL+XiaoWei&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+/* @import "https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yusei+Magic&family=ZCOOL+XiaoWei&display=swap"; */
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap";
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -15,9 +15,9 @@
   --ifm-footer-padding-vertical: var(--ifm-spacing-vertical);
   --site-announcement-bar-stripe-color1: hsl(167deg 68% 85%);
   --site-announcement-bar-stripe-color2: hsl(167deg 68% 95%);
-  --link-list-hover: rgb(102, 212, 189);
+  --link-list-hover: rgb(102 212 189);
   --base-font-family: "Noto Sans", sans-serif;
-  --ifm-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  --ifm-font-family-monospace: sfmono-regular, menlo, monaco, consolas,
     "Liberation Mono", "Courier New", monospace;
   --ifm-list-left-padding: 1.2rem;
 }
@@ -59,7 +59,7 @@ html {
 }
 
 hr {
-  border: 1px solid rgb(245, 244, 244);
+  border: 1px solid rgb(245 244 244);
   padding: 0;
   margin: 0;
 }
