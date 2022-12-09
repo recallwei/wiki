@@ -1,5 +1,6 @@
 /* @import "https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yusei+Magic&family=ZCOOL+XiaoWei&display=swap"; */
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"; /* Noto Sans */
+@import "https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css"; /* Fira Code */
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -34,6 +35,14 @@
   --dracula-color-primary: #383a59;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
 /* Header Github Icon */
 .header-github-link:hover {
   opacity: 0.6;
@@ -66,6 +75,7 @@ hr {
 
 blockquote {
   transition: all 0.5s ease-in-out;
+
   /* background: var(--ifm-color-primary-lighter);
   border-bottom: #25c2a0 1px solid; */
   background-color: #f8f8f9;
@@ -92,16 +102,19 @@ html[data-theme="dark"] blockquote {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
-/* 代码块、行内代码 */
 code {
   color: var(--ifm-color-primary);
   font-weight: bold;
-  font-size: smaller;
+  font-size: 13px;
+  font-family: "Fira Code", monospace !important;
+}
+
+pre code {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  font-size: 12px !important;
   vertical-align: middle;
-  /* 使用 JetBrains Mono 字体 */
-  font-family: "JetBrains Mono", monospace !important;
-  /* font-family: var(--base-font-family) !important; */
+  font-family: "Fira Code", monospace !important;
 }
 
 .markdown h1,
