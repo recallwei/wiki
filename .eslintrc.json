@@ -24,6 +24,7 @@
   "rules": {
     "prettier/prettier": "error",
     "quotes": "off",
+    "@typescript-eslint/semi": "off",
     "@typescript-eslint/quotes": "off"
   },
   "root": true

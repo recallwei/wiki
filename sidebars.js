@@ -7,7 +7,7 @@ const sidebars = {
     {
       type: "doc",
       id: "javascript/index",
-      label: "JavaScript",
+      label: "JavaScript"
     },
     {
       type: "category",
@@ -16,20 +16,20 @@ const sidebars = {
       collapsible: true,
       link: {
         type: "doc",
-        id: "javascript/built-in-objects/index",
+        id: "javascript/built-in-objects/index"
       },
       items: [
         {
           type: "doc",
           id: "javascript/built-in-objects/array",
-          label: "Array",
+          label: "Array"
         },
         {
           type: "doc",
           id: "javascript/built-in-objects/object",
-          label: "Object",
-        },
-      ],
+          label: "Object"
+        }
+      ]
     },
     {
       type: "category",
@@ -38,17 +38,37 @@ const sidebars = {
       collapsible: true,
       link: {
         type: "doc",
-        id: "javascript/utilities/index",
+        id: "javascript/utilities/index"
       },
       items: [
         {
           type: "doc",
           id: "javascript/utilities/js-doc",
-          label: "JSDoc",
-        },
-      ],
-    },
+          label: "JSDoc"
+        }
+      ]
+    }
   ],
+
+  visualStudioCode: [
+    {
+      type: "category",
+      label: "Visual Studio Code",
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: "visual-studio-code/index"
+      },
+      items: [
+        {
+          type: "doc",
+          id: "visual-studio-code/fira-code-font",
+          label: "Fira Code Font"
+        }
+      ]
+    }
+  ]
 };
 
 module.exports = sidebars;

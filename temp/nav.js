@@ -8,47 +8,47 @@ const nav = [
       {
         type: "docSidebar",
         label: "Markdown",
-        sidebarId: "markdown",
+        sidebarId: "markdown"
       },
       { type: "docSidebar", label: "HTML", sidebarId: "html" },
       { type: "docSidebar", label: "CSS", sidebarId: "css" },
       {
         type: "docSidebar",
         label: "JavaScript",
-        sidebarId: "javascript",
+        sidebarId: "javascript"
       },
       {
         type: "docSidebar",
         label: "TypeScript",
-        sidebarId: "typescript",
+        sidebarId: "typescript"
       },
       { type: "docSidebar", label: "React", sidebarId: "react" },
       { type: "docSidebar", label: "Vue", sidebarId: "vue" },
       {
         type: "docSidebar",
         label: "Docusaurus",
-        sidebarId: "docusaurus",
+        sidebarId: "docusaurus"
       },
       {
         type: "docSidebar",
         label: "Tailwind",
-        sidebarId: "tailwind",
+        sidebarId: "tailwind"
       },
       {
         type: "docSidebar",
         label: "Sass",
-        sidebarId: "sass",
+        sidebarId: "sass"
       },
       {
         type: "docSidebar",
         label: "微信小程序",
-        sidebarId: "wexin_mini_program",
+        sidebarId: "wexin_mini_program"
       },
       { type: "docSidebar", label: "npm", sidebarId: "npm" },
       { type: "docSidebar", label: "Yarn", sidebarId: "yarn" },
       { type: "docSidebar", label: "Vite", sidebarId: "vite" },
-      { type: "docSidebar", label: "GraphQL", sidebarId: "graphql" },
-    ],
+      { type: "docSidebar", label: "GraphQL", sidebarId: "graphql" }
+    ]
   },
   {
     type: "dropdown",
@@ -62,12 +62,12 @@ const nav = [
       {
         type: "docSidebar",
         label: "PostgreSQL",
-        sidebarId: "postgresql",
+        sidebarId: "postgresql"
       },
       {
         type: "docSidebar",
         label: "Microsoft SQL Server",
-        sidebarId: "microsoft_sqlserver",
+        sidebarId: "microsoft_sqlserver"
       },
       { type: "docSidebar", label: "MongoDB", sidebarId: "mongodb" },
       { type: "docSidebar", label: "CosmosDB", sidebarId: "cosmosdb" },
@@ -76,14 +76,14 @@ const nav = [
       {
         type: "docSidebar",
         label: "Vercel",
-        sidebarId: "vercel",
+        sidebarId: "vercel"
       },
       {
         type: "docSidebar",
         label: "Microsoft Azure",
-        sidebarId: "microsoft_azure",
-      },
-    ],
+        sidebarId: "microsoft_azure"
+      }
+    ]
   },
   {
     type: "dropdown",
@@ -94,14 +94,14 @@ const nav = [
       {
         type: "docSidebar",
         label: "操作系统",
-        sidebarId: "operating_system",
+        sidebarId: "operating_system"
       },
       {
         type: "docSidebar",
         label: "计算机网络",
-        sidebarId: "computer_network",
-      },
-    ],
+        sidebarId: "computer_network"
+      }
+    ]
   },
   {
     type: "dropdown",
@@ -113,63 +113,63 @@ const nav = [
       {
         type: "docSidebar",
         label: "YAML",
-        sidebarId: "yaml",
+        sidebarId: "yaml"
       },
       {
         type: "docSidebar",
         label: "PowerShell",
-        sidebarId: "powershell",
+        sidebarId: "powershell"
       },
       {
         type: "docSidebar",
         label: "Chrome",
-        sidebarId: "chrome",
+        sidebarId: "chrome"
       },
       {
         type: "docSidebar",
         label: "Visual Studio Code",
-        sidebarId: "visual_studio_code",
+        sidebarId: "visual_studio_code"
       },
       {
         type: "docSidebar",
         label: "Visual Studio",
-        sidebarId: "visual_studio",
+        sidebarId: "visual_studio"
       },
       {
         type: "docSidebar",
         label: "Rider",
-        sidebarId: "rider",
+        sidebarId: "rider"
       },
       {
         type: "docSidebar",
         label: "Webstorm",
-        sidebarId: "webstorm",
+        sidebarId: "webstorm"
       },
       {
         type: "docSidebar",
         label: "微信开发者工具",
-        sidebarId: "wechat_dev_tools",
-      },
-    ],
+        sidebarId: "wechat_dev_tools"
+      }
+    ]
   },
   {
     type: "doc",
     docId: "code-specification",
     label: "代码规范",
-    position: "left",
+    position: "left"
   },
   {
     type: "doc",
     docId: "software/index",
     label: "软件",
-    position: "left",
+    position: "left"
   },
   {
     type: "doc",
     docId: "copywriting-guide",
     label: "设计",
-    position: "left",
-  },
+    position: "left"
+  }
   //{ to: "/blog", label: "Blog", position: "left" },
   // {
   //   to: "/docs/tags",

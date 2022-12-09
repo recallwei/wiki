@@ -13,7 +13,7 @@ require("dotenv").config();
 const config = {
   // 自定义字段
   customFields: {
-    apiBaseUrl: process.env.API_BASE_URL,
+    apiBaseUrl: process.env.API_BASE_URL
   },
   title: "Bruce's Wiki",
   tagline: "信じて諦めなければ、夢は必ずかなう",
@@ -30,14 +30,14 @@ const config = {
   i18n: {
     defaultLocale: "zh-cn",
     locales: [
-      "zh-cn",
+      "zh-cn"
       //"en"
     ],
     localeConfigs: {
       "zh-cn": {
-        label: "简体中文",
-      },
-    },
+        label: "简体中文"
+      }
+    }
   },
 
   // 主题插件
@@ -50,11 +50,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         pages: {
-          remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")],
+          remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")]
         },
         docs: {
           remarkPlugins: [
-            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
+            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }]
           ],
           sidebarPath: "./sidebars.js",
           showLastUpdateAuthor: false,
@@ -65,25 +65,25 @@ const config = {
             "**/_*.{js,jsx,ts,tsx,md,mdx}",
             "**/_*/**",
             "**/*.test.{js,jsx,ts,tsx}",
-            "**/__tests__/**",
-          ],
+            "**/__tests__/**"
+          ]
         },
         blog: {
           remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")],
           showReadingTime: true,
-          editUrl: "https://github.com/recallwei/wiki/tree/main/website",
+          editUrl: "https://github.com/recallwei/wiki/tree/main/website"
         },
         theme: {
-          customCss: require.resolve("./src/style/custom.css"),
+          customCss: require.resolve("./src/style/custom.css")
         },
         sitemap: {
           changefreq: "weekly",
           priority: 0.5,
           ignorePatterns: ["/tags/**"],
-          filename: "sitemap.xml",
-        },
-      }),
-    ],
+          filename: "sitemap.xml"
+        }
+      })
+    ]
   ],
 
   // 主题配置
@@ -92,7 +92,7 @@ const config = {
     ({
       colorMode: {
         defaultMode: "light",
-        disableSwitch: false,
+        disableSwitch: false
       },
       announcementBar: {
         id: "support_us",
@@ -100,7 +100,7 @@ const config = {
           "I am currently learning TypeScript and building a RESTful API...",
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
-        isCloseable: true,
+        isCloseable: true
       },
       navbar: {
         title: "Bruce の Wiki",
@@ -109,29 +109,39 @@ const config = {
           src: "img/favicon/favicon.png",
           srcDark: "img/favicon/favicon.png",
           target: "_self",
-          className: "navbarIcon",
+          className: "navbarIcon"
         },
         hideOnScroll: false,
         items: [
+          {
+            type: "docSidebar",
+            label: "JavaScript",
+            sidebarId: "javascript"
+          },
+          {
+            type: "docSidebar",
+            label: "Visual Studio Code",
+            sidebarId: "visualStudioCode"
+          },
           // { type: "localeDropdown", position: "right" },
           {
             type: "search",
-            position: "right",
+            position: "right"
           },
           {
             href: "https://github.com/recallwei/",
             position: "right",
             className: "header-github-link",
             title: "前往 Bruce 的 GitHub 主页",
-            "aria-label": "GitHub repository",
-          },
-        ],
+            "aria-label": "GitHub repository"
+          }
+        ]
       },
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: false,
-        },
+          autoCollapseCategories: false
+        }
       },
       footer: {
         logo: {
@@ -139,15 +149,15 @@ const config = {
           href: "/",
           width: 40,
           height: 40,
-          alt: "bruce",
+          alt: "bruce"
         },
         style: "light", // "light" | "dark"
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus. Hosted by Vercel.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Bruce. Built with Docusaurus. Hosted by Vercel.`
       },
       tableOfContents: {
         minHeadingLevel: 2,
-        maxHeadingLevel: 3,
+        maxHeadingLevel: 3
       },
       prism: {
         theme: lightCodeTheme,
@@ -167,8 +177,8 @@ const config = {
           "powershell",
           "swift",
           "vim",
-          "docker",
-        ],
+          "docker"
+        ]
       },
       algolia: {
         appId: "2MFWID6114",
@@ -177,12 +187,12 @@ const config = {
         contextualSearch: false,
         externalUrlRegex: "external\\.com|domain\\.com",
         searchParameters: {},
-        searchPagePath: "search",
+        searchPagePath: "search"
       },
       liveCodeBlock: {
-        playgroundPosition: "bottom",
-      },
-    }),
+        playgroundPosition: "bottom"
+      }
+    })
 };
 
 module.exports = config;
