@@ -95,7 +95,7 @@ const config = {
       },
       announcementBar: {
         id: "announcement-bar",
-        content: "I am currently re-learning JavaScript and TypeScript.",
+        content: "I am currently building a website with Vue 3, TypeScript, Sass & Naive UI.",
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
         isCloseable: true
@@ -129,7 +129,8 @@ const config = {
           // { type: "localeDropdown", position: "right" },
           {
             type: "search",
-            position: "right"
+            position: "right",
+            className: "navbar-search" // Defined in style/custom.scss
           },
           {
             href: "https://github.com/recallwei/",

@@ -37,6 +37,11 @@
   border: solid white 1.5px;
 }
 
+// Navbar Search: hide the search bar temporarily
+.navbar-search {
+  display: none;
+}
+
 // Top Announcement Bar
 div[class^="announcementBar_"] {
   background: repeating-linear-gradient(
