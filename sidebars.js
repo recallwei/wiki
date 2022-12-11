@@ -68,7 +68,29 @@ const sidebars = {
         }
       ]
     }
-  ]
-};
+  ],
 
-module.exports = sidebars;
+  algorithm: [
+    {
+      type: "doc",
+      id: "algorithm/index",
+      label: "Algorithm"
+    },
+    {
+      type: "category",
+      label: "LeetCode",
+      collapsed: true,
+      collapsible: true,
+      link: { type: "doc", id: "algorithm/leetcode/index" },
+      items: [
+        {
+          type: "doc",
+          id: "algorithm/leetcode/[1]-two-sum",
+          label: "1. 两数之和"
+        }
+      ]
+    }
+  ]
+}
+
+module.exports = sidebars

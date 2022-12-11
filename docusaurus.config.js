@@ -2,12 +2,12 @@
 
 // @ts-check
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require("prism-react-renderer/themes/github")
+const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 // const oceanicNext = require("prism-react-renderer/themes/oceanicNext");
 // const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 
-require("dotenv").config();
+require("dotenv").config()
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -53,9 +53,7 @@ const config = {
           remarkPlugins: [require("@docusaurus/remark-plugin-npm2yarn")]
         },
         docs: {
-          remarkPlugins: [
-            [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }]
-          ],
+          remarkPlugins: [[require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }]],
           sidebarPath: "./sidebars.js",
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
@@ -96,8 +94,7 @@ const config = {
       },
       announcementBar: {
         id: "support_us",
-        content:
-          "I am currently learning TypeScript and building a RESTful API...",
+        content: "I am currently learning TypeScript and building a RESTful API...",
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
         isCloseable: true
@@ -122,6 +119,11 @@ const config = {
             type: "docSidebar",
             label: "Visual Studio Code",
             sidebarId: "visualStudioCode"
+          },
+          {
+            type: "docSidebar",
+            label: "Algorithm",
+            sidebarId: "algorithm"
           },
           // { type: "localeDropdown", position: "right" },
           {
@@ -193,6 +195,6 @@ const config = {
         playgroundPosition: "bottom"
       }
     })
-};
+}
 
-module.exports = config;
+module.exports = config

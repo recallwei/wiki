@@ -1,15 +1,14 @@
-/* @import "https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yusei+Magic&family=ZCOOL+XiaoWei&display=swap"; */
 @import "https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"; /* Noto Sans */
 @import "https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css"; /* Fira Code */
 
 :root {
   --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary-dark: rgb(33 175 144);
+  --ifm-color-primary-darker: rgb(31 165 136);
+  --ifm-color-primary-darkest: rgb(26 136 112);
+  --ifm-color-primary-light: rgb(70 203 174);
+  --ifm-color-primary-lighter: rgb(102 212 189);
+  --ifm-color-primary-lightest: rgb(146 224 208);
   --ifm-code-font-size: 100%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-footer-padding-horizontal: var(--ifm-spacing-horizontal);
@@ -18,8 +17,8 @@
   --site-announcement-bar-stripe-color2: hsl(167deg 68% 95%);
   --link-list-hover: rgb(102 212 189);
   --base-font-family: "Noto Sans", sans-serif;
-  --ifm-font-family-monospace: sfmono-regular, menlo, monaco, consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --ifm-font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono",
+    "Courier New", monospace;
   --ifm-list-left-padding: 1.2rem;
 }
 
@@ -89,11 +88,7 @@ blockquote {
 
 blockquote:hover {
   /* border-left: 2px solid var(--ifm-color-primary); */
-  border-image-source: linear-gradient(
-    to left,
-    #8f41e9,
-    var(--ifm-color-primary)
-  );
+  border-image-source: linear-gradient(to left, #8f41e9, var(--ifm-color-primary));
   border-image-slice: 1;
   box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0);
 }
