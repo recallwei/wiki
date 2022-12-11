@@ -4,8 +4,6 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github")
 const darkCodeTheme = require("prism-react-renderer/themes/dracula")
-// const oceanicNext = require("prism-react-renderer/themes/oceanicNext");
-// const duotoneLight = require("prism-react-renderer/themes/duotoneLight");
 
 require("dotenv").config()
 
@@ -40,8 +38,11 @@ const config = {
     }
   },
 
-  // 主题插件
+  // 主题
   themes: ["@docusaurus/theme-live-codeblock"],
+
+  // 插件
+  plugins: ["docusaurus-plugin-sass"],
 
   // 预设
   presets: [
@@ -72,7 +73,7 @@ const config = {
           editUrl: "https://github.com/recallwei/wiki/tree/main/website"
         },
         theme: {
-          customCss: require.resolve("./src/style/custom.css")
+          customCss: require.resolve("./src/style/index.scss")
         },
         sitemap: {
           changefreq: "weekly",
@@ -93,8 +94,8 @@ const config = {
         disableSwitch: false
       },
       announcementBar: {
-        id: "support_us",
-        content: "I am currently learning TypeScript and building a RESTful API...",
+        id: "announcement-bar",
+        content: "I am currently re-learning JavaScript and TypeScript.",
         backgroundColor: "#fafbfc",
         textColor: "#091E42",
         isCloseable: true
@@ -106,7 +107,7 @@ const config = {
           src: "img/favicon/favicon.png",
           srcDark: "img/favicon/favicon.png",
           target: "_self",
-          className: "navbarIcon"
+          className: "navbar-icon" // Defined in style/custom.scss
         },
         hideOnScroll: false,
         items: [
@@ -133,8 +134,8 @@ const config = {
           {
             href: "https://github.com/recallwei/",
             position: "right",
-            className: "header-github-link",
-            title: "前往 Bruce 的 GitHub 主页",
+            className: "header-github-icon", // Defined in style/custom.scss
+            title: "前往 Bruce Song 的 GitHub 主页",
             "aria-label": "GitHub repository"
           }
         ]
@@ -164,10 +165,10 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        // theme: duotoneLight,
-        // darkTheme: oceanicNext,
-        // Prism: https://prismjs.com/#supported-languages
-        // Docusaurus Support: https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js
+        /**
+         * Prism: https://prismjs.com/#supported-languages
+         * Docusaurus Support: https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js
+         */
         additionalLanguages: [
           "aspnet",
           "cpp",

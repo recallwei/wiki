@@ -1,0 +1,16 @@
+@use "theme.scss";
+@use "font.scss";
+@use "markdown.scss";
+@use "custom.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  font-family: var(--base-font-family);
+}

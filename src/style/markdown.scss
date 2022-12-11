@@ -1,0 +1,86 @@
+.markdown {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--base-font-family);
+  }
+
+  h1 {
+    line-height: 100%;
+  }
+
+  h2 {
+    margin-top: 30px !important;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    line-height: 100%;
+    border-left: var(--ifm-color-primary-dark) 8px solid;
+    border-radius: 1px;
+    border-bottom: var(--ifm-color-primary-dark) 1px solid;
+  }
+
+  h3 {
+    padding-left: 10px;
+    line-height: 100%;
+    border-left: var(--ifm-color-primary-darker) 6px solid;
+    border-radius: 1px;
+  }
+
+  hr {
+    border: 1px solid rgb(245 244 244);
+    padding: 0;
+    margin: 0;
+  }
+
+  /* TODO - Content image Component */
+  img {
+    display: block;
+  }
+
+  strong {
+    color: var(--ifm-color-primary-light);
+  }
+
+  code {
+    color: var(--ifm-color-primary);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Fira Code", monospace;
+    font-variant-ligatures: none; // Fira Code has ligatures, it should be disabled.
+  }
+
+  pre {
+    code {
+      font-size: 14px;
+    }
+  }
+
+  blockquote {
+    transition: all 0.5s ease-in-out;
+
+    /* background: var(--ifm-color-primary-lighter);
+  border-bottom: #25c2a0 1px solid; */
+    background-color: #f8f8f9;
+    font-size: 0.9em;
+    border-image-source: linear-gradient(to left, #8f41e9, #f8f8f8);
+    box-shadow: 1px 1px 5px 5px rgba(139, 138, 138, 0.01);
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+
+    &:hover {
+      /* border-left: 2px solid var(--ifm-color-primary); */
+      border-image-source: linear-gradient(to left, #8f41e9, var(--ifm-color-primary));
+      border-image-slice: 1;
+      box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0);
+    }
+  }
+}
+
+html[data-theme="dark"] {
+  .markdown {
+    blockquote {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

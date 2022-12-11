@@ -27,8 +27,6 @@ const twoSum = (nums: number[], target: number): number[] | undefined => {
 console.log(twoSum([2, 7, 11, 15], 9)) // expected: [0, 1]
 ```
 
-### 反思
+### 为什么不使用 `forEach()` 方法遍历数组？
 
-#### 为什么不使用 `forEach()` 方法遍历数组？
-
-> 因为 `forEach()` 方法不支持 `break` 语句或直接 `return`，会造成多余遍历次数，所以只能使用 `for` 循环。
+因为 `forEach()` 方法不支持 `break` 语句或直接 `return`，会造成多余遍历次数，所以只能使用 `for` 循环。
