@@ -24,8 +24,13 @@
   "rules": {
     "prettier/prettier": "error",
     "quotes": "off",
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": "off",
     "@typescript-eslint/semi": "off",
-    "@typescript-eslint/quotes": "off"
+    "@typescript-eslint/quotes": "off",
+    "react/jsx-filename-extension": [0],
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   "root": true
 }

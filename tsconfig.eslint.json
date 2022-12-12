@@ -1,4 +1,11 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.tsx", "src/**/*.jsx"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.tsx",
+    "src/**/*.jsx",
+    "./sidebars.js",
+    "./docusaurus.config.js"
+  ]
 }
