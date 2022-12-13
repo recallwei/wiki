@@ -1,25 +1,14 @@
-import React from "react";
-import type { Props } from "@theme/TOCItems/Tree";
-import clsx from "clsx";
-import customizedStyles from "./customized.styles.module.css";
+import React from "react"
+import type { Props } from "@theme/TOCItems/Tree"
+import clsx from "clsx"
+import customizedStyles from "./customized.styles.module.css"
 // Recursive component rendering the toc tree
-function TOCItemTree({
-  toc,
-  className,
-  linkClassName,
-  isChild,
-}: Props): JSX.Element | null {
+function TOCItemTree({ toc, className, linkClassName, isChild }: Props): JSX.Element | null {
   if (!toc.length) {
-    return null;
+    return null
   }
   return (
-    <ul
-      className={
-        isChild
-          ? customizedStyles.childText
-          : clsx(customizedStyles.text, className)
-      }
-    >
+    <ul className={isChild ? customizedStyles.childText : clsx(customizedStyles.text, className)}>
       {toc.map((heading) => (
         <li key={heading.id}>
           {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
@@ -39,8 +28,8 @@ function TOCItemTree({
         </li>
       ))}
     </ul>
-  );
+  )
 }
 
 // Memo only the tree root is enough
-export default React.memo(TOCItemTree);
+export default React.memo(TOCItemTree)
