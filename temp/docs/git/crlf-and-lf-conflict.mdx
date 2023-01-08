@@ -4,7 +4,7 @@ title: CRLF 和 LF 冲突
 
 CRLF 其中 CR (Carriage Return) 代表回车， LF (Line Feed) 代表换行，一般 Windows 操作系统使用 CRLF 作为默认的文件换行模式，macOS 或 Linux 使用 LF 作为默认的文件换行模式。为了保持一致性，一般我们**使用 LF 作为远程存储库的文件换行模式**。
 
-使用 Windows 系统的电脑克隆远程存储库时，会自动将文件的换行模式转换为 CRLF。
+造成冲突的原因：使用 Windows 系统的电脑克隆远程存储库时，会自动将文件的换行模式转换为 CRLF。
 
 ## VS Code 改变默认换行标准
 
