@@ -1,11 +1,5 @@
 {
   "extends": "./tsconfig.json",
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.js",
-    "src/**/*.tsx",
-    "src/**/*.jsx",
-    "./sidebars.js",
-    "./docusaurus.config.js"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.tsx", "src/**/*.jsx", "./sidebars.js"],
+  "exclude": ["./babel.config.js", "./eslintrc.js"]
 }

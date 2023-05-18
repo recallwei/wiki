@@ -1,6 +1,6 @@
 # Bruce Wiki
 
-This is my personal wiki website for recording web development knowledge.
+This is my personal wiki website for recording daily web development knowledge.
 
 ## Stack
 
