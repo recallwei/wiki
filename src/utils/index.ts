@@ -1,7 +1,7 @@
 // Functions
-export { sendRequest, RequestMethod } from "./requestUtils";
-export { openWindow, isMobile, setClipBoardText } from "./funcUtils";
-export { switchColor } from "./styleUtils";
+export { isMobile, openWindow, setClipBoardText } from './funcUtils'
+export { RequestMethod, sendRequest } from './requestUtils'
+export { switchColor } from './styleUtils'
 
 // Constants
-export { themeColor } from "./styleConstants";
+export { themeColor } from './styleConstants'

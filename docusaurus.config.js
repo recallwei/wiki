@@ -1,9 +1,10 @@
 // @ts-check
+require('dotenv').config()
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
-require('dotenv').config()
+const remarkPluginNpm2yarn = require('@docusaurus/remark-plugin-npm2yarn')
 
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
@@ -11,6 +12,7 @@ module.exports = {
   customFields: {
     apiBaseUrl: process.env.API_BASE_URL
   },
+  // eslint-disable-next-line quotes
   title: "Bruce's Wiki",
   tagline: '信じて諦めなければ、夢は必ずかなう',
   url: 'https://wiki.bruceworld.top/',
@@ -35,10 +37,10 @@ module.exports = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         pages: {
-          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn')]
+          remarkPlugins: [remarkPluginNpm2yarn]
         },
         docs: {
-          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
+          remarkPlugins: [[remarkPluginNpm2yarn, { sync: true }]],
           sidebarPath: './sidebars.js',
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
@@ -47,7 +49,7 @@ module.exports = {
           exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}', '**/_*/**', '**/*.test.{js,jsx,ts,tsx}', '**/__tests__/**']
         },
         blog: {
-          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn')],
+          remarkPlugins: [remarkPluginNpm2yarn],
           showReadingTime: true,
           editUrl: 'https://github.com/recallwei/wiki/tree/main/website'
         },

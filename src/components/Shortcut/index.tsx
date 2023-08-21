@@ -1,17 +1,19 @@
-import React, { CSSProperties, ReactNode } from "react";
-import styles from "./styles.module.css";
-import clsx from "clsx";
+import clsx from 'clsx'
+import type { CSSProperties, ReactNode } from 'react'
+import React from 'react'
+
+import styles from './styles.module.css'
 
 type ShortcutProps = {
-  children: ReactNode;
-  wrapperClassName?: string;
-  wrapperStyle?: CSSProperties;
-};
+  children: ReactNode
+  wrapperClassName?: string
+  wrapperStyle?: CSSProperties
+}
 
 export default function Shortcut({
   children,
   wrapperClassName,
-  wrapperStyle,
+  wrapperStyle
 }: ShortcutProps): JSX.Element {
   return (
     <span
@@ -20,5 +22,5 @@ export default function Shortcut({
     >
       {children}
     </span>
-  );
+  )
 }

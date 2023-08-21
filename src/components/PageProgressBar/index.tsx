@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
-import styles from "./styles.module.css";
-import clsx from "clsx";
+import clsx from 'clsx'
+import React, { useEffect, useState } from 'react'
+
+import styles from './styles.module.css'
 
 export default function PageProgressBar(): JSX.Element | null {
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   function handleScroll(): void {
     setProgress(
@@ -20,14 +21,14 @@ export default function PageProgressBar(): JSX.Element | null {
             document.body.scrollHeight - document.body.clientHeight)) *
         100
       ).toFixed(0)
-    );
+    )
   }
 
   function handleScrollToTop(): void {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
-    });
+      behavior: 'smooth'
+    })
   }
 
   return (
@@ -38,10 +39,13 @@ export default function PageProgressBar(): JSX.Element | null {
       )}
     >
       <div className={styles.menuBtn}>
-        <div className={styles.progressBarText} onClick={handleScrollToTop}>
+        <div
+          className={styles.progressBarText}
+          onClick={handleScrollToTop}
+        >
           {progress}%
         </div>
       </div>
     </div>
-  );
+  )
 }

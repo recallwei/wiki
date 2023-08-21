@@ -1,16 +1,18 @@
-import React, { CSSProperties } from "react";
-import styles from "./styles.module.css";
-import clsx from "clsx";
-import ThemedImage from "@theme/ThemedImage";
+import ThemedImage from '@theme/ThemedImage'
+import clsx from 'clsx'
+import type { CSSProperties } from 'react'
+import React from 'react'
 
-type FeatureIconType = {
-  onClick?: () => void;
-  src: any;
-  srcDark?: any;
-  title: string;
-  wrapperClassName?: string;
-  wrapperStyle?: CSSProperties;
-};
+import styles from './styles.module.css'
+
+type Props = {
+  onClick?: () => void
+  src: any
+  srcDark?: any
+  title: string
+  wrapperClassName?: string
+  wrapperStyle?: CSSProperties
+}
 
 export default function FeatureIcon({
   onClick,
@@ -18,8 +20,8 @@ export default function FeatureIcon({
   srcDark,
   title,
   wrapperClassName,
-  wrapperStyle,
-}: FeatureIconType): JSX.Element {
+  wrapperStyle
+}: Props): JSX.Element {
   return (
     <div
       className={clsx(styles.featureIconArea, wrapperClassName)}
@@ -28,7 +30,7 @@ export default function FeatureIcon({
       <ThemedImage
         sources={{
           light: src,
-          dark: srcDark ? srcDark : src,
+          dark: srcDark || src
         }}
         alt={title}
         loading="lazy"
@@ -36,5 +38,5 @@ export default function FeatureIcon({
       />
       <div className={styles.title}>{title}</div>
     </div>
-  );
+  )
 }

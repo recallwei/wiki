@@ -1,25 +1,25 @@
-import React from "react"
-import clsx from "clsx"
-import { useThemeConfig, usePrismTheme } from "@docusaurus/theme-common"
+import { usePrismTheme, useThemeConfig } from '@docusaurus/theme-common'
 import {
+  containsLineNumbers,
   parseCodeBlockTitle,
   parseLanguage,
   parseLines,
-  containsLineNumbers,
   useCodeWordWrap
-} from "@docusaurus/theme-common/internal"
-import Highlight, { defaultProps, type Language } from "prism-react-renderer"
-import Line from "@theme/CodeBlock/Line"
-import CopyButton from "@theme/CodeBlock/CopyButton"
-import WordWrapButton from "@theme/CodeBlock/WordWrapButton"
-import Container from "@theme/CodeBlock/Container"
-import type { Props } from "@theme/CodeBlock/Content/String"
+} from '@docusaurus/theme-common/internal'
+import Container from '@theme/CodeBlock/Container'
+import type { Props } from '@theme/CodeBlock/Content/String'
+import CopyButton from '@theme/CodeBlock/CopyButton'
+import Line from '@theme/CodeBlock/Line'
+import WordWrapButton from '@theme/CodeBlock/WordWrapButton'
+import clsx from 'clsx'
+import Highlight, { defaultProps, type Language } from 'prism-react-renderer'
+import React from 'react'
 
-import styles from "./styles.module.css"
+import styles from './styles.module.css'
 
 export default function CodeBlockString({
   children,
-  className: blockClassName = "",
+  className: blockClassName = '',
   metastring,
   title: titleProp,
   showLineNumbers: showLineNumbersProp,
@@ -28,7 +28,8 @@ export default function CodeBlockString({
   const {
     prism: { defaultLanguage, magicComments }
   } = useThemeConfig()
-  const language = languageProp ?? parseLanguage(blockClassName) ?? defaultLanguage
+  const language =
+    languageProp ?? parseLanguage(blockClassName) ?? defaultLanguage
   const prismTheme = usePrismTheme()
   const wordWrap = useCodeWordWrap()
 
@@ -49,26 +50,32 @@ export default function CodeBlockString({
       as="div"
       className={clsx(
         blockClassName,
-        language && !blockClassName.includes(`language-${language}`) && `language-${language}`
-      )}>
+        language &&
+          !blockClassName.includes(`language-${language}`) &&
+          `language-${language}`
+      )}
+    >
       {title && <div className={styles.codeBlockTitle}>{title}</div>}
       <div className={styles.codeBlockContent}>
         <Highlight
           {...defaultProps}
           theme={prismTheme}
           code={code}
-          language={(language ?? "text") as Language}>
+          language={(language ?? 'text') as Language}
+        >
           {({ className, tokens, getLineProps, getTokenProps }) => (
             <pre
               /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */
               tabIndex={0}
               ref={wordWrap.codeBlockRef}
-              className={clsx(className, styles.codeBlock, "thin-scrollbar")}>
+              className={clsx(className, styles.codeBlock, 'thin-scrollbar')}
+            >
               <code
                 className={clsx(
                   styles.codeBlockLines,
                   showLineNumbers && styles.codeBlockLinesWithNumbering
-                )}>
+                )}
+              >
                 {tokens.map((line, i) => (
                   <Line
                     key={i}
@@ -91,7 +98,10 @@ export default function CodeBlockString({
               isEnabled={wordWrap.isEnabled}
             />
           )}
-          <CopyButton className={styles.codeButton} code={code} />
+          <CopyButton
+            className={styles.codeButton}
+            code={code}
+          />
         </div>
       </div>
     </Container>

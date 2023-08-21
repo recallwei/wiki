@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-const Links = (): JSX.Element => {
-  return <>123</>;
-};
+function Links(): JSX.Element {
+  return <>123</>
+}
 
-export default Links;
+export default Links

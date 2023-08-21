@@ -1,23 +1,25 @@
-import React, { CSSProperties } from "react";
-import styles from "./styles.module.css";
-import clsx from "clsx";
-import ThemedImage from "@theme/ThemedImage";
+import ThemedImage from '@theme/ThemedImage'
+import clsx from 'clsx'
+import type { CSSProperties } from 'react'
+import React from 'react'
 
-type Image = {
-  src: any;
-  title?: string;
-  wrapperClassName?: string;
-  wrapperStyle?: CSSProperties;
-  onClick?: () => void;
-};
+import styles from './styles.module.css'
+
+type Props = {
+  src: any
+  title?: string
+  wrapperClassName?: string
+  wrapperStyle?: CSSProperties
+  onClick?: () => void
+}
 
 export default function Image({
   src,
   title,
   wrapperClassName,
   wrapperStyle,
-  onClick,
-}: Image): JSX.Element {
+  onClick
+}: Props): JSX.Element {
   return (
     <div
       className={clsx(styles.wrapper, wrapperClassName)}
@@ -27,7 +29,7 @@ export default function Image({
         className={styles.image}
         sources={{
           light: src,
-          dark: src,
+          dark: src
         }}
         alt={title}
         loading="lazy"
@@ -35,5 +37,5 @@ export default function Image({
       />
       <div className={styles.title}>- {title} -</div>
     </div>
-  );
+  )
 }

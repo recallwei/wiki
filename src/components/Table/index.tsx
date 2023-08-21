@@ -1,51 +1,53 @@
-import React, { CSSProperties, ReactNode } from "react";
-import styles from "./styles.module.css";
-import clsx from "clsx";
-import { isMobile } from "@site/src/utils/index";
+import { isMobile } from '@site/src/utils/index'
+import clsx from 'clsx'
+import type { CSSProperties, ReactNode } from 'react'
+import React from 'react'
+
+import styles from './styles.module.css'
 
 type TableProps = {
   data: {
-    position: Array<Position>;
-    header: string[];
-    body: Array<Array<ReactNode>>;
-    footer: string[];
-    caption: ReactNode;
-  };
-  wrapperClassName?: string;
-  wrapperStyle?: CSSProperties;
-  mobileWrapperStyle?: CSSProperties;
-};
+    position: Array<Position>
+    header: string[]
+    body: Array<Array<ReactNode>>
+    footer: string[]
+    caption: ReactNode
+  }
+  wrapperClassName?: string
+  wrapperStyle?: CSSProperties
+  mobileWrapperStyle?: CSSProperties
+}
 
 enum Position {
-  "Start" = 0,
-  "End" = 1,
-  "Center" = 2,
+  'Start' = 0,
+  'End' = 1,
+  'Center' = 2
 }
 
 export default function Table({
   data,
   wrapperClassName,
   wrapperStyle,
-  mobileWrapperStyle,
+  mobileWrapperStyle
 }: TableProps): JSX.Element {
   const getAlignStyle = (text: Position | undefined): any => {
-    let position: string;
+    let position: string
     switch (text) {
       case Position.Center:
-        position = "center";
-        break;
+        position = 'center'
+        break
       case Position.End:
-        position = "end";
-        break;
+        position = 'end'
+        break
       case undefined:
       case Position.Start:
       default:
-        position = "start";
+        position = 'start'
     }
     return {
-      textAlign: position,
-    };
-  };
+      textAlign: position
+    }
+  }
   return (
     <div
       className={clsx(styles.tableAreaWrapper, wrapperClassName)}
@@ -59,54 +61,56 @@ export default function Table({
           {data.header && data.header.length > 0 && (
             <thead>
               <tr role="row">
-                {data.header.map((x: string, index: number) => {
-                  return (
-                    <th key={index} style={getAlignStyle(data.position[index])}>
-                      {x}
-                    </th>
-                  );
-                })}
+                {data.header.map((x: string, index: number) => (
+                  <th
+                    key={index}
+                    style={getAlignStyle(data.position[index])}
+                  >
+                    {x}
+                  </th>
+                ))}
               </tr>
             </thead>
           )}
           <tbody>
             {data.body &&
               data.body.length > 0 &&
-              data.body.map((x: ReactNode[], index: number) => {
-                return (
+              data.body.map(
+                (x: ReactNode[], index: number) =>
                   x.length > 0 && (
-                    <tr role="row" key={index}>
-                      {x.map((y: ReactNode, index: number) => {
-                        return (
-                          <td
-                            role="gridcell"
-                            key={index}
-                            style={getAlignStyle(data.position[index])}
-                          >
-                            {y}
-                          </td>
-                        );
-                      })}
+                    <tr
+                      role="row"
+                      key={index}
+                    >
+                      {x.map((y: ReactNode, yIndex: number) => (
+                        <td
+                          role="gridcell"
+                          key={yIndex}
+                          style={getAlignStyle(data.position[index])}
+                        >
+                          {y}
+                        </td>
+                      ))}
                     </tr>
                   )
-                );
-              })}
+              )}
           </tbody>
           {data.footer && data.footer.length > 0 && (
             <tfoot>
               <tr role="row">
-                {data.footer.map((x: ReactNode, index: number) => {
-                  return (
-                    <th key={index} style={getAlignStyle(data.position[index])}>
-                      {x}
-                    </th>
-                  );
-                })}
+                {data.footer.map((x: ReactNode, index: number) => (
+                  <th
+                    key={index}
+                    style={getAlignStyle(data.position[index])}
+                  >
+                    {x}
+                  </th>
+                ))}
               </tr>
             </tfoot>
           )}
         </table>
       </div>
     </div>
-  );
+  )
 }

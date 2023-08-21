@@ -1,30 +1,30 @@
 // 打开新页面
 function openWindow(url: string): void {
-  const w: Window | null = window.open("about:blank");
+  const w: Window | null = window.open('about:blank')
   if (w) {
-    w.opener = null;
-    w.location.href = url;
+    w.opener = null
+    w.location.href = url
   }
-  return;
 }
 
 // 移动端检测
 function isMobile(): boolean {
-  const userAgent: string = navigator.userAgent.toUpperCase();
+  const userAgent: string = navigator.userAgent.toUpperCase()
   if (/IPHONE|IPOD/.test(userAgent) && /MOBILE/.test(userAgent)) {
-    return true;
-  } else if (/ANDROID/.test(userAgent) && /MOBILE/.test(userAgent)) {
-    return true;
-  } else if (/IPAD/.test(userAgent) && /MOBILE/.test(userAgent)) {
-    return false;
-  } else {
-    return false;
+    return true
   }
+  if (/ANDROID/.test(userAgent) && /MOBILE/.test(userAgent)) {
+    return true
+  }
+  if (/IPAD/.test(userAgent) && /MOBILE/.test(userAgent)) {
+    return false
+  }
+  return false
 }
 
 // 复制文本
 async function setClipBoardText(text: string): Promise<void> {
-  await navigator.clipboard.writeText(text);
+  await navigator.clipboard.writeText(text)
 }
 
-export { openWindow, isMobile, setClipBoardText };
+export { isMobile, openWindow, setClipBoardText }

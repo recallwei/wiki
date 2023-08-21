@@ -1,14 +1,16 @@
-import React, { CSSProperties, ReactNode } from "react";
-import styles from "./styles.module.css";
-import clsx from "clsx";
+import clsx from 'clsx'
+import type { CSSProperties, ReactNode } from 'react'
+import React from 'react'
 
-type BadgeType = {
-  children: ReactNode;
-  color?: string;
-  url?: string;
-  wrapperClassName?: string;
-  wrapperStyle?: CSSProperties;
-};
+import styles from './styles.module.css'
+
+type Props = {
+  children: ReactNode
+  color?: string
+  url?: string
+  wrapperClassName?: string
+  wrapperStyle?: CSSProperties
+}
 
 // TODO - Refactor: Use Link Component
 
@@ -17,12 +19,12 @@ export default function Badge({
   color,
   url,
   wrapperClassName,
-  wrapperStyle,
-}: BadgeType): JSX.Element {
+  wrapperStyle
+}: Props): JSX.Element {
   return (
     <span
       className={clsx(
-        "badge",
+        'badge',
         `badge--${color}`,
         styles.badge,
         url && styles.badgeHover,
@@ -31,11 +33,11 @@ export default function Badge({
       style={wrapperStyle}
       onClick={() => {
         if (url) {
-          window.location.href = url;
+          window.location.href = url
         }
       }}
     >
       {children}
     </span>
-  );
+  )
 }
