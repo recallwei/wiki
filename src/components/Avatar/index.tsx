@@ -1,50 +1,52 @@
-import React, { CSSProperties, ReactNode } from "react";
-import clsx from "clsx";
+import clsx from 'clsx'
+import type { CSSProperties, ReactNode } from 'react'
+import React from 'react'
 
 type AvatarType = {
-  avatarLink: boolean;
-  description: ReactNode;
-  name?: string;
-  size: "default" | "sm" | "lg" | "xl";
-  src: any;
-  positionVertical: boolean;
-  wrapperClassName?: string;
-  wrapperStyle?: CSSProperties;
-};
+  avatarLink: boolean
+  description: ReactNode
+  name?: string
+  size: 'default' | 'sm' | 'lg' | 'xl'
+  src: any
+  positionVertical: boolean
+  wrapperClassName?: string
+  wrapperStyle?: CSSProperties
+}
 
 export default function Avatar({
   avatarLink = false,
   description,
   name,
-  size = "default",
+  size = 'default',
   src,
   positionVertical = false,
   wrapperClassName,
-  wrapperStyle,
+  wrapperStyle
 }: AvatarType): JSX.Element {
   return (
     <div
-      className={`avatar ${positionVertical && "avatar--vertical"}`}
+      className={`avatar ${positionVertical && 'avatar--vertical'}`}
       style={wrapperStyle}
     >
       <img
         // class={`avatar__photo ${
         //   size !== "default" && `avatar__photo--${size}`
         // } ${avatarLink && "avatar__photo-link"}`}
-        //TODO - Verify whether className works
+        // TODO - Verify whether className works
         className={clsx(
-          "avatar__photo",
-          size !== "default" && `avatar__photo--${size}`,
-          avatarLink && "avatar__photo-link",
+          'avatar__photo',
+          size !== 'default' && `avatar__photo--${size}`,
+          avatarLink && 'avatar__photo-link',
           wrapperClassName
         )}
         src={src}
+        alt=""
       />
       <div className="avatar__intro">
         <div className="avatar__name">{name}</div>
-        //TODO - Keep using CSS styles instead of small element.
+        {/* //TODO: - Keep using CSS styles instead of small element. */}
         <small className="avatar__subtitle">{description}</small>
       </div>
     </div>
-  );
+  )
 }

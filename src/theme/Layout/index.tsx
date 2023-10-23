@@ -1,17 +1,19 @@
-import React from "react"
-import clsx from "clsx"
-import ErrorBoundary from "@docusaurus/ErrorBoundary"
-import { PageMetadata, ThemeClassNames } from "@docusaurus/theme-common"
+import BrowserOnly from '@docusaurus/BrowserOnly'
+import ErrorBoundary from '@docusaurus/ErrorBoundary'
+import { PageMetadata, ThemeClassNames } from '@docusaurus/theme-common'
+import AnnouncementBar from '@theme/AnnouncementBar'
+import ErrorPageContent from '@theme/ErrorPageContent'
+import Footer from '@theme/Footer'
+import type { Props } from '@theme/Layout'
+import LayoutProvider from '@theme/Layout/Provider'
+import Navbar from '@theme/Navbar'
 // import { useKeyboardNavigation } from "@docusaurus/theme-common/internal";
-import SkipToContent from "@theme/SkipToContent"
-import AnnouncementBar from "@theme/AnnouncementBar"
-import Navbar from "@theme/Navbar"
-import Footer from "@theme/Footer"
-import LayoutProvider from "@theme/Layout/Provider"
-import ErrorPageContent from "@theme/ErrorPageContent"
-import type { Props } from "@theme/Layout"
-import styles from "./styles.module.css"
-import BrowserOnly from "@docusaurus/BrowserOnly"
+import SkipToContent from '@theme/SkipToContent'
+import clsx from 'clsx'
+import React from 'react'
+
+import styles from './styles.module.css'
+
 export default function Layout(props: Props): JSX.Element {
   const {
     children,
@@ -26,10 +28,13 @@ export default function Layout(props: Props): JSX.Element {
     <BrowserOnly>
       {() => {
         // Detect whether is homepage
-        const isHomePage: boolean = window.location.pathname === "/"
+        const isHomePage: boolean = window.location.pathname === '/'
         return (
           <LayoutProvider>
-            <PageMetadata title={title} description={description} />
+            <PageMetadata
+              title={title}
+              description={description}
+            />
 
             <SkipToContent />
 
@@ -41,8 +46,15 @@ export default function Layout(props: Props): JSX.Element {
             )}
 
             <div
-              className={clsx(ThemeClassNames.wrapper.main, styles.mainWrapper, wrapperClassName)}>
-              <ErrorBoundary fallback={(params) => <ErrorPageContent {...params} />}>
+              className={clsx(
+                ThemeClassNames.wrapper.main,
+                styles.mainWrapper,
+                wrapperClassName
+              )}
+            >
+              <ErrorBoundary
+                fallback={(params) => <ErrorPageContent {...params} />}
+              >
                 {children}
               </ErrorBoundary>
             </div>

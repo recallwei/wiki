@@ -5,46 +5,46 @@
 const sidebars = {
   javascript: [
     {
-      type: "doc",
-      id: "javascript/index",
-      label: "JavaScript"
+      type: 'doc',
+      id: 'javascript/index',
+      label: 'JavaScript'
     },
     {
-      type: "category",
-      label: "Built-in Objects",
+      type: 'category',
+      label: 'Built-in Objects',
       collapsed: true,
       collapsible: true,
       link: {
-        type: "doc",
-        id: "javascript/built-in-objects/index"
+        type: 'doc',
+        id: 'javascript/built-in-objects/index'
       },
       items: [
         {
-          type: "doc",
-          id: "javascript/built-in-objects/array",
-          label: "Array"
+          type: 'doc',
+          id: 'javascript/built-in-objects/array',
+          label: 'Array'
         },
         {
-          type: "doc",
-          id: "javascript/built-in-objects/object",
-          label: "Object"
+          type: 'doc',
+          id: 'javascript/built-in-objects/object',
+          label: 'Object'
         }
       ]
     },
     {
-      type: "category",
-      label: "Utilities",
+      type: 'category',
+      label: 'Utilities',
       collapsed: true,
       collapsible: true,
       link: {
-        type: "doc",
-        id: "javascript/utilities/index"
+        type: 'doc',
+        id: 'javascript/utilities/index'
       },
       items: [
         {
-          type: "doc",
-          id: "javascript/utilities/js-doc",
-          label: "JSDoc"
+          type: 'doc',
+          id: 'javascript/utilities/js-doc',
+          label: 'JSDoc'
         }
       ]
     }
@@ -52,19 +52,19 @@ const sidebars = {
 
   visualStudioCode: [
     {
-      type: "category",
-      label: "Visual Studio Code",
+      type: 'category',
+      label: 'Visual Studio Code',
       collapsed: true,
       collapsible: true,
       link: {
-        type: "doc",
-        id: "visual-studio-code/index"
+        type: 'doc',
+        id: 'visual-studio-code/index'
       },
       items: [
         {
-          type: "doc",
-          id: "visual-studio-code/fira-code-font",
-          label: "Fira Code Font"
+          type: 'doc',
+          id: 'visual-studio-code/fira-code-font',
+          label: 'Fira Code Font'
         }
       ]
     }
@@ -72,21 +72,21 @@ const sidebars = {
 
   algorithm: [
     {
-      type: "doc",
-      id: "algorithm/index",
-      label: "Algorithm"
+      type: 'doc',
+      id: 'algorithm/index',
+      label: 'Algorithm'
     },
     {
-      type: "category",
-      label: "LeetCode",
+      type: 'category',
+      label: 'LeetCode',
       collapsed: true,
       collapsible: true,
-      link: { type: "doc", id: "algorithm/leetcode/index" },
+      link: { type: 'doc', id: 'algorithm/leetcode/index' },
       items: [
         {
-          type: "doc",
-          id: "algorithm/leetcode/[1]-two-sum",
-          label: "1. 两数之和"
+          type: 'doc',
+          id: 'algorithm/leetcode/[1]-two-sum',
+          label: '1. 两数之和'
         }
       ]
     }

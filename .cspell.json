@@ -1,15 +1,28 @@
 {
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
   "language": "en",
-  "words": [
-    "aspnet",
-    "changefreq",
-    "clsx",
-    "commitlint",
-    "fira",
-    "hideable",
-    "leetcode",
-    "stylelint"
+  "words": [],
+  "flagWords": [],
+  "dictionaries": [
+    "custom-words"
   ],
-  "flagWords": []
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-words",
+      "path": "./.cspell/custom-words.txt",
+      "addWords": true
+    }
+  ],
+  "ignorePaths": [
+    ".cspell",
+    ".vscode",
+    ".vercel",
+    "dist",
+    "build",
+    "node_modules",
+    "public",
+    "pnpm-lock.yaml",
+    "README.md"
+  ]
 }

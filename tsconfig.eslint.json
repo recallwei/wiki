@@ -5,7 +5,10 @@
     "src/**/*.js",
     "src/**/*.tsx",
     "src/**/*.jsx",
-    "./sidebars.js",
-    "./docusaurus.config.js"
+    "./sidebars.js"
+  ],
+  "exclude": [
+    "./babel.config.js",
+    "./eslintrc.js"
   ]
 }

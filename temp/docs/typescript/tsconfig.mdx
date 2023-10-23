@@ -1,15 +1,15 @@
 ---
-title: "TSConfig"
-description: ""
+title: 'TSConfig'
+description: ''
 tags:
-  - label: "TypeScript"
-    permalink: "typescript"
+  - label: 'TypeScript'
+    permalink: 'typescript'
 last_update:
-  date: "2022-07-30"
-  author: "Bruce"
+  date: '2022-07-30'
+  author: 'Bruce'
 ---
 
-import HyperLink from "@site/src/components/HyperLink";
+import HyperLink from '@site/src/components/HyperLink'
 
 ## CompilerOptions - Modules
 
@@ -39,7 +39,7 @@ import HyperLink from "@site/src/components/HyperLink";
 
 上述配置中，我们可以通过绝对路径 `src/*` 的方式来导入 src 目录中的模块。
 
-:::warning 警告
+:::danger 警告
 
 需要注意的是，`paths` 只影响 `tsc` 编译，但不会对输出内容进行修改。不使用 `ts-node` 执行 `.js` 文件就会报错。推荐引入 **webpack** 之类的构建工具。
 
